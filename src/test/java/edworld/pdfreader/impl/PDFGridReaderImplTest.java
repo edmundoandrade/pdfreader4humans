@@ -28,10 +28,14 @@ public class PDFGridReaderImplTest {
 	@Test
 	public void locateGridComponents() throws IOException {
 		GridComponent[] components = reader.locateGridComponents();
-		assertEquals(3, components.length);
-		assertEquals("line (49.607, 218.596, 758.265, 218.596)", components[0].toString());
-		assertEquals("line (49.607, 585.267, 517.321, 585.267)", components[1].toString());
-		assertEquals("line (49.607, 873.311, 758.273, 873.311)", components[2].toString());
+		assertEquals(173, components.length);
+		assertEquals("rect (50.406, 69.08, 758.273, 34.147)", components[0].toString());
+		assertEquals("rect (49.518, 75.116, 49.717, 83.987)", components[1].toString());
+		assertEquals("rect (101.254, 75.116, 101.453, 83.987)", components[2].toString());
+		assertEquals("rect (273.328, 75.116, 273.527, 83.987)", components[3].toString());
+		assertEquals("line (49.607, 218.596, 758.265, 218.596)", components[46].toString());
+		assertEquals("line (49.607, 585.267, 517.321, 585.267)", components[47].toString());
+		assertEquals("line (49.607, 873.311, 758.273, 873.311)", components[172].toString());
 	}
 
 	@After
