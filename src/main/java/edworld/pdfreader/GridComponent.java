@@ -7,18 +7,20 @@ public class GridComponent implements Comparable<GridComponent> {
 	private float fromY;
 	private float toX;
 	private float toY;
+	private double lineWidth;
 
-	public GridComponent(String type, float fromX, float fromY, float toX, float toY) {
+	public GridComponent(String type, float fromX, float fromY, float toX, float toY, double lineWidth) {
 		this.type = type;
 		this.fromX = fromX;
 		this.fromY = fromY;
 		this.toX = toX;
 		this.toY = toY;
+		this.lineWidth = lineWidth;
 	}
 
 	@Override
 	public String toString() {
-		return type + " (" + fromX + ", " + fromY + ", " + toX + ", " + toY + ")";
+		return type + " (" + fromX + ", " + fromY + ", " + toX + ", " + toY + ", " + lineWidth + "pt)";
 	}
 
 	public float getFromX() {

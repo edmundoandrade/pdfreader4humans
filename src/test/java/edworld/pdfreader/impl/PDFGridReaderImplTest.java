@@ -29,13 +29,13 @@ public class PDFGridReaderImplTest {
 	public void locateGridComponents() throws IOException {
 		GridComponent[] components = reader.locateGridComponents();
 		assertEquals(173, components.length);
-		assertEquals("rect (50.406, 69.08, 758.273, 34.147)", components[0].toString());
-		assertEquals("rect (49.518, 75.116, 49.717, 83.987)", components[1].toString());
-		assertEquals("rect (101.254, 75.116, 101.453, 83.987)", components[2].toString());
-		assertEquals("rect (273.328, 75.116, 273.527, 83.987)", components[3].toString());
-		assertEquals("line (49.607, 218.596, 758.265, 218.596)", components[46].toString());
-		assertEquals("line (49.607, 585.267, 517.321, 585.267)", components[47].toString());
-		assertEquals("line (49.607, 873.311, 758.273, 873.311)", components[172].toString());
+		assertEquals("rect (50.406, 69.08, 758.273, 34.147, 0.0pt)", components[0].toString());
+		assertEquals("rect (49.518, 75.116, 49.717, 83.987, 0.51pt)", components[1].toString());
+		assertEquals("rect (101.254, 75.116, 101.453, 83.987, 0.51pt)", components[2].toString());
+		assertEquals("rect (273.328, 75.116, 273.527, 83.987, 0.51pt)", components[3].toString());
+		assertEquals("line (49.607, 218.596, 758.265, 218.596, 1.08pt)", components[46].toString());
+		assertEquals("line (49.607, 585.267, 517.321, 585.267, 1.08pt)", components[47].toString());
+		assertEquals("line (49.607, 873.311, 758.273, 873.311, 0.51pt)", components[172].toString());
 	}
 
 	@After
