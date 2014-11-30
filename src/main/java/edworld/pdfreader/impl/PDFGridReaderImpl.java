@@ -41,7 +41,6 @@ public class PDFGridReaderImpl implements PDFGridReader {
 				graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
 				graphics.scale(scaling, scaling);
 				drawPage(graphics, pageToDraw, cropBox.createDimension());
-				// ImageIO.write(image, "png", new File("/user/saida.png"));
 				graphics.dispose();
 				dispose();
 				Collections.sort(list);
