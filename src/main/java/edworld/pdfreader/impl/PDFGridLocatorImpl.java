@@ -1,4 +1,4 @@
-// This open source code is distributed without warranties, following the license published at http://www.apache.org/licenses/LICENSE-2.0
+// This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader.impl;
 
 import java.awt.Color;
@@ -18,16 +18,10 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.util.PDFOperator;
 
 import edworld.pdfreader.GridComponent;
-import edworld.pdfreader.PDFGridReader;
+import edworld.pdfreader.PDFGridLocator;
 
-public class PDFGridReaderImpl implements PDFGridReader {
-	private PDPage page;
-
-	public PDFGridReaderImpl(PDPage page) {
-		this.page = page;
-	}
-
-	public GridComponent[] locateGridComponents() throws IOException {
+public class PDFGridLocatorImpl implements PDFGridLocator {
+	public GridComponent[] locateGridComponents(PDPage page) throws IOException {
 		final PDPage pageToDraw = page;
 		return new PageDrawer() {
 			private List<GridComponent> list = new ArrayList<GridComponent>();
@@ -66,27 +60,28 @@ public class PDFGridReaderImpl implements PDFGridReader {
 				super.processOperator(operator, arguments);
 			}
 
+			private void processSetFlatnessTolerance(COSNumber flatnessTolerance) {
+				getGraphicsState().setFlatness(flatnessTolerance.doubleValue());
+			}
+
 			private void processLineTo(COSNumber x, COSNumber y) {
-				Point2D pos = transformedPoint(x.doubleValue(), y.doubleValue());
-				float fromX = (float) getLinePath().getCurrentPoint().getX();
-				float fromY = (float) getLinePath().getCurrentPoint().getY();
-				float toX = (float) pos.getX();
-				float toY = (float) pos.getY();
-				list.add(new GridComponent("line", fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
+				Point2D from = getLinePath().getCurrentPoint();
+				Point2D to = transformedPoint(x.doubleValue(), y.doubleValue());
+				addGridComponent("line", from, to);
 			}
 
 			private void processAppendRectangleToPath(COSNumber x, COSNumber y, COSNumber w, COSNumber h) {
 				Point2D from = transformedPoint(x.doubleValue(), y.doubleValue());
 				Point2D to = transformedPoint(w.doubleValue() + x.doubleValue(), h.doubleValue() + y.doubleValue());
-				float fromX = (float) from.getX();
-				float fromY = (float) from.getY();
-				float toX = (float) to.getX();
-				float toY = (float) to.getY();
-				list.add(new GridComponent("rect", fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
+				addGridComponent("rect", from, to);
 			}
 
-			private void processSetFlatnessTolerance(COSNumber flatnessTolerance) {
-				getGraphicsState().setFlatness(flatnessTolerance.doubleValue());
+			private void addGridComponent(String type, Point2D from, Point2D to) {
+				float fromX = (float) Math.min(from.getX(), to.getX());
+				float fromY = (float) Math.min(from.getY(), to.getY());
+				float toX = (float) Math.max(from.getX(), to.getX());
+				float toY = (float) Math.max(from.getY(), to.getY());
+				list.add(new GridComponent(type, fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
 			}
 
 			private boolean isTextOperation(String operation) {

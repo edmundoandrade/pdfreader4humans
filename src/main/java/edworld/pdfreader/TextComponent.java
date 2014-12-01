@@ -1,16 +1,13 @@
-// This open source code is distributed without warranties, following the license published at http://www.apache.org/licenses/LICENSE-2.0
+// This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader;
 
-public class TextComponent {
-	private float x;
-	private float y;
+public class TextComponent extends Component {
 	private String text;
 	private String fontName;
 	private float fontSize;
 
-	public TextComponent(float x, float y, String text, String fontName, float fontSize) {
-		this.x = x;
-		this.y = y;
+	public TextComponent(String text, float fromX, float fromY, float toX, float toY, String fontName, float fontSize) {
+		super(fromX, fromY, toX, toY);
 		this.text = text;
 		this.fontName = fontName;
 		this.fontSize = fontSize;
@@ -18,6 +15,6 @@ public class TextComponent {
 
 	@Override
 	public String toString() {
-		return text + " (" + x + ", " + y + ", " + fontName + " " + fontSize + ")";
+		return text + " (" + fromX + ", " + fromY + ", " + toX + ", " + toY + ", " + fontName + " " + fontSize + ")";
 	}
 }
