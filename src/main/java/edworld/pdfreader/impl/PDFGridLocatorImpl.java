@@ -21,12 +21,12 @@ import edworld.pdfreader.GridComponent;
 import edworld.pdfreader.PDFGridLocator;
 
 public class PDFGridLocatorImpl implements PDFGridLocator {
-	public GridComponent[] locateGridComponents(PDPage page) throws IOException {
+	public List<GridComponent> locateGridComponents(PDPage page) throws IOException {
 		final PDPage pageToDraw = page;
 		return new PageDrawer() {
 			private List<GridComponent> list = new ArrayList<GridComponent>();
 
-			public GridComponent[] locateGridComponents() throws IOException {
+			public List<GridComponent> locateGridComponents() throws IOException {
 				int scaling = 4;
 				PDRectangle cropBox = pageToDraw.findCropBox();
 				BufferedImage image = new BufferedImage((int) cropBox.getWidth() * scaling, (int) cropBox.getHeight() * scaling, BufferedImage.TYPE_INT_ARGB);
@@ -38,7 +38,7 @@ public class PDFGridLocatorImpl implements PDFGridLocator {
 				graphics.dispose();
 				dispose();
 				Collections.sort(list);
-				return list.toArray(new GridComponent[0]);
+				return list;
 			}
 
 			@Override

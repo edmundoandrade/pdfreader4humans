@@ -3,6 +3,7 @@ package edworld.pdfreader;
 
 public class TextComponent extends Component {
 	private String text;
+
 	private String fontName;
 	private float fontSize;
 
@@ -11,6 +12,10 @@ public class TextComponent extends Component {
 		this.text = text;
 		this.fontName = fontName;
 		this.fontSize = fontSize;
+	}
+
+	public String getText() {
+		return text;
 	}
 
 	@Override

@@ -2,9 +2,10 @@
 package edworld.pdfreader;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.pdfbox.pdmodel.PDPage;
 
 public interface PDFTextLocator {
-	TextComponent[] locateTextComponents(PDPage page) throws IOException;
+	List<TextComponent> locateTextComponents(PDPage page) throws IOException;
 }

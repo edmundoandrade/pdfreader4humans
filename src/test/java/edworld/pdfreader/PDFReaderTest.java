@@ -43,22 +43,33 @@ public class PDFReaderTest {
 				graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
 				graphics.scale(scaling, scaling);
 				for (Component component : firstLevel) {
-					if (component.toString().startsWith("line")) {
-						graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
-					} else if (component.toString().startsWith("rect")) {
-						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) (component.getToX() - component.getFromX()),
-								(int) (component.getToY() - component.getFromY()));
+					if (component.fromY >= 50 && component.toY <= 300) {
+						if (component.toString().startsWith("box")) {
+							graphics.setColor(new Color(100, 100, 0));
+							graphics.fillRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
+							graphics.setColor(Color.WHITE);
+						}
 					}
 				}
 				for (Component component : firstLevel) {
-					if (component.toString().startsWith("group")) {
-						graphics.setColor(Color.YELLOW);
-						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) (component.getToX() - component.getFromX()),
-								(int) (component.getToY() - component.getFromY()));
-						graphics.setColor(Color.WHITE);
+					if (component.fromY >= 50 && component.toY <= 300) {
+						if (component.toString().startsWith("extension")) {
+							graphics.setColor(new Color(0, 100, 100));
+							graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
+							graphics.setColor(Color.WHITE);
+						}
 					}
 				}
-				ImageIO.write(image, "png", new File("/user/saida.png"));
+				for (Component component : firstLevel) {
+					if (component.fromY >= 50 && component.toY <= 300) {
+						if (component.toString().startsWith("line")) {
+							graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
+						} else if (component.toString().startsWith("rect")) {
+							graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
+						}
+					}
+				}
+				ImageIO.write(image, "png", new File("target/saida.png"));
 				graphics.dispose();
 			} finally {
 				doc.close();
@@ -67,6 +78,6 @@ public class PDFReaderTest {
 			throw new IllegalArgumentException(e);
 		}
 		//
-		Assert.assertEquals(610, firstLevel.size());
+		Assert.assertEquals(437, firstLevel.size());
 	}
 }

@@ -2,9 +2,10 @@
 package edworld.pdfreader;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.pdfbox.pdmodel.PDPage;
 
 public interface PDFGridLocator {
-	GridComponent[] locateGridComponents(PDPage page) throws IOException;
+	List<GridComponent> locateGridComponents(PDPage page) throws IOException;
 }

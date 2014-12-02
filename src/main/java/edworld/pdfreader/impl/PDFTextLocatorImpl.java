@@ -15,11 +15,11 @@ import edworld.pdfreader.PDFTextLocator;
 import edworld.pdfreader.TextComponent;
 
 public class PDFTextLocatorImpl implements PDFTextLocator {
-	public TextComponent[] locateTextComponents(final PDPage page) throws IOException {
+	public List<TextComponent> locateTextComponents(final PDPage page) throws IOException {
 		return new PDFTextStripper() {
 			private ArrayList<TextComponent> list = new ArrayList<TextComponent>();
 
-			public TextComponent[] locateTextComponents() throws IOException {
+			public List<TextComponent> locateTextComponents() throws IOException {
 				PDStream contents = page.getContents();
 				setStartPage(getCurrentPageNo());
 				setEndPage(getCurrentPageNo());
@@ -28,7 +28,7 @@ public class PDFTextLocatorImpl implements PDFTextLocator {
 					output = new StringWriter();
 					processPage(page, contents.getStream());
 				}
-				return list.toArray(new TextComponent[0]);
+				return list;
 			}
 
 			@Override
