@@ -12,23 +12,27 @@ import org.apache.pdfbox.pdmodel.PDPage;
 public class PDFReader {
 	private List<Component> firstLevel = new ArrayList<Component>();
 
-	public PDFReader(URL url, PDFTextLocator textLocator, PDFGridLocator gridLocator) throws IOException {
+	public PDFReader(URL url, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
 		PDDocument doc = PDDocument.load(url);
 		try {
-			readAllPages(doc, textLocator, gridLocator);
+			readAllPages(doc, textLocator, gridLocator, boxDetector);
 		} finally {
 			doc.close();
 		}
 	}
 
-	private void readAllPages(PDDocument doc, PDFTextLocator textLocator, PDFGridLocator gridLocator) throws IOException {
+	private void readAllPages(PDDocument doc, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
 		for (Object page : doc.getDocumentCatalog().getAllPages())
-			readPage((PDPage) page, textLocator, gridLocator);
+			readPage((PDPage) page, textLocator, gridLocator, boxDetector);
 	}
 
-	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator) throws IOException {
-		List<GridComponent> containers = groupIntoBoxes(extendConnectedComponents(gridLocator.locateGridComponents(page)));
-		firstLevel.addAll(containers);
+	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
+		List<GridComponent> extendedComponents = extendConnectedComponents(gridLocator.locateGridComponents(page));
+		List<GridComponent> boxes = boxDetector.detectBoxes(extendedComponents);
+		List<GridComponent> containers = new ArrayList<GridComponent>(boxes);
+		containers.addAll(extendedComponents);
+		firstLevel.addAll(boxes);
+		addComponents(extendedComponents, boxes);
 		addComponents(textLocator.locateTextComponents(page), containers);
 	}
 
@@ -107,70 +111,6 @@ public class PDFReader {
 			listNotExtended.remove(component2);
 		}
 		list.add(extendedComponent);
-	}
-
-	private List<GridComponent> groupIntoBoxes(List<GridComponent> gridComponents) {
-		List<GridComponent> list = new ArrayList<GridComponent>();
-		for (GridComponent component1 : gridComponents) {
-			if (component1.getWidth() > component1.getHeight()) {
-				List<GridComponent> crossedComponents = new ArrayList<GridComponent>();
-				for (GridComponent component2 : gridComponents)
-					if (component2.getHeight() > component2.getWidth() && component1.intersects(component2))
-						crossedComponents.add(component2);
-				float leftUp = component1.getFromX();
-				float top = Float.MAX_VALUE;
-				for (GridComponent component2 : crossedComponents) {
-					if (component2.getFromY() < component1.getFromY()) {
-						float nextTop = boxTop(component2, component1.getFromY(), gridComponents);
-						if (top < component1.getFromY() && nextTop == top) {
-							addBox(leftUp, top, component2.getFromX(), component1.getFromY(), component1, component2, list);
-							leftUp = component2.getToX();
-						}
-						top = nextTop;
-					}
-				}
-				float leftDown = component1.getFromX();
-				float bottom = Float.MIN_VALUE;
-				for (GridComponent component2 : crossedComponents) {
-					if (component2.getFromY() >= component1.getFromY()) {
-						float nextBottom = boxBottom(component2, component1.getToY(), gridComponents);
-						if (bottom > component1.getToY() && nextBottom == bottom) {
-							addBox(leftDown, component1.getToY(), component2.getFromX(), bottom, component1, component2, list);
-							leftDown = component2.getToX();
-						}
-						bottom = nextBottom;
-					}
-				}
-			}
-		}
-		list.addAll(gridComponents);
-		return list;
-	}
-
-	private float boxTop(GridComponent component, float bottom, List<GridComponent> gridComponents) {
-		float top = component.getFromY();
-		for (GridComponent crossComponent : gridComponents) {
-			if (crossComponent.getWidth() > crossComponent.getHeight() && crossComponent.intersects(component) && crossComponent.getFromX() < component.getFromX()
-					&& crossComponent.getToY() < bottom && crossComponent.getToY() > top) {
-				top = crossComponent.getToY();
-			}
-		}
-		return top;
-	}
-
-	private float boxBottom(GridComponent component, float top, List<GridComponent> gridComponents) {
-		float bottom = component.getToY();
-		for (GridComponent crossComponent : gridComponents) {
-			if (crossComponent.getWidth() > crossComponent.getHeight() && crossComponent.intersects(component) && crossComponent.getFromX() < component.getFromX()
-					&& crossComponent.getFromY() > top && crossComponent.getFromY() < bottom) {
-				bottom = crossComponent.getFromY();
-			}
-		}
-		return bottom;
-	}
-
-	private void addBox(float fromX, float fromY, float toX, float toY, GridComponent component1, GridComponent component2, List<GridComponent> list) {
-		list.add(new GridComponent("box", fromX, fromY, toX, toY, component1.getLineWidth()));
 	}
 
 	public List<Component> getFirstLevelComponents() {
