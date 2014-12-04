@@ -45,6 +45,8 @@ public class PDFReaderTest {
 				graphics.scale(scaling, scaling);
 				for (Component component : firstLevel) {
 					if (component.toString().startsWith("box")) {
+						graphics.setColor(new Color(100, 0, 0));
+						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
 						graphics.setColor(new Color(100, 100, 0));
 						graphics.fillRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
 						graphics.setColor(Color.WHITE);
@@ -73,6 +75,6 @@ public class PDFReaderTest {
 			throw new IllegalArgumentException(e);
 		}
 		//
-		Assert.assertEquals(458, firstLevel.size());
+		Assert.assertEquals(452, firstLevel.size());
 	}
 }
