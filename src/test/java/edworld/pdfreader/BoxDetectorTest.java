@@ -58,11 +58,11 @@ public class BoxDetectorTest {
 
 	@Test
 	public void detectRowBoxes() {
-		grd(" ─────────── ");
-		grd("             ");
-		grd(" ─────────── ");
-		grd("             ");
-		grd(" ─────────── ");
+		grd(" ┌────────── ");
+		grd(" │           ");
+		grd(" └─────────┐ ");
+		grd("           │ ");
+		grd(" ──────────┘ ");
 		List<GridComponent> detected = detector.detectBoxes(gridComponents());
 		Assert.assertEquals(2, detected.size());
 		box(" ┌─────────┐ ");
@@ -80,7 +80,7 @@ public class BoxDetectorTest {
 	}
 
 	@Test
-	public void detectMixedBoxes() {
+	public void detectBoxesWithRowSpan() {
 		grd(" ┌────┬────┐ ");
 		grd(" │    │    │ ");
 		grd(" │    ├────┤ ");
@@ -109,18 +109,65 @@ public class BoxDetectorTest {
 	}
 
 	@Test
-	public void detectUncoveredBoxes() {
-		grd(" │         │ ");
-		grd(" ├─────────┤ ");
-		grd(" │         │ ");
-		grd(" │         │ ");
+	public void detectBoxesWithColSpan() {
+		grd(" ┌─────────┐ ");
+		grd(" ├────┬────┤ ");
+		grd(" │    │    │ ");
+		grd(" └────┴────┘ ");
 		List<GridComponent> detected = detector.detectBoxes(gridComponents());
-		Assert.assertEquals(2, detected.size());
+		Assert.assertEquals(3, detected.size());
 		box(" ┌─────────┐ ");
 		box(" └─────────┘ ");
 		box("             ");
 		box("             ");
 		assertBox(detected);
+		box("             ");
+		box(" ┌────┐      ");
+		box(" │    │      ");
+		box(" └────┘      ");
+		assertBox(detected);
+		box("             ");
+		box("      ┌────┐ ");
+		box("      │    │ ");
+		box("      └────┘ ");
+		assertBox(detected);
+	}
+
+	@Test
+	public void detectUncoveredBoxes() {
+		grd(" │         │ ");
+		grd(" ├─────────┤ ");
+		grd(" ├─────────┤ ");
+		grd(" │         │ ");
+		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		Assert.assertEquals(3, detected.size());
+		box(" ┌─────────┐ ");
+		box(" └─────────┘ ");
+		box("             ");
+		box("             ");
+		assertBox(detected);
+		box("             ");
+		box(" ┌─────────┐ ");
+		box(" └─────────┘ ");
+		box("             ");
+		assertBox(detected);
+		box("             ");
+		box("             ");
+		box(" ┌─────────┐ ");
+		box(" └─────────┘ ");
+		assertBox(detected);
+	}
+
+	@Test
+	public void ignoreUnconnectedComponents() {
+		grd(" ─────────── ");
+		grd(" ─────────── ");
+		grd(" ┌─────────┐ ");
+		grd(" │    ──   │ ");
+		grd(" └─────────┘ ");
+		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		Assert.assertEquals(1, detected.size());
+		box("             ");
 		box("             ");
 		box(" ┌─────────┐ ");
 		box(" │         │ ");

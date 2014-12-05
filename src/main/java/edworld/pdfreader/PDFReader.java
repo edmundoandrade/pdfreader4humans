@@ -29,8 +29,9 @@ public class PDFReader {
 	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
 		List<GridComponent> extendedComponents = extendConnectedComponents(gridLocator.locateGridComponents(page));
 		List<GridComponent> boxes = boxDetector.detectBoxes(extendedComponents);
-		List<GridComponent> containers = new ArrayList<GridComponent>(boxes);
+		List<GridComponent> containers = new ArrayList<GridComponent>(extendedComponents.size() + boxes.size());
 		containers.addAll(extendedComponents);
+		containers.addAll(boxes);
 		firstLevel.addAll(boxes);
 		addComponents(extendedComponents, boxes);
 		addComponents(textLocator.locateTextComponents(page), containers);
