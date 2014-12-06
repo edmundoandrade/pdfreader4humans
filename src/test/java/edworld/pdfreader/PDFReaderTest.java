@@ -43,7 +43,7 @@ public class PDFReaderTest {
 				Graphics2D graphics = image.createGraphics();
 				graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
 				graphics.scale(scaling, scaling);
-				for (Component component : firstLevel) {
+				for (Component component : firstLevel)
 					if (component.toString().startsWith("box")) {
 						graphics.setColor(Color.RED);
 						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
@@ -51,21 +51,17 @@ public class PDFReaderTest {
 						graphics.fillRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
 						graphics.setColor(Color.WHITE);
 					}
-				}
-				for (Component component : firstLevel) {
+				for (Component component : firstLevel)
 					if (component.toString().startsWith("extension")) {
 						graphics.setColor(Color.MAGENTA);
 						graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
 						graphics.setColor(Color.WHITE);
 					}
-				}
-				for (Component component : firstLevel) {
-					if (component.toString().startsWith("line")) {
+				for (Component component : firstLevel)
+					if (component.toString().startsWith("line"))
 						graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
-					} else if (component.toString().startsWith("rect")) {
+					else if (component.toString().startsWith("rect"))
 						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
-					}
-				}
 				ImageIO.write(image, "png", new File("target/saida.png"));
 				graphics.dispose();
 			} finally {
@@ -75,6 +71,6 @@ public class PDFReaderTest {
 			throw new IllegalArgumentException(e);
 		}
 		//
-		Assert.assertEquals(425, firstLevel.size());
+		Assert.assertEquals(418, firstLevel.size());
 	}
 }

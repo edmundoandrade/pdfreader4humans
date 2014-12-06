@@ -15,13 +15,14 @@ public class BoxDetectorImpl implements BoxDetector {
 
 	@Override
 	public List<GridComponent> detectBoxes(List<GridComponent> components) {
+		List<GridComponent> extendedComponents = extendConnectedComponents(components);
 		List<GridComponent> boxes = new ArrayList<GridComponent>();
-		List<GridComponent> verticalComponents = vertical(components);
-		List<GridComponent> horizontalConnectedSegments = horizontalConnectedSegments(horizontal(components), verticalComponents);
+		List<GridComponent> verticalComponents = vertical(extendedComponents);
+		List<GridComponent> horizontalConnectedSegments = horizontalConnectedSegments(horizontal(extendedComponents), verticalComponents);
 		float borderWidth = maxBorderWidth(verticalComponents);
 		for (GridComponent component1 : horizontalConnectedSegments)
 			for (GridComponent component2 : horizontalConnectedSegments)
-				if (nearBelow(component1, component2, borderWidth)) {
+				if (nearestOnY(component1, component2, borderWidth)) {
 					addBox(component1, component2, boxes);
 					break;
 				}
@@ -29,7 +30,7 @@ public class BoxDetectorImpl implements BoxDetector {
 		return boxes;
 	}
 
-	private boolean nearBelow(Component component1, Component component2, float borderWidth) {
+	private boolean nearestOnY(Component component1, Component component2, float borderWidth) {
 		return component1.getFromY() < component2.getFromY() && component1.getFromX() + borderWidth < component2.getToX()
 				&& component2.getFromX() + borderWidth < component1.getToX();
 	}
@@ -88,6 +89,7 @@ public class BoxDetectorImpl implements BoxDetector {
 		for (GridComponent horizontalComponent : horizontalComponents)
 			segments.addAll(horizontalConnectedSegments(horizontalComponent, verticalComponents));
 		addCoverSegments(horizontalComponents, verticalComponents, segments);
+		Collections.sort(segments, orderByYX());
 		return segments;
 	}
 
@@ -118,14 +120,18 @@ public class BoxDetectorImpl implements BoxDetector {
 		float borderHeight = maxBorderHeight(horizontalComponents);
 		for (GridComponent component1 : verticalComponents)
 			for (GridComponent component2 : verticalComponents)
-				if (component1.getFromX() < component2.getFromX() && component1.getFromY() + borderHeight < component2.getToY()
-						&& component2.getFromY() + borderHeight < component1.getToY()) {
+				if (nearestOnX(borderHeight, component1, component2)) {
 					if (component1.getFromY() == component2.getFromY())
 						addSegment(component1.getFromX(), component1.getFromY(), component2.getToX(), component1.getFromY(), component1.getLineWidth(), null, segments);
 					if (component1.getToY() == component2.getToY())
 						addSegment(component1.getFromX(), component1.getToY(), component2.getToX(), component1.getToY(), component1.getLineWidth(), null, segments);
 					break;
 				}
+	}
+
+	private boolean nearestOnX(float borderHeight, GridComponent component1, GridComponent component2) {
+		return component1.getFromX() < component2.getFromX() && component1.getFromY() + borderHeight < component2.getToY()
+				&& component2.getFromY() + borderHeight < component1.getToY();
 	}
 
 	private void addSegment(float fromX, float fromY, float toX, float toY, double lineWidth, GridComponent sourceComponent, List<GridComponent> segments) {
@@ -150,5 +156,86 @@ public class BoxDetectorImpl implements BoxDetector {
 		for (GridComponent component : horizontalComponents)
 			borderHeight = Math.max(component.getToY() - component.getFromY(), borderHeight);
 		return borderHeight;
+	}
+
+	private List<GridComponent> extendConnectedComponents(List<GridComponent> gridComponents) {
+		List<GridComponent> listNotExtended = new ArrayList<GridComponent>(gridComponents);
+		List<GridComponent> list = new ArrayList<GridComponent>();
+		for (GridComponent component1 : gridComponents) {
+			GridComponent next = component1;
+			List<GridComponent> horizontalExtension = new ArrayList<GridComponent>();
+			for (GridComponent component2 : gridComponents)
+				if (component1 != component2 && horizontallyExtendable(next, component2, gridComponents)) {
+					horizontalExtension.add(component2);
+					next = component2;
+				}
+			addExtendedComponent(component1, horizontalExtension, list, listNotExtended);
+			next = component1;
+			List<GridComponent> verticalExtension = new ArrayList<GridComponent>();
+			for (GridComponent component2 : gridComponents)
+				if (component1 != component2 && verticallyExtendable(next, component2, gridComponents)) {
+					verticalExtension.add(component2);
+					next = component2;
+				}
+			addExtendedComponent(component1, verticalExtension, list, listNotExtended);
+		}
+		list.addAll(listNotExtended);
+		return list;
+	}
+
+	private void addExtendedComponent(GridComponent component1, List<GridComponent> extension, List<GridComponent> list, List<GridComponent> listNotExtended) {
+		if (extension.size() == 0 || !listNotExtended.contains(component1))
+			return;
+		float fromX = component1.getFromX();
+		float fromY = component1.getFromY();
+		float toX = component1.getToX();
+		float toY = component1.getToY();
+		for (GridComponent component2 : extension) {
+			if (!listNotExtended.contains(component2))
+				return;
+			fromX = Math.min(component2.getFromX(), fromX);
+			fromY = Math.min(component2.getFromY(), fromY);
+			toX = Math.max(component2.getToX(), toX);
+			toY = Math.max(component2.getToY(), toY);
+		}
+		GridComponent extendedComponent = new GridComponent("extension", fromX, fromY, toX, toY, component1.getLineWidth());
+		extendedComponent.addChild(component1);
+		listNotExtended.remove(component1);
+		for (GridComponent component2 : extension) {
+			extendedComponent.addChild(component2);
+			listNotExtended.remove(component2);
+		}
+		list.add(extendedComponent);
+	}
+
+	private boolean horizontallyExtendable(GridComponent component1, GridComponent component2, List<GridComponent> gridComponents) {
+		if (component1.getFromY() == component2.getFromY() && component1.getToY() == component2.getToY() && !isVertical(component1) && !isVertical(component2)) {
+			return component1.intersects(component2) || intersectsTransitively(component1, component2, gridComponents);
+		}
+		return false;
+	}
+
+	private boolean verticallyExtendable(GridComponent component1, GridComponent component2, List<GridComponent> gridComponents) {
+		if (component1.getFromX() == component2.getFromX() && component1.getToX() == component2.getToX() && isVertical(component1) && isVertical(component2)) {
+			return component1.intersects(component2) || intersectsTransitively(component1, component2, gridComponents);
+		}
+		return false;
+	}
+
+	private boolean isVertical(GridComponent component) {
+		return component.getHeight() > component.getWidth();
+	}
+
+	private boolean intersectsTransitively(GridComponent component1, GridComponent component2, List<GridComponent> gridComponents) {
+		for (GridComponent component : gridComponents)
+			if (component != component1 && component != component2 && isVertical(component) == !isVertical(component1) && component1.intersects(component)
+					&& component2.intersects(component)) {
+				System.out.println(component1.toString());
+				System.out.println(component.toString());
+				System.out.println(component2.toString());
+				System.out.println();
+				return true;
+			}
+		return false;
 	}
 }

@@ -27,13 +27,13 @@ public class PDFReader {
 	}
 
 	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
-		List<GridComponent> extendedComponents = extendConnectedComponents(gridLocator.locateGridComponents(page));
-		List<GridComponent> boxes = boxDetector.detectBoxes(extendedComponents);
-		List<GridComponent> containers = new ArrayList<GridComponent>(extendedComponents.size() + boxes.size());
-		containers.addAll(extendedComponents);
+		List<GridComponent> gridComponents = gridLocator.locateGridComponents(page);
+		List<GridComponent> boxes = boxDetector.detectBoxes(gridComponents);
+		List<GridComponent> containers = new ArrayList<GridComponent>(gridComponents.size() + boxes.size());
+		containers.addAll(gridComponents);
 		containers.addAll(boxes);
 		firstLevel.addAll(boxes);
-		addComponents(extendedComponents, boxes);
+		addComponents(gridComponents, boxes);
 		addComponents(textLocator.locateTextComponents(page), containers);
 	}
 
@@ -55,63 +55,7 @@ public class PDFReader {
 				container = possibleContainer;
 				area = possibleContainer.getArea();
 			}
-		if (container != null) {
-			System.out.println("> " + container.toString() + " " + container.getArea());
-			System.out.println(" CONTAINS " + component.toString() + " " + component.getArea());
-		}
 		return container;
-	}
-
-	private List<GridComponent> extendConnectedComponents(List<GridComponent> gridComponents) {
-		List<GridComponent> listNotExtended = new ArrayList<GridComponent>(gridComponents);
-		List<GridComponent> list = new ArrayList<GridComponent>();
-		for (GridComponent component1 : gridComponents) {
-			GridComponent next = component1;
-			List<GridComponent> horizontalExtension = new ArrayList<GridComponent>();
-			for (GridComponent component2 : gridComponents) {
-				if (component1 != component2 && next.intersects(component2) && component1.getFromY() == component2.getFromY() && component1.getToY() == component2.getToY()) {
-					horizontalExtension.add(component2);
-					next = component2;
-				}
-			}
-			addExtendedComponent(component1, horizontalExtension, list, listNotExtended);
-			next = component1;
-			List<GridComponent> verticalExtension = new ArrayList<GridComponent>();
-			for (GridComponent component2 : gridComponents) {
-				if (component1 != component2 && next.intersects(component2) && component1.getFromX() == component2.getFromX() && component1.getToX() == component2.getToX()) {
-					verticalExtension.add(component2);
-					next = component2;
-				}
-			}
-			addExtendedComponent(component1, verticalExtension, list, listNotExtended);
-		}
-		list.addAll(listNotExtended);
-		return list;
-	}
-
-	private void addExtendedComponent(GridComponent component1, List<GridComponent> extension, List<GridComponent> list, List<GridComponent> listNotExtended) {
-		if (extension.size() == 0 || !listNotExtended.contains(component1))
-			return;
-		float fromX = component1.getFromX();
-		float fromY = component1.getFromY();
-		float toX = component1.getToX();
-		float toY = component1.getToY();
-		for (GridComponent component2 : extension) {
-			if (!listNotExtended.contains(component2))
-				return;
-			fromX = Math.min(component2.getFromX(), fromX);
-			fromY = Math.min(component2.getFromY(), fromY);
-			toX = Math.max(component2.getToX(), toX);
-			toY = Math.max(component2.getToY(), toY);
-		}
-		GridComponent extendedComponent = new GridComponent("extension", fromX, fromY, toX, toY, component1.getLineWidth());
-		extendedComponent.addChild(component1);
-		listNotExtended.remove(component1);
-		for (GridComponent component2 : extension) {
-			extendedComponent.addChild(component2);
-			listNotExtended.remove(component2);
-		}
-		list.add(extendedComponent);
 	}
 
 	public List<Component> getFirstLevelComponents() {
