@@ -3,6 +3,7 @@ package edworld.pdfreader;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,8 +15,13 @@ import org.junit.Test;
 import edworld.pdfreader.impl.BoxDetectorImpl;
 
 public class BoxDetectorTest {
+	private static final String BOTTOM = "bottom";
+	private static final String RIGHT = "right";
+	private static final String TOP = "top";
+	private static final String LEFT = "left";
 	private BoxDetector detector;
 	private List<GridComponent> testComponents;
+	private List<BoxComponent> detected;
 	int row;
 	Float fromX, toX;
 	Map<Integer, Float> fromY, toY;
@@ -33,27 +39,20 @@ public class BoxDetectorTest {
 	}
 
 	@Test
-	public void detectNoBoxes() {
-		grd(" ─────┬───── ");
-		grd("      │      ");
-		Assert.assertTrue(detector.detectBoxes(gridComponents()).isEmpty());
-	}
-
-	@Test
 	public void detectColumnBoxes() {
 		grd(" ─────┬───── ");
 		grd("      │      ");
-		grd(" ─────┴───── ");
-		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		grd(" ─────┘      ");
+		detected = detector.detectBoxes(gridComponents());
 		Assert.assertEquals(2, detected.size());
 		box(" ┌────┐      ");
 		box(" │    │      ");
 		box(" └────┘      ");
-		assertBox(detected);
+		assertBox(detected, TOP, RIGHT, BOTTOM);
 		box("      ┌────┐ ");
 		box("      │    │ ");
 		box("      └────┘ ");
-		assertBox(detected);
+		assertBox(detected, LEFT, TOP);
 	}
 
 	@Test
@@ -63,20 +62,20 @@ public class BoxDetectorTest {
 		grd(" └─────────┐ ");
 		grd("           │ ");
 		grd(" ──────────┘ ");
-		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		detected = detector.detectBoxes(gridComponents());
 		Assert.assertEquals(2, detected.size());
 		box(" ┌─────────┐ ");
 		box(" │         │ ");
 		box(" └─────────┘ ");
 		box("             ");
 		box("             ");
-		assertBox(detected);
+		assertBox(detected, LEFT, TOP, BOTTOM);
 		box("             ");
 		box("             ");
 		box(" ┌─────────┐ ");
 		box(" │         │ ");
 		box(" └─────────┘ ");
-		assertBox(detected);
+		assertBox(detected, TOP, RIGHT, BOTTOM);
 	}
 
 	@Test
@@ -86,7 +85,7 @@ public class BoxDetectorTest {
 		grd(" │    ├────┤ ");
 		grd(" │    │    │ ");
 		grd(" └────┴────┘ ");
-		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		detected = detector.detectBoxes(gridComponents());
 		assertEquals(3, detected.size());
 		box(" ┌────┐      ");
 		box(" │    │      ");
@@ -114,7 +113,7 @@ public class BoxDetectorTest {
 		grd(" ├────┬────┤ ");
 		grd(" │    │    │ ");
 		grd(" └────┴────┘ ");
-		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		detected = detector.detectBoxes(gridComponents());
 		Assert.assertEquals(3, detected.size());
 		box(" ┌─────────┐ ");
 		box(" └─────────┘ ");
@@ -139,13 +138,13 @@ public class BoxDetectorTest {
 		grd(" ├─────────┤ ");
 		grd(" ├─────────┤ ");
 		grd(" │         │ ");
-		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		detected = detector.detectBoxes(gridComponents());
 		Assert.assertEquals(3, detected.size());
 		box(" ┌─────────┐ ");
 		box(" └─────────┘ ");
 		box("             ");
 		box("             ");
-		assertBox(detected);
+		assertBox(detected, LEFT, RIGHT, BOTTOM);
 		box("             ");
 		box(" ┌─────────┐ ");
 		box(" └─────────┘ ");
@@ -155,7 +154,7 @@ public class BoxDetectorTest {
 		box("             ");
 		box(" ┌─────────┐ ");
 		box(" └─────────┘ ");
-		assertBox(detected);
+		assertBox(detected, LEFT, TOP, RIGHT);
 	}
 
 	@Test
@@ -165,7 +164,7 @@ public class BoxDetectorTest {
 		grd(" ┌─────────┐ ");
 		grd(" │    ──   │ ");
 		grd(" └─────────┘ ");
-		List<GridComponent> detected = detector.detectBoxes(gridComponents());
+		detected = detector.detectBoxes(gridComponents());
 		Assert.assertEquals(1, detected.size());
 		box("             ");
 		box("             ");
@@ -182,8 +181,17 @@ public class BoxDetectorTest {
 		return testComponents;
 	}
 
-	private void assertBox(List<GridComponent> detected) {
-		Assert.assertEquals(new GridComponent("box", boxFromX, boxFromY, boxToX, boxToY, 1).toString(), detected.get(boxIndex).toString());
+	private void assertBox(List<BoxComponent> detected) {
+		assertBox(detected, LEFT, TOP, RIGHT, BOTTOM);
+	}
+
+	private void assertBox(List<BoxComponent> detected, String... borders) {
+		List<String> list = Arrays.asList(borders);
+		boolean borderLeft = list.contains(LEFT);
+		boolean borderTop = list.contains(TOP);
+		boolean borderRight = list.contains(RIGHT);
+		boolean borderBottom = list.contains(BOTTOM);
+		Assert.assertEquals(new BoxComponent(boxFromX, boxFromY, boxToX, boxToY, 1, borderLeft, borderTop, borderRight, borderBottom).toString(), detected.get(boxIndex).toString());
 		boxIndex++;
 		resetBoxData();
 	}

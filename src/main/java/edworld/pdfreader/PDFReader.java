@@ -28,8 +28,8 @@ public class PDFReader {
 
 	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
 		List<GridComponent> gridComponents = gridLocator.locateGridComponents(page);
-		List<GridComponent> boxes = boxDetector.detectBoxes(gridComponents);
-		List<GridComponent> containers = new ArrayList<GridComponent>(gridComponents.size() + boxes.size());
+		List<BoxComponent> boxes = boxDetector.detectBoxes(gridComponents);
+		List<Component> containers = new ArrayList<Component>(gridComponents.size() + boxes.size());
 		containers.addAll(gridComponents);
 		containers.addAll(boxes);
 		firstLevel.addAll(boxes);
@@ -37,7 +37,7 @@ public class PDFReader {
 		addComponents(textLocator.locateTextComponents(page), containers);
 	}
 
-	private void addComponents(List<? extends Component> components, List<GridComponent> containers) {
+	private void addComponents(List<? extends Component> components, List<? extends Component> containers) {
 		for (Component component : components) {
 			Component container = findContainer(component, containers);
 			if (container != null)
@@ -47,9 +47,9 @@ public class PDFReader {
 		}
 	}
 
-	private Component findContainer(Component component, List<GridComponent> containers) {
+	private Component findContainer(Component component, List<? extends Component> containers) {
 		Component container = null;
-		float area = Float.MAX_VALUE;
+		float area = Float.POSITIVE_INFINITY;
 		for (Component possibleContainer : containers)
 			if (possibleContainer.contains(component) && possibleContainer.getArea() < area) {
 				container = possibleContainer;

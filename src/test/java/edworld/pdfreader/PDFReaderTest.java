@@ -36,32 +36,26 @@ public class PDFReaderTest {
 		try {
 			PDDocument doc = PDDocument.load(getClass().getResource("/testcase1/input.pdf"));
 			try {
-				int scaling = 4;
+				int scaling = 1;
 				PDPage pageToDraw = (PDPage) doc.getDocumentCatalog().getAllPages().get(0);
 				PDRectangle cropBox = pageToDraw.findCropBox();
-				BufferedImage image = new BufferedImage((int) cropBox.getWidth() * scaling, (int) cropBox.getHeight() * scaling, BufferedImage.TYPE_INT_ARGB);
+				BufferedImage image = new BufferedImage(Math.round(cropBox.getWidth() * scaling), Math.round(cropBox.getHeight() * scaling), BufferedImage.TYPE_INT_ARGB);
 				Graphics2D graphics = image.createGraphics();
 				graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
 				graphics.scale(scaling, scaling);
 				for (Component component : firstLevel)
 					if (component.toString().startsWith("box")) {
-						graphics.setColor(Color.RED);
-						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
 						graphics.setColor(new Color(100, 100, 0));
-						graphics.fillRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
-						graphics.setColor(Color.WHITE);
-					}
-				for (Component component : firstLevel)
-					if (component.toString().startsWith("extension")) {
-						graphics.setColor(Color.MAGENTA);
-						graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
+						graphics.fillRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+						graphics.setColor(Color.RED);
+						graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
 						graphics.setColor(Color.WHITE);
 					}
 				for (Component component : firstLevel)
 					if (component.toString().startsWith("line"))
-						graphics.drawLine((int) component.getFromX(), (int) component.getFromY(), (int) component.getToX(), (int) component.getToY());
+						graphics.drawLine(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getToX()), Math.round(component.getToY()));
 					else if (component.toString().startsWith("rect"))
-						graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
+						graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
 				ImageIO.write(image, "png", new File("target/saida.png"));
 				graphics.dispose();
 			} finally {
@@ -71,6 +65,6 @@ public class PDFReaderTest {
 			throw new IllegalArgumentException(e);
 		}
 		//
-		Assert.assertEquals(418, firstLevel.size());
+		Assert.assertEquals(411, firstLevel.size());
 	}
 }

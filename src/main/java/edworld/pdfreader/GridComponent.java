@@ -11,6 +11,10 @@ public class GridComponent extends Component {
 		this.lineWidth = lineWidth;
 	}
 
+	public String getType() {
+		return type;
+	}
+
 	public double getLineWidth() {
 		return lineWidth;
 	}
