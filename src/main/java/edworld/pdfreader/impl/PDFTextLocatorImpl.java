@@ -4,6 +4,7 @@ package edworld.pdfreader.impl;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -17,9 +18,10 @@ import edworld.pdfreader.TextComponent;
 public class PDFTextLocatorImpl implements PDFTextLocator {
 	public List<TextComponent> locateTextComponents(final PDPage page) throws IOException {
 		return new PDFTextStripper() {
-			private ArrayList<TextComponent> list = new ArrayList<TextComponent>();
+			private ArrayList<TextComponent> list;
 
 			public List<TextComponent> locateTextComponents() throws IOException {
+				list = new ArrayList<TextComponent>();
 				PDStream contents = page.getContents();
 				setStartPage(getCurrentPageNo());
 				setEndPage(getCurrentPageNo());
@@ -28,24 +30,29 @@ public class PDFTextLocatorImpl implements PDFTextLocator {
 					output = new StringWriter();
 					processPage(page, contents.getStream());
 				}
+				Collections.sort(list);
 				return list;
 			}
 
 			@Override
 			protected void writeString(String text, List<TextPosition> textPositions) throws IOException {
-				float fromX = Float.MAX_VALUE, toX = Float.MIN_VALUE, fromY = Float.MAX_VALUE, toY = Float.MIN_VALUE, fontSize = -1;
+				float fromX = Float.POSITIVE_INFINITY;
+				float fromY = Float.POSITIVE_INFINITY;
+				float toX = Float.NEGATIVE_INFINITY;
+				float toY = Float.NEGATIVE_INFINITY;
+				float fontSize = -1;
 				String fontName = "";
 				for (TextPosition textPosition : textPositions) {
 					float x1 = textPosition.getX();
 					float y1 = textPosition.getY();
 					if (x1 <= fromX) {
 						fromX = x1;
-						fromY = y1;
+						fromY = y1 - textPosition.getHeight();
 						fontName = textPosition.getFont().getBaseFont();
 						fontSize = textPosition.getFontSizeInPt();
 					}
 					toX = Math.max(x1 + textPosition.getWidth(), toX);
-					toY = Math.max(y1 + textPosition.getHeight(), toY);
+					toY = Math.max(y1, toY);
 				}
 				list.add(new TextComponent(text, fromX, fromY, toX, toY, fontName, fontSize));
 			}

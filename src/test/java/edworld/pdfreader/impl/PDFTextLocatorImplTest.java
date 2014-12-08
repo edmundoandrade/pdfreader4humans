@@ -30,23 +30,17 @@ public class PDFTextLocatorImplTest {
 		PDPage page1 = (PDPage) doc.getDocumentCatalog().getAllPages().get(0);
 		List<TextComponent> components = locator.locateTextComponents(page1);
 		assertEquals(387, components.size());
-		assertEquals("Nº 31, quinta-feira, 13 de fevereiro de 2014 (49.348, 62.794617, 217.9233, 69.6987, Times-Roman 9.0)", components.get(0).toString());
-		assertEquals("1 (506.4658, 62.764587, 513.0536, 69.04302, HNBDHM+OxfordWd 11.0)", components.get(1).toString());
-		assertEquals("ISSN 1677-7042 (575.9183, 63.208984, 642.8473, 70.219574, Times-Italic 9.0)", components.get(2).toString());
-		assertEquals("3 (705.2703, 62.155884, 711.2479, 70.32129, Times-Italic 11.0)", components.get(3).toString());
-		assertEquals("Outros instrumentos e aparelhos (102.3502, 82.99078, 208.51189, 88.49015, Times-Roman 7.0)", components.get(4).toString());
-		assertEquals("15% (294.9229, 82.99078, 309.5321, 88.58579, Times-Roman 7.0)", components.get(5).toString());
-		assertEquals("10% (353.0895, 82.99078, 367.6987, 88.49015, Times-Roman 7.0)", components.get(6).toString());
-		assertEquals("90.30 (434.5236, 82.99078, 452.4563, 88.55392, Times-Roman 7.0)", components.get(7).toString());
-		assertEquals("Osciloscópios, analisadores de espectro e outros (470.85208, 82.99078, 629.8473, 88.51406, Times-Roman 7.0)", components.get(8).toString());
-		assertEquals("15% (663.42487, 82.99078, 678.03406, 88.58579, Times-Roman 7.0)", components.get(9).toString());
-		assertEquals("10% (721.59143, 82.99078, 736.2006, 88.49015, Times-Roman 7.0)", components.get(10).toString());
-		assertEquals(
-				"Contadores de gases, líquidos ou de eletricidade, incluídos os aparelhos para sua aferição, baseados (50.6142, 93.47052, 381.5646, 98.9938, Times-Roman 7.0)",
-				components.get(11).toString());
-		assertEquals("instrumentos e aparelhos para medida ou controle (470.8521, 90.96088, 635.793, 96.48415, Times-Roman 7.0)", components.get(12).toString());
-		assertEquals("em técnicas digitais e outros contadores baseados em técnicas digitais. (50.6142, 101.44061, 284.75183, 106.96389, Times-Roman 7.0)", components.get(13)
-				.toString());
+		assertEquals("Nº 31, quinta-feira, 13 de fevereiro de 2014 (49.348, 56.089787, 217.9233, 62.794617, Times-Roman 9.0)", components.get(0).toString());
+		assertEquals("1 (506.4658, 56.486153, 513.0536, 62.764587, HNBDHM+OxfordWd 11.0)", components.get(1).toString());
+		assertEquals("ISSN 1677-7042 (575.9183, 56.603043, 642.8473, 63.208984, Times-Italic 9.0)", components.get(2).toString());
+		assertEquals("3 (705.2703, 53.990482, 711.2479, 62.155884, Times-Italic 11.0)", components.get(3).toString());
+		assertEquals("Outros instrumentos e aparelhos (102.3502, 77.49142, 208.51189, 82.99078, Times-Roman 7.0)", components.get(4).toString());
+		assertEquals("15% (294.9229, 77.603, 309.5321, 82.99078, Times-Roman 7.0)", components.get(5).toString());
+		assertEquals("10% (353.0895, 77.603, 367.6987, 82.99078, Times-Roman 7.0)", components.get(6).toString());
+		assertEquals("90.30 (434.5236, 77.42765, 452.4563, 82.99078, Times-Roman 7.0)", components.get(7).toString());
+		assertEquals("Osciloscópios, analisadores de espectro e outros (470.85208, 77.49142, 629.8473, 82.99078, Times-Roman 7.0)", components.get(8).toString());
+		assertEquals("15% (663.42487, 77.603, 678.03406, 82.99078, Times-Roman 7.0)", components.get(9).toString());
+		assertEquals("10% (721.59143, 77.603, 736.2006, 82.99078, Times-Roman 7.0)", components.get(10).toString());
 	}
 
 	@After

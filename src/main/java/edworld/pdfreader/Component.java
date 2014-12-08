@@ -43,21 +43,25 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	public boolean contains(Component other) {
-		return fromX <= other.getFromX() && toX >= other.getToX() && fromY <= other.getFromY() && toY >= other.getToY();
+		return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY <= other.getFromY() && toY >= other.getToY();
 	}
 
 	public boolean intersects(Component other) {
-		return fromX <= other.getToX() && toX >= other.getFromX() && fromY <= other.getToY() && toY >= other.getFromY();
+		return this != other && fromX <= other.getToX() && toX >= other.getFromX() && fromY <= other.getToY() && toY >= other.getFromY();
 	}
 
 	public int compareTo(Component other) {
-		if (getFromY() < other.getFromY())
+		if (getToY() < other.getFromY())
 			return -1;
-		else if (getFromY() > other.getFromY())
+		else if (getFromY() > other.getToY())
 			return 1;
 		if (getFromX() < other.getFromX())
 			return -1;
 		else if (getFromX() > other.getFromX())
+			return 1;
+		if (getFromY() < other.getFromY())
+			return -1;
+		else if (getFromY() > other.getFromY())
 			return 1;
 		return 0;
 	}

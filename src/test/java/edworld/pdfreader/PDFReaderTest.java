@@ -44,10 +44,16 @@ public class PDFReaderTest {
 				graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
 				graphics.scale(scaling, scaling);
 				for (Component component : firstLevel)
+					System.out.println(component);
+				for (Component component : firstLevel)
 					if (component.toString().startsWith("box")) {
 						graphics.setColor(new Color(100, 100, 0));
 						graphics.fillRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
 						graphics.setColor(Color.RED);
+						graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+						graphics.setColor(Color.WHITE);
+					} else if (component.toString().startsWith("group")) {
+						graphics.setColor(Color.CYAN);
 						graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
 						graphics.setColor(Color.WHITE);
 					}
@@ -65,6 +71,6 @@ public class PDFReaderTest {
 			throw new IllegalArgumentException(e);
 		}
 		//
-		Assert.assertEquals(411, firstLevel.size());
+		Assert.assertEquals(284, firstLevel.size());
 	}
 }

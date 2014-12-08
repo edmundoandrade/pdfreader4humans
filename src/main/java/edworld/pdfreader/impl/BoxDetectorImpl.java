@@ -143,7 +143,7 @@ public class BoxDetectorImpl implements BoxDetector {
 	}
 
 	private boolean verticalExtension(GridComponent component1, GridComponent component2) {
-		return component1 != component2 && component1.getFromX() == component2.getFromX() && component1.getToX() == component2.getToX() && component1.intersects(component2);
+		return component1.getFromX() == component2.getFromX() && component1.getToX() == component2.getToX() && component1.intersects(component2);
 	}
 
 	private List<GridComponent> verticalBounds(GridComponent horizontalComponent, List<GridComponent> verticalComponents) {
