@@ -3,6 +3,6 @@ package edworld.pdfreader;
 
 import java.util.List;
 
-public interface BoxDetector {
-	List<BoxComponent> detectBoxes(List<GridComponent> components);
+public interface MarginDetector {
+	List<MarginComponent> detectMargins(List<? extends Component> components);
 }
