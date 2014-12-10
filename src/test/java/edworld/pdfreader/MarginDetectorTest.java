@@ -1,3 +1,4 @@
+// This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader;
 
 import java.util.ArrayList;
@@ -12,8 +13,10 @@ import org.junit.Test;
 import edworld.pdfreader.impl.MarginDetectorImpl;
 
 public class MarginDetectorTest {
+	private static final String LINE = "line";
+	private static final String TEXT = "text";
 	private MarginDetector detector;
-	private List<GridComponent> testComponents;
+	private List<Component> testComponents;
 	private List<MarginComponent> detected;
 	int row;
 	Float fromX, toX;
@@ -25,14 +28,14 @@ public class MarginDetectorTest {
 	@Before
 	public void setUp() {
 		detector = new MarginDetectorImpl();
-		testComponents = new ArrayList<GridComponent>();
+		testComponents = new ArrayList<Component>();
 		resetGridData();
 		marginIndex = 0;
 		resetMarginData();
 	}
 
 	@Test
-	public void detectMargins() {
+	public void detecSingleColumntMargins() {
 		grd("    ─────    ");
 		grd(" ─────       ");
 		grd("      ─────  ");
@@ -58,9 +61,82 @@ public class MarginDetectorTest {
 		assertMargin(detected);
 	}
 
-	private List<GridComponent> gridComponents() {
+	@Test
+	public void detecMultipleColumnstMargins() {
+		grd("    ─────      ───      ");
+		grd(" ─────        ───────── ");
+		grd("      ─────   ──────    ");
+		grd(" ───────────    ──────  ");
+		grd(" ───────────  ───────── ");
+		grd(" ─────        ────────  ");
+		grd("      ─────   ───────── ");
+		grd(" ──────────   ────────  ");
+		grd("   ─────────  ──────    ");
+		grd("   ─────────    ─────   ");
+		detected = detector.detectMargins(gridComponents());
+		Assert.assertEquals(2, detected.size());
+		mrg(" ┌─────────┐ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" └─────────┘ ");
+		assertMargin(detected);
+		mrg("              ┌───────┐ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              └───────┘ ");
+		assertMargin(detected);
+	}
+
+	@Test
+	public void detecMarginsInsideRegions() {
+		grd(" ────────────────────── ", LINE);
+		grd("    ─────      ───      ");
+		grd(" ───────────  ────────  ");
+		grd(" ───────────  ───────── ");
+		grd(" ───────────  ───────── ");
+		grd(" ───────────  ───────── ");
+		grd(" ───────      ───────── ");
+		grd(" ───────────  ───────── ");
+		grd(" ────────────────────── ", LINE);
+		detected = detector.detectMargins(gridComponents());
+		Assert.assertEquals(2, detected.size());
+		mrg("             ");
+		mrg(" ┌─────────┐ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" │         │ ");
+		mrg(" └─────────┘ ");
+		mrg("             ");
+		assertMargin(detected);
+		mrg("                       ");
+		mrg("              ┌───────┐ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              │       │ ");
+		mrg("              └───────┘ ");
+		mrg("                        ");
+		assertMargin(detected);
+	}
+
+	private List<Component> gridComponents() {
 		for (Integer column : fromY.keySet())
-			addVertical(column);
+			addVertical(column, TEXT);
 		resetGridData();
 		return testComponents;
 	}
@@ -72,6 +148,10 @@ public class MarginDetectorTest {
 	}
 
 	private void grd(String line) {
+		grd(line, TEXT);
+	}
+
+	private void grd(String line, String type) {
 		int column = 0;
 		for (Character character : line.toCharArray()) {
 			if (isHorizontal(character)) {
@@ -79,16 +159,16 @@ public class MarginDetectorTest {
 					fromX = coordFromX(column);
 				toX = coordToX(column);
 			} else
-				addHorizontal();
+				addHorizontal(type);
 			if (isVertical(character)) {
 				if (fromY.get(column) == null)
 					fromY.put(column, coordFromY(row));
 				toY.put(column, coordToY(row));
 			} else
-				addVertical(column);
+				addVertical(column, type);
 			column++;
 		}
-		addHorizontal();
+		addHorizontal(type);
 		row++;
 	}
 
@@ -110,17 +190,23 @@ public class MarginDetectorTest {
 		boxRow++;
 	}
 
-	private void addHorizontal() {
+	private void addHorizontal(String type) {
 		if (fromX != null) {
-			testComponents.add(new GridComponent("rect", fromX, coordFromY(row), toX, coordToY(row), 1));
+			if (type.equals(TEXT))
+				testComponents.add(new TextComponent("", fromX, coordFromY(row), toX, coordToY(row), "", 1));
+			else
+				testComponents.add(new GridComponent(type, fromX, coordFromY(row), toX, coordToY(row), 1));
 			fromX = null;
 			toX = null;
 		}
 	}
 
-	private void addVertical(int column) {
+	private void addVertical(int column, String type) {
 		if (fromY.get(column) != null) {
-			testComponents.add(new GridComponent("rect", coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), 1));
+			if (type.equals(TEXT))
+				testComponents.add(new TextComponent("", coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), "", 1));
+			else
+				testComponents.add(new GridComponent(type, coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), 1));
 			fromY.put(column, null);
 			toY.put(column, null);
 		}

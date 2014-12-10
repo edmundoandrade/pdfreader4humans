@@ -18,6 +18,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import edworld.pdfreader.impl.BoxDetectorImpl;
+import edworld.pdfreader.impl.MarginDetectorImpl;
 import edworld.pdfreader.impl.PDFGridLocatorImpl;
 import edworld.pdfreader.impl.PDFTextLocatorImpl;
 
@@ -26,7 +27,7 @@ public class PDFReaderTest {
 
 	@Before
 	public void setUp() throws IOException {
-		reader = new PDFReader(getClass().getResource("/testcase1/input.pdf"), new PDFTextLocatorImpl(), new PDFGridLocatorImpl(), new BoxDetectorImpl());
+		reader = new PDFReader(getClass().getResource("/testcase1/input.pdf"), new PDFTextLocatorImpl(), new PDFGridLocatorImpl(), new BoxDetectorImpl(), new MarginDetectorImpl());
 	}
 
 	@Test
@@ -62,6 +63,12 @@ public class PDFReaderTest {
 						graphics.drawLine(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getToX()), Math.round(component.getToY()));
 					else if (component.toString().startsWith("rect"))
 						graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+				for (Component component : firstLevel)
+					if (component.toString().startsWith("margin")) {
+						graphics.setColor(Color.YELLOW);
+						graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+						graphics.setColor(Color.WHITE);
+					}
 				ImageIO.write(image, "png", new File("target/saida.png"));
 				graphics.dispose();
 			} finally {
@@ -71,6 +78,6 @@ public class PDFReaderTest {
 			throw new IllegalArgumentException(e);
 		}
 		//
-		Assert.assertEquals(284, firstLevel.size());
+		Assert.assertEquals(45, firstLevel.size());
 	}
 }

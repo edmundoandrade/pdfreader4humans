@@ -15,22 +15,23 @@ import org.apache.pdfbox.pdmodel.PDPage;
 public class PDFReader {
 	private List<Component> firstLevel = new ArrayList<Component>();
 
-	public PDFReader(URL url, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
+	public PDFReader(URL url, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		PDDocument doc = PDDocument.load(url);
 		try {
-			readAllPages(doc, textLocator, gridLocator, boxDetector);
+			readAllPages(doc, textLocator, gridLocator, boxDetector, marginDetector);
 		} finally {
 			doc.close();
 		}
 	}
 
-	private void readAllPages(PDDocument doc, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
+	private void readAllPages(PDDocument doc, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		for (Object page : doc.getDocumentCatalog().getAllPages())
-			readPage((PDPage) page, textLocator, gridLocator, boxDetector);
+			readPage((PDPage) page, textLocator, gridLocator, boxDetector, marginDetector);
 	}
 
-	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector) throws IOException {
+	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		List<GridComponent> gridComponents = gridLocator.locateGridComponents(page);
+		List<TextComponent> textComponents = textLocator.locateTextComponents(page);
 		List<BoxComponent> boxes = boxDetector.detectBoxes(gridComponents);
 		List<Component> containers = new ArrayList<Component>();
 		containers.addAll(gridComponents);
@@ -38,10 +39,22 @@ public class PDFReader {
 		List<Component> groups = groupConnectedComponents(containers);
 		containers.addAll(groups);
 		firstLevel.addAll(groups);
-		addComponents(boxes, groups);
-		addComponents(gridComponents, containers);
-		addComponents(textLocator.locateTextComponents(page), containers);
+		addComponents(boxes, firstLevel, groups);
+		addComponents(gridComponents, firstLevel, containers);
+		List<MarginComponent> margins = marginDetector.detectMargins(group(textComponents, firstLevel));
+		containers.addAll(margins);
+		firstLevel.addAll(margins);
+		addComponents(textComponents, firstLevel, containers);
 		Collections.sort(firstLevel);
+	}
+
+	private List<? extends Component> group(List<TextComponent> textComponents, List<Component> layoutComponents) {
+		List<Component> list = new ArrayList<Component>();
+		list.addAll(layoutComponents);
+		for (Component component : textComponents)
+			if (findContainer(component, layoutComponents) == null)
+				list.add(component);
+		return list;
 	}
 
 	private List<Component> groupConnectedComponents(List<Component> components) {
@@ -100,13 +113,13 @@ public class PDFReader {
 				groupMap.put(component, groupIndex1);
 	}
 
-	private void addComponents(List<? extends Component> components, List<? extends Component> containers) {
+	private void addComponents(List<? extends Component> components, List<Component> targetList, List<? extends Component> containers) {
 		for (Component component : components) {
 			Component container = findContainer(component, containers);
 			if (container != null)
 				container.addChild(component);
 			else
-				firstLevel.add(component);
+				targetList.add(component);
 		}
 	}
 

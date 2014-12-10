@@ -1,8 +1,8 @@
+// This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import edworld.pdfreader.BoxComponent;
@@ -13,18 +13,18 @@ import edworld.pdfreader.GridComponent;
 public class BoxDetectorImpl implements BoxDetector {
 	@Override
 	public List<BoxComponent> detectBoxes(List<GridComponent> components) {
-		return detectBoxes(horizontal(components), vertical(components));
+		return detectBoxes(Component.horizontal(components), Component.vertical(components));
 	}
 
-	private List<BoxComponent> detectBoxes(List<GridComponent> horizontalComponents, List<GridComponent> verticalComponents) {
+	private List<BoxComponent> detectBoxes(List<Component> horizontalComponents, List<Component> verticalComponents) {
 		List<BoxComponent> boxes = new ArrayList<BoxComponent>();
-		for (GridComponent horizontalComponent : horizontalComponents)
+		for (Component horizontalComponent : horizontalComponents)
 			detectBoxes(horizontalComponent, verticalComponents, horizontalComponents, boxes);
 		Collections.sort(boxes);
 		return boxes;
 	}
 
-	private void detectBoxes(GridComponent horizontalComponent, List<GridComponent> verticalComponents, List<GridComponent> horizontalComponents, List<BoxComponent> boxes) {
+	private void detectBoxes(Component horizontalComponent, List<Component> verticalComponents, List<Component> horizontalComponents, List<BoxComponent> boxes) {
 		GridComponent previousVerticalAbove = null;
 		GridComponent previousVerticalBelow = null;
 		for (GridComponent verticalBound : verticalBounds(horizontalComponent, verticalComponents)) {
@@ -43,8 +43,8 @@ public class BoxDetectorImpl implements BoxDetector {
 			createUnboundedBoxBelow(horizontalComponent, previousVerticalBelow, null, verticalComponents, horizontalComponents, boxes);
 	}
 
-	private void createBoxAbove(GridComponent horizontalComponent, GridComponent verticalBound1, GridComponent verticalBound2, List<GridComponent> verticalComponents,
-			List<GridComponent> horizontalComponents, List<BoxComponent> boxes) {
+	private void createBoxAbove(Component horizontalComponent, GridComponent verticalBound1, GridComponent verticalBound2, List<Component> verticalComponents,
+			List<Component> horizontalComponents, List<BoxComponent> boxes) {
 		boolean borderLeft = (verticalBound1 != null);
 		boolean borderRight = (verticalBound2 != null);
 		if (!borderLeft)
@@ -55,31 +55,21 @@ public class BoxDetectorImpl implements BoxDetector {
 					horizontalComponent.getToX(), horizontalComponent.getFromY(), verticalBound1.getLineWidth());
 		if (verticalBound1.getToX() >= verticalBound2.getFromX())
 			return;
-		GridComponent upperBound = nextUpperHorizontalComponent(horizontalComponent.getFromY(), verticalBound1.getToX(), verticalBound2.getFromX(), horizontalComponents);
+		Component upperBound = horizontalComponent.nextUpperHorizontalComponent(verticalBound1.getToX(), verticalBound2.getFromX(), horizontalComponents);
 		float minTop = (upperBound == null ? Float.NEGATIVE_INFINITY : upperBound.getFromY());
 		float fromY1 = Math.max(transitiveTop(verticalBound1, verticalComponents), minTop);
 		float fromY2 = Math.max(transitiveTop(verticalBound2, verticalComponents), minTop);
 		if (Math.abs(fromY1 - fromY2) < horizontalComponent.getHeight()) {
 			float fromY = Math.max(fromY1, fromY2);
 			boolean borderTop = (upperBound != null && upperBound.getToY() >= fromY);
-			boxes.add(new BoxComponent(verticalBound1.getFromX(), fromY, verticalBound2.getToX(), horizontalComponent.getToY(), horizontalComponent.getLineWidth(), borderLeft,
-					borderTop, borderRight, true));
+			boxes.add(new BoxComponent(verticalBound1.getFromX(), fromY, verticalBound2.getToX(), horizontalComponent.getToY(), ((GridComponent) horizontalComponent)
+					.getLineWidth(), borderLeft, borderTop, borderRight, true));
 		}
 	}
 
-	private GridComponent nextUpperHorizontalComponent(float maxBottom, float maxLeft, float minRight, List<GridComponent> horizontalComponents) {
-		GridComponent found = null;
-		for (GridComponent candidate : horizontalComponents)
-			if (candidate.getToY() >= maxBottom)
-				break;
-			else if (candidate.getFromX() <= maxLeft && candidate.getToX() >= minRight)
-				found = candidate;
-		return found;
-	}
-
-	private float transitiveTop(GridComponent component, List<GridComponent> verticalComponents) {
+	private float transitiveTop(Component component, List<Component> verticalComponents) {
 		float top = component.getFromY();
-		GridComponent next = nextUpperExtension(component, verticalComponents);
+		Component next = nextUpperExtension(component, verticalComponents);
 		while (next != null) {
 			top = next.getFromY();
 			next = nextUpperExtension(next, verticalComponents);
@@ -87,15 +77,15 @@ public class BoxDetectorImpl implements BoxDetector {
 		return top;
 	}
 
-	private GridComponent nextUpperExtension(GridComponent verticalComponent, List<GridComponent> verticalComponents) {
-		for (GridComponent candidate : verticalComponents)
-			if (verticalExtension(verticalComponent, candidate) && candidate.getFromY() < verticalComponent.getFromY())
+	private Component nextUpperExtension(Component verticalComponent, List<Component> verticalComponents) {
+		for (Component candidate : verticalComponents)
+			if (verticalComponent.verticalExtension(candidate) && candidate.getFromY() < verticalComponent.getFromY())
 				return candidate;
 		return null;
 	}
 
-	private void createUnboundedBoxBelow(GridComponent horizontalComponent, GridComponent verticalBound1, GridComponent verticalBound2, List<GridComponent> verticalComponents,
-			List<GridComponent> horizontalComponents, List<BoxComponent> boxes) {
+	private void createUnboundedBoxBelow(Component horizontalComponent, GridComponent verticalBound1, GridComponent verticalBound2, List<Component> verticalComponents,
+			List<Component> horizontalComponents, List<BoxComponent> boxes) {
 		boolean borderLeft = (verticalBound1 != null);
 		boolean borderRight = (verticalBound2 != null);
 		if (!borderLeft)
@@ -106,28 +96,21 @@ public class BoxDetectorImpl implements BoxDetector {
 					horizontalComponent.getToX(), verticalBound1.getToY(), verticalBound1.getLineWidth());
 		if (verticalBound1.getToX() >= verticalBound2.getFromX())
 			return;
-		GridComponent lowerBound = nextLowerHorizontalComponent(horizontalComponent.getToY(), verticalBound1.getToX(), verticalBound2.getFromX(), horizontalComponents);
+		Component lowerBound = horizontalComponent.nextLowerHorizontalComponent(verticalBound1.getToX(), verticalBound2.getFromX(), horizontalComponents);
 		float maxBottom = (lowerBound == null ? Float.POSITIVE_INFINITY : lowerBound.getToY());
 		float toY1 = Math.min(transitiveBottom(verticalBound1, verticalComponents), maxBottom);
 		float toY2 = Math.min(transitiveBottom(verticalBound2, verticalComponents), maxBottom);
 		float toY = Math.min(toY1, toY2);
 		boolean borderBottom = (lowerBound != null && lowerBound.getFromY() <= toY);
 		if (!borderBottom && Math.abs(toY1 - toY2) < horizontalComponent.getHeight()) {
-			boxes.add(new BoxComponent(verticalBound1.getFromX(), horizontalComponent.getFromY(), verticalBound2.getToX(), toY, horizontalComponent.getLineWidth(), borderLeft,
-					true, borderRight, borderBottom));
+			boxes.add(new BoxComponent(verticalBound1.getFromX(), horizontalComponent.getFromY(), verticalBound2.getToX(), toY, ((GridComponent) horizontalComponent)
+					.getLineWidth(), borderLeft, true, borderRight, borderBottom));
 		}
 	}
 
-	private GridComponent nextLowerHorizontalComponent(float minTop, float maxLeft, float minRight, List<GridComponent> horizontalComponents) {
-		for (GridComponent candidate : horizontalComponents)
-			if (candidate.getFromY() > minTop && candidate.getFromX() <= maxLeft && candidate.getToX() >= minRight)
-				return candidate;
-		return null;
-	}
-
-	private float transitiveBottom(GridComponent component, List<GridComponent> verticalComponents) {
+	private float transitiveBottom(Component component, List<Component> verticalComponents) {
 		float bottom = component.getToY();
-		GridComponent next = nextLowerExtension(component, verticalComponents);
+		Component next = nextLowerExtension(component, verticalComponents);
 		while (next != null) {
 			bottom = next.getToY();
 			next = nextLowerExtension(next, verticalComponents);
@@ -135,64 +118,18 @@ public class BoxDetectorImpl implements BoxDetector {
 		return bottom;
 	}
 
-	private GridComponent nextLowerExtension(GridComponent verticalComponent, List<GridComponent> verticalComponents) {
-		for (GridComponent candidate : verticalComponents)
-			if (verticalExtension(verticalComponent, candidate) && candidate.getFromY() > verticalComponent.getFromY())
+	private Component nextLowerExtension(Component verticalComponent, List<Component> verticalComponents) {
+		for (Component candidate : verticalComponents)
+			if (verticalComponent.verticalExtension(candidate) && candidate.getFromY() > verticalComponent.getFromY())
 				return candidate;
 		return null;
 	}
 
-	private boolean verticalExtension(GridComponent component1, GridComponent component2) {
-		return component1.getFromX() == component2.getFromX() && component1.getToX() == component2.getToX() && component1.intersects(component2);
-	}
-
-	private List<GridComponent> verticalBounds(GridComponent horizontalComponent, List<GridComponent> verticalComponents) {
+	private List<GridComponent> verticalBounds(Component horizontalComponent, List<Component> verticalComponents) {
 		List<GridComponent> verticalBounds = new ArrayList<GridComponent>();
-		for (GridComponent verticalComponent : verticalComponents)
+		for (Component verticalComponent : verticalComponents)
 			if (horizontalComponent.intersects(verticalComponent))
-				verticalBounds.add(verticalComponent);
+				verticalBounds.add((GridComponent) verticalComponent);
 		return verticalBounds;
-	}
-
-	private List<GridComponent> horizontal(List<GridComponent> components) {
-		List<GridComponent> horizontalComponents = new ArrayList<GridComponent>();
-		for (GridComponent component : components)
-			if (component.getWidth() > component.getHeight())
-				horizontalComponents.add(component);
-		Collections.sort(horizontalComponents, orderByYX());
-		return horizontalComponents;
-	}
-
-	private List<GridComponent> vertical(List<GridComponent> components) {
-		List<GridComponent> verticalComponents = new ArrayList<GridComponent>();
-		for (GridComponent component : components)
-			if (component.getHeight() > component.getWidth())
-				verticalComponents.add(component);
-		Collections.sort(verticalComponents, orderByXY());
-		return verticalComponents;
-	}
-
-	private Comparator<Component> orderByYX() {
-		return new Comparator<Component>() {
-			@Override
-			public int compare(Component component1, Component component2) {
-				int compare = Float.compare(component1.getFromY(), component2.getFromY());
-				if (compare == 0)
-					compare = Float.compare(component1.getFromX(), component2.getFromX());
-				return compare;
-			}
-		};
-	}
-
-	private Comparator<Component> orderByXY() {
-		return new Comparator<Component>() {
-			@Override
-			public int compare(Component component1, Component component2) {
-				int compare = Float.compare(component1.getFromX(), component2.getFromX());
-				if (compare == 0)
-					compare = Float.compare(component1.getFromY(), component2.getFromY());
-				return compare;
-			}
-		};
 	}
 }
