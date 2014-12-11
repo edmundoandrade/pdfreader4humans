@@ -1,16 +1,16 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader.impl;
+package edworld.pdfreader4humans.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import edworld.pdfreader.BoxComponent;
-import edworld.pdfreader.BoxDetector;
-import edworld.pdfreader.Component;
-import edworld.pdfreader.GridComponent;
+import edworld.pdfreader4humans.BoxComponent;
+import edworld.pdfreader4humans.BoxDetector;
+import edworld.pdfreader4humans.Component;
+import edworld.pdfreader4humans.GridComponent;
 
-public class BoxDetectorImpl implements BoxDetector {
+public class MainBoxDetector implements BoxDetector {
 	@Override
 	public List<BoxComponent> detectBoxes(List<GridComponent> components) {
 		return detectBoxes(Component.horizontal(components), Component.vertical(components));

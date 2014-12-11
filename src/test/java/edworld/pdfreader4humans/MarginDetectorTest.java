@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader;
+package edworld.pdfreader4humans;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import edworld.pdfreader.impl.MarginDetectorImpl;
+import edworld.pdfreader4humans.impl.MainMarginDetector;
 
 public class MarginDetectorTest {
 	private static final String LINE = "line";
@@ -27,7 +27,7 @@ public class MarginDetectorTest {
 
 	@Before
 	public void setUp() {
-		detector = new MarginDetectorImpl();
+		detector = new MainMarginDetector();
 		testComponents = new ArrayList<Component>();
 		resetGridData();
 		marginIndex = 0;

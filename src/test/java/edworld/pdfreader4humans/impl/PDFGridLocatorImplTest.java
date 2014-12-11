@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader.impl;
+package edworld.pdfreader4humans.impl;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,8 +12,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import edworld.pdfreader.GridComponent;
-import edworld.pdfreader.PDFGridLocator;
+import edworld.pdfreader4humans.GridComponent;
+import edworld.pdfreader4humans.PDFGridLocator;
 
 public class PDFGridLocatorImplTest {
 	private PDDocument doc;
@@ -22,7 +22,7 @@ public class PDFGridLocatorImplTest {
 	@Before
 	public void setUp() throws Exception {
 		doc = PDDocument.load(getClass().getResource("/testcase1/input.pdf"));
-		locator = new PDFGridLocatorImpl();
+		locator = new MainPDFGridLocator();
 	}
 
 	@Test

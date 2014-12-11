@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader.impl;
+package edworld.pdfreader4humans.impl;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -12,10 +12,10 @@ import org.apache.pdfbox.pdmodel.common.PDStream;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.pdfbox.util.TextPosition;
 
-import edworld.pdfreader.PDFTextLocator;
-import edworld.pdfreader.TextComponent;
+import edworld.pdfreader4humans.PDFTextLocator;
+import edworld.pdfreader4humans.TextComponent;
 
-public class PDFTextLocatorImpl implements PDFTextLocator {
+public class MainPDFTextLocator implements PDFTextLocator {
 	public List<TextComponent> locateTextComponents(final PDPage page) throws IOException {
 		return new PDFTextStripper() {
 			private ArrayList<TextComponent> list;

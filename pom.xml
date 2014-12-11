@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edworld</groupId>
-	<artifactId>pdfreader</artifactId>
+	<artifactId>pdfreader4humans</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Edworld's PDF reader</name>
 	<description>PDF reader able to recognize information components in the natural human reading order.</description>
@@ -21,9 +21,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git@github.com/edmundoandrade/pdfreader.git</connection>
-		<developerConnection>scm:git:git@github.com/edmundoandrade/pdfreader.git</developerConnection>
-		<url>git@github.com/edmundoandrade/pdfreader.git</url>
+		<connection>scm:git:git@github.com/edmundoandrade/pdfreader4humans.git</connection>
+		<developerConnection>scm:git:git@github.com/edmundoandrade/pdfreader4humans.git</developerConnection>
+		<url>git@github.com/edmundoandrade/pdfreader4humans.git</url>
 	</scm>
 	<build>
 		<plugins>

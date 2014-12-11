@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader.impl;
+package edworld.pdfreader4humans.impl;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -17,10 +17,10 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.util.PDFOperator;
 
-import edworld.pdfreader.GridComponent;
-import edworld.pdfreader.PDFGridLocator;
+import edworld.pdfreader4humans.GridComponent;
+import edworld.pdfreader4humans.PDFGridLocator;
 
-public class PDFGridLocatorImpl implements PDFGridLocator {
+public class MainPDFGridLocator implements PDFGridLocator {
 	public List<GridComponent> locateGridComponents(PDPage page) throws IOException {
 		final PDPage pageToDraw = page;
 		return new PageDrawer() {

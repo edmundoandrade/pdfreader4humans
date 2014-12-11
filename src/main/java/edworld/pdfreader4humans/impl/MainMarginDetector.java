@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader.impl;
+package edworld.pdfreader4humans.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import edworld.pdfreader.Component;
-import edworld.pdfreader.GridComponent;
-import edworld.pdfreader.MarginComponent;
-import edworld.pdfreader.MarginDetector;
-import edworld.pdfreader.TextComponent;
+import edworld.pdfreader4humans.Component;
+import edworld.pdfreader4humans.GridComponent;
+import edworld.pdfreader4humans.MarginComponent;
+import edworld.pdfreader4humans.MarginDetector;
+import edworld.pdfreader4humans.TextComponent;
 
-public class MarginDetectorImpl implements MarginDetector {
+public class MainMarginDetector implements MarginDetector {
 	@Override
 	public List<MarginComponent> detectMargins(List<? extends Component> components) {
 		List<Component> sortedComponents = new ArrayList<Component>(components);
@@ -40,7 +40,7 @@ public class MarginDetectorImpl implements MarginDetector {
 				for (int i = 0; i < Math.min(leftMargins.size(), rightMargins.size()); i++) {
 					while (i + 1 < rightMargins.size() && rightMap.get(rightMargins.get(i)) < frequencyRight / 2)
 						rightMargins.remove(i);
-					while (i + 1 < leftMargins.size() && leftMap.get(leftMargins.get(i)) < frequencyLeft / 2)
+					while (i > 0 && i + 1 < leftMargins.size() && leftMap.get(leftMargins.get(i)) < 2)
 						leftMargins.remove(i);
 					if (i + 1 == leftMargins.size())
 						while (i + 1 < rightMargins.size())

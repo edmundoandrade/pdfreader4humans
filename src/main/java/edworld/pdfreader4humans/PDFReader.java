@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader;
+package edworld.pdfreader4humans;
 
 import java.io.IOException;
 import java.net.URL;
@@ -15,6 +15,21 @@ import org.apache.pdfbox.pdmodel.PDPage;
 public class PDFReader {
 	private List<Component> firstLevel = new ArrayList<Component>();
 
+	/**
+	 * Class responsible for reading PDF contents in the same order a human would read them.
+	 * 
+	 * @param url
+	 *            the PDF's location
+	 * @param textLocator
+	 *            an instance of a PDFTextLocator subclass such as MainPDFTextLocator
+	 * @param gridLocator
+	 *            an instance of a PDFGridLocator subclass such as MainPDFGridLocator
+	 * @param boxDetector
+	 *            an instance of a BoxDetector subclass such as MainBoxDetector
+	 * @param marginDetector
+	 *            an instance of a MarginDetector subclass such as MainMarginDetector
+	 * @throws IOException
+	 */
 	public PDFReader(URL url, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		PDDocument doc = PDDocument.load(url);
 		try {

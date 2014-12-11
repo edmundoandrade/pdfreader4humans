@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader;
+package edworld.pdfreader4humans;
 
 public class GridComponent extends Component {
 	private String type;

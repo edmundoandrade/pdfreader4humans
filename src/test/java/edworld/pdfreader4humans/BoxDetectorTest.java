@@ -1,4 +1,4 @@
-package edworld.pdfreader;
+package edworld.pdfreader4humans;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import edworld.pdfreader.impl.BoxDetectorImpl;
+import edworld.pdfreader4humans.impl.MainBoxDetector;
 
 public class BoxDetectorTest {
 	private static final String BOTTOM = "bottom";
@@ -31,7 +31,7 @@ public class BoxDetectorTest {
 
 	@Before
 	public void setUp() {
-		detector = new BoxDetectorImpl();
+		detector = new MainBoxDetector();
 		testComponents = new ArrayList<GridComponent>();
 		resetGridData();
 		boxIndex = 0;
