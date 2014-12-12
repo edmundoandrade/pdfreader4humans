@@ -15,7 +15,7 @@ import org.junit.Test;
 import edworld.pdfreader4humans.PDFTextLocator;
 import edworld.pdfreader4humans.TextComponent;
 
-public class PDFTextLocatorImplTest {
+public class MainPDFTextLocatorTest {
 	private PDDocument doc;
 	private PDFTextLocator locator;
 
@@ -29,7 +29,7 @@ public class PDFTextLocatorImplTest {
 	public void locateTextComponents() throws IOException {
 		PDPage page1 = (PDPage) doc.getDocumentCatalog().getAllPages().get(0);
 		List<TextComponent> components = locator.locateTextComponents(page1);
-		assertEquals(387, components.size());
+		assertEquals(392, components.size());
 		assertEquals("Nº 31, quinta-feira, 13 de fevereiro de 2014 (49.348, 56.089787, 217.9233, 62.794617, Times-Roman 9.0)", components.get(0).toString());
 		assertEquals("1 (506.4658, 56.486153, 513.0536, 62.764587, HNBDHM+OxfordWd 11.0)", components.get(1).toString());
 		assertEquals("ISSN 1677-7042 (575.9183, 56.603043, 642.8473, 63.208984, Times-Italic 9.0)", components.get(2).toString());
@@ -41,6 +41,8 @@ public class PDFTextLocatorImplTest {
 		assertEquals("Osciloscópios, analisadores de espectro e outros (470.85208, 77.49142, 629.8473, 82.99078, Times-Roman 7.0)", components.get(8).toString());
 		assertEquals("15% (663.42487, 77.603, 678.03406, 82.99078, Times-Roman 7.0)", components.get(9).toString());
 		assertEquals("10% (721.59143, 77.603, 736.2006, 82.99078, Times-Roman 7.0)", components.get(10).toString());
+		assertEquals("a) Gabinete; (318.84198, 316.3835, 359.09103, 320.12946, Times-Roman 7.0)", components.get(98).toString());
+		assertEquals("tados e dos demais atos normativos a ser uniformemente seguida (304.69586, 435.96918, 517.3223, 440.66357, Times-Roman 7.0)", components.get(206).toString());
 	}
 
 	@After

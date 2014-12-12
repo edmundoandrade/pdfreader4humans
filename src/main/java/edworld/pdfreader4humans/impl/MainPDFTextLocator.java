@@ -25,7 +25,7 @@ public class MainPDFTextLocator implements PDFTextLocator {
 				PDStream contents = page.getContents();
 				setStartPage(getCurrentPageNo());
 				setEndPage(getCurrentPageNo());
-				setSortByPosition(true);
+				setSortByPosition(false);
 				if (contents != null) {
 					output = new StringWriter();
 					processPage(page, contents.getStream());
@@ -42,10 +42,17 @@ public class MainPDFTextLocator implements PDFTextLocator {
 				float toY = Float.NEGATIVE_INFINITY;
 				float fontSize = -1;
 				String fontName = "";
+				List<TextPosition> partialList = new ArrayList<TextPosition>();
+				String partialText = "";
+				float lastX = Float.NEGATIVE_INFINITY;
 				for (TextPosition textPosition : textPositions) {
 					float x1 = textPosition.getX();
 					float y1 = textPosition.getY();
-					if (x1 <= fromX) {
+					if (x1 < lastX) {
+						list.add(new TextComponent(partialText, fromX, fromY, toX, toY, fontName, fontSize));
+						writeString(text.substring(partialText.length()), textPositions.subList(partialList.size(), textPositions.size()));
+						return;
+					} else if (x1 <= fromX) {
 						fromX = x1;
 						fromY = y1 - textPosition.getHeight();
 						fontName = textPosition.getFont().getBaseFont();
@@ -53,6 +60,9 @@ public class MainPDFTextLocator implements PDFTextLocator {
 					}
 					toX = Math.max(x1 + textPosition.getWidth(), toX);
 					toY = Math.max(y1, toY);
+					partialList.add(textPosition);
+					partialText += textPosition.getCharacter();
+					lastX = x1;
 				}
 				list.add(new TextComponent(text, fromX, fromY, toX, toY, fontName, fontSize));
 			}

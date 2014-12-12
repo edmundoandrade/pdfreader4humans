@@ -15,7 +15,7 @@ import org.junit.Test;
 import edworld.pdfreader4humans.GridComponent;
 import edworld.pdfreader4humans.PDFGridLocator;
 
-public class PDFGridLocatorImplTest {
+public class MainPDFGridLocatorTest {
 	private PDDocument doc;
 	private PDFGridLocator locator;
 
