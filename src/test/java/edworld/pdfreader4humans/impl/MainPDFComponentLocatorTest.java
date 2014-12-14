@@ -12,22 +12,37 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import edworld.pdfreader4humans.PDFTextLocator;
+import edworld.pdfreader4humans.GridComponent;
+import edworld.pdfreader4humans.PDFComponentLocator;
 import edworld.pdfreader4humans.TextComponent;
 
-public class MainPDFTextLocatorTest {
+public class MainPDFComponentLocatorTest {
 	private PDDocument doc;
-	private PDFTextLocator locator;
+	private PDFComponentLocator locator;
+	private PDPage page1;
 
 	@Before
 	public void setUp() throws Exception {
 		doc = PDDocument.load(getClass().getResource("/testcase1/input.pdf"));
-		locator = new MainPDFTextLocator(new MainPDFGridLocator());
+		locator = new MainPDFComponentLocator();
+		page1 = (PDPage) doc.getDocumentCatalog().getAllPages().get(0);
+	}
+
+	@Test
+	public void locateGridComponents() throws IOException {
+		List<GridComponent> components = locator.locateGridComponents(page1);
+		assertEquals(172, components.size());
+		assertEquals("rect (50.406, 34.147, 758.273, 69.08, 0.0pt)", components.get(0).toString());
+		assertEquals("rect (49.518, 75.116, 49.717, 83.987, 0.51pt)", components.get(1).toString());
+		assertEquals("rect (49.518, 83.887, 389.762, 84.086, 0.51pt)", components.get(2).toString());
+		assertEquals("rect (101.254, 75.116, 101.453, 83.987, 0.51pt)", components.get(4).toString());
+		assertEquals("rect (273.328, 75.116, 273.527, 83.987, 0.51pt)", components.get(5).toString());
+		assertEquals("line (49.607, 218.596, 758.265, 218.596, 1.08pt)", components.get(46).toString());
+		assertEquals("line (49.607, 585.267, 517.321, 585.267, 1.08pt)", components.get(47).toString());
 	}
 
 	@Test
 	public void locateTextComponents() throws IOException {
-		PDPage page1 = (PDPage) doc.getDocumentCatalog().getAllPages().get(0);
 		List<TextComponent> components = locator.locateTextComponents(page1);
 		assertEquals(392, components.size());
 		assertEquals("Nº 31, quinta-feira, 13 de fevereiro de 2014 (49.348, 56.089787, 217.9233, 62.794617, Times-Roman 9.0)", components.get(0).toString());

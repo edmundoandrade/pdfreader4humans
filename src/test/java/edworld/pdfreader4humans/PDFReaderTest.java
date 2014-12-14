@@ -22,8 +22,7 @@ import org.junit.Test;
 
 import edworld.pdfreader4humans.impl.MainBoxDetector;
 import edworld.pdfreader4humans.impl.MainMarginDetector;
-import edworld.pdfreader4humans.impl.MainPDFGridLocator;
-import edworld.pdfreader4humans.impl.MainPDFTextLocator;
+import edworld.pdfreader4humans.impl.MainPDFComponentLocator;
 
 public class PDFReaderTest {
 	private PDFReader reader;
@@ -31,9 +30,8 @@ public class PDFReaderTest {
 
 	@Before
 	public void setUp() throws IOException {
-		MainPDFGridLocator gridLocator = new MainPDFGridLocator();
-		MainPDFTextLocator textLocator = new MainPDFTextLocator(gridLocator);
-		reader = new PDFReader(getClass().getResource("/testcase1/input.pdf"), textLocator, gridLocator, new MainBoxDetector(), new MainMarginDetector());
+		PDFComponentLocator componentLocator = new MainPDFComponentLocator();
+		reader = new PDFReader(getClass().getResource("/testcase1/input.pdf"), componentLocator, new MainBoxDetector(), new MainMarginDetector());
 	}
 
 	@Test

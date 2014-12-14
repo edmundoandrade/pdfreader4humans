@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.apache.pdfbox.pdmodel.PDPage;
 
-public interface PDFGridLocator {
+public interface PDFComponentLocator {
+	List<TextComponent> locateTextComponents(PDPage page) throws IOException;
+
 	List<GridComponent> locateGridComponents(PDPage page) throws IOException;
 }

@@ -20,33 +20,31 @@ public class PDFReader {
 	 * 
 	 * @param url
 	 *            the PDF's location
-	 * @param textLocator
-	 *            an instance of a PDFTextLocator subclass such as MainPDFTextLocator
-	 * @param gridLocator
-	 *            an instance of a PDFGridLocator subclass such as MainPDFGridLocator
+	 * @param componentLocator
+	 *            an instance of a PDFComponentLocator subclass such as MainPDFComponentLocator
 	 * @param boxDetector
 	 *            an instance of a BoxDetector subclass such as MainBoxDetector
 	 * @param marginDetector
 	 *            an instance of a MarginDetector subclass such as MainMarginDetector
 	 * @throws IOException
 	 */
-	public PDFReader(URL url, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		PDDocument doc = PDDocument.load(url);
 		try {
-			readAllPages(doc, textLocator, gridLocator, boxDetector, marginDetector);
+			readAllPages(doc, componentLocator, boxDetector, marginDetector);
 		} finally {
 			doc.close();
 		}
 	}
 
-	private void readAllPages(PDDocument doc, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	private void readAllPages(PDDocument doc, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		for (Object page : doc.getDocumentCatalog().getAllPages())
-			readPage((PDPage) page, textLocator, gridLocator, boxDetector, marginDetector);
+			readPage((PDPage) page, componentLocator, boxDetector, marginDetector);
 	}
 
-	private void readPage(PDPage page, PDFTextLocator textLocator, PDFGridLocator gridLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
-		List<GridComponent> gridComponents = gridLocator.locateGridComponents(page);
-		List<TextComponent> textComponents = textLocator.locateTextComponents(page);
+	private void readPage(PDPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+		List<GridComponent> gridComponents = componentLocator.locateGridComponents(page);
+		List<TextComponent> textComponents = componentLocator.locateTextComponents(page);
 		List<BoxComponent> boxes = boxDetector.detectBoxes(gridComponents);
 		List<Component> containers = new ArrayList<Component>();
 		containers.addAll(gridComponents);
