@@ -1,0 +1,1 @@
+<text fromX="${fromX}" fromY="${fromY}" toX="${toX}" toY="${toY}" fontName="${fontName}" fontSize="${fontSize}">${text}</text>

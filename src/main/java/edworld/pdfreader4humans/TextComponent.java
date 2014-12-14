@@ -9,7 +9,7 @@ public class TextComponent extends Component {
 	private float fontSize;
 
 	public TextComponent(String text, float fromX, float fromY, float toX, float toY, String fontName, float fontSize) {
-		super(fromX, fromY, toX, toY);
+		super("text", fromX, fromY, toX, toY);
 		this.text = text;
 		this.fontName = fontName;
 		this.fontSize = fontSize;
@@ -28,7 +28,16 @@ public class TextComponent extends Component {
 	}
 
 	@Override
+	public String output(String template) {
+		String output = super.output(template);
+		output = fillTemplate(output, "text", getText());
+		output = fillTemplate(output, "fontName", getFontName());
+		output = fillTemplate(output, "fontSize", getFontSize());
+		return output;
+	}
+
+	@Override
 	public String toString() {
-		return text + " (" + fromX + ", " + fromY + ", " + toX + ", " + toY + ", " + fontName + " " + fontSize + ")";
+		return super.toString() + ", " + fontName + " " + fontSize + " :: " + text;
 	}
 }

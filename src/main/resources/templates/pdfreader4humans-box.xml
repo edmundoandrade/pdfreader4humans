@@ -1,0 +1,3 @@
+<box fromX="${fromX}" fromY="${fromY}" toX="${toX}" toY="${toY}" lineWidth="${lineWidth}">
+${content}
+</box>

@@ -5,19 +5,26 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.regex.Matcher;
 
 public abstract class Component implements Comparable<Component> {
+	protected String type;
 	protected float fromX;
 	protected float fromY;
 	protected float toX;
 	protected float toY;
 	private List<Component> children = new ArrayList<Component>();
 
-	public Component(float fromX, float fromY, float toX, float toY) {
+	public Component(String type, float fromX, float fromY, float toX, float toY) {
+		this.type = type;
 		this.fromX = fromX;
 		this.fromY = fromY;
 		this.toX = toX;
 		this.toY = toY;
+	}
+
+	public String getType() {
+		return type;
 	}
 
 	public float getFromX() {
@@ -99,6 +106,24 @@ public abstract class Component implements Comparable<Component> {
 			if (candidate.getFromY() > getToY() && candidate.getFromX() <= maxLeft && candidate.getToX() >= minRight)
 				return candidate;
 		return null;
+	}
+
+	public String output(String template) {
+		String output = fillTemplate(template, "type", getType());
+		output = fillTemplate(output, "fromX", getFromX());
+		output = fillTemplate(output, "fromY", getFromY());
+		output = fillTemplate(output, "toX", getToX());
+		output = fillTemplate(output, "toY", getToY());
+		return output;
+	}
+
+	protected String fillTemplate(String template, String fieldName, Object fieldValue) {
+		return template.replaceAll("\\$\\{" + fieldName + "\\}", Matcher.quoteReplacement(fieldValue.toString()));
+	}
+
+	@Override
+	public String toString() {
+		return type + " :: " + fromX + ", " + fromY + ", " + toX + ", " + toY;
 	}
 
 	public static List<Component> horizontal(List<? extends Component> components) {

@@ -2,17 +2,11 @@
 package edworld.pdfreader4humans;
 
 public class GridComponent extends Component {
-	private String type;
 	private double lineWidth;
 
 	public GridComponent(String type, float fromX, float fromY, float toX, float toY, double lineWidth) {
-		super(fromX, fromY, toX, toY);
-		this.type = type;
+		super(type, fromX, fromY, toX, toY);
 		this.lineWidth = lineWidth;
-	}
-
-	public String getType() {
-		return type;
 	}
 
 	public double getLineWidth() {
@@ -20,7 +14,12 @@ public class GridComponent extends Component {
 	}
 
 	@Override
+	public String output(String template) {
+		return fillTemplate(super.output(template), "lineWidth", getLineWidth());
+	}
+
+	@Override
 	public String toString() {
-		return type + " (" + fromX + ", " + fromY + ", " + toX + ", " + toY + ", " + lineWidth + "pt)";
+		return super.toString() + ", " + lineWidth + "pt";
 	}
 }

@@ -6,7 +6,7 @@ public class BoxComponent extends Component {
 	private double lineWidth;
 
 	public BoxComponent(float fromX, float fromY, float toX, float toY, double lineWidth, boolean borderLeft, boolean borderTop, boolean borderRight, boolean borderBottom) {
-		super(fromX, fromY, toX, toY);
+		super("box", fromX, fromY, toX, toY);
 		this.lineWidth = lineWidth;
 		this.borderLeft = borderLeft;
 		this.borderTop = borderTop;
@@ -19,20 +19,28 @@ public class BoxComponent extends Component {
 	}
 
 	@Override
+	public String output(String template) {
+		String output = super.output(template);
+		output = fillTemplate(output, "lineWidth", getLineWidth());
+		output = fillTemplate(output, "borders", borderToString());
+		return output;
+	}
+
+	@Override
 	public String toString() {
-		return "box (" + fromX + ", " + fromY + ", " + toX + ", " + toY + ", " + lineWidth + "pt, " + borderToString() + ")";
+		return super.toString() + ", " + lineWidth + "pt, borders:" + borderToString();
 	}
 
 	protected String borderToString() {
-		String border = "";
+		String borders = "";
 		if (borderLeft)
-			border += ":left";
+			borders += ",left";
 		if (borderTop)
-			border += ":top";
+			borders += ",top";
 		if (borderRight)
-			border += ":right";
+			borders += ",right";
 		if (borderBottom)
-			border += ":bottom";
-		return "border" + (border.isEmpty() ? ":no" : border);
+			borders += ",bottom";
+		return borders.isEmpty() ? "no" : borders.substring(1);
 	}
 }
