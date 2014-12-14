@@ -22,7 +22,7 @@ public class MainPDFTextLocatorTest {
 	@Before
 	public void setUp() throws Exception {
 		doc = PDDocument.load(getClass().getResource("/testcase1/input.pdf"));
-		locator = new MainPDFTextLocator();
+		locator = new MainPDFTextLocator(new MainPDFGridLocator());
 	}
 
 	@Test
@@ -41,8 +41,11 @@ public class MainPDFTextLocatorTest {
 		assertEquals("Osciloscópios, analisadores de espectro e outros (470.85208, 77.49142, 629.8473, 82.99078, Times-Roman 7.0)", components.get(8).toString());
 		assertEquals("15% (663.42487, 77.603, 678.03406, 82.99078, Times-Roman 7.0)", components.get(9).toString());
 		assertEquals("10% (721.59143, 77.603, 736.2006, 82.99078, Times-Roman 7.0)", components.get(10).toString());
+		assertEquals("DECRETO Nº (64.63681, 234.46262, 115.43865, 239.8504, Times-Bold 7.0)", components.get(49).toString());
 		assertEquals("a) Gabinete; (318.84198, 316.3835, 359.09103, 320.12946, Times-Roman 7.0)", components.get(98).toString());
 		assertEquals("tados e dos demais atos normativos a ser uniformemente seguida (304.69586, 435.96918, 517.3223, 440.66357, Times-Roman 7.0)", components.get(206).toString());
+		assertEquals("Nº (414.0244, 764.2241, 422.40897, 769.7554, Times-Bold 7.0)", components.get(351).toString());
+		assertEquals("Documento assinado digitalmente conforme MP nº (463.2183, 879.116, 631.8032, 884.3922, Times-Roman 7.0)", components.get(388).toString());
 	}
 
 	@After

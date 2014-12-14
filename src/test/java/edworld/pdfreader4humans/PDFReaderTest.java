@@ -31,7 +31,9 @@ public class PDFReaderTest {
 
 	@Before
 	public void setUp() throws IOException {
-		reader = new PDFReader(getClass().getResource("/testcase1/input.pdf"), new MainPDFTextLocator(), new MainPDFGridLocator(), new MainBoxDetector(), new MainMarginDetector());
+		MainPDFGridLocator gridLocator = new MainPDFGridLocator();
+		MainPDFTextLocator textLocator = new MainPDFTextLocator(gridLocator);
+		reader = new PDFReader(getClass().getResource("/testcase1/input.pdf"), textLocator, gridLocator, new MainBoxDetector(), new MainMarginDetector());
 	}
 
 	@Test
