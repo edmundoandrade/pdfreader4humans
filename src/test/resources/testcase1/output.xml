@@ -1,573 +1,902 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pdfreader4humans>
-<page id="1">
-<text fromX="49.348" fromY="56.089787" toX="217.9233" toY="62.794617" fontName="Times-Roman" fontSize="9.0">Nº 31, quinta-feira, 13 de fevereiro de 2014</text>
-<rect fromX="50.406" fromY="34.147" toX="758.273" toY="69.08" lineWidth="0.0">
-<text fromX="506.4658" fromY="56.486153" toX="513.0536" toY="62.764587" fontName="HNBDHM+OxfordWd" fontSize="11.0">1</text>
-<text fromX="575.9183" fromY="56.603043" toX="642.8473" toY="63.208984" fontName="Times-Italic" fontSize="9.0">ISSN 1677-7042</text>
-<text fromX="705.2703" fromY="53.990482" toX="711.2479" toY="62.155884" fontName="Times-Italic" fontSize="11.0">3</text>
-</rect>
-<group fromX="49.518" fromY="75.116" toX="389.862" toY="210.725" lineWidth="${lineWidth}">
-<box fromX="49.518" fromY="75.116" toX="101.453" toY="84.086" lineWidth="0.51">
-</box>
-<box fromX="49.518" fromY="83.887" toX="389.862" toY="102.536" lineWidth="0.51">
-</box>
-<box fromX="101.254" fromY="75.116" toX="273.527" toY="84.086" lineWidth="0.51">
-</box>
-<box fromX="273.328" fromY="75.116" toX="332.123" toY="84.086" lineWidth="0.51">
-</box>
-<box fromX="331.924" fromY="75.116" toX="389.862" toY="84.086" lineWidth="0.51">
-</box>
-<box fromX="49.518" fromY="102.437" toX="101.453" toY="210.725" lineWidth="0.51">
-</box>
-<box fromX="101.254" fromY="102.437" toX="273.527" toY="152.866" lineWidth="0.51">
-</box>
-<box fromX="101.254" fromY="152.667" toX="273.527" toY="163.346" lineWidth="0.51">
-
-</box>
-<box fromX="273.328" fromY="102.437" toX="332.123" toY="152.866" lineWidth="0.51">
-
-</box>
-<box fromX="331.924" fromY="102.437" toX="389.862" toY="152.866" lineWidth="0.51">
-
-</box>
-<box fromX="101.254" fromY="163.147" toX="273.527" toY="173.825" lineWidth="0.51">
-
-</box>
-<box fromX="273.328" fromY="152.667" toX="332.123" toY="163.346" lineWidth="0.51">
-
-</box>
-<box fromX="273.328" fromY="163.147" toX="332.123" toY="173.825" lineWidth="0.51">
-
-</box>
-<box fromX="331.924" fromY="152.667" toX="389.862" toY="163.346" lineWidth="0.51">
-
-</box>
-<box fromX="101.254" fromY="173.626" toX="273.527" toY="200.245" lineWidth="0.51">
-
-</box>
-<box fromX="331.924" fromY="163.147" toX="389.862" toY="173.825" lineWidth="0.51">
-
-</box>
-<box fromX="101.254" fromY="200.046" toX="273.527" toY="210.725" lineWidth="0.51">
-
-</box>
-<box fromX="273.328" fromY="173.626" toX="332.123" toY="200.245" lineWidth="0.51">
-
-</box>
-<box fromX="273.328" fromY="200.046" toX="332.123" toY="210.725" lineWidth="0.51">
-
-</box>
-<box fromX="331.924" fromY="173.626" toX="389.862" toY="200.245" lineWidth="0.51">
-
-</box>
-<box fromX="331.924" fromY="200.046" toX="389.862" toY="210.725" lineWidth="0.51">
-
-</box>
-<rect fromX="101.254" fromY="152.667" toX="389.762" toY="152.866" lineWidth="0.51">
-
-</rect>
-<rect fromX="101.254" fromY="163.147" toX="389.762" toY="163.346" lineWidth="0.51">
-
-</rect>
-<rect fromX="101.254" fromY="173.626" toX="389.762" toY="173.825" lineWidth="0.51">
-
-</rect>
-<rect fromX="101.254" fromY="200.046" toX="389.762" toY="200.245" lineWidth="0.51">
-
-</rect>
-<rect fromX="49.518" fromY="210.526" toX="389.762" toY="210.725" lineWidth="0.51">
-
-</rect>
-
-</group>
-<group fromX="418.02" fromY="75.116" toX="758.364" toY="115.967" lineWidth="${lineWidth}">
-<box fromX="418.02" fromY="75.116" toX="469.955" toY="115.967" lineWidth="0.51">
-
-</box>
-<box fromX="469.756" fromY="75.116" toX="642.029" toY="115.967" lineWidth="0.51">
-
-</box>
-<box fromX="641.83" fromY="75.116" toX="700.625" toY="115.967" lineWidth="0.51">
-
-</box>
-<box fromX="700.426" fromY="75.116" toX="758.364" toY="115.967" lineWidth="0.51">
-
-</box>
-<rect fromX="418.02" fromY="115.768" toX="758.264" toY="115.967" lineWidth="0.51">
-
-</rect>
-
-</group>
-<text fromX="570.0543" fromY="142.73149" toX="606.31824" toY="148.10333" fontName="Times-Roman" fontSize="7.0">ANEXO II</text>
-<text fromX="418.10913" fromY="161.3345" toX="490.97974" toY="166.72229" fontName="Times-Bold" fontSize="7.0">PM = PE x (1 + M),</text>
-<text fromX="494.04825" fromY="162.97635" toX="514.8582" toY="166.72229" fontName="Times-Roman" fontSize="7.0">sendo:</text>
-<text fromX="418.10913" fromY="175.96841" toX="430.50262" toY="181.3562" fontName="Times-Bold" fontSize="7.0">PM</text>
-<text fromX="433.57114" fromY="179.23616" toX="504.67242" toY="181.3562" fontName="Times-Roman" fontSize="7.0">= preço com margem</text>
-<text fromX="418.10913" fromY="190.60233" toX="428.29492" toY="195.99011" fontName="Times-Bold" fontSize="7.0">PE</text>
-<text fromX="431.3634" fromY="193.87007" toX="634.40155" toY="195.99011" fontName="Times-Roman" fontSize="7.0">= menor preço ofertado do produto manufaturado estrangeiro</text>
-<text fromX="418.10913" fromY="205.23624" toX="425.6329" toY="210.62402" fontName="Times-Bold" fontSize="7.0">M</text>
-<text fromX="428.7014" fromY="208.50398" toX="732.3139" toY="210.62402" fontName="Times-Roman" fontSize="7.0">= margem de preferência em percentual, conforme estabelecido no Anexo I a este Decreto.</text>
-<line fromX="49.607" fromY="218.596" toX="758.265" toY="218.596" lineWidth="1.08" />
-<margin fromX="49.607193" fromY="234.26459" toX="276.3883" toY="577.3081">
-<text fromX="64.63681" fromY="234.46262" toX="115.43865" toY="239.8504" fontName="Times-Bold" fontSize="7.0">DECRETO Nº</text>
-<text fromX="118.5071" fromY="234.26459" toX="261.34717" toY="239.85162" fontName="Times-Bold" fontSize="7.0">8.195, DE 12 DE FEVEREIRO DE 2014</text>
-<text fromX="134.33891" fromY="251.02171" toX="154.25618" toY="256.39355" fontName="Times-Roman" fontSize="7.0">Altera</text>
-<text fromX="159.25343" fromY="252.64761" toX="195.68555" toY="256.39355" fontName="Times-Roman" fontSize="7.0">os Anexos</text>
-<text fromX="200.6828" fromY="251.11736" toX="211.87361" toY="256.39355" fontName="Times-Roman" fontSize="7.0">I e</text>
-<text fromX="216.87086" fromY="251.11736" toX="222.17894" toY="256.39355" fontName="Times-Roman" fontSize="7.0">II</text>
-<text fromX="227.1762" fromY="252.64761" toX="264.92337" toY="256.39355" fontName="Times-Roman" fontSize="7.0">ao Decreto</text>
-<text fromX="269.92062" fromY="252.72731" toX="276.3764" toY="256.39355" fontName="Times-Roman" fontSize="7.0">nº</text>
-<text fromX="134.33891" fromY="259.46524" toX="276.38037" toY="264.9646" fontName="Times-Roman" fontSize="7.0">8.030, de 20 de junho de 2013, que aprova</text>
-<text fromX="134.33891" fromY="269.7905" toX="221.96298" toY="273.53644" fontName="Times-Roman" fontSize="7.0">a Estrutura Regimental e</text>
-<text fromX="226.82155" fromY="269.7905" toX="276.37488" toY="273.53644" fontName="Times-Roman" fontSize="7.0">o Quadro De-</text>
-<text fromX="134.33891" fromY="278.44122" toX="172.42003" toY="282.10748" fontName="Times-Roman" fontSize="7.0">monstrativo</text>
-<text fromX="176.76851" fromY="276.5842" toX="214.62408" toY="282.10748" fontName="Times-Roman" fontSize="7.0">dos Cargos</text>
-<text fromX="218.97256" fromY="278.36154" toX="264.50336" toY="282.10748" fontName="Times-Roman" fontSize="7.0">em Comissão</text>
-<text fromX="268.85184" fromY="276.5842" toX="276.3756" toY="282.10748" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="134.33891" fromY="285.17996" toX="276.382" toY="290.67932" fontName="Times-Roman" fontSize="7.0">Secretaria de Políticas para as Mulheres da</text>
-<text fromX="134.33891" fromY="293.97415" toX="276.37805" toY="299.25037" fontName="Times-Roman" fontSize="7.0">Presidência da República, e remaneja car-</text>
-<text fromX="134.33891" fromY="302.4185" toX="192.94305" toY="307.8222" fontName="Times-Roman" fontSize="7.0">gos em comissão.</text>
-<text fromX="77.85083" fromY="318.86398" toX="83.60524" toY="324.36334" fontName="Times-Bold" fontSize="7.0">A</text>
-<text fromX="86.90805" fromY="318.97556" toX="152.49797" toY="324.36334" fontName="Times-Bold" fontSize="7.0">PRESIDENTA DA</text>
-<text fromX="155.80078" fromY="318.97556" toX="204.72925" toY="324.36334" fontName="Times-Bold" fontSize="7.0">REPÚBLICA,</text>
-<text fromX="208.03206" fromY="320.69708" toX="216.00215" toY="324.36334" fontName="Times-Roman" fontSize="7.0">no</text>
-<text fromX="219.30496" fromY="320.69708" toX="241.2028" toY="324.36334" fontName="Times-Roman" fontSize="7.0">uso da</text>
-<text fromX="244.50562" fromY="320.6174" toX="276.37805" toY="324.36334" fontName="Times-Roman" fontSize="7.0">atribuição</text>
-<text fromX="49.607193" fromY="327.53943" toX="61.116016" toY="332.93518" fontName="Times-Roman" fontSize="7.0">que</text>
-<text fromX="65.21345" fromY="327.4916" toX="74.95291" toY="332.93518" fontName="Times-Roman" fontSize="7.0">lhe</text>
-<text fromX="79.05034" fromY="329.18924" toX="102.9447" toY="332.93518" fontName="Times-Roman" fontSize="7.0">confere</text>
-<text fromX="107.04213" fromY="329.18924" toX="111.027176" toY="332.93518" fontName="Times-Roman" fontSize="7.0">o</text>
-<text fromX="115.1246" fromY="329.18924" toX="125.52559" toY="332.93518" fontName="Times-Roman" fontSize="7.0">art.</text>
-<text fromX="129.62302" fromY="327.43582" toX="164.71855" toY="332.93518" fontName="Times-Roman" fontSize="7.0">84, caput,</text>
-<text fromX="168.81598" fromY="327.4916" toX="276.37646" toY="332.93518" fontName="Times-Roman" fontSize="7.0">inciso VI, alínea "a", da Cons-</text>
-<text fromX="49.6072" fromY="336.81183" toX="75.51002" toY="341.50623" fontName="Times-Roman" fontSize="7.0">tituição,</text>
-<text fromX="77.85164" fromY="352.66037" toX="83.60605" toY="358.04816" fontName="Times-Bold" fontSize="7.0">D</text>
-<text fromX="86.67454" fromY="352.66037" toX="91.99059" toY="358.04816" fontName="Times-Bold" fontSize="7.0">E</text>
-<text fromX="95.05908" fromY="352.38937" toX="100.81349" toY="358.04816" fontName="Times-Bold" fontSize="7.0">C</text>
-<text fromX="103.88198" fromY="352.38937" toX="109.63639" toY="358.04816" fontName="Times-Bold" fontSize="7.0">R</text>
-<text fromX="112.70488" fromY="352.38937" toX="118.020935" toY="358.04816" fontName="Times-Bold" fontSize="7.0">E</text>
-<text fromX="121.089424" fromY="352.38937" toX="126.40548" toY="358.04816" fontName="Times-Bold" fontSize="7.0">T</text>
-<text fromX="129.47397" fromY="352.38937" toX="135.22838" toY="358.04816" fontName="Times-Bold" fontSize="7.0">A</text>
-<text fromX="138.29688" fromY="352.38937" toX="140.95091" toY="358.04816" fontName="Times-Bold" fontSize="7.0">:</text>
-<text fromX="77.85164" fromY="369.21823" toX="100.96971" toY="374.5901" fontName="Times-Roman" fontSize="7.0">Art. 1º</text>
-<text fromX="105.014534" fromY="369.31387" toX="205.90643" toY="374.5901" fontName="Times-Roman" fontSize="7.0">Ficam remanejados, na forma</text>
-<text fromX="209.95126" fromY="369.0668" toX="251.90744" toY="374.5901" fontName="Times-Roman" fontSize="7.0">do Anexo I,</text>
-<text fromX="255.95227" fromY="370.84415" toX="276.37646" toY="374.5901" fontName="Times-Roman" fontSize="7.0">os se-</text>
-<text fromX="49.607197" fromY="377.75742" toX="97.882095" toY="383.16113" fontName="Times-Roman" fontSize="7.0">guintes cargos</text>
-<text fromX="102.47208" fromY="379.4152" toX="146.46703" toY="383.16113" fontName="Times-Roman" fontSize="7.0">em comissão</text>
-<text fromX="151.057" fromY="377.63785" toX="211.86086" toY="383.16113" fontName="Times-Roman" fontSize="7.0">do Grupo-Direção</text>
-<text fromX="216.45084" fromY="379.4152" toX="276.37802" toY="383.16113" fontName="Times-Roman" fontSize="7.0">e Assessoramento</text>
-<text fromX="49.607197" fromY="386.2336" toX="107.573746" toY="391.73297" fontName="Times-Roman" fontSize="7.0">Superiores -DAS:</text>
-<text fromX="77.85164" fromY="402.9979" toX="86.98697" toY="408.2741" fontName="Times-Roman" fontSize="7.0">I -</text>
-<text fromX="90.813416" fromY="402.75082" toX="134.0289" toY="408.2741" fontName="Times-Roman" fontSize="7.0">da Secretaria</text>
-<text fromX="137.85535" fromY="402.75082" toX="171.33932" toY="408.2741" fontName="Times-Roman" fontSize="7.0">de Gestão</text>
-<text fromX="175.16577" fromY="402.9979" toX="210.8734" toY="408.2741" fontName="Times-Roman" fontSize="7.0">Pública do</text>
-<text fromX="214.69984" fromY="402.9979" toX="259.70856" toY="408.2741" fontName="Times-Roman" fontSize="7.0">Ministério do</text>
-<text fromX="263.535" fromY="402.9979" toX="276.37485" toY="408.2741" fontName="Times-Roman" fontSize="7.0">Pla-</text>
-<text fromX="49.607197" fromY="413.1797" toX="276.38046" toY="416.84595" fontName="Times-Roman" fontSize="7.0">nejamento, Orçamento e Gestão para a Secretaria de Políticas para as</text>
-<text fromX="49.607197" fromY="420.14078" toX="240.39539" toY="425.417" fontName="Times-Roman" fontSize="7.0">Mulheres da Presidência da República: um DAS 101.4; e</text>
-<text fromX="77.85164" fromY="436.6827" toX="83.15973" toY="441.95892" fontName="Times-Roman" fontSize="7.0">II</text>
-<text fromX="87.65247" fromY="441.45682" toX="102.32463" toY="441.95892" fontName="Times-Roman" fontSize="7.0">- da</text>
-<text fromX="106.81818" fromY="436.45956" toX="138.68263" toY="441.95892" fontName="Times-Roman" fontSize="7.0">Secretaria</text>
-<text fromX="143.17618" fromY="436.43564" toX="182.65128" toY="441.95892" fontName="Times-Roman" fontSize="7.0">de Políticas</text>
-<text fromX="187.14403" fromY="436.56317" toX="200.86057" toY="441.95892" fontName="Times-Roman" fontSize="7.0">para</text>
-<text fromX="205.35332" fromY="438.21298" toX="211.99242" toY="441.95892" fontName="Times-Roman" fontSize="7.0">as</text>
-<text fromX="216.48596" fromY="436.6827" toX="258.60712" toY="441.95892" fontName="Times-Roman" fontSize="7.0">Mulheres da</text>
-<text fromX="263.10065" fromY="436.6827" toX="276.37885" toY="441.95892" fontName="Times-Roman" fontSize="7.0">Pre-</text>
-<text fromX="49.607197" fromY="446.78403" toX="75.72522" toY="450.52997" fontName="Times-Roman" fontSize="7.0">sidência</text>
-<text fromX="79.544495" fromY="445.00668" toX="87.06827" toY="450.52997" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="90.88754" fromY="445.25375" toX="123.2063" toY="450.52997" fontName="Times-Roman" fontSize="7.0">República</text>
-<text fromX="127.02557" fromY="445.13422" toX="140.74211" toY="450.52997" fontName="Times-Roman" fontSize="7.0">para</text>
-<text fromX="144.56139" fromY="446.78403" toX="183.78543" toY="450.52997" fontName="Times-Roman" fontSize="7.0">a Secretaria</text>
-<text fromX="187.6055" fromY="445.00668" toX="195.12927" toY="450.52997" fontName="Times-Roman" fontSize="7.0">de</text>
-<text fromX="198.94855" fromY="445.0306" toX="221.08151" toY="450.52997" fontName="Times-Roman" fontSize="7.0">Gestão</text>
-<text fromX="224.90079" fromY="445.25375" toX="248.81108" toY="450.52997" fontName="Times-Roman" fontSize="7.0">Pública</text>
-<text fromX="252.63036" fromY="445.00668" toX="260.60046" toY="450.52997" fontName="Times-Roman" fontSize="7.0">do</text>
-<text fromX="264.41974" fromY="445.25375" toX="276.3749" toY="450.52997" fontName="Times-Roman" fontSize="7.0">Mi-</text>
-<text fromX="49.607197" fromY="455.43555" toX="260.76697" toY="459.1018" fontName="Times-Roman" fontSize="7.0">nistério do Planejamento, Orçamento e Gestão: um DAS 102.4.</text>
-<text fromX="77.85164" fromY="470.27188" toX="276.3828" toY="475.64374" fontName="Times-Roman" fontSize="7.0">Art. 2º O Anexo II ao Decreto nº 8.030, de 20 de junho de</text>
-<text fromX="49.607197" fromY="478.827" toX="249.34578" toY="484.21478" fontName="Times-Roman" fontSize="7.0">2013, passa a vigorar na forma do Anexo II a este Decreto.</text>
-<text fromX="77.85164" fromY="495.38486" toX="101.37778" toY="500.7567" fontName="Times-Roman" fontSize="7.0">Art. 3º</text>
-<text fromX="105.82987" fromY="495.25735" toX="166.95894" toY="500.7567" fontName="Times-Roman" fontSize="7.0">Os apostilamentos</text>
-<text fromX="171.41104" fromY="495.23343" toX="223.22305" toY="500.7567" fontName="Times-Roman" fontSize="7.0">decorrentes das</text>
-<text fromX="227.67516" fromY="497.01077" toX="276.37888" toY="500.7567" fontName="Times-Roman" fontSize="7.0">alterações rea-</text>
-<text fromX="49.607197" fromY="503.8842" toX="86.78372" toY="509.32776" fontName="Times-Roman" fontSize="7.0">lizadas por</text>
-<text fromX="91.20235" fromY="505.58182" toX="190.3145" toY="509.32776" fontName="Times-Roman" fontSize="7.0">este Decreto deverão ocorrer</text>
-<text fromX="194.73312" fromY="505.6615" toX="236.76741" toY="509.32776" fontName="Times-Roman" fontSize="7.0">no prazo de</text>
-<text fromX="241.18604" fromY="505.62964" toX="276.37802" toY="509.32776" fontName="Times-Roman" fontSize="7.0">vinte dias,</text>
-<text fromX="49.607197" fromY="514.1536" toX="186.8443" toY="517.8996" fontName="Times-Roman" fontSize="7.0">contado da data de sua entrada em vigor.</text>
-<text fromX="77.85164" fromY="529.16455" toX="182.54366" toY="534.44073" fontName="Times-Roman" fontSize="7.0">Parágrafo único. A Ministra de</text>
-<text fromX="185.97319" fromY="529.16455" toX="276.37967" toY="534.44073" fontName="Times-Roman" fontSize="7.0">Estado Chefe da Secretaria</text>
-<text fromX="49.607197" fromY="537.4893" toX="57.13097" toY="543.0126" fontName="Times-Roman" fontSize="7.0">de</text>
-<text fromX="60.552532" fromY="537.7364" toX="88.009544" toY="543.0126" fontName="Times-Roman" fontSize="7.0">Políticas</text>
-<text fromX="91.43111" fromY="537.6168" toX="105.14765" toY="543.0126" fontName="Times-Roman" fontSize="7.0">para</text>
-<text fromX="108.569214" fromY="539.2666" toX="115.20831" toY="543.0126" fontName="Times-Roman" fontSize="7.0">as</text>
-<text fromX="118.62908" fromY="537.7364" toX="159.67828" toY="543.0126" fontName="Times-Roman" fontSize="7.0">Mulheres da</text>
-<text fromX="163.09904" fromY="537.7364" toX="199.8412" toY="543.0126" fontName="Times-Roman" fontSize="7.0">Presidência</text>
-<text fromX="203.26196" fromY="537.4893" toX="210.78574" toY="543.0126" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="214.2073" fromY="537.7364" toX="246.52605" toY="543.0126" fontName="Times-Roman" fontSize="7.0">República</text>
-<text fromX="249.94681" fromY="537.569" toX="262.33234" toY="543.0126" fontName="Times-Roman" fontSize="7.0">fará</text>
-<text fromX="265.7539" fromY="537.6168" toX="276.37805" toY="543.0126" fontName="Times-Roman" fontSize="7.0">pu-</text>
-<text fromX="49.607197" fromY="546.06036" toX="276.3883" toY="551.5836" fontName="Times-Roman" fontSize="7.0">blicar no Diário Oficial da União, no prazo de trinta dias, contado da</text>
-<text fromX="49.607197" fromY="554.6322" toX="276.3804" toY="560.15546" fontName="Times-Roman" fontSize="7.0">data de entrada em vigor deste Decreto, relação nominal dos titulares</text>
-<text fromX="49.607197" fromY="563.20325" toX="60.677666" toY="568.7265" fontName="Times-Roman" fontSize="7.0">dos</text>
-<text fromX="64.31602" fromY="564.9805" toX="98.35313" toY="568.7265" fontName="Times-Roman" fontSize="7.0">cargos em</text>
-<text fromX="101.99148" fromY="564.9805" toX="138.83408" toY="568.7265" fontName="Times-Roman" fontSize="7.0">comissão a</text>
-<text fromX="142.47243" fromY="563.33075" toX="164.25949" toY="568.7265" fontName="Times-Roman" fontSize="7.0">que se</text>
-<text fromX="167.89784" fromY="565.06024" toX="186.47614" toY="568.7265" fontName="Times-Roman" fontSize="7.0">refere</text>
-<text fromX="190.11449" fromY="564.9805" toX="218.98695" toY="568.7265" fontName="Times-Roman" fontSize="7.0">o Anexo</text>
-<text fromX="222.6253" fromY="563.4503" toX="245.07387" toY="568.7265" fontName="Times-Roman" fontSize="7.0">II, que</text>
-<text fromX="248.71222" fromY="563.2829" toX="276.37646" toY="568.7265" fontName="Times-Roman" fontSize="7.0">indicará,</text>
-<text fromX="49.607197" fromY="571.85474" toX="268.99213" toY="577.29834" fontName="Times-Roman" fontSize="7.0">inclusive, o número de cargos vagos, suas denominações e níveis.</text>
-
-</margin>
-<margin fromX="290.5505" fromY="234.26459" toX="517.3295" toY="577.3081">
-<text fromX="318.79416" fromY="234.48204" toX="517.3295" toY="239.85388" fontName="Times-Roman" fontSize="7.0">Art. 4º Os ocupantes dos cargos em comissão que deixam de</text>
-<text fromX="290.5505" fromY="244.16013" toX="324.47128" toY="247.90607" fontName="Times-Roman" fontSize="7.0">existir por</text>
-<text fromX="327.84183" fromY="242.4625" toX="363.96234" toY="247.90607" fontName="Times-Roman" fontSize="7.0">força deste</text>
-<text fromX="367.3329" fromY="242.62987" toX="441.96497" toY="247.90607" fontName="Times-Roman" fontSize="7.0">Decreto consideram-se</text>
-<text fromX="445.3355" fromY="244.16013" toX="517.32153" toY="247.90607" fontName="Times-Roman" fontSize="7.0">automaticamente exo-</text>
-<text fromX="290.5505" fromY="252.292" toX="317.33005" toY="255.95825" fontName="Times-Roman" fontSize="7.0">nerados.</text>
-<text fromX="318.79416" fromY="266.60788" toX="341.56796" toY="271.97974" fontName="Times-Roman" fontSize="7.0">Art. 5º</text>
-<text fromX="345.26767" fromY="266.48038" toX="375.9717" toY="271.97974" fontName="Times-Roman" fontSize="7.0">O Anexo</text>
-<text fromX="379.67142" fromY="266.70352" toX="422.4773" toY="271.97974" fontName="Times-Roman" fontSize="7.0">I ao Decreto</text>
-<text fromX="426.177" fromY="268.31348" toX="456.25934" toY="271.97974" fontName="Times-Roman" fontSize="7.0">nº 8.030,</text>
-<text fromX="459.95905" fromY="266.45645" toX="489.11685" toY="271.97974" fontName="Times-Roman" fontSize="7.0">de 2013,</text>
-<text fromX="492.81656" fromY="266.58398" toX="517.3198" toY="271.97974" fontName="Times-Roman" fontSize="7.0">passa a</text>
-<text fromX="290.5505" fromY="276.3338" toX="409.95065" toY="280.03192" fontName="Times-Roman" fontSize="7.0">vigorar com as seguintes alterações:</text>
-<text fromX="318.84198" fromY="294.10233" toX="508.6976" toY="296.055" fontName="Times-Roman" fontSize="7.0">"Art. 2º .................................................................................</text>
-<text fromX="318.84198" fromY="306.80106" toX="507.6216" toY="312.07727" fontName="Times-Roman" fontSize="7.0">I - .........................................................................................</text>
-<text fromX="318.84198" fromY="316.3835" toX="359.09103" toY="320.12946" fontName="Times-Roman" fontSize="7.0">a) Gabinete;</text>
-<text fromX="318.84198" fromY="322.65836" toX="397.15625" toY="328.18164" fontName="Times-Roman" fontSize="7.0">b) Secretaria-Executiva:</text>
-<text fromX="318.84198" fromY="330.84604" toX="468.09018" toY="336.23383" fontName="Times-Roman" fontSize="7.0">1. Departamento de Administração Interna; e</text>
-<text fromX="318.84198" fromY="340.54007" toX="392.70895" toY="344.286" fontName="Times-Roman" fontSize="7.0">c) Assessoria Jurídica;</text>
-<text fromX="304.69586" fromY="351.45273" toX="516.68445" toY="352.3374" fontName="Times-Roman" fontSize="7.0">..............................................................................................." (NR)</text>
-<text fromX="318.84198" fromY="366.407" toX="436.62903" toY="368.35968" fontName="Times-Roman" fontSize="7.0">"Art. 5º-A. À Assessoria Jurídica,</text>
-<text fromX="441.12656" fromY="362.87625" toX="517.32227" toY="368.35968" fontName="Times-Roman" fontSize="7.0">órgão de execução da</text>
-<text fromX="304.69586" fromY="371.0408" toX="517.3264" toY="376.41266" fontName="Times-Roman" fontSize="7.0">Advocacia-Geral da União junto à Secretaria de Políticas para as</text>
-<text fromX="304.69586" fromY="379.18784" toX="465.46082" toY="384.46405" fontName="Times-Roman" fontSize="7.0">Mulheres da Presidência da República, compete:</text>
-<text fromX="318.84198" fromY="395.2101" toX="354.43015" toY="400.48633" fontName="Times-Roman" fontSize="7.0">I - prestar</text>
-<text fromX="358.72604" fromY="396.7404" toX="466.79517" toY="400.48633" fontName="Times-Roman" fontSize="7.0">assessoria e consultoria jurídica</text>
-<text fromX="471.09106" fromY="396.82007" toX="517.3193" toY="400.48633" fontName="Times-Roman" fontSize="7.0">no âmbito da</text>
-<text fromX="304.69586" fromY="403.03836" toX="336.56036" toY="408.53772" fontName="Times-Roman" fontSize="7.0">Secretaria</text>
-<text fromX="340.11823" fromY="403.01443" toX="378.65768" toY="408.53772" fontName="Times-Roman" fontSize="7.0">de Políticas</text>
-<text fromX="382.21555" fromY="403.14197" toX="395.9321" toY="408.53772" fontName="Times-Roman" fontSize="7.0">para</text>
-<text fromX="399.48996" fromY="404.79178" toX="439.7908" toY="408.53772" fontName="Times-Roman" fontSize="7.0">as Mulheres</text>
-<text fromX="443.34866" fromY="403.01443" toX="450.87244" toY="408.53772" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="454.4303" fromY="403.2615" toX="502.2549" toY="408.53772" fontName="Times-Roman" fontSize="7.0">Presidência da</text>
-<text fromX="505.81277" fromY="403.2615" toX="517.3216" toY="408.53772" fontName="Times-Roman" fontSize="7.0">Re-</text>
-<text fromX="304.69586" fromY="411.19336" toX="330.37555" toY="416.5891" fontName="Times-Roman" fontSize="7.0">pública;</text>
-<text fromX="318.84198" fromY="427.33517" toX="324.1501" toY="432.6114" fontName="Times-Roman" fontSize="7.0">II</text>
-<text fromX="327.61948" fromY="432.10928" toX="348.7913" toY="432.6114" fontName="Times-Roman" fontSize="7.0">- fixar</text>
-<text fromX="352.26068" fromY="428.86545" toX="355.7994" toY="432.6114" fontName="Times-Roman" fontSize="7.0">a</text>
-<text fromX="359.268" fromY="427.16782" toX="411.86594" toY="432.6114" fontName="Times-Roman" fontSize="7.0">interpretação da</text>
-<text fromX="415.33453" fromY="427.11203" toX="457.62393" toY="432.6114" fontName="Times-Roman" fontSize="7.0">Constituição,</text>
-<text fromX="461.09253" fromY="427.0881" toX="471.71667" toY="432.6114" fontName="Times-Roman" fontSize="7.0">das</text>
-<text fromX="475.18527" fromY="427.16782" toX="502.78894" toY="432.6114" fontName="Times-Roman" fontSize="7.0">leis, dos</text>
-<text fromX="506.25754" fromY="427.917" toX="517.32007" toY="432.6114" fontName="Times-Roman" fontSize="7.0">tra-</text>
-<text fromX="304.69586" fromY="435.96918" toX="517.3223" toY="440.66357" fontName="Times-Roman" fontSize="7.0">tados e dos demais atos normativos a ser uniformemente seguida</text>
-<text fromX="304.69586" fromY="445.0495" toX="517.3224" toY="448.71576" fontName="Times-Roman" fontSize="7.0">na área de atuação da Secretaria de Políticas para as Mulheres da</text>
-<text fromX="304.69586" fromY="451.49252" toX="419.79453" toY="456.76874" fontName="Times-Roman" fontSize="7.0">Presidência da República, quando</text>
-<text fromX="424.1462" fromY="453.10248" toX="517.31915" toY="456.76874" fontName="Times-Roman" fontSize="7.0">não houver orientação nor-</text>
-<text fromX="304.69586" fromY="461.15387" toX="429.41205" toY="464.82013" fontName="Times-Roman" fontSize="7.0">mativa do Advogado-Geral da União;</text>
-<text fromX="318.84198" fromY="475.5662" toX="420.32138" toY="480.8424" fontName="Times-Roman" fontSize="7.0">III - atuar, em conjunto com</text>
-<text fromX="424.70016" fromY="477.09647" toX="517.32074" toY="480.8424" fontName="Times-Roman" fontSize="7.0">os órgãos da Secretaria de</text>
-<text fromX="304.69586" fromY="483.61838" toX="349.1077" toY="488.8946" fontName="Times-Roman" fontSize="7.0">Políticas para</text>
-<text fromX="352.34436" fromY="485.14865" toX="392.3248" toY="488.8946" fontName="Times-Roman" fontSize="7.0">as Mulheres</text>
-<text fromX="395.56146" fromY="483.3713" toX="443.06567" toY="488.8946" fontName="Times-Roman" fontSize="7.0">da Presidência</text>
-<text fromX="446.30234" fromY="483.3713" toX="491.37567" toY="488.8946" fontName="Times-Roman" fontSize="7.0">da República,</text>
-<text fromX="494.61234" fromY="485.22833" toX="517.32153" toY="488.8946" fontName="Times-Roman" fontSize="7.0">na ela-</text>
-<text fromX="304.69586" fromY="491.4235" toX="517.3247" toY="496.94678" fontName="Times-Roman" fontSize="7.0">boração de propostas de atos normativos que serão submetidas à</text>
-<text fromX="304.69586" fromY="499.72275" toX="484.04706" toY="504.99896" fontName="Times-Roman" fontSize="7.0">Ministra de Estado ou a dirigente de órgão colegiado;</text>
-<text fromX="318.84198" fromY="515.74506" toX="409.4064" toY="521.02124" fontName="Times-Roman" fontSize="7.0">IV - realizar revisão final</text>
-<text fromX="413.90076" fromY="515.498" toX="517.3209" toY="521.02124" fontName="Times-Roman" fontSize="7.0">da técnica legislativa e emitir</text>
-<text fromX="304.69586" fromY="523.6769" toX="386.5648" toY="529.07263" fontName="Times-Roman" fontSize="7.0">parecer conclusivo sobre</text>
-<text fromX="389.87558" fromY="525.32666" toX="503.62097" toY="529.07263" fontName="Times-Roman" fontSize="7.0">a constitucionalidade, a legalidade</text>
-<text fromX="506.93176" fromY="525.32666" toX="517.32074" toY="529.07263" fontName="Times-Roman" fontSize="7.0">e a</text>
-<text fromX="304.69586" fromY="533.37964" toX="373.8445" toY="537.1256" fontName="Times-Roman" fontSize="7.0">compatibilidade com</text>
-<text fromX="377.90848" fromY="533.37964" toX="471.11887" toY="537.1256" fontName="Times-Roman" fontSize="7.0">o ordenamento jurídico das</text>
-<text fromX="475.18283" fromY="531.72986" toX="517.32074" toY="537.1256" fontName="Times-Roman" fontSize="7.0">propostas de</text>
-<text fromX="304.69586" fromY="541.431" toX="517.3224" toY="545.177" fontName="Times-Roman" fontSize="7.0">atos normativos que serão submetidas à Ministra de Estado ou a</text>
-<text fromX="304.69586" fromY="547.70514" toX="400.96674" toY="553.2284" fontName="Times-Roman" fontSize="7.0">dirigente de órgão colegiado;</text>
-<text fromX="318.84198" fromY="563.8868" toX="331.64755" toY="569.2507" fontName="Times-Roman" fontSize="7.0">V -</text>
-<text fromX="336.04385" fromY="565.5047" toX="366.12067" toY="569.2507" fontName="Times-Roman" fontSize="7.0">assistir a</text>
-<text fromX="370.51697" fromY="563.9745" toX="409.44855" toY="569.2507" fontName="Times-Roman" fontSize="7.0">Ministra de</text>
-<text fromX="413.84485" fromY="563.9745" toX="447.90665" toY="569.2507" fontName="Times-Roman" fontSize="7.0">Estado no</text>
-<text fromX="452.30295" fromY="565.5047" toX="505.3974" toY="569.2507" fontName="Times-Roman" fontSize="7.0">controle interno</text>
-<text fromX="509.7937" fromY="563.7274" toX="517.31744" toY="569.2507" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="304.69586" fromY="571.85925" toX="463.91467" toY="577.30286" fontName="Times-Roman" fontSize="7.0">legalidade administrativa dos atos da Secretaria;</text>
-
-</margin>
-<margin fromX="531.49304" fromY="234.26459" toX="758.2726" toY="577.3081">
-<text fromX="559.7853" fromY="234.49452" toX="643.515" toY="239.8584" fontName="Times-Roman" fontSize="7.0">VI - pronunciar-se sobre</text>
-<text fromX="647.37573" fromY="236.11246" toX="758.26355" toY="239.8584" fontName="Times-Roman" fontSize="7.0">os procedimentos administrativos</text>
-<text fromX="545.63916" fromY="241.47153" toX="758.2688" toY="246.99481" fontName="Times-Roman" fontSize="7.0">disciplinares e os respectivos recursos hierárquicos submetidos à</text>
-<text fromX="545.63916" fromY="248.60794" toX="647.78375" toY="254.13123" fontName="Times-Roman" fontSize="7.0">decisão da Ministra de Estado;</text>
-<text fromX="559.7853" fromY="263.87384" toX="645.2802" toY="269.23773" fontName="Times-Roman" fontSize="7.0">VII - receber e processar</text>
-<text fromX="648.9536" fromY="263.84198" toX="758.2631" toY="269.23773" fontName="Times-Roman" fontSize="7.0">pedidos de subsídios necessários</text>
-<text fromX="545.63916" fromY="270.9792" toX="758.2648" toY="276.37494" fontName="Times-Roman" fontSize="7.0">para a defesa judicial formulados pela Advocacia-Geral da União</text>
-<text fromX="545.63916" fromY="279.7654" toX="753.6901" toY="283.51135" fontName="Times-Roman" fontSize="7.0">ou para a propositura de ações judiciais de interesse do órgão;</text>
-<text fromX="559.7853" fromY="293.25397" toX="758.2726" toY="298.61786" fontName="Times-Roman" fontSize="7.0">VIII - orientar a Secretaria de Políticas para as Mulheres da</text>
-<text fromX="545.63916" fromY="300.47806" toX="630.7787" toY="305.75427" fontName="Times-Roman" fontSize="7.0">Presidência da República</text>
-<text fromX="635.0554" fromY="300.35852" toX="699.6776" toY="305.75427" fontName="Times-Roman" fontSize="7.0">quanto à forma de</text>
-<text fromX="703.95435" fromY="302.00833" toX="758.26013" toY="305.75427" fontName="Times-Roman" fontSize="7.0">cumprimento de</text>
-<text fromX="545.63916" fromY="307.3674" toX="611.5437" toY="312.8907" fontName="Times-Roman" fontSize="7.0">decisões judiciais; e</text>
-<text fromX="559.7853" fromY="322.72098" toX="568.1937" toY="327.9972" fontName="Times-Roman" fontSize="7.0">IX</text>
-<text fromX="571.39453" fromY="327.4951" toX="574.0486" toY="327.9972" fontName="Times-Roman" fontSize="7.0">-</text>
-<text fromX="577.2494" fromY="324.25125" toX="631.69946" toY="327.9972" fontName="Times-Roman" fontSize="7.0">examinar, prévia</text>
-<text fromX="634.90027" fromY="324.25125" toX="638.43896" toY="327.9972" fontName="Times-Roman" fontSize="7.0">e</text>
-<text fromX="641.6398" fromY="324.25125" toX="697.1992" toY="327.9972" fontName="Times-Roman" fontSize="7.0">conclusivamente,</text>
-<text fromX="700.4" fromY="324.33093" toX="733.71344" toY="327.9972" fontName="Times-Roman" fontSize="7.0">no âmbito</text>
-<text fromX="736.91425" fromY="322.4739" toX="744.438" toY="327.9972" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="747.6388" fromY="322.49783" toX="758.26294" toY="327.9972" fontName="Times-Roman" fontSize="7.0">Se-</text>
-<text fromX="545.63916" fromY="331.38766" toX="569.53345" toY="335.1336" fontName="Times-Roman" fontSize="7.0">cretaria</text>
-<text fromX="573.9768" fromY="329.61032" toX="581.50055" toY="335.1336" fontName="Times-Roman" fontSize="7.0">de</text>
-<text fromX="585.9439" fromY="329.8574" toX="631.5615" toY="335.1336" fontName="Times-Roman" fontSize="7.0">Políticas para</text>
-<text fromX="636.0049" fromY="331.38766" toX="642.6439" toY="335.1336" fontName="Times-Roman" fontSize="7.0">as</text>
-<text fromX="647.0873" fromY="329.8574" toX="677.1903" toY="335.1336" fontName="Times-Roman" fontSize="7.0">Mulheres</text>
-<text fromX="681.63367" fromY="329.61032" toX="730.3436" toY="335.1336" fontName="Times-Roman" fontSize="7.0">da Presidência</text>
-<text fromX="734.787" fromY="329.61032" toX="742.3107" toY="335.1336" fontName="Times-Roman" fontSize="7.0">da</text>
-<text fromX="746.7541" fromY="329.8574" toX="758.2629" toY="335.1336" fontName="Times-Roman" fontSize="7.0">Re-</text>
-<text fromX="545.63916" fromY="336.87506" toX="571.3188" toY="342.2708" fontName="Times-Roman" fontSize="7.0">pública:</text>
-<text fromX="559.7853" fromY="353.63138" toX="576.9305" toY="357.37732" fontName="Times-Roman" fontSize="7.0">a) os</text>
-<text fromX="580.79675" fromY="352.68292" toX="611.2281" toY="357.37732" fontName="Times-Roman" fontSize="7.0">textos de</text>
-<text fromX="615.09436" fromY="353.63138" toX="647.29504" toY="357.37732" fontName="Times-Roman" fontSize="7.0">editais de</text>
-<text fromX="651.1613" fromY="351.93375" toX="685.5697" toY="357.37732" fontName="Times-Roman" fontSize="7.0">licitação e</text>
-<text fromX="689.436" fromY="351.85403" toX="740.23083" toY="357.37732" fontName="Times-Roman" fontSize="7.0">dos respectivos</text>
-<text fromX="744.0971" fromY="353.63138" toX="758.25995" toY="357.37732" fontName="Times-Roman" fontSize="7.0">con-</text>
-<text fromX="545.63916" fromY="359.81934" toX="603.11865" toY="364.51373" fontName="Times-Roman" fontSize="7.0">tratos, convênios,</text>
-<text fromX="606.58325" fromY="360.7678" toX="642.80646" toY="364.51373" fontName="Times-Roman" fontSize="7.0">acordos ou</text>
-<text fromX="646.27185" fromY="359.07016" toX="728.7614" toY="364.51373" fontName="Times-Roman" fontSize="7.0">instrumentos congêneres,</text>
-<text fromX="732.226" fromY="360.7678" toX="758.2634" toY="364.51373" fontName="Times-Roman" fontSize="7.0">a serem</text>
-<text fromX="545.63916" fromY="366.2544" toX="632.7521" toY="371.65015" fontName="Times-Roman" fontSize="7.0">publicados e celebrados; e</text>
-<text fromX="559.7853" fromY="381.23337" toX="643.3158" toY="386.75665" fontName="Times-Roman" fontSize="7.0">b) os atos pelos quais se</text>
-<text fromX="646.6505" fromY="383.0904" toX="758.2636" toY="386.75665" fontName="Times-Roman" fontSize="7.0">reconheça a inexigibilidade ou se</text>
-<text fromX="545.63916" fromY="388.36978" toX="668.92035" toY="393.89307" fontName="Times-Roman" fontSize="7.0">decida a dispensa de licitação." (NR)</text>
-<text fromX="559.7853" fromY="407.04694" toX="650.75903" toY="408.9996" fontName="Times-Roman" fontSize="7.0">"Art. 11. Aos Secretários e</text>
-<text fromX="654.1702" fromY="403.47632" toX="758.2619" toY="408.9996" fontName="Times-Roman" fontSize="7.0">demais dirigentes incumbe pla-</text>
-<text fromX="545.63916" fromY="412.47058" toX="626.3795" toY="416.13684" fontName="Times-Roman" fontSize="7.0">nejar, dirigir, coordenar,</text>
-<text fromX="630.3773" fromY="412.3909" toX="733.0089" toY="416.13684" fontName="Times-Roman" fontSize="7.0">orientar, acompanhar e avaliar</text>
-<text fromX="737.0067" fromY="412.3909" toX="758.2605" toY="416.13684" fontName="Times-Roman" fontSize="7.0">a exe-</text>
-<text fromX="545.63916" fromY="419.5273" toX="564.22534" toY="423.27325" fontName="Times-Roman" fontSize="7.0">cução</text>
-<text fromX="568.86633" fromY="417.74997" toX="616.45087" toY="423.27325" fontName="Times-Roman" fontSize="7.0">das atividades</text>
-<text fromX="621.09186" fromY="417.74997" toX="646.9818" toY="423.27325" fontName="Times-Roman" fontSize="7.0">de suas</text>
-<text fromX="651.6228" fromY="419.607" toX="688.1369" toY="423.27325" fontName="Times-Roman" fontSize="7.0">unidades e</text>
-<text fromX="692.7771" fromY="419.5273" toX="740.3457" toY="423.27325" fontName="Times-Roman" fontSize="7.0">exercer outras</text>
-<text fromX="744.9867" fromY="419.5273" toX="758.2649" toY="423.27325" fontName="Times-Roman" fontSize="7.0">atri-</text>
-<text fromX="545.63916" fromY="424.88638" toX="682.6529" toY="430.40967" fontName="Times-Roman" fontSize="7.0">buições que lhes forem cometidas." (NR)</text>
-<text fromX="559.7375" fromY="440.14435" toX="758.2652" toY="445.5162" fontName="Times-Roman" fontSize="7.0">Art. 6º Os expedientes referentes a assuntos da Secretaria de</text>
-<text fromX="531.49384" fromY="447.3764" toX="629.77124" toY="452.65262" fontName="Times-Roman" fontSize="7.0">Políticas para as Mulheres da</text>
-<text fromX="632.98" fromY="447.3764" toX="758.25995" toY="452.65262" fontName="Times-Roman" fontSize="7.0">Presidência da República que estejam</text>
-<text fromX="531.49384" fromY="456.0431" toX="758.2656" toY="459.78903" fontName="Times-Roman" fontSize="7.0">sob o exame da Subchefia para Assuntos Jurídicos da Casa Civil da</text>
-<text fromX="531.49384" fromY="461.64923" toX="758.2706" toY="466.92545" fontName="Times-Roman" fontSize="7.0">Presidência da República quando da entrada em vigor deste Decreto</text>
-<text fromX="531.49384" fromY="470.39642" toX="610.5715" toY="474.06268" fontName="Times-Roman" fontSize="7.0">não serão redistribuídos</text>
-<text fromX="614.02893" fromY="468.66693" toX="700.9801" toY="474.06268" fontName="Times-Roman" fontSize="7.0">para a Assessoria Jurídica</text>
-<text fromX="704.43756" fromY="468.5394" toX="758.2659" toY="474.06268" fontName="Times-Roman" fontSize="7.0">da Secretaria de</text>
-<text fromX="531.49384" fromY="475.92288" toX="716.9895" toY="481.1991" fontName="Times-Roman" fontSize="7.0">Políticas para as Mulheres da Presidência da República.</text>
-<text fromX="559.7375" fromY="490.93378" toX="676.04346" toY="496.30563" fontName="Times-Roman" fontSize="7.0">Art. 7º Fica revogado o inciso IV</text>
-<text fromX="679.77826" fromY="490.78235" toX="710.523" toY="496.30563" fontName="Times-Roman" fontSize="7.0">do caput</text>
-<text fromX="714.2586" fromY="490.78235" toX="758.2623" toY="496.30563" fontName="Times-Roman" fontSize="7.0">do art. 3º do</text>
-<text fromX="531.49304" fromY="498.0702" toX="714.9086" toY="503.44205" fontName="Times-Roman" fontSize="7.0">Anexo I ao Decreto nº 8.030, de 20 de junho de 2013.</text>
-<text fromX="559.7367" fromY="513.17676" toX="758.26373" toY="518.5486" fontName="Times-Roman" fontSize="7.0">Art. 8º Este Decreto entra em vigor quatorze dias após a data</text>
-<text fromX="531.49304" fromY="520.16174" toX="592.29675" toY="525.685" fontName="Times-Roman" fontSize="7.0">de sua publicação.</text>
-<text fromX="559.7367" fromY="535.5153" toX="651.568" toY="540.7915" fontName="Times-Roman" fontSize="7.0">Brasília, 12 de fevereiro de</text>
-<text fromX="654.88275" fromY="535.4037" toX="758.26263" toY="540.7915" fontName="Times-Roman" fontSize="7.0">2014; 193º da Independência e</text>
-<text fromX="531.49304" fromY="542.54095" toX="593.8908" toY="547.9288" fontName="Times-Roman" fontSize="7.0">126º da República.</text>
-<text fromX="645.06696" fromY="557.7591" toX="713.67365" toY="563.0353" fontName="Times-Roman" fontSize="7.0">DILMA ROUSSEFF</text>
-<text fromX="645.06696" fromY="564.9673" toX="699.4947" toY="570.17175" fontName="Times-Italic" fontSize="7.0">Miriam Belchior</text>
-<text fromX="645.06696" fromY="572.10364" toX="751.22046" toY="577.3081" fontName="Times-Italic" fontSize="7.0">Eleonora Menicucci de Oliveira</text>
-
-</margin>
-<line fromX="49.607" fromY="585.267" toX="517.321" toY="585.267" lineWidth="1.08" />
-<text fromX="387.1352" fromY="593.1797" toX="420.74515" toY="598.5515" fontName="Times-Roman" fontSize="7.0">ANEXO I</text>
-<text fromX="344.04883" fromY="601.7443" toX="463.83154" toY="607.0205" fontName="Times-Roman" fontSize="7.0">REMANEJAMENTO DE CARGOS</text>
-<group fromX="49.53" fromY="615.684" toX="758.374" toY="693.145" lineWidth="${lineWidth}">
-<box fromX="49.53" fromY="615.784" toX="163.113" toY="641.973" lineWidth="1.08">
-
-</box>
-<box fromX="162.914" fromY="615.784" toX="276.497" toY="641.973" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="615.784" toX="342.046" toY="632.913" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="632.714" toX="342.046" toY="641.973" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="615.784" toX="512.711" toY="632.913" lineWidth="1.08">
-
-</box>
-<box fromX="162.914" fromY="641.774" toX="276.497" toY="651.033" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="641.774" toX="342.046" toY="651.033" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="632.714" toX="512.711" toY="641.973" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="615.784" toX="578.26" toY="632.913" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="632.714" toX="578.26" toY="641.973" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="615.784" toX="758.374" toY="632.913" lineWidth="1.08">
-
-</box>
-<box fromX="49.53" fromY="641.774" toX="163.113" toY="651.033" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="632.714" toX="758.374" toY="641.973" lineWidth="1.08">
-
-</box>
-<box fromX="49.53" fromY="650.834" toX="163.113" toY="658.499" lineWidth="1.08">
-
-</box>
-<box fromX="49.53" fromY="658.3" toX="163.113" toY="667.559" lineWidth="1.08">
-
-</box>
-<box fromX="162.914" fromY="650.834" toX="276.497" toY="658.499" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="650.834" toX="342.046" toY="658.499" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="641.774" toX="512.711" toY="651.033" lineWidth="1.08">
-
-</box>
-<box fromX="162.914" fromY="658.3" toX="276.497" toY="667.559" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="650.834" toX="512.711" toY="658.499" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="641.774" toX="578.26" toY="651.033" lineWidth="1.08">
-
-</box>
-<box fromX="162.914" fromY="667.36" toX="276.497" toY="675.025" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="658.3" toX="342.046" toY="667.559" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="658.3" toX="512.711" toY="667.559" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="650.834" toX="578.26" toY="658.499" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="641.774" toX="758.374" toY="651.033" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="667.36" toX="342.046" toY="675.025" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="667.36" toX="512.711" toY="675.025" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="658.3" toX="578.26" toY="667.559" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="650.834" toX="758.374" toY="658.499" lineWidth="1.08">
-
-</box>
-<box fromX="49.53" fromY="667.36" toX="163.113" toY="675.025" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="658.3" toX="758.374" toY="667.559" lineWidth="1.08">
-
-</box>
-<box fromX="49.53" fromY="674.826" toX="276.497" toY="684.085" lineWidth="1.08">
-
-</box>
-<box fromX="276.298" fromY="674.826" toX="342.046" toY="684.085" lineWidth="1.08">
-
-</box>
-<box fromX="341.847" fromY="674.826" toX="512.711" toY="684.085" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="667.36" toX="578.26" toY="675.025" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="674.826" toX="578.26" toY="684.085" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="667.36" toX="758.374" toY="675.025" lineWidth="1.08">
-
-</box>
-<box fromX="49.53" fromY="683.886" toX="512.711" toY="693.145" lineWidth="1.08">
-
-</box>
-<box fromX="512.512" fromY="683.886" toX="578.26" toY="693.145" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="674.826" toX="758.374" toY="684.085" lineWidth="1.08">
-
-</box>
-<box fromX="578.061" fromY="683.886" toX="758.374" toY="693.145" lineWidth="1.08">
-
-</box>
-<rect fromX="49.607" fromY="615.684" toX="758.374" toY="615.883" lineWidth="1.08">
-
-</rect>
-<rect fromX="276.298" fromY="632.714" toX="758.275" toY="632.913" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="641.774" toX="758.274" toY="641.973" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="650.834" toX="758.274" toY="651.033" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="658.3" toX="758.274" toY="658.499" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="667.36" toX="758.274" toY="667.559" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="674.826" toX="758.274" toY="675.025" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="683.886" toX="758.274" toY="684.085" lineWidth="1.08">
-
-</rect>
-<rect fromX="49.53" fromY="692.946" toX="758.274" toY="693.145" lineWidth="1.08">
-
-</rect>
-
-</group>
-<text fromX="385.80795" fromY="706.70685" toX="422.07196" toY="712.0787" fontName="Times-Roman" fontSize="7.0">ANEXO II</text>
-<text fromX="309.2472" fromY="713.7508" toX="498.63266" toY="720.5493" fontName="Times-Roman" fontSize="7.0">(Anexo II ao Decreto nº 8.030, de 20 de junho de 2013)</text>
-<text fromX="49.606842" fromY="733.24243" toX="615.34045" toY="736.9884" fontName="Times-Roman" fontSize="7.0">a) QUADRO DEMONSTRATIVO DOS CARGOS EM COMISSÃO DA SECRETARIA DE POLÍTICAS PARA AS MULHERES DA PRESIDÊNCIA DA REPÚBLICA</text>
-<group fromX="49.53" fromY="745.652" toX="758.372" toY="868.818" lineWidth="${lineWidth}">
-<box fromX="49.53" fromY="745.751" toX="371.571" toY="770.851" lineWidth="1.08">
-</box>
-<box fromX="49.53" fromY="770.652" toX="371.571" toY="868.818" lineWidth="1.08">
-</box>
-<box fromX="371.372" fromY="745.751" toX="466.057" toY="770.851" lineWidth="1.08">
-</box>
-<box fromX="371.372" fromY="770.652" toX="466.057" toY="868.818" lineWidth="1.08">
-</box>
-<box fromX="465.858" fromY="745.751" toX="663.886" toY="770.851" lineWidth="1.08">
-</box>
-<box fromX="465.858" fromY="770.652" toX="663.886" toY="868.818" lineWidth="1.08">
-</box>
-<box fromX="663.687" fromY="745.751" toX="758.372" toY="770.851" lineWidth="1.08">
-</box>
-<box fromX="663.687" fromY="770.652" toX="758.372" toY="868.818" lineWidth="1.08">
-</box>
-<rect fromX="49.607" fromY="745.652" toX="758.372" toY="745.851" lineWidth="1.08">
-</rect>
-<rect fromX="49.53" fromY="770.652" toX="758.272" toY="770.851" lineWidth="1.08">
-</rect>
-</group>
-<line fromX="49.607" fromY="873.311" toX="758.273" toY="873.311" lineWidth="0.51" />
-<text fromX="49.4745" fromY="879.54083" toX="352.7328" toY="884.817" fontName="Times-Roman" fontSize="7.0">Este documento pode ser verificado no endereço eletrônico http://www.in.gov.br/autenticidade.html ,</text>
-<text fromX="463.2183" fromY="879.116" toX="631.8032" toY="884.3922" fontName="Times-Roman" fontSize="7.0">Documento assinado digitalmente conforme MP nº</text>
-<text fromX="634.8718" fromY="879.0047" toX="757.81055" toY="884.3925" fontName="Times-Roman" fontSize="7.0">2.200-2 de 24/08/2001, que institui a</text>
-<text fromX="49.474487" fromY="888.7351" toX="156.11916" toY="894.13086" fontName="Times-Roman" fontSize="7.0">pelo código 00012014021300003</text>
-<text fromX="568.29675" fromY="888.4302" toX="757.80945" toY="893.70636" fontName="Times-Roman" fontSize="7.0">Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.</text>
-</page>
+	<page id="1">
+		<text fromX="49.348" fromY="56.089787" toX="217.9233" toY="62.794617" fontName="Times-Roman" fontSize="9.0">Nº 31, quinta-feira, 13 de fevereiro de 2014</text>
+		<rect fromX="50.406" fromY="34.147" toX="758.273" toY="69.08" lineWidth="0.0">
+			<text fromX="506.4658" fromY="56.486153" toX="513.0536" toY="62.764587" fontName="HNBDHM+OxfordWd" fontSize="11.0">1</text>
+			<text fromX="575.9183" fromY="56.603043" toX="642.8473" toY="63.208984" fontName="Times-Italic" fontSize="9.0">ISSN 1677-7042</text>
+			<text fromX="705.2703" fromY="53.990482" toX="711.2479" toY="62.155884" fontName="Times-Italic" fontSize="11.0">3</text>
+		</rect>
+		<group fromX="49.518" fromY="75.116" toX="389.862" toY="210.725">
+			<box fromX="49.518" fromY="75.116" toX="101.453" toY="84.086" lineWidth="0.51">
+				<rect fromX="49.518" fromY="75.116" toX="49.717" toY="83.987" lineWidth="0.51">
+				</rect>
+				<rect fromX="101.254" fromY="75.116" toX="101.453" toY="83.987" lineWidth="0.51">
+				</rect>
+			</box>
+			<box fromX="49.518" fromY="83.887" toX="389.862" toY="102.536" lineWidth="0.51">
+				<rect fromX="49.518" fromY="83.887" toX="389.762" toY="84.086" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="83.987" toX="49.717" toY="102.437" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="102.337" toX="389.762" toY="102.536" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="83.987" toX="389.862" toY="102.437" lineWidth="0.51">
+				</rect>
+				<text fromX="50.6142" fromY="87.97115" toX="381.5646" toY="93.47052" fontName="Times-Roman" fontSize="7.0">Contadores de gases, líquidos ou de eletricidade, incluídos os aparelhos para sua aferição, baseados</text>
+				<text fromX="50.6142" fromY="97.694664" toX="284.75183" toY="101.44061" fontName="Times-Roman" fontSize="7.0">em técnicas digitais e outros contadores baseados em técnicas digitais.</text>
+			</box>
+			<box fromX="101.254" fromY="75.116" toX="273.527" toY="84.086" lineWidth="0.51">
+				<text fromX="102.3502" fromY="77.49142" toX="208.51189" toY="82.99078" fontName="Times-Roman" fontSize="7.0">Outros instrumentos e aparelhos</text>
+			</box>
+			<box fromX="273.328" fromY="75.116" toX="332.123" toY="84.086" lineWidth="0.51">
+				<rect fromX="273.328" fromY="75.116" toX="273.527" toY="83.987" lineWidth="0.51">
+				</rect>
+				<text fromX="294.9229" fromY="77.603" toX="309.5321" toY="82.99078" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="331.924" fromY="75.116" toX="389.862" toY="84.086" lineWidth="0.51">
+				<rect fromX="331.924" fromY="75.116" toX="332.123" toY="83.987" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="75.116" toX="389.862" toY="83.987" lineWidth="0.51">
+				</rect>
+				<text fromX="353.0895" fromY="77.603" toX="367.6987" toY="82.99078" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<box fromX="49.518" fromY="102.437" toX="101.453" toY="210.725" lineWidth="0.51">
+				<rect fromX="49.518" fromY="102.437" toX="49.717" toY="152.767" lineWidth="0.51">
+				</rect>
+				<rect fromX="101.254" fromY="102.437" toX="101.453" toY="152.767" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="152.767" toX="49.717" toY="163.247" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="163.247" toX="49.717" toY="173.726" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="173.726" toX="49.717" toY="200.146" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="200.145" toX="49.717" toY="210.625" lineWidth="0.51">
+				</rect>
+				<text fromX="62.0363" fromY="106.357155" toX="87.9391" toY="111.92029" fontName="Times-Roman" fontSize="7.0">9028.10</text>
+				<text fromX="62.0363" fromY="114.32725" toX="87.9391" toY="119.89038" fontName="Times-Roman" fontSize="7.0">9028.20</text>
+				<text fromX="62.0363" fromY="122.29734" toX="87.9391" toY="127.86047" fontName="Times-Roman" fontSize="7.0">9028.30</text>
+				<text fromX="62.0363" fromY="130.26744" toX="87.9391" toY="135.83057" fontName="Times-Roman" fontSize="7.0">9028.90</text>
+				<text fromX="62.0363" fromY="138.23753" toX="87.9391" toY="143.80066" fontName="Times-Roman" fontSize="7.0">9029.10</text>
+				<text fromX="62.0363" fromY="146.20763" toX="87.9391" toY="151.77075" fontName="Times-Roman" fontSize="7.0">9029.20</text>
+			</box>
+			<box fromX="101.254" fromY="102.437" toX="273.527" toY="152.866" lineWidth="0.51">
+				<text fromX="102.34987" fromY="106.42086" toX="169.57765" toY="111.92023" fontName="Times-Roman" fontSize="7.0">Contadores de gases</text>
+			</box>
+			<box fromX="101.254" fromY="152.667" toX="273.527" toY="163.346" lineWidth="0.51">
+				<rect fromX="101.254" fromY="152.767" toX="101.453" toY="163.247" lineWidth="0.51">
+				</rect>
+				<text fromX="102.3502" fromY="156.75124" toX="178.00233" toY="162.25061" fontName="Times-Roman" fontSize="7.0">Contadores de líquidos</text>
+			</box>
+			<box fromX="273.328" fromY="102.437" toX="332.123" toY="152.866" lineWidth="0.51">
+				<rect fromX="273.328" fromY="102.437" toX="273.527" toY="152.767" lineWidth="0.51">
+				</rect>
+				<text fromX="294.9226" fromY="106.53244" toX="309.5318" toY="111.92023" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="331.924" fromY="102.437" toX="389.862" toY="152.866" lineWidth="0.51">
+				<rect fromX="331.924" fromY="102.437" toX="332.123" toY="152.767" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="102.437" toX="389.862" toY="152.767" lineWidth="0.51">
+				</rect>
+				<text fromX="353.0892" fromY="106.53244" toX="367.6984" toY="111.92023" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<box fromX="101.254" fromY="163.147" toX="273.527" toY="173.825" lineWidth="0.51">
+				<rect fromX="101.254" fromY="163.247" toX="101.453" toY="173.726" lineWidth="0.51">
+				</rect>
+				<text fromX="102.3502" fromY="167.22981" toX="189.49522" toY="172.72919" fontName="Times-Roman" fontSize="7.0">Contadores de eletricidade</text>
+			</box>
+			<box fromX="273.328" fromY="152.667" toX="332.123" toY="163.346" lineWidth="0.51">
+				<rect fromX="273.328" fromY="152.767" toX="273.527" toY="163.247" lineWidth="0.51">
+				</rect>
+				<text fromX="294.9229" fromY="156.86282" toX="309.5321" toY="162.25061" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="273.328" fromY="163.147" toX="332.123" toY="173.825" lineWidth="0.51">
+				<rect fromX="273.328" fromY="163.247" toX="273.527" toY="173.726" lineWidth="0.51">
+				</rect>
+				<text fromX="294.9229" fromY="167.3414" toX="309.5321" toY="172.72919" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="331.924" fromY="152.667" toX="389.862" toY="163.346" lineWidth="0.51">
+				<rect fromX="331.924" fromY="152.767" toX="332.123" toY="163.247" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="152.767" toX="389.862" toY="163.247" lineWidth="0.51">
+				</rect>
+				<text fromX="353.0895" fromY="156.86282" toX="367.6987" toY="162.25061" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<box fromX="101.254" fromY="173.626" toX="273.527" toY="200.245" lineWidth="0.51">
+				<rect fromX="101.254" fromY="173.726" toX="101.453" toY="200.146" lineWidth="0.51">
+				</rect>
+				<text fromX="102.3502" fromY="177.70961" toX="267.7297" toY="183.20898" fontName="Times-Roman" fontSize="7.0">Contadores de voltas, contadores de produção, ta-</text>
+				<text fromX="102.3502" fromY="187.59253" toX="269.09256" toY="191.17908" fontName="Times-Roman" fontSize="7.0">xímetros, totalizadores de caminho percorrido, po-</text>
+				<text fromX="102.3502" fromY="193.62589" toX="218.2434" toY="199.14917" fontName="Times-Roman" fontSize="7.0">dômetros e contadores semelhantes</text>
+			</box>
+			<box fromX="331.924" fromY="163.147" toX="389.862" toY="173.825" lineWidth="0.51">
+				<rect fromX="331.924" fromY="163.247" toX="332.123" toY="173.726" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="163.247" toX="389.862" toY="173.726" lineWidth="0.51">
+				</rect>
+				<text fromX="353.0895" fromY="167.3414" toX="367.6987" toY="172.72919" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<box fromX="101.254" fromY="200.046" toX="273.527" toY="210.725" lineWidth="0.51">
+				<rect fromX="101.254" fromY="200.145" toX="101.453" toY="210.625" lineWidth="0.51">
+				</rect>
+				<text fromX="102.3502" fromY="204.3527" toX="232.3664" toY="209.6289" fontName="Times-Roman" fontSize="7.0">Indicadores de velocidade e tacômetros</text>
+			</box>
+			<box fromX="273.328" fromY="173.626" toX="332.123" toY="200.245" lineWidth="0.51">
+				<rect fromX="273.328" fromY="173.726" toX="273.527" toY="200.146" lineWidth="0.51">
+				</rect>
+				<text fromX="294.92294" fromY="177.8212" toX="309.53214" toY="183.20898" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="273.328" fromY="200.046" toX="332.123" toY="210.725" lineWidth="0.51">
+				<rect fromX="273.328" fromY="200.145" toX="273.527" toY="210.625" lineWidth="0.51">
+				</rect>
+				<text fromX="294.9229" fromY="204.24112" toX="309.5321" toY="209.6289" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="331.924" fromY="173.626" toX="389.862" toY="200.245" lineWidth="0.51">
+				<rect fromX="331.924" fromY="173.726" toX="332.123" toY="200.146" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="173.726" toX="389.862" toY="200.146" lineWidth="0.51">
+				</rect>
+				<text fromX="353.08954" fromY="177.8212" toX="367.69873" toY="183.20898" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<box fromX="331.924" fromY="200.046" toX="389.862" toY="210.725" lineWidth="0.51">
+				<rect fromX="331.924" fromY="200.145" toX="332.123" toY="210.625" lineWidth="0.51">
+				</rect>
+				<rect fromX="389.663" fromY="200.145" toX="389.862" toY="210.625" lineWidth="0.51">
+				</rect>
+				<text fromX="353.0895" fromY="204.24112" toX="367.6987" toY="209.6289" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<rect fromX="101.254" fromY="152.667" toX="389.762" toY="152.866" lineWidth="0.51">
+			</rect>
+			<rect fromX="101.254" fromY="163.147" toX="389.762" toY="163.346" lineWidth="0.51">
+			</rect>
+			<rect fromX="101.254" fromY="173.626" toX="389.762" toY="173.825" lineWidth="0.51">
+			</rect>
+			<rect fromX="101.254" fromY="200.046" toX="389.762" toY="200.245" lineWidth="0.51">
+			</rect>
+			<rect fromX="49.518" fromY="210.526" toX="389.762" toY="210.725" lineWidth="0.51">
+			</rect>
+		</group>
+		<group fromX="418.02" fromY="75.116" toX="758.364" toY="115.967">
+			<box fromX="418.02" fromY="75.116" toX="469.955" toY="115.967" lineWidth="0.51">
+				<rect fromX="418.02" fromY="75.116" toX="418.219" toY="115.867" lineWidth="0.51">
+				</rect>
+				<rect fromX="469.756" fromY="75.116" toX="469.955" toY="115.867" lineWidth="0.51">
+				</rect>
+				<text fromX="434.5236" fromY="77.42765" toX="452.4563" toY="82.99078" fontName="Times-Roman" fontSize="7.0">90.30</text>
+			</box>
+			<box fromX="469.756" fromY="75.116" toX="642.029" toY="115.967" lineWidth="0.51">
+				<text fromX="470.85208" fromY="77.49142" toX="629.8473" toY="82.99078" fontName="Times-Roman" fontSize="7.0">Osciloscópios, analisadores de espectro e outros</text>
+				<text fromX="470.8521" fromY="85.517296" toX="635.793" toY="90.96088" fontName="Times-Roman" fontSize="7.0">instrumentos e aparelhos para medida ou controle</text>
+				<text fromX="470.8521" fromY="93.40769" toX="629.6162" toY="98.93097" fontName="Times-Roman" fontSize="7.0">de grandezas elétricas; instrumentos e aparelhos</text>
+				<text fromX="470.8521" fromY="101.5053" toX="632.1905" toY="106.90106" fontName="Times-Roman" fontSize="7.0">para medida ou detecção de radiações alfa, beta,</text>
+				<text fromX="470.8521" fromY="109.46743" toX="637.3392" toY="114.871155" fontName="Times-Roman" fontSize="7.0">gama, X, cósmicas ou outras radiações ionizantes.</text>
+			</box>
+			<box fromX="641.83" fromY="75.116" toX="700.625" toY="115.967" lineWidth="0.51">
+				<rect fromX="641.83" fromY="75.116" toX="642.029" toY="115.867" lineWidth="0.51">
+				</rect>
+				<text fromX="663.42487" fromY="77.603" toX="678.03406" toY="82.99078" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="700.426" fromY="75.116" toX="758.364" toY="115.967" lineWidth="0.51">
+				<rect fromX="700.426" fromY="75.116" toX="700.625" toY="115.867" lineWidth="0.51">
+				</rect>
+				<rect fromX="758.165" fromY="75.116" toX="758.364" toY="115.867" lineWidth="0.51">
+				</rect>
+				<text fromX="721.59143" fromY="77.603" toX="736.2006" toY="82.99078" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<rect fromX="418.02" fromY="115.768" toX="758.264" toY="115.967" lineWidth="0.51">
+			</rect>
+		</group>
+		<text fromX="570.0543" fromY="142.73149" toX="606.31824" toY="148.10333" fontName="Times-Roman" fontSize="7.0">ANEXO II</text>
+		<text fromX="418.10913" fromY="161.3345" toX="490.97974" toY="166.72229" fontName="Times-Bold" fontSize="7.0">PM = PE x (1 + M),</text>
+		<text fromX="494.04825" fromY="162.97635" toX="514.8582" toY="166.72229" fontName="Times-Roman" fontSize="7.0">sendo:</text>
+		<text fromX="418.10913" fromY="175.96841" toX="430.50262" toY="181.3562" fontName="Times-Bold" fontSize="7.0">PM</text>
+		<text fromX="433.57114" fromY="179.23616" toX="504.67242" toY="181.3562" fontName="Times-Roman" fontSize="7.0">= preço com margem</text>
+		<text fromX="418.10913" fromY="190.60233" toX="428.29492" toY="195.99011" fontName="Times-Bold" fontSize="7.0">PE</text>
+		<text fromX="431.3634" fromY="193.87007" toX="634.40155" toY="195.99011" fontName="Times-Roman" fontSize="7.0">= menor preço ofertado do produto manufaturado estrangeiro</text>
+		<text fromX="418.10913" fromY="205.23624" toX="425.6329" toY="210.62402" fontName="Times-Bold" fontSize="7.0">M</text>
+		<text fromX="428.7014" fromY="208.50398" toX="732.3139" toY="210.62402" fontName="Times-Roman" fontSize="7.0">= margem de preferência em percentual, conforme estabelecido no Anexo I a este Decreto.</text>
+		<line fromX="49.607" fromY="218.596" toX="758.265" toY="218.596" lineWidth="1.08" />
+		<margin fromX="49.607193" fromY="234.26459" toX="276.3883" toY="577.3081">
+			<text fromX="64.63681" fromY="234.46262" toX="115.43865" toY="239.8504" fontName="Times-Bold" fontSize="7.0">DECRETO Nº</text>
+			<text fromX="118.5071" fromY="234.26459" toX="261.34717" toY="239.85162" fontName="Times-Bold" fontSize="7.0">8.195, DE 12 DE FEVEREIRO DE 2014</text>
+			<text fromX="134.33891" fromY="251.02171" toX="154.25618" toY="256.39355" fontName="Times-Roman" fontSize="7.0">Altera</text>
+			<text fromX="159.25343" fromY="252.64761" toX="195.68555" toY="256.39355" fontName="Times-Roman" fontSize="7.0">os Anexos</text>
+			<text fromX="200.6828" fromY="251.11736" toX="211.87361" toY="256.39355" fontName="Times-Roman" fontSize="7.0">I e</text>
+			<text fromX="216.87086" fromY="251.11736" toX="222.17894" toY="256.39355" fontName="Times-Roman" fontSize="7.0">II</text>
+			<text fromX="227.1762" fromY="252.64761" toX="264.92337" toY="256.39355" fontName="Times-Roman" fontSize="7.0">ao Decreto</text>
+			<text fromX="269.92062" fromY="252.72731" toX="276.3764" toY="256.39355" fontName="Times-Roman" fontSize="7.0">nº</text>
+			<text fromX="134.33891" fromY="259.46524" toX="276.38037" toY="264.9646" fontName="Times-Roman" fontSize="7.0">8.030, de 20 de junho de 2013, que aprova</text>
+			<text fromX="134.33891" fromY="269.7905" toX="221.96298" toY="273.53644" fontName="Times-Roman" fontSize="7.0">a Estrutura Regimental e</text>
+			<text fromX="226.82155" fromY="269.7905" toX="276.37488" toY="273.53644" fontName="Times-Roman" fontSize="7.0">o Quadro De-</text>
+			<text fromX="134.33891" fromY="278.44122" toX="172.42003" toY="282.10748" fontName="Times-Roman" fontSize="7.0">monstrativo</text>
+			<text fromX="176.76851" fromY="276.5842" toX="214.62408" toY="282.10748" fontName="Times-Roman" fontSize="7.0">dos Cargos</text>
+			<text fromX="218.97256" fromY="278.36154" toX="264.50336" toY="282.10748" fontName="Times-Roman" fontSize="7.0">em Comissão</text>
+			<text fromX="268.85184" fromY="276.5842" toX="276.3756" toY="282.10748" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="134.33891" fromY="285.17996" toX="276.382" toY="290.67932" fontName="Times-Roman" fontSize="7.0">Secretaria de Políticas para as Mulheres da</text>
+			<text fromX="134.33891" fromY="293.97415" toX="276.37805" toY="299.25037" fontName="Times-Roman" fontSize="7.0">Presidência da República, e remaneja car-</text>
+			<text fromX="134.33891" fromY="302.4185" toX="192.94305" toY="307.8222" fontName="Times-Roman" fontSize="7.0">gos em comissão.</text>
+			<text fromX="77.85083" fromY="318.86398" toX="83.60524" toY="324.36334" fontName="Times-Bold" fontSize="7.0">A</text>
+			<text fromX="86.90805" fromY="318.97556" toX="152.49797" toY="324.36334" fontName="Times-Bold" fontSize="7.0">PRESIDENTA DA</text>
+			<text fromX="155.80078" fromY="318.97556" toX="204.72925" toY="324.36334" fontName="Times-Bold" fontSize="7.0">REPÚBLICA,</text>
+			<text fromX="208.03206" fromY="320.69708" toX="216.00215" toY="324.36334" fontName="Times-Roman" fontSize="7.0">no</text>
+			<text fromX="219.30496" fromY="320.69708" toX="241.2028" toY="324.36334" fontName="Times-Roman" fontSize="7.0">uso da</text>
+			<text fromX="244.50562" fromY="320.6174" toX="276.37805" toY="324.36334" fontName="Times-Roman" fontSize="7.0">atribuição</text>
+			<text fromX="49.607193" fromY="327.53943" toX="61.116016" toY="332.93518" fontName="Times-Roman" fontSize="7.0">que</text>
+			<text fromX="65.21345" fromY="327.4916" toX="74.95291" toY="332.93518" fontName="Times-Roman" fontSize="7.0">lhe</text>
+			<text fromX="79.05034" fromY="329.18924" toX="102.9447" toY="332.93518" fontName="Times-Roman" fontSize="7.0">confere</text>
+			<text fromX="107.04213" fromY="329.18924" toX="111.027176" toY="332.93518" fontName="Times-Roman" fontSize="7.0">o</text>
+			<text fromX="115.1246" fromY="329.18924" toX="125.52559" toY="332.93518" fontName="Times-Roman" fontSize="7.0">art.</text>
+			<text fromX="129.62302" fromY="327.43582" toX="164.71855" toY="332.93518" fontName="Times-Roman" fontSize="7.0">84, caput,</text>
+			<text fromX="168.81598" fromY="327.4916" toX="276.37646" toY="332.93518" fontName="Times-Roman" fontSize="7.0">inciso VI, alínea "a", da Cons-</text>
+			<text fromX="49.6072" fromY="336.81183" toX="75.51002" toY="341.50623" fontName="Times-Roman" fontSize="7.0">tituição,</text>
+			<text fromX="77.85164" fromY="352.66037" toX="83.60605" toY="358.04816" fontName="Times-Bold" fontSize="7.0">D</text>
+			<text fromX="86.67454" fromY="352.66037" toX="91.99059" toY="358.04816" fontName="Times-Bold" fontSize="7.0">E</text>
+			<text fromX="95.05908" fromY="352.38937" toX="100.81349" toY="358.04816" fontName="Times-Bold" fontSize="7.0">C</text>
+			<text fromX="103.88198" fromY="352.38937" toX="109.63639" toY="358.04816" fontName="Times-Bold" fontSize="7.0">R</text>
+			<text fromX="112.70488" fromY="352.38937" toX="118.020935" toY="358.04816" fontName="Times-Bold" fontSize="7.0">E</text>
+			<text fromX="121.089424" fromY="352.38937" toX="126.40548" toY="358.04816" fontName="Times-Bold" fontSize="7.0">T</text>
+			<text fromX="129.47397" fromY="352.38937" toX="135.22838" toY="358.04816" fontName="Times-Bold" fontSize="7.0">A</text>
+			<text fromX="138.29688" fromY="352.38937" toX="140.95091" toY="358.04816" fontName="Times-Bold" fontSize="7.0">:</text>
+			<text fromX="77.85164" fromY="369.21823" toX="100.96971" toY="374.5901" fontName="Times-Roman" fontSize="7.0">Art. 1º</text>
+			<text fromX="105.014534" fromY="369.31387" toX="205.90643" toY="374.5901" fontName="Times-Roman" fontSize="7.0">Ficam remanejados, na forma</text>
+			<text fromX="209.95126" fromY="369.0668" toX="251.90744" toY="374.5901" fontName="Times-Roman" fontSize="7.0">do Anexo I,</text>
+			<text fromX="255.95227" fromY="370.84415" toX="276.37646" toY="374.5901" fontName="Times-Roman" fontSize="7.0">os se-</text>
+			<text fromX="49.607197" fromY="377.75742" toX="97.882095" toY="383.16113" fontName="Times-Roman" fontSize="7.0">guintes cargos</text>
+			<text fromX="102.47208" fromY="379.4152" toX="146.46703" toY="383.16113" fontName="Times-Roman" fontSize="7.0">em comissão</text>
+			<text fromX="151.057" fromY="377.63785" toX="211.86086" toY="383.16113" fontName="Times-Roman" fontSize="7.0">do Grupo-Direção</text>
+			<text fromX="216.45084" fromY="379.4152" toX="276.37802" toY="383.16113" fontName="Times-Roman" fontSize="7.0">e Assessoramento</text>
+			<text fromX="49.607197" fromY="386.2336" toX="107.573746" toY="391.73297" fontName="Times-Roman" fontSize="7.0">Superiores -DAS:</text>
+			<text fromX="77.85164" fromY="402.9979" toX="86.98697" toY="408.2741" fontName="Times-Roman" fontSize="7.0">I -</text>
+			<text fromX="90.813416" fromY="402.75082" toX="134.0289" toY="408.2741" fontName="Times-Roman" fontSize="7.0">da Secretaria</text>
+			<text fromX="137.85535" fromY="402.75082" toX="171.33932" toY="408.2741" fontName="Times-Roman" fontSize="7.0">de Gestão</text>
+			<text fromX="175.16577" fromY="402.9979" toX="210.8734" toY="408.2741" fontName="Times-Roman" fontSize="7.0">Pública do</text>
+			<text fromX="214.69984" fromY="402.9979" toX="259.70856" toY="408.2741" fontName="Times-Roman" fontSize="7.0">Ministério do</text>
+			<text fromX="263.535" fromY="402.9979" toX="276.37485" toY="408.2741" fontName="Times-Roman" fontSize="7.0">Pla-</text>
+			<text fromX="49.607197" fromY="413.1797" toX="276.38046" toY="416.84595" fontName="Times-Roman" fontSize="7.0">nejamento, Orçamento e Gestão para a Secretaria de Políticas para as</text>
+			<text fromX="49.607197" fromY="420.14078" toX="240.39539" toY="425.417" fontName="Times-Roman" fontSize="7.0">Mulheres da Presidência da República: um DAS 101.4; e</text>
+			<text fromX="77.85164" fromY="436.6827" toX="83.15973" toY="441.95892" fontName="Times-Roman" fontSize="7.0">II</text>
+			<text fromX="87.65247" fromY="441.45682" toX="102.32463" toY="441.95892" fontName="Times-Roman" fontSize="7.0">- da</text>
+			<text fromX="106.81818" fromY="436.45956" toX="138.68263" toY="441.95892" fontName="Times-Roman" fontSize="7.0">Secretaria</text>
+			<text fromX="143.17618" fromY="436.43564" toX="182.65128" toY="441.95892" fontName="Times-Roman" fontSize="7.0">de Políticas</text>
+			<text fromX="187.14403" fromY="436.56317" toX="200.86057" toY="441.95892" fontName="Times-Roman" fontSize="7.0">para</text>
+			<text fromX="205.35332" fromY="438.21298" toX="211.99242" toY="441.95892" fontName="Times-Roman" fontSize="7.0">as</text>
+			<text fromX="216.48596" fromY="436.6827" toX="258.60712" toY="441.95892" fontName="Times-Roman" fontSize="7.0">Mulheres da</text>
+			<text fromX="263.10065" fromY="436.6827" toX="276.37885" toY="441.95892" fontName="Times-Roman" fontSize="7.0">Pre-</text>
+			<text fromX="49.607197" fromY="446.78403" toX="75.72522" toY="450.52997" fontName="Times-Roman" fontSize="7.0">sidência</text>
+			<text fromX="79.544495" fromY="445.00668" toX="87.06827" toY="450.52997" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="90.88754" fromY="445.25375" toX="123.2063" toY="450.52997" fontName="Times-Roman" fontSize="7.0">República</text>
+			<text fromX="127.02557" fromY="445.13422" toX="140.74211" toY="450.52997" fontName="Times-Roman" fontSize="7.0">para</text>
+			<text fromX="144.56139" fromY="446.78403" toX="183.78543" toY="450.52997" fontName="Times-Roman" fontSize="7.0">a Secretaria</text>
+			<text fromX="187.6055" fromY="445.00668" toX="195.12927" toY="450.52997" fontName="Times-Roman" fontSize="7.0">de</text>
+			<text fromX="198.94855" fromY="445.0306" toX="221.08151" toY="450.52997" fontName="Times-Roman" fontSize="7.0">Gestão</text>
+			<text fromX="224.90079" fromY="445.25375" toX="248.81108" toY="450.52997" fontName="Times-Roman" fontSize="7.0">Pública</text>
+			<text fromX="252.63036" fromY="445.00668" toX="260.60046" toY="450.52997" fontName="Times-Roman" fontSize="7.0">do</text>
+			<text fromX="264.41974" fromY="445.25375" toX="276.3749" toY="450.52997" fontName="Times-Roman" fontSize="7.0">Mi-</text>
+			<text fromX="49.607197" fromY="455.43555" toX="260.76697" toY="459.1018" fontName="Times-Roman" fontSize="7.0">nistério do Planejamento, Orçamento e Gestão: um DAS 102.4.</text>
+			<text fromX="77.85164" fromY="470.27188" toX="276.3828" toY="475.64374" fontName="Times-Roman" fontSize="7.0">Art. 2º O Anexo II ao Decreto nº 8.030, de 20 de junho de</text>
+			<text fromX="49.607197" fromY="478.827" toX="249.34578" toY="484.21478" fontName="Times-Roman" fontSize="7.0">2013, passa a vigorar na forma do Anexo II a este Decreto.</text>
+			<text fromX="77.85164" fromY="495.38486" toX="101.37778" toY="500.7567" fontName="Times-Roman" fontSize="7.0">Art. 3º</text>
+			<text fromX="105.82987" fromY="495.25735" toX="166.95894" toY="500.7567" fontName="Times-Roman" fontSize="7.0">Os apostilamentos</text>
+			<text fromX="171.41104" fromY="495.23343" toX="223.22305" toY="500.7567" fontName="Times-Roman" fontSize="7.0">decorrentes das</text>
+			<text fromX="227.67516" fromY="497.01077" toX="276.37888" toY="500.7567" fontName="Times-Roman" fontSize="7.0">alterações rea-</text>
+			<text fromX="49.607197" fromY="503.8842" toX="86.78372" toY="509.32776" fontName="Times-Roman" fontSize="7.0">lizadas por</text>
+			<text fromX="91.20235" fromY="505.58182" toX="190.3145" toY="509.32776" fontName="Times-Roman" fontSize="7.0">este Decreto deverão ocorrer</text>
+			<text fromX="194.73312" fromY="505.6615" toX="236.76741" toY="509.32776" fontName="Times-Roman" fontSize="7.0">no prazo de</text>
+			<text fromX="241.18604" fromY="505.62964" toX="276.37802" toY="509.32776" fontName="Times-Roman" fontSize="7.0">vinte dias,</text>
+			<text fromX="49.607197" fromY="514.1536" toX="186.8443" toY="517.8996" fontName="Times-Roman" fontSize="7.0">contado da data de sua entrada em vigor.</text>
+			<text fromX="77.85164" fromY="529.16455" toX="182.54366" toY="534.44073" fontName="Times-Roman" fontSize="7.0">Parágrafo único. A Ministra de</text>
+			<text fromX="185.97319" fromY="529.16455" toX="276.37967" toY="534.44073" fontName="Times-Roman" fontSize="7.0">Estado Chefe da Secretaria</text>
+			<text fromX="49.607197" fromY="537.4893" toX="57.13097" toY="543.0126" fontName="Times-Roman" fontSize="7.0">de</text>
+			<text fromX="60.552532" fromY="537.7364" toX="88.009544" toY="543.0126" fontName="Times-Roman" fontSize="7.0">Políticas</text>
+			<text fromX="91.43111" fromY="537.6168" toX="105.14765" toY="543.0126" fontName="Times-Roman" fontSize="7.0">para</text>
+			<text fromX="108.569214" fromY="539.2666" toX="115.20831" toY="543.0126" fontName="Times-Roman" fontSize="7.0">as</text>
+			<text fromX="118.62908" fromY="537.7364" toX="159.67828" toY="543.0126" fontName="Times-Roman" fontSize="7.0">Mulheres da</text>
+			<text fromX="163.09904" fromY="537.7364" toX="199.8412" toY="543.0126" fontName="Times-Roman" fontSize="7.0">Presidência</text>
+			<text fromX="203.26196" fromY="537.4893" toX="210.78574" toY="543.0126" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="214.2073" fromY="537.7364" toX="246.52605" toY="543.0126" fontName="Times-Roman" fontSize="7.0">República</text>
+			<text fromX="249.94681" fromY="537.569" toX="262.33234" toY="543.0126" fontName="Times-Roman" fontSize="7.0">fará</text>
+			<text fromX="265.7539" fromY="537.6168" toX="276.37805" toY="543.0126" fontName="Times-Roman" fontSize="7.0">pu-</text>
+			<text fromX="49.607197" fromY="546.06036" toX="276.3883" toY="551.5836" fontName="Times-Roman" fontSize="7.0">blicar no Diário Oficial da União, no prazo de trinta dias, contado da</text>
+			<text fromX="49.607197" fromY="554.6322" toX="276.3804" toY="560.15546" fontName="Times-Roman" fontSize="7.0">data de entrada em vigor deste Decreto, relação nominal dos titulares</text>
+			<text fromX="49.607197" fromY="563.20325" toX="60.677666" toY="568.7265" fontName="Times-Roman" fontSize="7.0">dos</text>
+			<text fromX="64.31602" fromY="564.9805" toX="98.35313" toY="568.7265" fontName="Times-Roman" fontSize="7.0">cargos em</text>
+			<text fromX="101.99148" fromY="564.9805" toX="138.83408" toY="568.7265" fontName="Times-Roman" fontSize="7.0">comissão a</text>
+			<text fromX="142.47243" fromY="563.33075" toX="164.25949" toY="568.7265" fontName="Times-Roman" fontSize="7.0">que se</text>
+			<text fromX="167.89784" fromY="565.06024" toX="186.47614" toY="568.7265" fontName="Times-Roman" fontSize="7.0">refere</text>
+			<text fromX="190.11449" fromY="564.9805" toX="218.98695" toY="568.7265" fontName="Times-Roman" fontSize="7.0">o Anexo</text>
+			<text fromX="222.6253" fromY="563.4503" toX="245.07387" toY="568.7265" fontName="Times-Roman" fontSize="7.0">II, que</text>
+			<text fromX="248.71222" fromY="563.2829" toX="276.37646" toY="568.7265" fontName="Times-Roman" fontSize="7.0">indicará,</text>
+			<text fromX="49.607197" fromY="571.85474" toX="268.99213" toY="577.29834" fontName="Times-Roman" fontSize="7.0">inclusive, o número de cargos vagos, suas denominações e níveis.</text>
+		</margin>
+		<margin fromX="290.5505" fromY="234.26459" toX="517.3295" toY="577.3081">
+			<text fromX="318.79416" fromY="234.48204" toX="517.3295" toY="239.85388" fontName="Times-Roman" fontSize="7.0">Art. 4º Os ocupantes dos cargos em comissão que deixam de</text>
+			<text fromX="290.5505" fromY="244.16013" toX="324.47128" toY="247.90607" fontName="Times-Roman" fontSize="7.0">existir por</text>
+			<text fromX="327.84183" fromY="242.4625" toX="363.96234" toY="247.90607" fontName="Times-Roman" fontSize="7.0">força deste</text>
+			<text fromX="367.3329" fromY="242.62987" toX="441.96497" toY="247.90607" fontName="Times-Roman" fontSize="7.0">Decreto consideram-se</text>
+			<text fromX="445.3355" fromY="244.16013" toX="517.32153" toY="247.90607" fontName="Times-Roman" fontSize="7.0">automaticamente exo-</text>
+			<text fromX="290.5505" fromY="252.292" toX="317.33005" toY="255.95825" fontName="Times-Roman" fontSize="7.0">nerados.</text>
+			<text fromX="318.79416" fromY="266.60788" toX="341.56796" toY="271.97974" fontName="Times-Roman" fontSize="7.0">Art. 5º</text>
+			<text fromX="345.26767" fromY="266.48038" toX="375.9717" toY="271.97974" fontName="Times-Roman" fontSize="7.0">O Anexo</text>
+			<text fromX="379.67142" fromY="266.70352" toX="422.4773" toY="271.97974" fontName="Times-Roman" fontSize="7.0">I ao Decreto</text>
+			<text fromX="426.177" fromY="268.31348" toX="456.25934" toY="271.97974" fontName="Times-Roman" fontSize="7.0">nº 8.030,</text>
+			<text fromX="459.95905" fromY="266.45645" toX="489.11685" toY="271.97974" fontName="Times-Roman" fontSize="7.0">de 2013,</text>
+			<text fromX="492.81656" fromY="266.58398" toX="517.3198" toY="271.97974" fontName="Times-Roman" fontSize="7.0">passa a</text>
+			<text fromX="290.5505" fromY="276.3338" toX="409.95065" toY="280.03192" fontName="Times-Roman" fontSize="7.0">vigorar com as seguintes alterações:</text>
+			<text fromX="318.84198" fromY="294.10233" toX="508.6976" toY="296.055" fontName="Times-Roman" fontSize="7.0">"Art. 2º .................................................................................</text>
+			<text fromX="318.84198" fromY="306.80106" toX="507.6216" toY="312.07727" fontName="Times-Roman" fontSize="7.0">I - .........................................................................................</text>
+			<text fromX="318.84198" fromY="316.3835" toX="359.09103" toY="320.12946" fontName="Times-Roman" fontSize="7.0">a) Gabinete;</text>
+			<text fromX="318.84198" fromY="322.65836" toX="397.15625" toY="328.18164" fontName="Times-Roman" fontSize="7.0">b) Secretaria-Executiva:</text>
+			<text fromX="318.84198" fromY="330.84604" toX="468.09018" toY="336.23383" fontName="Times-Roman" fontSize="7.0">1. Departamento de Administração Interna; e</text>
+			<text fromX="318.84198" fromY="340.54007" toX="392.70895" toY="344.286" fontName="Times-Roman" fontSize="7.0">c) Assessoria Jurídica;</text>
+			<text fromX="304.69586" fromY="351.45273" toX="516.68445" toY="352.3374" fontName="Times-Roman" fontSize="7.0">..............................................................................................." (NR)</text>
+			<text fromX="318.84198" fromY="366.407" toX="436.62903" toY="368.35968" fontName="Times-Roman" fontSize="7.0">"Art. 5º-A. À Assessoria Jurídica,</text>
+			<text fromX="441.12656" fromY="362.87625" toX="517.32227" toY="368.35968" fontName="Times-Roman" fontSize="7.0">órgão de execução da</text>
+			<text fromX="304.69586" fromY="371.0408" toX="517.3264" toY="376.41266" fontName="Times-Roman" fontSize="7.0">Advocacia-Geral da União junto à Secretaria de Políticas para as</text>
+			<text fromX="304.69586" fromY="379.18784" toX="465.46082" toY="384.46405" fontName="Times-Roman" fontSize="7.0">Mulheres da Presidência da República, compete:</text>
+			<text fromX="318.84198" fromY="395.2101" toX="354.43015" toY="400.48633" fontName="Times-Roman" fontSize="7.0">I - prestar</text>
+			<text fromX="358.72604" fromY="396.7404" toX="466.79517" toY="400.48633" fontName="Times-Roman" fontSize="7.0">assessoria e consultoria jurídica</text>
+			<text fromX="471.09106" fromY="396.82007" toX="517.3193" toY="400.48633" fontName="Times-Roman" fontSize="7.0">no âmbito da</text>
+			<text fromX="304.69586" fromY="403.03836" toX="336.56036" toY="408.53772" fontName="Times-Roman" fontSize="7.0">Secretaria</text>
+			<text fromX="340.11823" fromY="403.01443" toX="378.65768" toY="408.53772" fontName="Times-Roman" fontSize="7.0">de Políticas</text>
+			<text fromX="382.21555" fromY="403.14197" toX="395.9321" toY="408.53772" fontName="Times-Roman" fontSize="7.0">para</text>
+			<text fromX="399.48996" fromY="404.79178" toX="439.7908" toY="408.53772" fontName="Times-Roman" fontSize="7.0">as Mulheres</text>
+			<text fromX="443.34866" fromY="403.01443" toX="450.87244" toY="408.53772" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="454.4303" fromY="403.2615" toX="502.2549" toY="408.53772" fontName="Times-Roman" fontSize="7.0">Presidência da</text>
+			<text fromX="505.81277" fromY="403.2615" toX="517.3216" toY="408.53772" fontName="Times-Roman" fontSize="7.0">Re-</text>
+			<text fromX="304.69586" fromY="411.19336" toX="330.37555" toY="416.5891" fontName="Times-Roman" fontSize="7.0">pública;</text>
+			<text fromX="318.84198" fromY="427.33517" toX="324.1501" toY="432.6114" fontName="Times-Roman" fontSize="7.0">II</text>
+			<text fromX="327.61948" fromY="432.10928" toX="348.7913" toY="432.6114" fontName="Times-Roman" fontSize="7.0">- fixar</text>
+			<text fromX="352.26068" fromY="428.86545" toX="355.7994" toY="432.6114" fontName="Times-Roman" fontSize="7.0">a</text>
+			<text fromX="359.268" fromY="427.16782" toX="411.86594" toY="432.6114" fontName="Times-Roman" fontSize="7.0">interpretação da</text>
+			<text fromX="415.33453" fromY="427.11203" toX="457.62393" toY="432.6114" fontName="Times-Roman" fontSize="7.0">Constituição,</text>
+			<text fromX="461.09253" fromY="427.0881" toX="471.71667" toY="432.6114" fontName="Times-Roman" fontSize="7.0">das</text>
+			<text fromX="475.18527" fromY="427.16782" toX="502.78894" toY="432.6114" fontName="Times-Roman" fontSize="7.0">leis, dos</text>
+			<text fromX="506.25754" fromY="427.917" toX="517.32007" toY="432.6114" fontName="Times-Roman" fontSize="7.0">tra-</text>
+			<text fromX="304.69586" fromY="435.96918" toX="517.3223" toY="440.66357" fontName="Times-Roman" fontSize="7.0">tados e dos demais atos normativos a ser uniformemente seguida</text>
+			<text fromX="304.69586" fromY="445.0495" toX="517.3224" toY="448.71576" fontName="Times-Roman" fontSize="7.0">na área de atuação da Secretaria de Políticas para as Mulheres da</text>
+			<text fromX="304.69586" fromY="451.49252" toX="419.79453" toY="456.76874" fontName="Times-Roman" fontSize="7.0">Presidência da República, quando</text>
+			<text fromX="424.1462" fromY="453.10248" toX="517.31915" toY="456.76874" fontName="Times-Roman" fontSize="7.0">não houver orientação nor-</text>
+			<text fromX="304.69586" fromY="461.15387" toX="429.41205" toY="464.82013" fontName="Times-Roman" fontSize="7.0">mativa do Advogado-Geral da União;</text>
+			<text fromX="318.84198" fromY="475.5662" toX="420.32138" toY="480.8424" fontName="Times-Roman" fontSize="7.0">III - atuar, em conjunto com</text>
+			<text fromX="424.70016" fromY="477.09647" toX="517.32074" toY="480.8424" fontName="Times-Roman" fontSize="7.0">os órgãos da Secretaria de</text>
+			<text fromX="304.69586" fromY="483.61838" toX="349.1077" toY="488.8946" fontName="Times-Roman" fontSize="7.0">Políticas para</text>
+			<text fromX="352.34436" fromY="485.14865" toX="392.3248" toY="488.8946" fontName="Times-Roman" fontSize="7.0">as Mulheres</text>
+			<text fromX="395.56146" fromY="483.3713" toX="443.06567" toY="488.8946" fontName="Times-Roman" fontSize="7.0">da Presidência</text>
+			<text fromX="446.30234" fromY="483.3713" toX="491.37567" toY="488.8946" fontName="Times-Roman" fontSize="7.0">da República,</text>
+			<text fromX="494.61234" fromY="485.22833" toX="517.32153" toY="488.8946" fontName="Times-Roman" fontSize="7.0">na ela-</text>
+			<text fromX="304.69586" fromY="491.4235" toX="517.3247" toY="496.94678" fontName="Times-Roman" fontSize="7.0">boração de propostas de atos normativos que serão submetidas à</text>
+			<text fromX="304.69586" fromY="499.72275" toX="484.04706" toY="504.99896" fontName="Times-Roman" fontSize="7.0">Ministra de Estado ou a dirigente de órgão colegiado;</text>
+			<text fromX="318.84198" fromY="515.74506" toX="409.4064" toY="521.02124" fontName="Times-Roman" fontSize="7.0">IV - realizar revisão final</text>
+			<text fromX="413.90076" fromY="515.498" toX="517.3209" toY="521.02124" fontName="Times-Roman" fontSize="7.0">da técnica legislativa e emitir</text>
+			<text fromX="304.69586" fromY="523.6769" toX="386.5648" toY="529.07263" fontName="Times-Roman" fontSize="7.0">parecer conclusivo sobre</text>
+			<text fromX="389.87558" fromY="525.32666" toX="503.62097" toY="529.07263" fontName="Times-Roman" fontSize="7.0">a constitucionalidade, a legalidade</text>
+			<text fromX="506.93176" fromY="525.32666" toX="517.32074" toY="529.07263" fontName="Times-Roman" fontSize="7.0">e a</text>
+			<text fromX="304.69586" fromY="533.37964" toX="373.8445" toY="537.1256" fontName="Times-Roman" fontSize="7.0">compatibilidade com</text>
+			<text fromX="377.90848" fromY="533.37964" toX="471.11887" toY="537.1256" fontName="Times-Roman" fontSize="7.0">o ordenamento jurídico das</text>
+			<text fromX="475.18283" fromY="531.72986" toX="517.32074" toY="537.1256" fontName="Times-Roman" fontSize="7.0">propostas de</text>
+			<text fromX="304.69586" fromY="541.431" toX="517.3224" toY="545.177" fontName="Times-Roman" fontSize="7.0">atos normativos que serão submetidas à Ministra de Estado ou a</text>
+			<text fromX="304.69586" fromY="547.70514" toX="400.96674" toY="553.2284" fontName="Times-Roman" fontSize="7.0">dirigente de órgão colegiado;</text>
+			<text fromX="318.84198" fromY="563.8868" toX="331.64755" toY="569.2507" fontName="Times-Roman" fontSize="7.0">V -</text>
+			<text fromX="336.04385" fromY="565.5047" toX="366.12067" toY="569.2507" fontName="Times-Roman" fontSize="7.0">assistir a</text>
+			<text fromX="370.51697" fromY="563.9745" toX="409.44855" toY="569.2507" fontName="Times-Roman" fontSize="7.0">Ministra de</text>
+			<text fromX="413.84485" fromY="563.9745" toX="447.90665" toY="569.2507" fontName="Times-Roman" fontSize="7.0">Estado no</text>
+			<text fromX="452.30295" fromY="565.5047" toX="505.3974" toY="569.2507" fontName="Times-Roman" fontSize="7.0">controle interno</text>
+			<text fromX="509.7937" fromY="563.7274" toX="517.31744" toY="569.2507" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="304.69586" fromY="571.85925" toX="463.91467" toY="577.30286" fontName="Times-Roman" fontSize="7.0">legalidade administrativa dos atos da Secretaria;</text>
+		</margin>
+		<margin fromX="531.49304" fromY="234.26459" toX="758.2726" toY="577.3081">
+			<text fromX="559.7853" fromY="234.49452" toX="643.515" toY="239.8584" fontName="Times-Roman" fontSize="7.0">VI - pronunciar-se sobre</text>
+			<text fromX="647.37573" fromY="236.11246" toX="758.26355" toY="239.8584" fontName="Times-Roman" fontSize="7.0">os procedimentos administrativos</text>
+			<text fromX="545.63916" fromY="241.47153" toX="758.2688" toY="246.99481" fontName="Times-Roman" fontSize="7.0">disciplinares e os respectivos recursos hierárquicos submetidos à</text>
+			<text fromX="545.63916" fromY="248.60794" toX="647.78375" toY="254.13123" fontName="Times-Roman" fontSize="7.0">decisão da Ministra de Estado;</text>
+			<text fromX="559.7853" fromY="263.87384" toX="645.2802" toY="269.23773" fontName="Times-Roman" fontSize="7.0">VII - receber e processar</text>
+			<text fromX="648.9536" fromY="263.84198" toX="758.2631" toY="269.23773" fontName="Times-Roman" fontSize="7.0">pedidos de subsídios necessários</text>
+			<text fromX="545.63916" fromY="270.9792" toX="758.2648" toY="276.37494" fontName="Times-Roman" fontSize="7.0">para a defesa judicial formulados pela Advocacia-Geral da União</text>
+			<text fromX="545.63916" fromY="279.7654" toX="753.6901" toY="283.51135" fontName="Times-Roman" fontSize="7.0">ou para a propositura de ações judiciais de interesse do órgão;</text>
+			<text fromX="559.7853" fromY="293.25397" toX="758.2726" toY="298.61786" fontName="Times-Roman" fontSize="7.0">VIII - orientar a Secretaria de Políticas para as Mulheres da</text>
+			<text fromX="545.63916" fromY="300.47806" toX="630.7787" toY="305.75427" fontName="Times-Roman" fontSize="7.0">Presidência da República</text>
+			<text fromX="635.0554" fromY="300.35852" toX="699.6776" toY="305.75427" fontName="Times-Roman" fontSize="7.0">quanto à forma de</text>
+			<text fromX="703.95435" fromY="302.00833" toX="758.26013" toY="305.75427" fontName="Times-Roman" fontSize="7.0">cumprimento de</text>
+			<text fromX="545.63916" fromY="307.3674" toX="611.5437" toY="312.8907" fontName="Times-Roman" fontSize="7.0">decisões judiciais; e</text>
+			<text fromX="559.7853" fromY="322.72098" toX="568.1937" toY="327.9972" fontName="Times-Roman" fontSize="7.0">IX</text>
+			<text fromX="571.39453" fromY="327.4951" toX="574.0486" toY="327.9972" fontName="Times-Roman" fontSize="7.0">-</text>
+			<text fromX="577.2494" fromY="324.25125" toX="631.69946" toY="327.9972" fontName="Times-Roman" fontSize="7.0">examinar, prévia</text>
+			<text fromX="634.90027" fromY="324.25125" toX="638.43896" toY="327.9972" fontName="Times-Roman" fontSize="7.0">e</text>
+			<text fromX="641.6398" fromY="324.25125" toX="697.1992" toY="327.9972" fontName="Times-Roman" fontSize="7.0">conclusivamente,</text>
+			<text fromX="700.4" fromY="324.33093" toX="733.71344" toY="327.9972" fontName="Times-Roman" fontSize="7.0">no âmbito</text>
+			<text fromX="736.91425" fromY="322.4739" toX="744.438" toY="327.9972" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="747.6388" fromY="322.49783" toX="758.26294" toY="327.9972" fontName="Times-Roman" fontSize="7.0">Se-</text>
+			<text fromX="545.63916" fromY="331.38766" toX="569.53345" toY="335.1336" fontName="Times-Roman" fontSize="7.0">cretaria</text>
+			<text fromX="573.9768" fromY="329.61032" toX="581.50055" toY="335.1336" fontName="Times-Roman" fontSize="7.0">de</text>
+			<text fromX="585.9439" fromY="329.8574" toX="631.5615" toY="335.1336" fontName="Times-Roman" fontSize="7.0">Políticas para</text>
+			<text fromX="636.0049" fromY="331.38766" toX="642.6439" toY="335.1336" fontName="Times-Roman" fontSize="7.0">as</text>
+			<text fromX="647.0873" fromY="329.8574" toX="677.1903" toY="335.1336" fontName="Times-Roman" fontSize="7.0">Mulheres</text>
+			<text fromX="681.63367" fromY="329.61032" toX="730.3436" toY="335.1336" fontName="Times-Roman" fontSize="7.0">da Presidência</text>
+			<text fromX="734.787" fromY="329.61032" toX="742.3107" toY="335.1336" fontName="Times-Roman" fontSize="7.0">da</text>
+			<text fromX="746.7541" fromY="329.8574" toX="758.2629" toY="335.1336" fontName="Times-Roman" fontSize="7.0">Re-</text>
+			<text fromX="545.63916" fromY="336.87506" toX="571.3188" toY="342.2708" fontName="Times-Roman" fontSize="7.0">pública:</text>
+			<text fromX="559.7853" fromY="353.63138" toX="576.9305" toY="357.37732" fontName="Times-Roman" fontSize="7.0">a) os</text>
+			<text fromX="580.79675" fromY="352.68292" toX="611.2281" toY="357.37732" fontName="Times-Roman" fontSize="7.0">textos de</text>
+			<text fromX="615.09436" fromY="353.63138" toX="647.29504" toY="357.37732" fontName="Times-Roman" fontSize="7.0">editais de</text>
+			<text fromX="651.1613" fromY="351.93375" toX="685.5697" toY="357.37732" fontName="Times-Roman" fontSize="7.0">licitação e</text>
+			<text fromX="689.436" fromY="351.85403" toX="740.23083" toY="357.37732" fontName="Times-Roman" fontSize="7.0">dos respectivos</text>
+			<text fromX="744.0971" fromY="353.63138" toX="758.25995" toY="357.37732" fontName="Times-Roman" fontSize="7.0">con-</text>
+			<text fromX="545.63916" fromY="359.81934" toX="603.11865" toY="364.51373" fontName="Times-Roman" fontSize="7.0">tratos, convênios,</text>
+			<text fromX="606.58325" fromY="360.7678" toX="642.80646" toY="364.51373" fontName="Times-Roman" fontSize="7.0">acordos ou</text>
+			<text fromX="646.27185" fromY="359.07016" toX="728.7614" toY="364.51373" fontName="Times-Roman" fontSize="7.0">instrumentos congêneres,</text>
+			<text fromX="732.226" fromY="360.7678" toX="758.2634" toY="364.51373" fontName="Times-Roman" fontSize="7.0">a serem</text>
+			<text fromX="545.63916" fromY="366.2544" toX="632.7521" toY="371.65015" fontName="Times-Roman" fontSize="7.0">publicados e celebrados; e</text>
+			<text fromX="559.7853" fromY="381.23337" toX="643.3158" toY="386.75665" fontName="Times-Roman" fontSize="7.0">b) os atos pelos quais se</text>
+			<text fromX="646.6505" fromY="383.0904" toX="758.2636" toY="386.75665" fontName="Times-Roman" fontSize="7.0">reconheça a inexigibilidade ou se</text>
+			<text fromX="545.63916" fromY="388.36978" toX="668.92035" toY="393.89307" fontName="Times-Roman" fontSize="7.0">decida a dispensa de licitação." (NR)</text>
+			<text fromX="559.7853" fromY="407.04694" toX="650.75903" toY="408.9996" fontName="Times-Roman" fontSize="7.0">"Art. 11. Aos Secretários e</text>
+			<text fromX="654.1702" fromY="403.47632" toX="758.2619" toY="408.9996" fontName="Times-Roman" fontSize="7.0">demais dirigentes incumbe pla-</text>
+			<text fromX="545.63916" fromY="412.47058" toX="626.3795" toY="416.13684" fontName="Times-Roman" fontSize="7.0">nejar, dirigir, coordenar,</text>
+			<text fromX="630.3773" fromY="412.3909" toX="733.0089" toY="416.13684" fontName="Times-Roman" fontSize="7.0">orientar, acompanhar e avaliar</text>
+			<text fromX="737.0067" fromY="412.3909" toX="758.2605" toY="416.13684" fontName="Times-Roman" fontSize="7.0">a exe-</text>
+			<text fromX="545.63916" fromY="419.5273" toX="564.22534" toY="423.27325" fontName="Times-Roman" fontSize="7.0">cução</text>
+			<text fromX="568.86633" fromY="417.74997" toX="616.45087" toY="423.27325" fontName="Times-Roman" fontSize="7.0">das atividades</text>
+			<text fromX="621.09186" fromY="417.74997" toX="646.9818" toY="423.27325" fontName="Times-Roman" fontSize="7.0">de suas</text>
+			<text fromX="651.6228" fromY="419.607" toX="688.1369" toY="423.27325" fontName="Times-Roman" fontSize="7.0">unidades e</text>
+			<text fromX="692.7771" fromY="419.5273" toX="740.3457" toY="423.27325" fontName="Times-Roman" fontSize="7.0">exercer outras</text>
+			<text fromX="744.9867" fromY="419.5273" toX="758.2649" toY="423.27325" fontName="Times-Roman" fontSize="7.0">atri-</text>
+			<text fromX="545.63916" fromY="424.88638" toX="682.6529" toY="430.40967" fontName="Times-Roman" fontSize="7.0">buições que lhes forem cometidas." (NR)</text>
+			<text fromX="559.7375" fromY="440.14435" toX="758.2652" toY="445.5162" fontName="Times-Roman" fontSize="7.0">Art. 6º Os expedientes referentes a assuntos da Secretaria de</text>
+			<text fromX="531.49384" fromY="447.3764" toX="629.77124" toY="452.65262" fontName="Times-Roman" fontSize="7.0">Políticas para as Mulheres da</text>
+			<text fromX="632.98" fromY="447.3764" toX="758.25995" toY="452.65262" fontName="Times-Roman" fontSize="7.0">Presidência da República que estejam</text>
+			<text fromX="531.49384" fromY="456.0431" toX="758.2656" toY="459.78903" fontName="Times-Roman" fontSize="7.0">sob o exame da Subchefia para Assuntos Jurídicos da Casa Civil da</text>
+			<text fromX="531.49384" fromY="461.64923" toX="758.2706" toY="466.92545" fontName="Times-Roman" fontSize="7.0">Presidência da República quando da entrada em vigor deste Decreto</text>
+			<text fromX="531.49384" fromY="470.39642" toX="610.5715" toY="474.06268" fontName="Times-Roman" fontSize="7.0">não serão redistribuídos</text>
+			<text fromX="614.02893" fromY="468.66693" toX="700.9801" toY="474.06268" fontName="Times-Roman" fontSize="7.0">para a Assessoria Jurídica</text>
+			<text fromX="704.43756" fromY="468.5394" toX="758.2659" toY="474.06268" fontName="Times-Roman" fontSize="7.0">da Secretaria de</text>
+			<text fromX="531.49384" fromY="475.92288" toX="716.9895" toY="481.1991" fontName="Times-Roman" fontSize="7.0">Políticas para as Mulheres da Presidência da República.</text>
+			<text fromX="559.7375" fromY="490.93378" toX="676.04346" toY="496.30563" fontName="Times-Roman" fontSize="7.0">Art. 7º Fica revogado o inciso IV</text>
+			<text fromX="679.77826" fromY="490.78235" toX="710.523" toY="496.30563" fontName="Times-Roman" fontSize="7.0">do caput</text>
+			<text fromX="714.2586" fromY="490.78235" toX="758.2623" toY="496.30563" fontName="Times-Roman" fontSize="7.0">do art. 3º do</text>
+			<text fromX="531.49304" fromY="498.0702" toX="714.9086" toY="503.44205" fontName="Times-Roman" fontSize="7.0">Anexo I ao Decreto nº 8.030, de 20 de junho de 2013.</text>
+			<text fromX="559.7367" fromY="513.17676" toX="758.26373" toY="518.5486" fontName="Times-Roman" fontSize="7.0">Art. 8º Este Decreto entra em vigor quatorze dias após a data</text>
+			<text fromX="531.49304" fromY="520.16174" toX="592.29675" toY="525.685" fontName="Times-Roman" fontSize="7.0">de sua publicação.</text>
+			<text fromX="559.7367" fromY="535.5153" toX="651.568" toY="540.7915" fontName="Times-Roman" fontSize="7.0">Brasília, 12 de fevereiro de</text>
+			<text fromX="654.88275" fromY="535.4037" toX="758.26263" toY="540.7915" fontName="Times-Roman" fontSize="7.0">2014; 193º da Independência e</text>
+			<text fromX="531.49304" fromY="542.54095" toX="593.8908" toY="547.9288" fontName="Times-Roman" fontSize="7.0">126º da República.</text>
+			<text fromX="645.06696" fromY="557.7591" toX="713.67365" toY="563.0353" fontName="Times-Roman" fontSize="7.0">DILMA ROUSSEFF</text>
+			<text fromX="645.06696" fromY="564.9673" toX="699.4947" toY="570.17175" fontName="Times-Italic" fontSize="7.0">Miriam Belchior</text>
+			<text fromX="645.06696" fromY="572.10364" toX="751.22046" toY="577.3081" fontName="Times-Italic" fontSize="7.0">Eleonora Menicucci de Oliveira</text>
+		</margin>
+		<line fromX="49.607" fromY="585.267" toX="517.321" toY="585.267" lineWidth="1.08" />
+		<text fromX="387.1352" fromY="593.1797" toX="420.74515" toY="598.5515" fontName="Times-Roman" fontSize="7.0">ANEXO I</text>
+		<text fromX="344.04883" fromY="601.7443" toX="463.83154" toY="607.0205" fontName="Times-Roman" fontSize="7.0">REMANEJAMENTO DE CARGOS</text>
+		<group fromX="49.53" fromY="615.684" toX="758.374" toY="693.145">
+			<box fromX="49.53" fromY="615.784" toX="163.113" toY="641.973" lineWidth="1.08">
+				<rect fromX="49.53" fromY="615.784" toX="49.729" toY="632.814" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="632.814" toX="49.729" toY="641.874" lineWidth="1.08">
+				</rect>
+				<rect fromX="162.914" fromY="615.784" toX="163.113" toY="632.814" lineWidth="1.08">
+				</rect>
+				<rect fromX="162.914" fromY="632.814" toX="163.113" toY="641.874" lineWidth="1.08">
+				</rect>
+				<text fromX="89.2174" fromY="618.18884" toX="122.4288" toY="623.8476" fontName="Times-Bold" fontSize="7.0">CÓDIGO</text>
+			</box>
+			<box fromX="162.914" fromY="615.784" toX="276.497" toY="641.973" lineWidth="1.08">
+				<text fromX="209.90942" fromY="618.4598" toX="228.50366" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DAS-</text>
+				<text fromX="198.83896" fromY="626.27844" toX="239.57414" toY="631.8177" fontName="Times-Bold" fontSize="7.0">UNITÁRIO</text>
+			</box>
+			<box fromX="276.298" fromY="615.784" toX="342.046" toY="632.913" lineWidth="1.08">
+				<rect fromX="276.298" fromY="615.784" toX="276.497" toY="632.814" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="615.784" toX="342.046" toY="632.814" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="276.298" fromY="632.714" toX="342.046" toY="641.973" lineWidth="1.08">
+				<rect fromX="276.298" fromY="632.814" toX="276.497" toY="641.874" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="632.814" toX="342.046" toY="641.874" lineWidth="1.08">
+				</rect>
+				<text fromX="299.0416" fromY="633.9676" toX="318.30536" toY="640.8777" fontName="Times-Bold" fontSize="7.0">QTD.</text>
+			</box>
+			<box fromX="341.847" fromY="615.784" toX="512.711" toY="632.913" lineWidth="1.08">
+				<text fromX="367.0838" fromY="618.4598" toX="486.47592" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DA SEGEP/MP P/ A SPM/PR (a)</text>
+			</box>
+			<box fromX="162.914" fromY="641.774" toX="276.497" toY="651.033" lineWidth="1.08">
+				<rect fromX="162.914" fromY="641.874" toX="163.113" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="212.2327" fromY="644.43835" toX="226.18036" toY="649.93774" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="276.298" fromY="641.774" toX="342.046" toY="651.033" lineWidth="1.08">
+				<rect fromX="276.298" fromY="641.874" toX="276.497" toY="650.934" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="641.874" toX="342.046" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="306.68076" fromY="644.5499" toX="310.6658" toY="649.93774" fontName="Times-Roman" fontSize="7.0">1</text>
+			</box>
+			<box fromX="341.847" fromY="632.714" toX="512.711" toY="641.973" lineWidth="1.08">
+				<text fromX="397.7848" fromY="635.34644" toX="455.77536" toY="640.8777" fontName="Times-Bold" fontSize="7.0">VALOR TOTAL</text>
+			</box>
+			<box fromX="512.512" fromY="615.784" toX="578.26" toY="632.913" lineWidth="1.08">
+				<rect fromX="512.512" fromY="615.784" toX="512.711" toY="632.814" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="615.784" toX="578.26" toY="632.814" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="512.512" fromY="632.714" toX="578.26" toY="641.973" lineWidth="1.08">
+				<rect fromX="512.512" fromY="632.814" toX="512.711" toY="641.874" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="632.814" toX="578.26" toY="641.874" lineWidth="1.08">
+				</rect>
+				<text fromX="535.2556" fromY="633.9676" toX="554.51935" toY="640.8777" fontName="Times-Bold" fontSize="7.0">QTD.</text>
+			</box>
+			<box fromX="578.061" fromY="615.784" toX="758.374" toY="632.913" lineWidth="1.08">
+				<rect fromX="758.175" fromY="615.784" toX="758.374" toY="632.814" lineWidth="1.08">
+				</rect>
+				<text fromX="636.10815" fromY="618.4598" toX="699.327" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DA SPM/PR P/ A</text>
+				<text fromX="640.9428" fromY="626.15094" toX="694.494" toY="631.8177" fontName="Times-Bold" fontSize="7.0">SEGEP/MP (b)</text>
+			</box>
+			<box fromX="49.53" fromY="641.774" toX="163.113" toY="651.033" lineWidth="1.08">
+				<rect fromX="49.53" fromY="641.874" toX="49.729" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="87.3524" fromY="644.66156" toX="124.29379" toY="649.93774" fontName="Times-Roman" fontSize="7.0">DAS 101.4</text>
+			</box>
+			<box fromX="578.061" fromY="632.714" toX="758.374" toY="641.973" lineWidth="1.08">
+				<rect fromX="758.175" fromY="632.814" toX="758.374" toY="641.874" lineWidth="1.08">
+				</rect>
+				<text fromX="638.72345" fromY="635.34644" toX="696.7138" toY="640.8777" fontName="Times-Bold" fontSize="7.0">VALOR TOTAL</text>
+			</box>
+			<box fromX="49.53" fromY="650.834" toX="163.113" toY="658.499" lineWidth="1.08">
+				<rect fromX="49.53" fromY="650.934" toX="49.729" toY="658.4" lineWidth="1.08">
+				</rect>
+				<rect fromX="162.914" fromY="650.934" toX="163.113" toY="658.4" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="49.53" fromY="658.3" toX="163.113" toY="667.559" lineWidth="1.08">
+				<rect fromX="49.53" fromY="658.4" toX="49.729" toY="667.46" lineWidth="1.08">
+				</rect>
+				<rect fromX="162.914" fromY="658.4" toX="163.113" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="87.3524" fromY="661.1876" toX="124.29379" toY="666.4638" fontName="Times-Roman" fontSize="7.0">DAS 102.4</text>
+			</box>
+			<box fromX="162.914" fromY="650.834" toX="276.497" toY="658.499" lineWidth="1.08">
+			</box>
+			<box fromX="276.298" fromY="650.834" toX="342.046" toY="658.499" lineWidth="1.08">
+				<rect fromX="276.298" fromY="650.934" toX="276.497" toY="658.4" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="650.934" toX="342.046" toY="658.4" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="341.847" fromY="641.774" toX="512.711" toY="651.033" lineWidth="1.08">
+				<text fromX="419.80676" fromY="644.43835" toX="433.75443" toY="649.93774" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="162.914" fromY="658.3" toX="276.497" toY="667.559" lineWidth="1.08">
+				<text fromX="212.2327" fromY="660.9644" toX="226.18036" toY="666.4638" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="341.847" fromY="650.834" toX="512.711" toY="658.499" lineWidth="1.08">
+			</box>
+			<box fromX="512.512" fromY="641.774" toX="578.26" toY="651.033" lineWidth="1.08">
+				<rect fromX="512.512" fromY="641.874" toX="512.711" toY="650.934" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="641.874" toX="578.26" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="543.5609" fromY="649.4356" toX="546.21497" toY="649.93774" fontName="Times-Roman" fontSize="7.0">-</text>
+			</box>
+			<box fromX="162.914" fromY="667.36" toX="276.497" toY="675.025" lineWidth="1.08">
+				<rect fromX="162.914" fromY="667.46" toX="163.113" toY="674.926" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="276.298" fromY="658.3" toX="342.046" toY="667.559" lineWidth="1.08">
+				<rect fromX="276.298" fromY="658.4" toX="276.497" toY="667.46" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="658.4" toX="342.046" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="307.34625" fromY="665.9617" toX="310.0003" toY="666.4638" fontName="Times-Roman" fontSize="7.0">-</text>
+			</box>
+			<box fromX="341.847" fromY="658.3" toX="512.711" toY="667.559" lineWidth="1.08">
+				<text fromX="425.45358" fromY="665.9617" toX="428.10764" toY="666.4638" fontName="Times-Roman" fontSize="7.0">-</text>
+			</box>
+			<box fromX="512.512" fromY="650.834" toX="578.26" toY="658.499" lineWidth="1.08">
+				<rect fromX="512.512" fromY="650.934" toX="512.711" toY="658.4" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="650.934" toX="578.26" toY="658.4" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="578.061" fromY="641.774" toX="758.374" toY="651.033" lineWidth="1.08">
+				<rect fromX="758.175" fromY="641.874" toX="758.374" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="666.3921" fromY="649.4356" toX="669.04614" toY="649.93774" fontName="Times-Roman" fontSize="7.0">-</text>
+			</box>
+			<box fromX="276.298" fromY="667.36" toX="342.046" toY="675.025" lineWidth="1.08">
+				<rect fromX="276.298" fromY="667.46" toX="276.497" toY="674.926" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="667.46" toX="342.046" toY="674.926" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="341.847" fromY="667.36" toX="512.711" toY="675.025" lineWidth="1.08">
+			</box>
+			<box fromX="512.512" fromY="658.3" toX="578.26" toY="667.559" lineWidth="1.08">
+				<rect fromX="512.512" fromY="658.4" toX="512.711" toY="667.46" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="658.4" toX="578.26" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="542.8946" fromY="661.076" toX="546.87964" toY="666.4638" fontName="Times-Roman" fontSize="7.0">1</text>
+			</box>
+			<box fromX="578.061" fromY="650.834" toX="758.374" toY="658.499" lineWidth="1.08">
+				<rect fromX="758.175" fromY="650.934" toX="758.374" toY="658.4" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="49.53" fromY="667.36" toX="163.113" toY="675.025" lineWidth="1.08">
+				<rect fromX="49.53" fromY="667.46" toX="49.729" toY="674.926" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="578.061" fromY="658.3" toX="758.374" toY="667.559" lineWidth="1.08">
+				<rect fromX="758.175" fromY="658.4" toX="758.374" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="660.74445" fromY="660.9644" toX="674.69214" toY="666.4638" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="49.53" fromY="674.826" toX="276.497" toY="684.085" lineWidth="1.08">
+				<rect fromX="49.53" fromY="674.926" toX="49.729" toY="683.986" lineWidth="1.08">
+				</rect>
+				<text fromX="148.9305" fromY="677.602" toX="176.10057" toY="682.9898" fontName="Times-Bold" fontSize="7.0">TO TA L</text>
+			</box>
+			<box fromX="276.298" fromY="674.826" toX="342.046" toY="684.085" lineWidth="1.08">
+				<rect fromX="276.298" fromY="674.926" toX="276.497" toY="683.986" lineWidth="1.08">
+				</rect>
+				<rect fromX="341.847" fromY="674.926" toX="342.046" toY="683.986" lineWidth="1.08">
+				</rect>
+				<text fromX="306.6811" fromY="677.50635" toX="310.66614" toY="682.9898" fontName="Times-Bold" fontSize="7.0">1</text>
+			</box>
+			<box fromX="341.847" fromY="674.826" toX="512.711" toY="684.085" lineWidth="1.08">
+				<text fromX="419.8071" fromY="677.3948" toX="433.75476" toY="682.9898" fontName="Times-Bold" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="512.512" fromY="667.36" toX="578.26" toY="675.025" lineWidth="1.08">
+				<rect fromX="512.512" fromY="667.46" toX="512.711" toY="674.926" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="667.46" toX="578.26" toY="674.926" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="512.512" fromY="674.826" toX="578.26" toY="684.085" lineWidth="1.08">
+				<rect fromX="512.512" fromY="674.926" toX="512.711" toY="683.986" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="674.926" toX="578.26" toY="683.986" lineWidth="1.08">
+				</rect>
+				<text fromX="542.8949" fromY="677.50635" toX="546.87994" toY="682.9898" fontName="Times-Bold" fontSize="7.0">1</text>
+			</box>
+			<box fromX="578.061" fromY="667.36" toX="758.374" toY="675.025" lineWidth="1.08">
+				<rect fromX="758.175" fromY="667.46" toX="758.374" toY="674.926" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="49.53" fromY="683.886" toX="512.711" toY="693.145" lineWidth="1.08">
+				<rect fromX="49.53" fromY="683.986" toX="49.729" toY="693.046" lineWidth="1.08">
+				</rect>
+				<text fromX="226.2107" fromY="686.38306" toX="335.03445" toY="692.0498" fontName="Times-Bold" fontSize="7.0">Saldo do Remanejamento (a-b)</text>
+			</box>
+			<box fromX="512.512" fromY="683.886" toX="578.26" toY="693.145" lineWidth="1.08">
+				<rect fromX="512.512" fromY="683.986" toX="512.711" toY="693.046" lineWidth="1.08">
+				</rect>
+				<rect fromX="578.061" fromY="683.986" toX="578.26" toY="693.046" lineWidth="1.08">
+				</rect>
+				<text fromX="542.89465" fromY="686.46277" toX="546.8797" toY="692.0498" fontName="Times-Bold" fontSize="7.0">0</text>
+			</box>
+			<box fromX="578.061" fromY="674.826" toX="758.374" toY="684.085" lineWidth="1.08">
+				<rect fromX="758.175" fromY="674.926" toX="758.374" toY="683.986" lineWidth="1.08">
+				</rect>
+				<text fromX="660.74475" fromY="677.3948" toX="674.69244" toY="682.9898" fontName="Times-Bold" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="578.061" fromY="683.886" toX="758.374" toY="693.145" lineWidth="1.08">
+				<rect fromX="758.175" fromY="683.986" toX="758.374" toY="693.046" lineWidth="1.08">
+				</rect>
+				<text fromX="665.7258" fromY="686.46277" toX="669.7109" toY="692.0498" fontName="Times-Bold" fontSize="7.0">0</text>
+			</box>
+			<rect fromX="49.607" fromY="615.684" toX="758.374" toY="615.883" lineWidth="1.08">
+			</rect>
+			<rect fromX="276.298" fromY="632.714" toX="758.275" toY="632.913" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="641.774" toX="758.274" toY="641.973" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="650.834" toX="758.274" toY="651.033" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="658.3" toX="758.274" toY="658.499" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="667.36" toX="758.274" toY="667.559" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="674.826" toX="758.274" toY="675.025" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="683.886" toX="758.274" toY="684.085" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="692.946" toX="758.274" toY="693.145" lineWidth="1.08">
+			</rect>
+		</group>
+		<text fromX="385.80795" fromY="706.70685" toX="422.07196" toY="712.0787" fontName="Times-Roman" fontSize="7.0">ANEXO II</text>
+		<text fromX="309.2472" fromY="713.7508" toX="498.63266" toY="720.5493" fontName="Times-Roman" fontSize="7.0">(Anexo II ao Decreto nº 8.030, de 20 de junho de 2013)</text>
+		<text fromX="49.606842" fromY="733.24243" toX="615.34045" toY="736.9884" fontName="Times-Roman" fontSize="7.0">a) QUADRO DEMONSTRATIVO DOS CARGOS EM COMISSÃO DA SECRETARIA DE POLÍTICAS PARA AS MULHERES DA PRESIDÊNCIA DA REPÚBLICA</text>
+		<group fromX="49.53" fromY="745.652" toX="758.372" toY="868.818">
+			<box fromX="49.53" fromY="745.751" toX="371.571" toY="770.851" lineWidth="1.08">
+				<rect fromX="49.53" fromY="745.751" toX="49.729" toY="770.751" lineWidth="1.08">
+				</rect>
+				<text fromX="191.458" fromY="748.27594" toX="228.64647" toY="753.8152" fontName="Times-Bold" fontSize="7.0">UNIDADE</text>
+			</box>
+			<box fromX="49.53" fromY="770.652" toX="371.571" toY="868.818" lineWidth="1.08">
+				<rect fromX="49.53" fromY="770.752" toX="49.729" toY="779.812" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="779.812" toX="49.729" toY="788.872" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="788.872" toX="49.729" toY="797.932" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="797.932" toX="49.729" toY="806.992" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="806.992" toX="49.729" toY="816.052" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="825.112" toX="49.729" toY="834.172" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="816.052" toX="49.729" toY="825.112" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="834.172" toX="49.729" toY="843.232" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="843.232" toX="49.729" toY="852.292" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="852.292" toX="49.729" toY="861.352" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="861.352" toX="49.729" toY="868.818" lineWidth="1.08">
+				</rect>
+				<text fromX="50.6262" fromY="773.15674" toX="92.700356" toY="778.8155" fontName="Times-Bold" fontSize="7.0">GABINETE</text>
+				<text fromX="50.6262" fromY="809.5561" toX="92.67645" toY="815.0555" fontName="Times-Roman" fontSize="7.0">Coordenação</text>
+				<text fromX="50.6262" fromY="818.6162" toX="151.04947" toY="824.1156" fontName="Times-Roman" fontSize="7.0">Coordenação-Geral do CNDM</text>
+				<text fromX="50.6262" fromY="827.6762" toX="82.94496" toY="833.1756" fontName="Times-Roman" fontSize="7.0">Ouvidoria</text>
+				<text fromX="50.6262" fromY="836.8638" toX="165.19638" toY="842.2356" fontName="Times-Roman" fontSize="7.0">Assessoria de Comunicação Social</text>
+			</box>
+			<box fromX="371.372" fromY="745.751" toX="466.057" toY="770.851" lineWidth="1.08">
+				<rect fromX="371.372" fromY="745.751" toX="371.571" toY="770.751" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="745.751" toX="466.057" toY="770.751" lineWidth="1.08">
+				</rect>
+				<text fromX="402.27588" fromY="748.15643" toX="434.15634" toY="753.8152" fontName="Times-Bold" fontSize="7.0">CARGO/</text>
+				<text fromX="400.0642" fromY="756.39746" toX="436.36807" toY="761.7853" fontName="Times-Bold" fontSize="7.0">FUNÇÃO/</text>
+				<text fromX="414.0244" fromY="764.2241" toX="422.40897" toY="769.7554" fontName="Times-Bold" fontSize="7.0">Nº</text>
+			</box>
+			<box fromX="371.372" fromY="770.652" toX="466.057" toY="868.818" lineWidth="1.08">
+				<rect fromX="371.372" fromY="770.752" toX="371.571" toY="779.812" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="779.812" toX="371.571" toY="788.872" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="770.752" toX="466.057" toY="779.812" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="788.872" toX="371.571" toY="797.932" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="779.812" toX="466.057" toY="788.872" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="788.872" toX="466.057" toY="797.932" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="797.932" toX="371.571" toY="806.992" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="806.992" toX="371.571" toY="816.052" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="797.932" toX="466.057" toY="806.992" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="806.992" toX="466.057" toY="816.052" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="816.052" toX="371.571" toY="825.112" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="825.112" toX="371.571" toY="834.172" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="816.052" toX="466.057" toY="825.112" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="825.112" toX="466.057" toY="834.172" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="834.172" toX="371.571" toY="843.232" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="843.232" toX="371.571" toY="852.292" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="834.172" toX="466.057" toY="843.232" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="843.232" toX="466.057" toY="852.292" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="852.292" toX="371.571" toY="861.352" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="852.292" toX="466.057" toY="861.352" lineWidth="1.08">
+				</rect>
+				<rect fromX="371.372" fromY="861.352" toX="371.571" toY="868.818" lineWidth="1.08">
+				</rect>
+				<rect fromX="465.858" fromY="861.352" toX="466.057" toY="868.818" lineWidth="1.08">
+				</rect>
+				<text fromX="416.22345" fromY="773.4277" toX="420.2085" toY="778.8155" fontName="Times-Roman" fontSize="7.0">1</text>
+				<text fromX="416.2242" fromY="782.3761" toX="420.20926" toY="787.8755" fontName="Times-Roman" fontSize="7.0">3</text>
+				<text fromX="416.2242" fromY="791.34045" toX="420.20926" toY="796.9355" fontName="Times-Roman" fontSize="7.0">5</text>
+				<text fromX="416.2242" fromY="800.4961" toX="420.20926" toY="805.9955" fontName="Times-Roman" fontSize="7.0">3</text>
+				<text fromX="416.22345" fromY="809.66766" toX="420.2085" toY="815.0555" fontName="Times-Roman" fontSize="7.0">1</text>
+				<text fromX="416.22345" fromY="818.7278" toX="420.2085" toY="824.1156" fontName="Times-Roman" fontSize="7.0">1</text>
+				<text fromX="416.22345" fromY="827.7878" toX="420.2085" toY="833.1756" fontName="Times-Roman" fontSize="7.0">1</text>
+				<text fromX="416.22345" fromY="836.8478" toX="420.2085" toY="842.2356" fontName="Times-Roman" fontSize="7.0">1</text>
+				<text fromX="416.2242" fromY="845.9078" toX="420.20926" toY="851.2956" fontName="Times-Roman" fontSize="7.0">1</text>
+				<text fromX="416.2242" fromY="854.9679" toX="420.20926" toY="860.3557" fontName="Times-Roman" fontSize="7.0">1</text>
+			</box>
+			<box fromX="465.858" fromY="745.751" toX="663.886" toY="770.851" lineWidth="1.08">
+				<text fromX="532.9395" fromY="748.42737" toX="595.80756" toY="753.8152" fontName="Times-Bold" fontSize="7.0">DENOMINAÇÃO</text>
+				<text fromX="531.38934" fromY="756.1265" toX="597.3578" toY="761.7853" fontName="Times-Bold" fontSize="7.0">CARGO/FUNÇÃO</text>
+			</box>
+			<box fromX="465.858" fromY="770.652" toX="663.886" toY="868.818" lineWidth="1.08">
+				<text fromX="533.6398" fromY="773.3161" toX="595.105" toY="778.8155" fontName="Times-Roman" fontSize="7.0">Chefe de Gabinete</text>
+				<text fromX="535.1708" fromY="782.50366" toX="593.57544" toY="787.8755" fontName="Times-Roman" fontSize="7.0">Assessor Especial</text>
+				<text fromX="550.20636" fromY="791.56366" toX="578.5399" toY="796.9355" fontName="Times-Roman" fontSize="7.0">Assessor</text>
+				<text fromX="535.8363" fromY="800.62366" toX="592.91" toY="805.9955" fontName="Times-Roman" fontSize="7.0">Assessor Técnico</text>
+				<text fromX="543.5665" fromY="809.5561" toX="585.17834" toY="815.0555" fontName="Times-Roman" fontSize="7.0">Coordenador</text>
+				<text fromX="533.3887" fromY="818.6162" toX="595.3561" toY="824.1156" fontName="Times-Roman" fontSize="7.0">Coordenador-Geral</text>
+				<text fromX="533.3887" fromY="827.6762" toX="595.3561" toY="833.1756" fontName="Times-Roman" fontSize="7.0">Coordenador-Geral</text>
+				<text fromX="530.98175" fromY="836.7362" toX="597.76294" toY="842.2356" fontName="Times-Roman" fontSize="7.0">Chefe de Assessoria</text>
+				<text fromX="550.20636" fromY="845.92377" toX="578.5399" toY="851.2956" fontName="Times-Roman" fontSize="7.0">Assessor</text>
+				<text fromX="535.8363" fromY="854.9839" toX="592.91" toY="860.3557" fontName="Times-Roman" fontSize="7.0">Assessor Técnico</text>
+			</box>
+			<box fromX="663.687" fromY="745.751" toX="758.372" toY="770.851" lineWidth="1.08">
+				<rect fromX="663.687" fromY="745.751" toX="663.886" toY="770.751" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="745.751" toX="758.372" toY="770.751" lineWidth="1.08">
+				</rect>
+				<text fromX="695.9185" fromY="748.28394" toX="725.14484" toY="753.8152" fontName="Times-Bold" fontSize="7.0">NE/DAS</text>
+			</box>
+			<box fromX="663.687" fromY="770.652" toX="758.372" toY="868.818" lineWidth="1.08">
+				<rect fromX="663.687" fromY="770.752" toX="663.886" toY="779.812" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="779.812" toX="663.886" toY="788.872" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="770.752" toX="758.372" toY="779.812" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="788.872" toX="663.886" toY="797.932" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="779.812" toX="758.372" toY="788.872" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="788.872" toX="758.372" toY="797.932" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="797.932" toX="663.886" toY="806.992" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="806.992" toX="663.886" toY="816.052" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="797.932" toX="758.372" toY="806.992" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="816.052" toX="663.886" toY="825.112" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="806.992" toX="758.372" toY="816.052" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="825.112" toX="663.886" toY="834.172" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="816.052" toX="758.372" toY="825.112" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="825.112" toX="758.372" toY="834.172" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="834.172" toX="663.886" toY="843.232" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="843.232" toX="663.886" toY="852.292" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="834.172" toX="758.372" toY="843.232" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="852.292" toX="663.886" toY="861.352" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="843.232" toX="758.372" toY="852.292" lineWidth="1.08">
+				</rect>
+				<rect fromX="663.687" fromY="861.352" toX="663.886" toY="868.818" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="852.292" toX="758.372" toY="861.352" lineWidth="1.08">
+				</rect>
+				<rect fromX="758.173" fromY="861.352" toX="758.372" toY="868.818" lineWidth="1.08">
+				</rect>
+				<text fromX="701.56323" fromY="773.4277" toX="719.496" toY="778.8155" fontName="Times-Roman" fontSize="7.0">101.5</text>
+				<text fromX="701.5639" fromY="782.4877" toX="719.49664" toY="787.8755" fontName="Times-Roman" fontSize="7.0">102.5</text>
+				<text fromX="701.56396" fromY="791.54767" toX="719.4967" toY="796.9355" fontName="Times-Roman" fontSize="7.0">102.4</text>
+				<text fromX="701.56476" fromY="800.60767" toX="719.4975" toY="805.9955" fontName="Times-Roman" fontSize="7.0">102.3</text>
+				<text fromX="701.5641" fromY="809.66766" toX="719.4968" toY="815.0555" fontName="Times-Roman" fontSize="7.0">101.3</text>
+				<text fromX="701.564" fromY="818.7278" toX="719.49677" toY="824.1156" fontName="Times-Roman" fontSize="7.0">101.4</text>
+				<text fromX="701.564" fromY="827.7878" toX="719.49677" toY="833.1756" fontName="Times-Roman" fontSize="7.0">101.4</text>
+				<text fromX="701.5639" fromY="836.8478" toX="719.49664" toY="842.2356" fontName="Times-Roman" fontSize="7.0">101.4</text>
+				<text fromX="701.56396" fromY="845.9078" toX="719.4967" toY="851.2956" fontName="Times-Roman" fontSize="7.0">102.4</text>
+				<text fromX="701.56476" fromY="854.9679" toX="719.4975" toY="860.3557" fontName="Times-Roman" fontSize="7.0">102.3</text>
+			</box>
+			<rect fromX="49.607" fromY="745.652" toX="758.372" toY="745.851" lineWidth="1.08">
+			</rect>
+			<rect fromX="49.53" fromY="770.652" toX="758.272" toY="770.851" lineWidth="1.08">
+			</rect>
+		</group>
+		<line fromX="49.607" fromY="873.311" toX="758.273" toY="873.311" lineWidth="0.51" />
+		<text fromX="49.4745" fromY="879.54083" toX="352.7328" toY="884.817" fontName="Times-Roman" fontSize="7.0">Este documento pode ser verificado no endereço eletrônico http://www.in.gov.br/autenticidade.html ,</text>
+		<text fromX="463.2183" fromY="879.116" toX="631.8032" toY="884.3922" fontName="Times-Roman" fontSize="7.0">Documento assinado digitalmente conforme MP nº</text>
+		<text fromX="634.8718" fromY="879.0047" toX="757.81055" toY="884.3925" fontName="Times-Roman" fontSize="7.0">2.200-2 de 24/08/2001, que institui a</text>
+		<text fromX="49.474487" fromY="888.7351" toX="156.11916" toY="894.13086" fontName="Times-Roman" fontSize="7.0">pelo código 00012014021300003</text>
+		<text fromX="568.29675" fromY="888.4302" toX="757.80945" toY="893.70636" fontName="Times-Roman" fontSize="7.0">Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.</text>
+	</page>
 </pdfreader4humans>

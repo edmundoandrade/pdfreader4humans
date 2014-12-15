@@ -8,8 +8,10 @@ import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -22,10 +24,11 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
 public class PDFReader {
-	private static final String UTF_8 = "UTF-8";
-	private URL url;
-	private List<List<Component>> firstLevel = new ArrayList<List<Component>>();
-	private Map<String, String> templateMap = new HashMap<String, String>();
+	protected static final String UTF_8 = "UTF-8";
+	protected static final String LINE_BREAK = System.getProperty("line.separator");
+	protected URL url;
+	protected List<List<Component>> firstLevel = new ArrayList<List<Component>>();
+	protected Map<String, String> templateMap = new HashMap<String, String>();
 
 	/**
 	 * Class responsible for reading PDF contents in the same order a human would read them.
@@ -55,26 +58,31 @@ public class PDFReader {
 	}
 
 	public String toXML() {
-		String output = template("pdfreader4humans.xml");
+		String output = template("pdfreader4humans.xml", 0);
 		String content = "";
 		for (int pageIndex = 0; pageIndex < firstLevel.size(); pageIndex++)
-			content += pageToXML(pageIndex + 1, firstLevel.get(pageIndex));
-		return output.replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
+			content += pageToXML(pageIndex + 1, firstLevel.get(pageIndex), 1);
+		return removeEmptyLines(output.replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content)));
 	}
 
-	private String pageToXML(int pageNumber, List<Component> pageFirstLevelComponents) {
-		String pageTemplate = template("pdfreader4humans-page.xml");
+	private String removeEmptyLines(String text) {
+		return text.replaceAll(LINE_BREAK + LINE_BREAK, LINE_BREAK);
+	}
+
+	protected String pageToXML(int pageNumber, List<Component> pageFirstLevelComponents, int indentLevel) {
+		String pageTemplate = template("pdfreader4humans-page.xml", indentLevel);
 		String content = "";
 		for (Component component : pageFirstLevelComponents)
-			content += output(component);
+			content += output(component, indentLevel + 1);
 		return pageTemplate.replaceAll("\\$\\{pageNumber\\}", String.valueOf(pageNumber)).replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
 	}
 
-	private String output(Component component) {
+	protected String output(Component component, int indentLevel) {
+		String componentTemplate = template("pdfreader4humans-" + component.getType() + ".xml", indentLevel);
 		String content = "";
 		for (Component child : component.getChildren())
-			content += child.output(template("pdfreader4humans-" + child.getType() + ".xml"));
-		return component.output(template("pdfreader4humans-" + component.getType() + ".xml")).replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
+			content += output(child, indentLevel + 1);
+		return component.output(componentTemplate).replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
 	}
 
 	public RenderedImage createPageImage(int pageNumber, int scaling, Color inkColor, Color backgroundColor, boolean showStructure) throws IOException {
@@ -204,19 +212,35 @@ public class PDFReader {
 		return container;
 	}
 
-	private String template(String templateFileName) {
+	protected String template(String templateFileName, int indentLevel) {
 		String template = templateMap.get(templateFileName);
 		if (template != null)
-			return template;
+			return indent(template, indentLevel);
 		InputStream input = getClass().getResourceAsStream("/templates/" + templateFileName);
 		try {
 			try {
 				template = IOUtils.toString(input, UTF_8);
 				templateMap.put(templateFileName, template);
-				return template;
+				return indent(template, indentLevel);
 			} finally {
 				input.close();
 			}
+		} catch (IOException e) {
+			throw new IllegalArgumentException(e);
+		}
+	}
+
+	protected String indent(String output, int indentLevel) {
+		try {
+			char[] tabs = new char[indentLevel];
+			Arrays.fill(tabs, '\t');
+			StringBuilder buffer = new StringBuilder();
+			for (String line : IOUtils.readLines(new StringReader(output)))
+				if (line.equals("${content}"))
+					buffer.append(line);
+				else
+					buffer.append(tabs).append(line).append(LINE_BREAK);
+			return buffer.toString();
 		} catch (IOException e) {
 			throw new IllegalArgumentException(e);
 		}

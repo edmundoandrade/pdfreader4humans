@@ -12,7 +12,6 @@ import javax.imageio.ImageIO;
 import org.apache.commons.io.IOUtils;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import edworld.pdfreader4humans.impl.MainBoxDetector;
@@ -33,7 +32,6 @@ public class PDFReaderTest {
 	}
 
 	@Test
-	@Ignore
 	public void toXML() throws IOException {
 		Assert.assertEquals(IOUtils.toString(getClass().getResource("/testcase1/output.xml")), reader.toXML());
 	}
