@@ -14,18 +14,6 @@
 				<rect fromX="101.254" fromY="75.116" toX="101.453" toY="83.987" lineWidth="0.51">
 				</rect>
 			</box>
-			<box fromX="49.518" fromY="83.887" toX="389.862" toY="102.536" lineWidth="0.51">
-				<rect fromX="49.518" fromY="83.887" toX="389.762" toY="84.086" lineWidth="0.51">
-				</rect>
-				<rect fromX="49.518" fromY="83.987" toX="49.717" toY="102.437" lineWidth="0.51">
-				</rect>
-				<rect fromX="49.518" fromY="102.337" toX="389.762" toY="102.536" lineWidth="0.51">
-				</rect>
-				<rect fromX="389.663" fromY="83.987" toX="389.862" toY="102.437" lineWidth="0.51">
-				</rect>
-				<text fromX="50.6142" fromY="87.97115" toX="381.5646" toY="93.47052" fontName="Times-Roman" fontSize="7.0">Contadores de gases, líquidos ou de eletricidade, incluídos os aparelhos para sua aferição, baseados</text>
-				<text fromX="50.6142" fromY="97.694664" toX="284.75183" toY="101.44061" fontName="Times-Roman" fontSize="7.0">em técnicas digitais e outros contadores baseados em técnicas digitais.</text>
-			</box>
 			<box fromX="101.254" fromY="75.116" toX="273.527" toY="84.086" lineWidth="0.51">
 				<text fromX="102.3502" fromY="77.49142" toX="208.51189" toY="82.99078" fontName="Times-Roman" fontSize="7.0">Outros instrumentos e aparelhos</text>
 			</box>
@@ -37,13 +25,31 @@
 			<box fromX="331.924" fromY="75.116" toX="389.862" toY="84.086" lineWidth="0.51">
 				<rect fromX="331.924" fromY="75.116" toX="332.123" toY="83.987" lineWidth="0.51">
 				</rect>
+				<text fromX="353.0895" fromY="77.603" toX="367.6987" toY="82.99078" fontName="Times-Roman" fontSize="7.0">10%</text>
 				<rect fromX="389.663" fromY="75.116" toX="389.862" toY="83.987" lineWidth="0.51">
 				</rect>
-				<text fromX="353.0895" fromY="77.603" toX="367.6987" toY="82.99078" fontName="Times-Roman" fontSize="7.0">10%</text>
+			</box>
+			<box fromX="49.518" fromY="83.887" toX="389.862" toY="102.536" lineWidth="0.51">
+				<rect fromX="49.518" fromY="83.887" toX="389.762" toY="84.086" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="83.987" toX="49.717" toY="102.437" lineWidth="0.51">
+				</rect>
+				<text fromX="50.6142" fromY="87.97115" toX="381.5646" toY="93.47052" fontName="Times-Roman" fontSize="7.0">Contadores de gases, líquidos ou de eletricidade, incluídos os aparelhos para sua aferição, baseados</text>
+				<text fromX="50.6142" fromY="97.694664" toX="284.75183" toY="101.44061" fontName="Times-Roman" fontSize="7.0">em técnicas digitais e outros contadores baseados em técnicas digitais.</text>
+				<rect fromX="389.663" fromY="83.987" toX="389.862" toY="102.437" lineWidth="0.51">
+				</rect>
+				<rect fromX="49.518" fromY="102.337" toX="389.762" toY="102.536" lineWidth="0.51">
+				</rect>
 			</box>
 			<box fromX="49.518" fromY="102.437" toX="101.453" toY="210.725" lineWidth="0.51">
 				<rect fromX="49.518" fromY="102.437" toX="49.717" toY="152.767" lineWidth="0.51">
 				</rect>
+				<text fromX="62.0363" fromY="106.357155" toX="87.9391" toY="111.92029" fontName="Times-Roman" fontSize="7.0">9028.10</text>
+				<text fromX="62.0363" fromY="114.32725" toX="87.9391" toY="119.89038" fontName="Times-Roman" fontSize="7.0">9028.20</text>
+				<text fromX="62.0363" fromY="122.29734" toX="87.9391" toY="127.86047" fontName="Times-Roman" fontSize="7.0">9028.30</text>
+				<text fromX="62.0363" fromY="130.26744" toX="87.9391" toY="135.83057" fontName="Times-Roman" fontSize="7.0">9028.90</text>
+				<text fromX="62.0363" fromY="138.23753" toX="87.9391" toY="143.80066" fontName="Times-Roman" fontSize="7.0">9029.10</text>
+				<text fromX="62.0363" fromY="146.20763" toX="87.9391" toY="151.77075" fontName="Times-Roman" fontSize="7.0">9029.20</text>
 				<rect fromX="101.254" fromY="102.437" toX="101.453" toY="152.767" lineWidth="0.51">
 				</rect>
 				<rect fromX="49.518" fromY="152.767" toX="49.717" toY="163.247" lineWidth="0.51">
@@ -54,20 +60,9 @@
 				</rect>
 				<rect fromX="49.518" fromY="200.145" toX="49.717" toY="210.625" lineWidth="0.51">
 				</rect>
-				<text fromX="62.0363" fromY="106.357155" toX="87.9391" toY="111.92029" fontName="Times-Roman" fontSize="7.0">9028.10</text>
-				<text fromX="62.0363" fromY="114.32725" toX="87.9391" toY="119.89038" fontName="Times-Roman" fontSize="7.0">9028.20</text>
-				<text fromX="62.0363" fromY="122.29734" toX="87.9391" toY="127.86047" fontName="Times-Roman" fontSize="7.0">9028.30</text>
-				<text fromX="62.0363" fromY="130.26744" toX="87.9391" toY="135.83057" fontName="Times-Roman" fontSize="7.0">9028.90</text>
-				<text fromX="62.0363" fromY="138.23753" toX="87.9391" toY="143.80066" fontName="Times-Roman" fontSize="7.0">9029.10</text>
-				<text fromX="62.0363" fromY="146.20763" toX="87.9391" toY="151.77075" fontName="Times-Roman" fontSize="7.0">9029.20</text>
 			</box>
 			<box fromX="101.254" fromY="102.437" toX="273.527" toY="152.866" lineWidth="0.51">
 				<text fromX="102.34987" fromY="106.42086" toX="169.57765" toY="111.92023" fontName="Times-Roman" fontSize="7.0">Contadores de gases</text>
-			</box>
-			<box fromX="101.254" fromY="152.667" toX="273.527" toY="163.346" lineWidth="0.51">
-				<rect fromX="101.254" fromY="152.767" toX="101.453" toY="163.247" lineWidth="0.51">
-				</rect>
-				<text fromX="102.3502" fromY="156.75124" toX="178.00233" toY="162.25061" fontName="Times-Roman" fontSize="7.0">Contadores de líquidos</text>
 			</box>
 			<box fromX="273.328" fromY="102.437" toX="332.123" toY="152.866" lineWidth="0.51">
 				<rect fromX="273.328" fromY="102.437" toX="273.527" toY="152.767" lineWidth="0.51">
@@ -77,32 +72,50 @@
 			<box fromX="331.924" fromY="102.437" toX="389.862" toY="152.866" lineWidth="0.51">
 				<rect fromX="331.924" fromY="102.437" toX="332.123" toY="152.767" lineWidth="0.51">
 				</rect>
+				<text fromX="353.0892" fromY="106.53244" toX="367.6984" toY="111.92023" fontName="Times-Roman" fontSize="7.0">10%</text>
 				<rect fromX="389.663" fromY="102.437" toX="389.862" toY="152.767" lineWidth="0.51">
 				</rect>
-				<text fromX="353.0892" fromY="106.53244" toX="367.6984" toY="111.92023" fontName="Times-Roman" fontSize="7.0">10%</text>
 			</box>
-			<box fromX="101.254" fromY="163.147" toX="273.527" toY="173.825" lineWidth="0.51">
-				<rect fromX="101.254" fromY="163.247" toX="101.453" toY="173.726" lineWidth="0.51">
+			<rect fromX="101.254" fromY="152.667" toX="389.762" toY="152.866" lineWidth="0.51">
+			</rect>
+			<box fromX="101.254" fromY="152.667" toX="273.527" toY="163.346" lineWidth="0.51">
+				<rect fromX="101.254" fromY="152.767" toX="101.453" toY="163.247" lineWidth="0.51">
 				</rect>
-				<text fromX="102.3502" fromY="167.22981" toX="189.49522" toY="172.72919" fontName="Times-Roman" fontSize="7.0">Contadores de eletricidade</text>
+				<text fromX="102.3502" fromY="156.75124" toX="178.00233" toY="162.25061" fontName="Times-Roman" fontSize="7.0">Contadores de líquidos</text>
 			</box>
 			<box fromX="273.328" fromY="152.667" toX="332.123" toY="163.346" lineWidth="0.51">
 				<rect fromX="273.328" fromY="152.767" toX="273.527" toY="163.247" lineWidth="0.51">
 				</rect>
 				<text fromX="294.9229" fromY="156.86282" toX="309.5321" toY="162.25061" fontName="Times-Roman" fontSize="7.0">15%</text>
 			</box>
+			<box fromX="331.924" fromY="152.667" toX="389.862" toY="163.346" lineWidth="0.51">
+				<rect fromX="331.924" fromY="152.767" toX="332.123" toY="163.247" lineWidth="0.51">
+				</rect>
+				<text fromX="353.0895" fromY="156.86282" toX="367.6987" toY="162.25061" fontName="Times-Roman" fontSize="7.0">10%</text>
+				<rect fromX="389.663" fromY="152.767" toX="389.862" toY="163.247" lineWidth="0.51">
+				</rect>
+			</box>
+			<rect fromX="101.254" fromY="163.147" toX="389.762" toY="163.346" lineWidth="0.51">
+			</rect>
+			<box fromX="101.254" fromY="163.147" toX="273.527" toY="173.825" lineWidth="0.51">
+				<rect fromX="101.254" fromY="163.247" toX="101.453" toY="173.726" lineWidth="0.51">
+				</rect>
+				<text fromX="102.3502" fromY="167.22981" toX="189.49522" toY="172.72919" fontName="Times-Roman" fontSize="7.0">Contadores de eletricidade</text>
+			</box>
 			<box fromX="273.328" fromY="163.147" toX="332.123" toY="173.825" lineWidth="0.51">
 				<rect fromX="273.328" fromY="163.247" toX="273.527" toY="173.726" lineWidth="0.51">
 				</rect>
 				<text fromX="294.9229" fromY="167.3414" toX="309.5321" toY="172.72919" fontName="Times-Roman" fontSize="7.0">15%</text>
 			</box>
-			<box fromX="331.924" fromY="152.667" toX="389.862" toY="163.346" lineWidth="0.51">
-				<rect fromX="331.924" fromY="152.767" toX="332.123" toY="163.247" lineWidth="0.51">
+			<box fromX="331.924" fromY="163.147" toX="389.862" toY="173.825" lineWidth="0.51">
+				<rect fromX="331.924" fromY="163.247" toX="332.123" toY="173.726" lineWidth="0.51">
 				</rect>
-				<rect fromX="389.663" fromY="152.767" toX="389.862" toY="163.247" lineWidth="0.51">
+				<text fromX="353.0895" fromY="167.3414" toX="367.6987" toY="172.72919" fontName="Times-Roman" fontSize="7.0">10%</text>
+				<rect fromX="389.663" fromY="163.247" toX="389.862" toY="173.726" lineWidth="0.51">
 				</rect>
-				<text fromX="353.0895" fromY="156.86282" toX="367.6987" toY="162.25061" fontName="Times-Roman" fontSize="7.0">10%</text>
 			</box>
+			<rect fromX="101.254" fromY="173.626" toX="389.762" toY="173.825" lineWidth="0.51">
+			</rect>
 			<box fromX="101.254" fromY="173.626" toX="273.527" toY="200.245" lineWidth="0.51">
 				<rect fromX="101.254" fromY="173.726" toX="101.453" toY="200.146" lineWidth="0.51">
 				</rect>
@@ -110,50 +123,37 @@
 				<text fromX="102.3502" fromY="187.59253" toX="269.09256" toY="191.17908" fontName="Times-Roman" fontSize="7.0">xímetros, totalizadores de caminho percorrido, po-</text>
 				<text fromX="102.3502" fromY="193.62589" toX="218.2434" toY="199.14917" fontName="Times-Roman" fontSize="7.0">dômetros e contadores semelhantes</text>
 			</box>
-			<box fromX="331.924" fromY="163.147" toX="389.862" toY="173.825" lineWidth="0.51">
-				<rect fromX="331.924" fromY="163.247" toX="332.123" toY="173.726" lineWidth="0.51">
-				</rect>
-				<rect fromX="389.663" fromY="163.247" toX="389.862" toY="173.726" lineWidth="0.51">
-				</rect>
-				<text fromX="353.0895" fromY="167.3414" toX="367.6987" toY="172.72919" fontName="Times-Roman" fontSize="7.0">10%</text>
-			</box>
-			<box fromX="101.254" fromY="200.046" toX="273.527" toY="210.725" lineWidth="0.51">
-				<rect fromX="101.254" fromY="200.145" toX="101.453" toY="210.625" lineWidth="0.51">
-				</rect>
-				<text fromX="102.3502" fromY="204.3527" toX="232.3664" toY="209.6289" fontName="Times-Roman" fontSize="7.0">Indicadores de velocidade e tacômetros</text>
-			</box>
 			<box fromX="273.328" fromY="173.626" toX="332.123" toY="200.245" lineWidth="0.51">
 				<rect fromX="273.328" fromY="173.726" toX="273.527" toY="200.146" lineWidth="0.51">
 				</rect>
 				<text fromX="294.92294" fromY="177.8212" toX="309.53214" toY="183.20898" fontName="Times-Roman" fontSize="7.0">15%</text>
+			</box>
+			<box fromX="331.924" fromY="173.626" toX="389.862" toY="200.245" lineWidth="0.51">
+				<rect fromX="331.924" fromY="173.726" toX="332.123" toY="200.146" lineWidth="0.51">
+				</rect>
+				<text fromX="353.08954" fromY="177.8212" toX="367.69873" toY="183.20898" fontName="Times-Roman" fontSize="7.0">10%</text>
+				<rect fromX="389.663" fromY="173.726" toX="389.862" toY="200.146" lineWidth="0.51">
+				</rect>
+			</box>
+			<rect fromX="101.254" fromY="200.046" toX="389.762" toY="200.245" lineWidth="0.51">
+			</rect>
+			<box fromX="101.254" fromY="200.046" toX="273.527" toY="210.725" lineWidth="0.51">
+				<rect fromX="101.254" fromY="200.145" toX="101.453" toY="210.625" lineWidth="0.51">
+				</rect>
+				<text fromX="102.3502" fromY="204.3527" toX="232.3664" toY="209.6289" fontName="Times-Roman" fontSize="7.0">Indicadores de velocidade e tacômetros</text>
 			</box>
 			<box fromX="273.328" fromY="200.046" toX="332.123" toY="210.725" lineWidth="0.51">
 				<rect fromX="273.328" fromY="200.145" toX="273.527" toY="210.625" lineWidth="0.51">
 				</rect>
 				<text fromX="294.9229" fromY="204.24112" toX="309.5321" toY="209.6289" fontName="Times-Roman" fontSize="7.0">15%</text>
 			</box>
-			<box fromX="331.924" fromY="173.626" toX="389.862" toY="200.245" lineWidth="0.51">
-				<rect fromX="331.924" fromY="173.726" toX="332.123" toY="200.146" lineWidth="0.51">
-				</rect>
-				<rect fromX="389.663" fromY="173.726" toX="389.862" toY="200.146" lineWidth="0.51">
-				</rect>
-				<text fromX="353.08954" fromY="177.8212" toX="367.69873" toY="183.20898" fontName="Times-Roman" fontSize="7.0">10%</text>
-			</box>
 			<box fromX="331.924" fromY="200.046" toX="389.862" toY="210.725" lineWidth="0.51">
 				<rect fromX="331.924" fromY="200.145" toX="332.123" toY="210.625" lineWidth="0.51">
 				</rect>
+				<text fromX="353.0895" fromY="204.24112" toX="367.6987" toY="209.6289" fontName="Times-Roman" fontSize="7.0">10%</text>
 				<rect fromX="389.663" fromY="200.145" toX="389.862" toY="210.625" lineWidth="0.51">
 				</rect>
-				<text fromX="353.0895" fromY="204.24112" toX="367.6987" toY="209.6289" fontName="Times-Roman" fontSize="7.0">10%</text>
 			</box>
-			<rect fromX="101.254" fromY="152.667" toX="389.762" toY="152.866" lineWidth="0.51">
-			</rect>
-			<rect fromX="101.254" fromY="163.147" toX="389.762" toY="163.346" lineWidth="0.51">
-			</rect>
-			<rect fromX="101.254" fromY="173.626" toX="389.762" toY="173.825" lineWidth="0.51">
-			</rect>
-			<rect fromX="101.254" fromY="200.046" toX="389.762" toY="200.245" lineWidth="0.51">
-			</rect>
 			<rect fromX="49.518" fromY="210.526" toX="389.762" toY="210.725" lineWidth="0.51">
 			</rect>
 		</group>
@@ -161,9 +161,9 @@
 			<box fromX="418.02" fromY="75.116" toX="469.955" toY="115.967" lineWidth="0.51">
 				<rect fromX="418.02" fromY="75.116" toX="418.219" toY="115.867" lineWidth="0.51">
 				</rect>
+				<text fromX="434.5236" fromY="77.42765" toX="452.4563" toY="82.99078" fontName="Times-Roman" fontSize="7.0">90.30</text>
 				<rect fromX="469.756" fromY="75.116" toX="469.955" toY="115.867" lineWidth="0.51">
 				</rect>
-				<text fromX="434.5236" fromY="77.42765" toX="452.4563" toY="82.99078" fontName="Times-Roman" fontSize="7.0">90.30</text>
 			</box>
 			<box fromX="469.756" fromY="75.116" toX="642.029" toY="115.967" lineWidth="0.51">
 				<text fromX="470.85208" fromY="77.49142" toX="629.8473" toY="82.99078" fontName="Times-Roman" fontSize="7.0">Osciloscópios, analisadores de espectro e outros</text>
@@ -180,9 +180,9 @@
 			<box fromX="700.426" fromY="75.116" toX="758.364" toY="115.967" lineWidth="0.51">
 				<rect fromX="700.426" fromY="75.116" toX="700.625" toY="115.867" lineWidth="0.51">
 				</rect>
+				<text fromX="721.59143" fromY="77.603" toX="736.2006" toY="82.99078" fontName="Times-Roman" fontSize="7.0">10%</text>
 				<rect fromX="758.165" fromY="75.116" toX="758.364" toY="115.867" lineWidth="0.51">
 				</rect>
-				<text fromX="721.59143" fromY="77.603" toX="736.2006" toY="82.99078" fontName="Times-Roman" fontSize="7.0">10%</text>
 			</box>
 			<rect fromX="418.02" fromY="115.768" toX="758.264" toY="115.967" lineWidth="0.51">
 			</rect>
@@ -468,16 +468,18 @@
 		<text fromX="387.1352" fromY="593.1797" toX="420.74515" toY="598.5515" fontName="Times-Roman" fontSize="7.0">ANEXO I</text>
 		<text fromX="344.04883" fromY="601.7443" toX="463.83154" toY="607.0205" fontName="Times-Roman" fontSize="7.0">REMANEJAMENTO DE CARGOS</text>
 		<group fromX="49.53" fromY="615.684" toX="758.374" toY="693.145">
+			<rect fromX="49.607" fromY="615.684" toX="758.374" toY="615.883" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="615.784" toX="163.113" toY="641.973" lineWidth="1.08">
 				<rect fromX="49.53" fromY="615.784" toX="49.729" toY="632.814" lineWidth="1.08">
 				</rect>
-				<rect fromX="49.53" fromY="632.814" toX="49.729" toY="641.874" lineWidth="1.08">
-				</rect>
+				<text fromX="89.2174" fromY="618.18884" toX="122.4288" toY="623.8476" fontName="Times-Bold" fontSize="7.0">CÓDIGO</text>
 				<rect fromX="162.914" fromY="615.784" toX="163.113" toY="632.814" lineWidth="1.08">
+				</rect>
+				<rect fromX="49.53" fromY="632.814" toX="49.729" toY="641.874" lineWidth="1.08">
 				</rect>
 				<rect fromX="162.914" fromY="632.814" toX="163.113" toY="641.874" lineWidth="1.08">
 				</rect>
-				<text fromX="89.2174" fromY="618.18884" toX="122.4288" toY="623.8476" fontName="Times-Bold" fontSize="7.0">CÓDIGO</text>
 			</box>
 			<box fromX="162.914" fromY="615.784" toX="276.497" toY="641.973" lineWidth="1.08">
 				<text fromX="209.90942" fromY="618.4598" toX="228.50366" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DAS-</text>
@@ -489,30 +491,8 @@
 				<rect fromX="341.847" fromY="615.784" toX="342.046" toY="632.814" lineWidth="1.08">
 				</rect>
 			</box>
-			<box fromX="276.298" fromY="632.714" toX="342.046" toY="641.973" lineWidth="1.08">
-				<rect fromX="276.298" fromY="632.814" toX="276.497" toY="641.874" lineWidth="1.08">
-				</rect>
-				<rect fromX="341.847" fromY="632.814" toX="342.046" toY="641.874" lineWidth="1.08">
-				</rect>
-				<text fromX="299.0416" fromY="633.9676" toX="318.30536" toY="640.8777" fontName="Times-Bold" fontSize="7.0">QTD.</text>
-			</box>
 			<box fromX="341.847" fromY="615.784" toX="512.711" toY="632.913" lineWidth="1.08">
 				<text fromX="367.0838" fromY="618.4598" toX="486.47592" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DA SEGEP/MP P/ A SPM/PR (a)</text>
-			</box>
-			<box fromX="162.914" fromY="641.774" toX="276.497" toY="651.033" lineWidth="1.08">
-				<rect fromX="162.914" fromY="641.874" toX="163.113" toY="650.934" lineWidth="1.08">
-				</rect>
-				<text fromX="212.2327" fromY="644.43835" toX="226.18036" toY="649.93774" fontName="Times-Roman" fontSize="7.0">3,63</text>
-			</box>
-			<box fromX="276.298" fromY="641.774" toX="342.046" toY="651.033" lineWidth="1.08">
-				<rect fromX="276.298" fromY="641.874" toX="276.497" toY="650.934" lineWidth="1.08">
-				</rect>
-				<rect fromX="341.847" fromY="641.874" toX="342.046" toY="650.934" lineWidth="1.08">
-				</rect>
-				<text fromX="306.68076" fromY="644.5499" toX="310.6658" toY="649.93774" fontName="Times-Roman" fontSize="7.0">1</text>
-			</box>
-			<box fromX="341.847" fromY="632.714" toX="512.711" toY="641.973" lineWidth="1.08">
-				<text fromX="397.7848" fromY="635.34644" toX="455.77536" toY="640.8777" fontName="Times-Bold" fontSize="7.0">VALOR TOTAL</text>
 			</box>
 			<box fromX="512.512" fromY="615.784" toX="578.26" toY="632.913" lineWidth="1.08">
 				<rect fromX="512.512" fromY="615.784" toX="512.711" toY="632.814" lineWidth="1.08">
@@ -520,41 +500,77 @@
 				<rect fromX="578.061" fromY="615.784" toX="578.26" toY="632.814" lineWidth="1.08">
 				</rect>
 			</box>
+			<box fromX="578.061" fromY="615.784" toX="758.374" toY="632.913" lineWidth="1.08">
+				<text fromX="636.10815" fromY="618.4598" toX="699.327" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DA SPM/PR P/ A</text>
+				<text fromX="640.9428" fromY="626.15094" toX="694.494" toY="631.8177" fontName="Times-Bold" fontSize="7.0">SEGEP/MP (b)</text>
+				<rect fromX="758.175" fromY="615.784" toX="758.374" toY="632.814" lineWidth="1.08">
+				</rect>
+			</box>
+			<rect fromX="276.298" fromY="632.714" toX="758.275" toY="632.913" lineWidth="1.08">
+			</rect>
+			<box fromX="276.298" fromY="632.714" toX="342.046" toY="641.973" lineWidth="1.08">
+				<rect fromX="276.298" fromY="632.814" toX="276.497" toY="641.874" lineWidth="1.08">
+				</rect>
+				<text fromX="299.0416" fromY="633.9676" toX="318.30536" toY="640.8777" fontName="Times-Bold" fontSize="7.0">QTD.</text>
+				<rect fromX="341.847" fromY="632.814" toX="342.046" toY="641.874" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="341.847" fromY="632.714" toX="512.711" toY="641.973" lineWidth="1.08">
+				<text fromX="397.7848" fromY="635.34644" toX="455.77536" toY="640.8777" fontName="Times-Bold" fontSize="7.0">VALOR TOTAL</text>
+			</box>
 			<box fromX="512.512" fromY="632.714" toX="578.26" toY="641.973" lineWidth="1.08">
 				<rect fromX="512.512" fromY="632.814" toX="512.711" toY="641.874" lineWidth="1.08">
 				</rect>
+				<text fromX="535.2556" fromY="633.9676" toX="554.51935" toY="640.8777" fontName="Times-Bold" fontSize="7.0">QTD.</text>
 				<rect fromX="578.061" fromY="632.814" toX="578.26" toY="641.874" lineWidth="1.08">
 				</rect>
-				<text fromX="535.2556" fromY="633.9676" toX="554.51935" toY="640.8777" fontName="Times-Bold" fontSize="7.0">QTD.</text>
 			</box>
-			<box fromX="578.061" fromY="615.784" toX="758.374" toY="632.913" lineWidth="1.08">
-				<rect fromX="758.175" fromY="615.784" toX="758.374" toY="632.814" lineWidth="1.08">
+			<box fromX="578.061" fromY="632.714" toX="758.374" toY="641.973" lineWidth="1.08">
+				<text fromX="638.72345" fromY="635.34644" toX="696.7138" toY="640.8777" fontName="Times-Bold" fontSize="7.0">VALOR TOTAL</text>
+				<rect fromX="758.175" fromY="632.814" toX="758.374" toY="641.874" lineWidth="1.08">
 				</rect>
-				<text fromX="636.10815" fromY="618.4598" toX="699.327" toY="623.8476" fontName="Times-Bold" fontSize="7.0">DA SPM/PR P/ A</text>
-				<text fromX="640.9428" fromY="626.15094" toX="694.494" toY="631.8177" fontName="Times-Bold" fontSize="7.0">SEGEP/MP (b)</text>
 			</box>
+			<rect fromX="49.53" fromY="641.774" toX="758.274" toY="641.973" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="641.774" toX="163.113" toY="651.033" lineWidth="1.08">
 				<rect fromX="49.53" fromY="641.874" toX="49.729" toY="650.934" lineWidth="1.08">
 				</rect>
 				<text fromX="87.3524" fromY="644.66156" toX="124.29379" toY="649.93774" fontName="Times-Roman" fontSize="7.0">DAS 101.4</text>
-			</box>
-			<box fromX="578.061" fromY="632.714" toX="758.374" toY="641.973" lineWidth="1.08">
-				<rect fromX="758.175" fromY="632.814" toX="758.374" toY="641.874" lineWidth="1.08">
+				<rect fromX="162.914" fromY="641.874" toX="163.113" toY="650.934" lineWidth="1.08">
 				</rect>
-				<text fromX="638.72345" fromY="635.34644" toX="696.7138" toY="640.8777" fontName="Times-Bold" fontSize="7.0">VALOR TOTAL</text>
 			</box>
+			<box fromX="162.914" fromY="641.774" toX="276.497" toY="651.033" lineWidth="1.08">
+				<text fromX="212.2327" fromY="644.43835" toX="226.18036" toY="649.93774" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="276.298" fromY="641.774" toX="342.046" toY="651.033" lineWidth="1.08">
+				<rect fromX="276.298" fromY="641.874" toX="276.497" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="306.68076" fromY="644.5499" toX="310.6658" toY="649.93774" fontName="Times-Roman" fontSize="7.0">1</text>
+				<rect fromX="341.847" fromY="641.874" toX="342.046" toY="650.934" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="341.847" fromY="641.774" toX="512.711" toY="651.033" lineWidth="1.08">
+				<text fromX="419.80676" fromY="644.43835" toX="433.75443" toY="649.93774" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="512.512" fromY="641.774" toX="578.26" toY="651.033" lineWidth="1.08">
+				<rect fromX="512.512" fromY="641.874" toX="512.711" toY="650.934" lineWidth="1.08">
+				</rect>
+				<text fromX="543.5609" fromY="649.4356" toX="546.21497" toY="649.93774" fontName="Times-Roman" fontSize="7.0">-</text>
+				<rect fromX="578.061" fromY="641.874" toX="578.26" toY="650.934" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="578.061" fromY="641.774" toX="758.374" toY="651.033" lineWidth="1.08">
+				<text fromX="666.3921" fromY="649.4356" toX="669.04614" toY="649.93774" fontName="Times-Roman" fontSize="7.0">-</text>
+				<rect fromX="758.175" fromY="641.874" toX="758.374" toY="650.934" lineWidth="1.08">
+				</rect>
+			</box>
+			<rect fromX="49.53" fromY="650.834" toX="758.274" toY="651.033" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="650.834" toX="163.113" toY="658.499" lineWidth="1.08">
 				<rect fromX="49.53" fromY="650.934" toX="49.729" toY="658.4" lineWidth="1.08">
 				</rect>
 				<rect fromX="162.914" fromY="650.934" toX="163.113" toY="658.4" lineWidth="1.08">
 				</rect>
-			</box>
-			<box fromX="49.53" fromY="658.3" toX="163.113" toY="667.559" lineWidth="1.08">
-				<rect fromX="49.53" fromY="658.4" toX="49.729" toY="667.46" lineWidth="1.08">
-				</rect>
-				<rect fromX="162.914" fromY="658.4" toX="163.113" toY="667.46" lineWidth="1.08">
-				</rect>
-				<text fromX="87.3524" fromY="661.1876" toX="124.29379" toY="666.4638" fontName="Times-Roman" fontSize="7.0">DAS 102.4</text>
 			</box>
 			<box fromX="162.914" fromY="650.834" toX="276.497" toY="658.499" lineWidth="1.08">
 			</box>
@@ -564,34 +580,7 @@
 				<rect fromX="341.847" fromY="650.934" toX="342.046" toY="658.4" lineWidth="1.08">
 				</rect>
 			</box>
-			<box fromX="341.847" fromY="641.774" toX="512.711" toY="651.033" lineWidth="1.08">
-				<text fromX="419.80676" fromY="644.43835" toX="433.75443" toY="649.93774" fontName="Times-Roman" fontSize="7.0">3,63</text>
-			</box>
-			<box fromX="162.914" fromY="658.3" toX="276.497" toY="667.559" lineWidth="1.08">
-				<text fromX="212.2327" fromY="660.9644" toX="226.18036" toY="666.4638" fontName="Times-Roman" fontSize="7.0">3,63</text>
-			</box>
 			<box fromX="341.847" fromY="650.834" toX="512.711" toY="658.499" lineWidth="1.08">
-			</box>
-			<box fromX="512.512" fromY="641.774" toX="578.26" toY="651.033" lineWidth="1.08">
-				<rect fromX="512.512" fromY="641.874" toX="512.711" toY="650.934" lineWidth="1.08">
-				</rect>
-				<rect fromX="578.061" fromY="641.874" toX="578.26" toY="650.934" lineWidth="1.08">
-				</rect>
-				<text fromX="543.5609" fromY="649.4356" toX="546.21497" toY="649.93774" fontName="Times-Roman" fontSize="7.0">-</text>
-			</box>
-			<box fromX="162.914" fromY="667.36" toX="276.497" toY="675.025" lineWidth="1.08">
-				<rect fromX="162.914" fromY="667.46" toX="163.113" toY="674.926" lineWidth="1.08">
-				</rect>
-			</box>
-			<box fromX="276.298" fromY="658.3" toX="342.046" toY="667.559" lineWidth="1.08">
-				<rect fromX="276.298" fromY="658.4" toX="276.497" toY="667.46" lineWidth="1.08">
-				</rect>
-				<rect fromX="341.847" fromY="658.4" toX="342.046" toY="667.46" lineWidth="1.08">
-				</rect>
-				<text fromX="307.34625" fromY="665.9617" toX="310.0003" toY="666.4638" fontName="Times-Roman" fontSize="7.0">-</text>
-			</box>
-			<box fromX="341.847" fromY="658.3" toX="512.711" toY="667.559" lineWidth="1.08">
-				<text fromX="425.45358" fromY="665.9617" toX="428.10764" toY="666.4638" fontName="Times-Roman" fontSize="7.0">-</text>
 			</box>
 			<box fromX="512.512" fromY="650.834" toX="578.26" toY="658.499" lineWidth="1.08">
 				<rect fromX="512.512" fromY="650.934" toX="512.711" toY="658.4" lineWidth="1.08">
@@ -599,10 +588,53 @@
 				<rect fromX="578.061" fromY="650.934" toX="578.26" toY="658.4" lineWidth="1.08">
 				</rect>
 			</box>
-			<box fromX="578.061" fromY="641.774" toX="758.374" toY="651.033" lineWidth="1.08">
-				<rect fromX="758.175" fromY="641.874" toX="758.374" toY="650.934" lineWidth="1.08">
+			<box fromX="578.061" fromY="650.834" toX="758.374" toY="658.499" lineWidth="1.08">
+				<rect fromX="758.175" fromY="650.934" toX="758.374" toY="658.4" lineWidth="1.08">
 				</rect>
-				<text fromX="666.3921" fromY="649.4356" toX="669.04614" toY="649.93774" fontName="Times-Roman" fontSize="7.0">-</text>
+			</box>
+			<rect fromX="49.53" fromY="658.3" toX="758.274" toY="658.499" lineWidth="1.08">
+			</rect>
+			<box fromX="49.53" fromY="658.3" toX="163.113" toY="667.559" lineWidth="1.08">
+				<rect fromX="49.53" fromY="658.4" toX="49.729" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="87.3524" fromY="661.1876" toX="124.29379" toY="666.4638" fontName="Times-Roman" fontSize="7.0">DAS 102.4</text>
+				<rect fromX="162.914" fromY="658.4" toX="163.113" toY="667.46" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="162.914" fromY="658.3" toX="276.497" toY="667.559" lineWidth="1.08">
+				<text fromX="212.2327" fromY="660.9644" toX="226.18036" toY="666.4638" fontName="Times-Roman" fontSize="7.0">3,63</text>
+			</box>
+			<box fromX="276.298" fromY="658.3" toX="342.046" toY="667.559" lineWidth="1.08">
+				<rect fromX="276.298" fromY="658.4" toX="276.497" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="307.34625" fromY="665.9617" toX="310.0003" toY="666.4638" fontName="Times-Roman" fontSize="7.0">-</text>
+				<rect fromX="341.847" fromY="658.4" toX="342.046" toY="667.46" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="341.847" fromY="658.3" toX="512.711" toY="667.559" lineWidth="1.08">
+				<text fromX="425.45358" fromY="665.9617" toX="428.10764" toY="666.4638" fontName="Times-Roman" fontSize="7.0">-</text>
+			</box>
+			<box fromX="512.512" fromY="658.3" toX="578.26" toY="667.559" lineWidth="1.08">
+				<rect fromX="512.512" fromY="658.4" toX="512.711" toY="667.46" lineWidth="1.08">
+				</rect>
+				<text fromX="542.8946" fromY="661.076" toX="546.87964" toY="666.4638" fontName="Times-Roman" fontSize="7.0">1</text>
+				<rect fromX="578.061" fromY="658.4" toX="578.26" toY="667.46" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="578.061" fromY="658.3" toX="758.374" toY="667.559" lineWidth="1.08">
+				<text fromX="660.74445" fromY="660.9644" toX="674.69214" toY="666.4638" fontName="Times-Roman" fontSize="7.0">3,63</text>
+				<rect fromX="758.175" fromY="658.4" toX="758.374" toY="667.46" lineWidth="1.08">
+				</rect>
+			</box>
+			<rect fromX="49.53" fromY="667.36" toX="758.274" toY="667.559" lineWidth="1.08">
+			</rect>
+			<box fromX="49.53" fromY="667.36" toX="163.113" toY="675.025" lineWidth="1.08">
+				<rect fromX="49.53" fromY="667.46" toX="49.729" toY="674.926" lineWidth="1.08">
+				</rect>
+				<rect fromX="162.914" fromY="667.46" toX="163.113" toY="674.926" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="162.914" fromY="667.36" toX="276.497" toY="675.025" lineWidth="1.08">
 			</box>
 			<box fromX="276.298" fromY="667.36" toX="342.046" toY="675.025" lineWidth="1.08">
 				<rect fromX="276.298" fromY="667.46" toX="276.497" toY="674.926" lineWidth="1.08">
@@ -612,26 +644,18 @@
 			</box>
 			<box fromX="341.847" fromY="667.36" toX="512.711" toY="675.025" lineWidth="1.08">
 			</box>
-			<box fromX="512.512" fromY="658.3" toX="578.26" toY="667.559" lineWidth="1.08">
-				<rect fromX="512.512" fromY="658.4" toX="512.711" toY="667.46" lineWidth="1.08">
+			<box fromX="512.512" fromY="667.36" toX="578.26" toY="675.025" lineWidth="1.08">
+				<rect fromX="512.512" fromY="667.46" toX="512.711" toY="674.926" lineWidth="1.08">
 				</rect>
-				<rect fromX="578.061" fromY="658.4" toX="578.26" toY="667.46" lineWidth="1.08">
-				</rect>
-				<text fromX="542.8946" fromY="661.076" toX="546.87964" toY="666.4638" fontName="Times-Roman" fontSize="7.0">1</text>
-			</box>
-			<box fromX="578.061" fromY="650.834" toX="758.374" toY="658.499" lineWidth="1.08">
-				<rect fromX="758.175" fromY="650.934" toX="758.374" toY="658.4" lineWidth="1.08">
+				<rect fromX="578.061" fromY="667.46" toX="578.26" toY="674.926" lineWidth="1.08">
 				</rect>
 			</box>
-			<box fromX="49.53" fromY="667.36" toX="163.113" toY="675.025" lineWidth="1.08">
-				<rect fromX="49.53" fromY="667.46" toX="49.729" toY="674.926" lineWidth="1.08">
+			<box fromX="578.061" fromY="667.36" toX="758.374" toY="675.025" lineWidth="1.08">
+				<rect fromX="758.175" fromY="667.46" toX="758.374" toY="674.926" lineWidth="1.08">
 				</rect>
 			</box>
-			<box fromX="578.061" fromY="658.3" toX="758.374" toY="667.559" lineWidth="1.08">
-				<rect fromX="758.175" fromY="658.4" toX="758.374" toY="667.46" lineWidth="1.08">
-				</rect>
-				<text fromX="660.74445" fromY="660.9644" toX="674.69214" toY="666.4638" fontName="Times-Roman" fontSize="7.0">3,63</text>
-			</box>
+			<rect fromX="49.53" fromY="674.826" toX="758.274" toY="675.025" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="674.826" toX="276.497" toY="684.085" lineWidth="1.08">
 				<rect fromX="49.53" fromY="674.926" toX="49.729" toY="683.986" lineWidth="1.08">
 				</rect>
@@ -640,30 +664,27 @@
 			<box fromX="276.298" fromY="674.826" toX="342.046" toY="684.085" lineWidth="1.08">
 				<rect fromX="276.298" fromY="674.926" toX="276.497" toY="683.986" lineWidth="1.08">
 				</rect>
+				<text fromX="306.6811" fromY="677.50635" toX="310.66614" toY="682.9898" fontName="Times-Bold" fontSize="7.0">1</text>
 				<rect fromX="341.847" fromY="674.926" toX="342.046" toY="683.986" lineWidth="1.08">
 				</rect>
-				<text fromX="306.6811" fromY="677.50635" toX="310.66614" toY="682.9898" fontName="Times-Bold" fontSize="7.0">1</text>
 			</box>
 			<box fromX="341.847" fromY="674.826" toX="512.711" toY="684.085" lineWidth="1.08">
 				<text fromX="419.8071" fromY="677.3948" toX="433.75476" toY="682.9898" fontName="Times-Bold" fontSize="7.0">3,63</text>
 			</box>
-			<box fromX="512.512" fromY="667.36" toX="578.26" toY="675.025" lineWidth="1.08">
-				<rect fromX="512.512" fromY="667.46" toX="512.711" toY="674.926" lineWidth="1.08">
-				</rect>
-				<rect fromX="578.061" fromY="667.46" toX="578.26" toY="674.926" lineWidth="1.08">
-				</rect>
-			</box>
 			<box fromX="512.512" fromY="674.826" toX="578.26" toY="684.085" lineWidth="1.08">
 				<rect fromX="512.512" fromY="674.926" toX="512.711" toY="683.986" lineWidth="1.08">
 				</rect>
+				<text fromX="542.8949" fromY="677.50635" toX="546.87994" toY="682.9898" fontName="Times-Bold" fontSize="7.0">1</text>
 				<rect fromX="578.061" fromY="674.926" toX="578.26" toY="683.986" lineWidth="1.08">
 				</rect>
-				<text fromX="542.8949" fromY="677.50635" toX="546.87994" toY="682.9898" fontName="Times-Bold" fontSize="7.0">1</text>
 			</box>
-			<box fromX="578.061" fromY="667.36" toX="758.374" toY="675.025" lineWidth="1.08">
-				<rect fromX="758.175" fromY="667.46" toX="758.374" toY="674.926" lineWidth="1.08">
+			<box fromX="578.061" fromY="674.826" toX="758.374" toY="684.085" lineWidth="1.08">
+				<text fromX="660.74475" fromY="677.3948" toX="674.69244" toY="682.9898" fontName="Times-Bold" fontSize="7.0">3,63</text>
+				<rect fromX="758.175" fromY="674.926" toX="758.374" toY="683.986" lineWidth="1.08">
 				</rect>
 			</box>
+			<rect fromX="49.53" fromY="683.886" toX="758.274" toY="684.085" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="683.886" toX="512.711" toY="693.145" lineWidth="1.08">
 				<rect fromX="49.53" fromY="683.986" toX="49.729" toY="693.046" lineWidth="1.08">
 				</rect>
@@ -672,36 +693,15 @@
 			<box fromX="512.512" fromY="683.886" toX="578.26" toY="693.145" lineWidth="1.08">
 				<rect fromX="512.512" fromY="683.986" toX="512.711" toY="693.046" lineWidth="1.08">
 				</rect>
+				<text fromX="542.89465" fromY="686.46277" toX="546.8797" toY="692.0498" fontName="Times-Bold" fontSize="7.0">0</text>
 				<rect fromX="578.061" fromY="683.986" toX="578.26" toY="693.046" lineWidth="1.08">
 				</rect>
-				<text fromX="542.89465" fromY="686.46277" toX="546.8797" toY="692.0498" fontName="Times-Bold" fontSize="7.0">0</text>
-			</box>
-			<box fromX="578.061" fromY="674.826" toX="758.374" toY="684.085" lineWidth="1.08">
-				<rect fromX="758.175" fromY="674.926" toX="758.374" toY="683.986" lineWidth="1.08">
-				</rect>
-				<text fromX="660.74475" fromY="677.3948" toX="674.69244" toY="682.9898" fontName="Times-Bold" fontSize="7.0">3,63</text>
 			</box>
 			<box fromX="578.061" fromY="683.886" toX="758.374" toY="693.145" lineWidth="1.08">
+				<text fromX="665.7258" fromY="686.46277" toX="669.7109" toY="692.0498" fontName="Times-Bold" fontSize="7.0">0</text>
 				<rect fromX="758.175" fromY="683.986" toX="758.374" toY="693.046" lineWidth="1.08">
 				</rect>
-				<text fromX="665.7258" fromY="686.46277" toX="669.7109" toY="692.0498" fontName="Times-Bold" fontSize="7.0">0</text>
 			</box>
-			<rect fromX="49.607" fromY="615.684" toX="758.374" toY="615.883" lineWidth="1.08">
-			</rect>
-			<rect fromX="276.298" fromY="632.714" toX="758.275" toY="632.913" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="641.774" toX="758.274" toY="641.973" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="650.834" toX="758.274" toY="651.033" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="658.3" toX="758.274" toY="658.499" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="667.36" toX="758.274" toY="667.559" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="674.826" toX="758.274" toY="675.025" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="683.886" toX="758.274" toY="684.085" lineWidth="1.08">
-			</rect>
 			<rect fromX="49.53" fromY="692.946" toX="758.274" toY="693.145" lineWidth="1.08">
 			</rect>
 		</group>
@@ -709,14 +709,39 @@
 		<text fromX="309.2472" fromY="713.7508" toX="498.63266" toY="720.5493" fontName="Times-Roman" fontSize="7.0">(Anexo II ao Decreto nº 8.030, de 20 de junho de 2013)</text>
 		<text fromX="49.606842" fromY="733.24243" toX="615.34045" toY="736.9884" fontName="Times-Roman" fontSize="7.0">a) QUADRO DEMONSTRATIVO DOS CARGOS EM COMISSÃO DA SECRETARIA DE POLÍTICAS PARA AS MULHERES DA PRESIDÊNCIA DA REPÚBLICA</text>
 		<group fromX="49.53" fromY="745.652" toX="758.372" toY="868.818">
+			<rect fromX="49.607" fromY="745.652" toX="758.372" toY="745.851" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="745.751" toX="371.571" toY="770.851" lineWidth="1.08">
 				<rect fromX="49.53" fromY="745.751" toX="49.729" toY="770.751" lineWidth="1.08">
 				</rect>
 				<text fromX="191.458" fromY="748.27594" toX="228.64647" toY="753.8152" fontName="Times-Bold" fontSize="7.0">UNIDADE</text>
 			</box>
+			<box fromX="371.372" fromY="745.751" toX="466.057" toY="770.851" lineWidth="1.08">
+				<rect fromX="371.372" fromY="745.751" toX="371.571" toY="770.751" lineWidth="1.08">
+				</rect>
+				<text fromX="402.27588" fromY="748.15643" toX="434.15634" toY="753.8152" fontName="Times-Bold" fontSize="7.0">CARGO/</text>
+				<text fromX="400.0642" fromY="756.39746" toX="436.36807" toY="761.7853" fontName="Times-Bold" fontSize="7.0">FUNÇÃO/</text>
+				<text fromX="414.0244" fromY="764.2241" toX="422.40897" toY="769.7554" fontName="Times-Bold" fontSize="7.0">Nº</text>
+				<rect fromX="465.858" fromY="745.751" toX="466.057" toY="770.751" lineWidth="1.08">
+				</rect>
+			</box>
+			<box fromX="465.858" fromY="745.751" toX="663.886" toY="770.851" lineWidth="1.08">
+				<text fromX="532.9395" fromY="748.42737" toX="595.80756" toY="753.8152" fontName="Times-Bold" fontSize="7.0">DENOMINAÇÃO</text>
+				<text fromX="531.38934" fromY="756.1265" toX="597.3578" toY="761.7853" fontName="Times-Bold" fontSize="7.0">CARGO/FUNÇÃO</text>
+			</box>
+			<box fromX="663.687" fromY="745.751" toX="758.372" toY="770.851" lineWidth="1.08">
+				<rect fromX="663.687" fromY="745.751" toX="663.886" toY="770.751" lineWidth="1.08">
+				</rect>
+				<text fromX="695.9185" fromY="748.28394" toX="725.14484" toY="753.8152" fontName="Times-Bold" fontSize="7.0">NE/DAS</text>
+				<rect fromX="758.173" fromY="745.751" toX="758.372" toY="770.751" lineWidth="1.08">
+				</rect>
+			</box>
+			<rect fromX="49.53" fromY="770.652" toX="758.272" toY="770.851" lineWidth="1.08">
+			</rect>
 			<box fromX="49.53" fromY="770.652" toX="371.571" toY="868.818" lineWidth="1.08">
 				<rect fromX="49.53" fromY="770.752" toX="49.729" toY="779.812" lineWidth="1.08">
 				</rect>
+				<text fromX="50.6262" fromY="773.15674" toX="92.700356" toY="778.8155" fontName="Times-Bold" fontSize="7.0">GABINETE</text>
 				<rect fromX="49.53" fromY="779.812" toX="49.729" toY="788.872" lineWidth="1.08">
 				</rect>
 				<rect fromX="49.53" fromY="788.872" toX="49.729" toY="797.932" lineWidth="1.08">
@@ -725,92 +750,78 @@
 				</rect>
 				<rect fromX="49.53" fromY="806.992" toX="49.729" toY="816.052" lineWidth="1.08">
 				</rect>
-				<rect fromX="49.53" fromY="825.112" toX="49.729" toY="834.172" lineWidth="1.08">
-				</rect>
+				<text fromX="50.6262" fromY="809.5561" toX="92.67645" toY="815.0555" fontName="Times-Roman" fontSize="7.0">Coordenação</text>
 				<rect fromX="49.53" fromY="816.052" toX="49.729" toY="825.112" lineWidth="1.08">
 				</rect>
+				<text fromX="50.6262" fromY="818.6162" toX="151.04947" toY="824.1156" fontName="Times-Roman" fontSize="7.0">Coordenação-Geral do CNDM</text>
+				<rect fromX="49.53" fromY="825.112" toX="49.729" toY="834.172" lineWidth="1.08">
+				</rect>
+				<text fromX="50.6262" fromY="827.6762" toX="82.94496" toY="833.1756" fontName="Times-Roman" fontSize="7.0">Ouvidoria</text>
 				<rect fromX="49.53" fromY="834.172" toX="49.729" toY="843.232" lineWidth="1.08">
 				</rect>
+				<text fromX="50.6262" fromY="836.8638" toX="165.19638" toY="842.2356" fontName="Times-Roman" fontSize="7.0">Assessoria de Comunicação Social</text>
 				<rect fromX="49.53" fromY="843.232" toX="49.729" toY="852.292" lineWidth="1.08">
 				</rect>
 				<rect fromX="49.53" fromY="852.292" toX="49.729" toY="861.352" lineWidth="1.08">
 				</rect>
 				<rect fromX="49.53" fromY="861.352" toX="49.729" toY="868.818" lineWidth="1.08">
 				</rect>
-				<text fromX="50.6262" fromY="773.15674" toX="92.700356" toY="778.8155" fontName="Times-Bold" fontSize="7.0">GABINETE</text>
-				<text fromX="50.6262" fromY="809.5561" toX="92.67645" toY="815.0555" fontName="Times-Roman" fontSize="7.0">Coordenação</text>
-				<text fromX="50.6262" fromY="818.6162" toX="151.04947" toY="824.1156" fontName="Times-Roman" fontSize="7.0">Coordenação-Geral do CNDM</text>
-				<text fromX="50.6262" fromY="827.6762" toX="82.94496" toY="833.1756" fontName="Times-Roman" fontSize="7.0">Ouvidoria</text>
-				<text fromX="50.6262" fromY="836.8638" toX="165.19638" toY="842.2356" fontName="Times-Roman" fontSize="7.0">Assessoria de Comunicação Social</text>
-			</box>
-			<box fromX="371.372" fromY="745.751" toX="466.057" toY="770.851" lineWidth="1.08">
-				<rect fromX="371.372" fromY="745.751" toX="371.571" toY="770.751" lineWidth="1.08">
-				</rect>
-				<rect fromX="465.858" fromY="745.751" toX="466.057" toY="770.751" lineWidth="1.08">
-				</rect>
-				<text fromX="402.27588" fromY="748.15643" toX="434.15634" toY="753.8152" fontName="Times-Bold" fontSize="7.0">CARGO/</text>
-				<text fromX="400.0642" fromY="756.39746" toX="436.36807" toY="761.7853" fontName="Times-Bold" fontSize="7.0">FUNÇÃO/</text>
-				<text fromX="414.0244" fromY="764.2241" toX="422.40897" toY="769.7554" fontName="Times-Bold" fontSize="7.0">Nº</text>
 			</box>
 			<box fromX="371.372" fromY="770.652" toX="466.057" toY="868.818" lineWidth="1.08">
 				<rect fromX="371.372" fromY="770.752" toX="371.571" toY="779.812" lineWidth="1.08">
 				</rect>
+				<text fromX="416.22345" fromY="773.4277" toX="420.2085" toY="778.8155" fontName="Times-Roman" fontSize="7.0">1</text>
+				<rect fromX="465.858" fromY="770.752" toX="466.057" toY="779.812" lineWidth="1.08">
+				</rect>
 				<rect fromX="371.372" fromY="779.812" toX="371.571" toY="788.872" lineWidth="1.08">
 				</rect>
-				<rect fromX="465.858" fromY="770.752" toX="466.057" toY="779.812" lineWidth="1.08">
+				<text fromX="416.2242" fromY="782.3761" toX="420.20926" toY="787.8755" fontName="Times-Roman" fontSize="7.0">3</text>
+				<rect fromX="465.858" fromY="779.812" toX="466.057" toY="788.872" lineWidth="1.08">
 				</rect>
 				<rect fromX="371.372" fromY="788.872" toX="371.571" toY="797.932" lineWidth="1.08">
 				</rect>
-				<rect fromX="465.858" fromY="779.812" toX="466.057" toY="788.872" lineWidth="1.08">
-				</rect>
+				<text fromX="416.2242" fromY="791.34045" toX="420.20926" toY="796.9355" fontName="Times-Roman" fontSize="7.0">5</text>
 				<rect fromX="465.858" fromY="788.872" toX="466.057" toY="797.932" lineWidth="1.08">
 				</rect>
 				<rect fromX="371.372" fromY="797.932" toX="371.571" toY="806.992" lineWidth="1.08">
 				</rect>
-				<rect fromX="371.372" fromY="806.992" toX="371.571" toY="816.052" lineWidth="1.08">
-				</rect>
+				<text fromX="416.2242" fromY="800.4961" toX="420.20926" toY="805.9955" fontName="Times-Roman" fontSize="7.0">3</text>
 				<rect fromX="465.858" fromY="797.932" toX="466.057" toY="806.992" lineWidth="1.08">
 				</rect>
+				<rect fromX="371.372" fromY="806.992" toX="371.571" toY="816.052" lineWidth="1.08">
+				</rect>
+				<text fromX="416.22345" fromY="809.66766" toX="420.2085" toY="815.0555" fontName="Times-Roman" fontSize="7.0">1</text>
 				<rect fromX="465.858" fromY="806.992" toX="466.057" toY="816.052" lineWidth="1.08">
 				</rect>
 				<rect fromX="371.372" fromY="816.052" toX="371.571" toY="825.112" lineWidth="1.08">
 				</rect>
-				<rect fromX="371.372" fromY="825.112" toX="371.571" toY="834.172" lineWidth="1.08">
-				</rect>
+				<text fromX="416.22345" fromY="818.7278" toX="420.2085" toY="824.1156" fontName="Times-Roman" fontSize="7.0">1</text>
 				<rect fromX="465.858" fromY="816.052" toX="466.057" toY="825.112" lineWidth="1.08">
 				</rect>
+				<rect fromX="371.372" fromY="825.112" toX="371.571" toY="834.172" lineWidth="1.08">
+				</rect>
+				<text fromX="416.22345" fromY="827.7878" toX="420.2085" toY="833.1756" fontName="Times-Roman" fontSize="7.0">1</text>
 				<rect fromX="465.858" fromY="825.112" toX="466.057" toY="834.172" lineWidth="1.08">
 				</rect>
 				<rect fromX="371.372" fromY="834.172" toX="371.571" toY="843.232" lineWidth="1.08">
 				</rect>
-				<rect fromX="371.372" fromY="843.232" toX="371.571" toY="852.292" lineWidth="1.08">
-				</rect>
+				<text fromX="416.22345" fromY="836.8478" toX="420.2085" toY="842.2356" fontName="Times-Roman" fontSize="7.0">1</text>
 				<rect fromX="465.858" fromY="834.172" toX="466.057" toY="843.232" lineWidth="1.08">
 				</rect>
+				<rect fromX="371.372" fromY="843.232" toX="371.571" toY="852.292" lineWidth="1.08">
+				</rect>
+				<text fromX="416.2242" fromY="845.9078" toX="420.20926" toY="851.2956" fontName="Times-Roman" fontSize="7.0">1</text>
 				<rect fromX="465.858" fromY="843.232" toX="466.057" toY="852.292" lineWidth="1.08">
 				</rect>
 				<rect fromX="371.372" fromY="852.292" toX="371.571" toY="861.352" lineWidth="1.08">
 				</rect>
+				<text fromX="416.2242" fromY="854.9679" toX="420.20926" toY="860.3557" fontName="Times-Roman" fontSize="7.0">1</text>
 				<rect fromX="465.858" fromY="852.292" toX="466.057" toY="861.352" lineWidth="1.08">
 				</rect>
 				<rect fromX="371.372" fromY="861.352" toX="371.571" toY="868.818" lineWidth="1.08">
 				</rect>
 				<rect fromX="465.858" fromY="861.352" toX="466.057" toY="868.818" lineWidth="1.08">
 				</rect>
-				<text fromX="416.22345" fromY="773.4277" toX="420.2085" toY="778.8155" fontName="Times-Roman" fontSize="7.0">1</text>
-				<text fromX="416.2242" fromY="782.3761" toX="420.20926" toY="787.8755" fontName="Times-Roman" fontSize="7.0">3</text>
-				<text fromX="416.2242" fromY="791.34045" toX="420.20926" toY="796.9355" fontName="Times-Roman" fontSize="7.0">5</text>
-				<text fromX="416.2242" fromY="800.4961" toX="420.20926" toY="805.9955" fontName="Times-Roman" fontSize="7.0">3</text>
-				<text fromX="416.22345" fromY="809.66766" toX="420.2085" toY="815.0555" fontName="Times-Roman" fontSize="7.0">1</text>
-				<text fromX="416.22345" fromY="818.7278" toX="420.2085" toY="824.1156" fontName="Times-Roman" fontSize="7.0">1</text>
-				<text fromX="416.22345" fromY="827.7878" toX="420.2085" toY="833.1756" fontName="Times-Roman" fontSize="7.0">1</text>
-				<text fromX="416.22345" fromY="836.8478" toX="420.2085" toY="842.2356" fontName="Times-Roman" fontSize="7.0">1</text>
-				<text fromX="416.2242" fromY="845.9078" toX="420.20926" toY="851.2956" fontName="Times-Roman" fontSize="7.0">1</text>
-				<text fromX="416.2242" fromY="854.9679" toX="420.20926" toY="860.3557" fontName="Times-Roman" fontSize="7.0">1</text>
-			</box>
-			<box fromX="465.858" fromY="745.751" toX="663.886" toY="770.851" lineWidth="1.08">
-				<text fromX="532.9395" fromY="748.42737" toX="595.80756" toY="753.8152" fontName="Times-Bold" fontSize="7.0">DENOMINAÇÃO</text>
-				<text fromX="531.38934" fromY="756.1265" toX="597.3578" toY="761.7853" fontName="Times-Bold" fontSize="7.0">CARGO/FUNÇÃO</text>
 			</box>
 			<box fromX="465.858" fromY="770.652" toX="663.886" toY="868.818" lineWidth="1.08">
 				<text fromX="533.6398" fromY="773.3161" toX="595.105" toY="778.8155" fontName="Times-Roman" fontSize="7.0">Chefe de Gabinete</text>
@@ -824,73 +835,62 @@
 				<text fromX="550.20636" fromY="845.92377" toX="578.5399" toY="851.2956" fontName="Times-Roman" fontSize="7.0">Assessor</text>
 				<text fromX="535.8363" fromY="854.9839" toX="592.91" toY="860.3557" fontName="Times-Roman" fontSize="7.0">Assessor Técnico</text>
 			</box>
-			<box fromX="663.687" fromY="745.751" toX="758.372" toY="770.851" lineWidth="1.08">
-				<rect fromX="663.687" fromY="745.751" toX="663.886" toY="770.751" lineWidth="1.08">
-				</rect>
-				<rect fromX="758.173" fromY="745.751" toX="758.372" toY="770.751" lineWidth="1.08">
-				</rect>
-				<text fromX="695.9185" fromY="748.28394" toX="725.14484" toY="753.8152" fontName="Times-Bold" fontSize="7.0">NE/DAS</text>
-			</box>
 			<box fromX="663.687" fromY="770.652" toX="758.372" toY="868.818" lineWidth="1.08">
 				<rect fromX="663.687" fromY="770.752" toX="663.886" toY="779.812" lineWidth="1.08">
 				</rect>
+				<text fromX="701.56323" fromY="773.4277" toX="719.496" toY="778.8155" fontName="Times-Roman" fontSize="7.0">101.5</text>
+				<rect fromX="758.173" fromY="770.752" toX="758.372" toY="779.812" lineWidth="1.08">
+				</rect>
 				<rect fromX="663.687" fromY="779.812" toX="663.886" toY="788.872" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="770.752" toX="758.372" toY="779.812" lineWidth="1.08">
+				<text fromX="701.5639" fromY="782.4877" toX="719.49664" toY="787.8755" fontName="Times-Roman" fontSize="7.0">102.5</text>
+				<rect fromX="758.173" fromY="779.812" toX="758.372" toY="788.872" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="788.872" toX="663.886" toY="797.932" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="779.812" toX="758.372" toY="788.872" lineWidth="1.08">
-				</rect>
+				<text fromX="701.56396" fromY="791.54767" toX="719.4967" toY="796.9355" fontName="Times-Roman" fontSize="7.0">102.4</text>
 				<rect fromX="758.173" fromY="788.872" toX="758.372" toY="797.932" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="797.932" toX="663.886" toY="806.992" lineWidth="1.08">
 				</rect>
+				<text fromX="701.56476" fromY="800.60767" toX="719.4975" toY="805.9955" fontName="Times-Roman" fontSize="7.0">102.3</text>
+				<rect fromX="758.173" fromY="797.932" toX="758.372" toY="806.992" lineWidth="1.08">
+				</rect>
 				<rect fromX="663.687" fromY="806.992" toX="663.886" toY="816.052" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="797.932" toX="758.372" toY="806.992" lineWidth="1.08">
+				<text fromX="701.5641" fromY="809.66766" toX="719.4968" toY="815.0555" fontName="Times-Roman" fontSize="7.0">101.3</text>
+				<rect fromX="758.173" fromY="806.992" toX="758.372" toY="816.052" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="816.052" toX="663.886" toY="825.112" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="806.992" toX="758.372" toY="816.052" lineWidth="1.08">
+				<text fromX="701.564" fromY="818.7278" toX="719.49677" toY="824.1156" fontName="Times-Roman" fontSize="7.0">101.4</text>
+				<rect fromX="758.173" fromY="816.052" toX="758.372" toY="825.112" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="825.112" toX="663.886" toY="834.172" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="816.052" toX="758.372" toY="825.112" lineWidth="1.08">
-				</rect>
+				<text fromX="701.564" fromY="827.7878" toX="719.49677" toY="833.1756" fontName="Times-Roman" fontSize="7.0">101.4</text>
 				<rect fromX="758.173" fromY="825.112" toX="758.372" toY="834.172" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="834.172" toX="663.886" toY="843.232" lineWidth="1.08">
 				</rect>
+				<text fromX="701.5639" fromY="836.8478" toX="719.49664" toY="842.2356" fontName="Times-Roman" fontSize="7.0">101.4</text>
+				<rect fromX="758.173" fromY="834.172" toX="758.372" toY="843.232" lineWidth="1.08">
+				</rect>
 				<rect fromX="663.687" fromY="843.232" toX="663.886" toY="852.292" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="834.172" toX="758.372" toY="843.232" lineWidth="1.08">
+				<text fromX="701.56396" fromY="845.9078" toX="719.4967" toY="851.2956" fontName="Times-Roman" fontSize="7.0">102.4</text>
+				<rect fromX="758.173" fromY="843.232" toX="758.372" toY="852.292" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="852.292" toX="663.886" toY="861.352" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="843.232" toX="758.372" toY="852.292" lineWidth="1.08">
+				<text fromX="701.56476" fromY="854.9679" toX="719.4975" toY="860.3557" fontName="Times-Roman" fontSize="7.0">102.3</text>
+				<rect fromX="758.173" fromY="852.292" toX="758.372" toY="861.352" lineWidth="1.08">
 				</rect>
 				<rect fromX="663.687" fromY="861.352" toX="663.886" toY="868.818" lineWidth="1.08">
 				</rect>
-				<rect fromX="758.173" fromY="852.292" toX="758.372" toY="861.352" lineWidth="1.08">
-				</rect>
 				<rect fromX="758.173" fromY="861.352" toX="758.372" toY="868.818" lineWidth="1.08">
 				</rect>
-				<text fromX="701.56323" fromY="773.4277" toX="719.496" toY="778.8155" fontName="Times-Roman" fontSize="7.0">101.5</text>
-				<text fromX="701.5639" fromY="782.4877" toX="719.49664" toY="787.8755" fontName="Times-Roman" fontSize="7.0">102.5</text>
-				<text fromX="701.56396" fromY="791.54767" toX="719.4967" toY="796.9355" fontName="Times-Roman" fontSize="7.0">102.4</text>
-				<text fromX="701.56476" fromY="800.60767" toX="719.4975" toY="805.9955" fontName="Times-Roman" fontSize="7.0">102.3</text>
-				<text fromX="701.5641" fromY="809.66766" toX="719.4968" toY="815.0555" fontName="Times-Roman" fontSize="7.0">101.3</text>
-				<text fromX="701.564" fromY="818.7278" toX="719.49677" toY="824.1156" fontName="Times-Roman" fontSize="7.0">101.4</text>
-				<text fromX="701.564" fromY="827.7878" toX="719.49677" toY="833.1756" fontName="Times-Roman" fontSize="7.0">101.4</text>
-				<text fromX="701.5639" fromY="836.8478" toX="719.49664" toY="842.2356" fontName="Times-Roman" fontSize="7.0">101.4</text>
-				<text fromX="701.56396" fromY="845.9078" toX="719.4967" toY="851.2956" fontName="Times-Roman" fontSize="7.0">102.4</text>
-				<text fromX="701.56476" fromY="854.9679" toX="719.4975" toY="860.3557" fontName="Times-Roman" fontSize="7.0">102.3</text>
 			</box>
-			<rect fromX="49.607" fromY="745.652" toX="758.372" toY="745.851" lineWidth="1.08">
-			</rect>
-			<rect fromX="49.53" fromY="770.652" toX="758.272" toY="770.851" lineWidth="1.08">
-			</rect>
 		</group>
 		<line fromX="49.607" fromY="873.311" toX="758.273" toY="873.311" lineWidth="0.51" />
 		<text fromX="49.4745" fromY="879.54083" toX="352.7328" toY="884.817" fontName="Times-Roman" fontSize="7.0">Este documento pode ser verificado no endereço eletrônico http://www.in.gov.br/autenticidade.html ,</text>

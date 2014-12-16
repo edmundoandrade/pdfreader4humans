@@ -34,9 +34,9 @@ public class MainPDFComponentLocatorTest {
 		assertEquals(172, components.size());
 		assertEquals("rect :: 50.406, 34.147, 758.273, 69.08, 0.0pt", components.get(0).toString());
 		assertEquals("rect :: 49.518, 75.116, 49.717, 83.987, 0.51pt", components.get(1).toString());
-		assertEquals("rect :: 49.518, 83.887, 389.762, 84.086, 0.51pt", components.get(2).toString());
-		assertEquals("rect :: 101.254, 75.116, 101.453, 83.987, 0.51pt", components.get(4).toString());
-		assertEquals("rect :: 273.328, 75.116, 273.527, 83.987, 0.51pt", components.get(5).toString());
+		assertEquals("rect :: 101.254, 75.116, 101.453, 83.987, 0.51pt", components.get(2).toString());
+		assertEquals("rect :: 273.328, 75.116, 273.527, 83.987, 0.51pt", components.get(3).toString());
+		assertEquals("rect :: 49.518, 83.887, 389.762, 84.086, 0.51pt", components.get(6).toString());
 		assertEquals("line :: 49.607, 218.596, 758.265, 218.596, 1.08pt", components.get(46).toString());
 		assertEquals("line :: 49.607, 585.267, 517.321, 585.267, 1.08pt", components.get(47).toString());
 	}

@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -65,7 +64,28 @@ public class PDFReader {
 		return removeEmptyLines(output.replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content)));
 	}
 
-	private String removeEmptyLines(String text) {
+	public List<String> toTextLines() {
+		List<String> lines = new ArrayList<String>();
+		for (int pageIndex = 0; pageIndex < firstLevel.size(); pageIndex++)
+			lines.addAll(pageToTextLines(pageIndex + 1, firstLevel.get(pageIndex)));
+		return lines;
+	}
+
+	protected List<String> pageToTextLines(int pageNumber, List<Component> pageFirstLevelComponents) {
+		List<String> lines = new ArrayList<String>();
+		for (Component component : pageFirstLevelComponents)
+			addToTextLines(component, lines);
+		return lines;
+	}
+
+	private void addToTextLines(Component component, List<String> lines) {
+		if (component instanceof TextComponent)
+			lines.add(((TextComponent) component).getText());
+		for (Component child : component.getChildren())
+			addToTextLines(child, lines);
+	}
+
+	protected String removeEmptyLines(String text) {
 		return text.replaceAll(LINE_BREAK + LINE_BREAK, LINE_BREAK);
 	}
 
@@ -85,14 +105,16 @@ public class PDFReader {
 		return component.output(componentTemplate).replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
 	}
 
-	public RenderedImage createPageImage(int pageNumber, int scaling, Color inkColor, Color backgroundColor, boolean showStructure) throws IOException {
+	public BufferedImage createPageImage(int pageNumber, int scaling, Color inkColor, Color backgroundColor, boolean showStructure) throws IOException {
 		Map<String, Font> fonts = new HashMap<String, Font>();
 		PDRectangle cropBox = getPageCropBox(pageNumber);
 		BufferedImage image = new BufferedImage(Math.round(cropBox.getWidth() * scaling), Math.round(cropBox.getHeight() * scaling), BufferedImage.TYPE_INT_ARGB);
 		Graphics2D graphics = image.createGraphics();
-		graphics.setColor(inkColor);
 		graphics.setBackground(backgroundColor);
 		graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
+		graphics.setColor(backgroundColor);
+		graphics.fillRect(0, 0, image.getWidth(), image.getHeight());
+		graphics.setColor(inkColor);
 		graphics.scale(scaling, scaling);
 		for (Component component : getFirstLevelComponents(pageNumber))
 			draw(component, graphics, inkColor, backgroundColor, showStructure, fonts);
@@ -100,12 +122,12 @@ public class PDFReader {
 		return image;
 	}
 
-	private void readAllPages(PDDocument doc, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	protected void readAllPages(PDDocument doc, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		for (Object page : doc.getDocumentCatalog().getAllPages())
 			firstLevel.add(readPage((PDPage) page, componentLocator, boxDetector, marginDetector));
 	}
 
-	private List<Component> readPage(PDPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	protected List<Component> readPage(PDPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
 		List<Component> firstLevelComponents = new ArrayList<Component>();
 		List<GridComponent> gridComponents = componentLocator.locateGridComponents(page);
 		List<TextComponent> textComponents = componentLocator.locateTextComponents(page);
@@ -122,11 +144,18 @@ public class PDFReader {
 		containers.addAll(margins);
 		firstLevelComponents.addAll(margins);
 		addComponents(textComponents, firstLevelComponents, containers);
-		Collections.sort(firstLevelComponents);
+		sortRecursively(firstLevelComponents);
 		return firstLevelComponents;
 	}
 
-	private List<? extends Component> group(List<TextComponent> textComponents, List<Component> layoutComponents) {
+	protected void sortRecursively(List<Component> components) {
+		if (components.size() > 0)
+			Collections.sort(components);
+		for (Component component : components)
+			sortRecursively(component.getChildren());
+	}
+
+	protected List<? extends Component> group(List<TextComponent> textComponents, List<Component> layoutComponents) {
 		List<Component> list = new ArrayList<Component>();
 		list.addAll(layoutComponents);
 		for (Component component : textComponents)
@@ -135,7 +164,7 @@ public class PDFReader {
 		return list;
 	}
 
-	private List<Component> groupConnectedComponents(List<Component> components) {
+	protected List<Component> groupConnectedComponents(List<Component> components) {
 		Map<Component, Integer> groupMap = new HashMap<Component, Integer>();
 		int lastGroupIndex = buildGroupMap(components, groupMap);
 		List<Component> groups = new ArrayList<Component>(lastGroupIndex);
@@ -144,7 +173,7 @@ public class PDFReader {
 		return groups;
 	}
 
-	private Component createGroup(int groupIndex, Map<Component, Integer> groupMap) {
+	protected Component createGroup(int groupIndex, Map<Component, Integer> groupMap) {
 		float fromX = Float.POSITIVE_INFINITY;
 		float fromY = Float.POSITIVE_INFINITY;
 		float toX = Float.NEGATIVE_INFINITY;
@@ -185,13 +214,13 @@ public class PDFReader {
 		return lastGroupIndex;
 	}
 
-	private void joinGroups(Integer groupIndex1, Integer groupIndex2, Map<Component, Integer> groupMap) {
+	protected void joinGroups(Integer groupIndex1, Integer groupIndex2, Map<Component, Integer> groupMap) {
 		for (Component component : groupMap.keySet())
 			if (groupMap.get(component) == groupIndex2)
 				groupMap.put(component, groupIndex1);
 	}
 
-	private void addComponents(List<? extends Component> components, List<Component> targetList, List<? extends Component> containers) {
+	protected void addComponents(List<? extends Component> components, List<Component> targetList, List<? extends Component> containers) {
 		for (Component component : components) {
 			Component container = findContainer(component, containers);
 			if (container != null)
@@ -201,7 +230,7 @@ public class PDFReader {
 		}
 	}
 
-	private Component findContainer(Component component, List<? extends Component> containers) {
+	protected Component findContainer(Component component, List<? extends Component> containers) {
 		Component container = null;
 		float area = Float.POSITIVE_INFINITY;
 		for (Component possibleContainer : containers)
