@@ -1,5 +1,5 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
-package edworld.pdfreader4humans;
+package edworld.pdfreader4humans.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,10 +10,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import edworld.pdfreader4humans.impl.MainMarginDetector;
+import edworld.pdfreader4humans.Component;
+import edworld.pdfreader4humans.GridComponent;
+import edworld.pdfreader4humans.GroupComponent;
+import edworld.pdfreader4humans.MarginComponent;
+import edworld.pdfreader4humans.MarginDetector;
+import edworld.pdfreader4humans.TextComponent;
 
-public class MarginDetectorTest {
+public class MainMarginDetectorTest {
 	private static final String LINE = "line";
+	private static final String GROUP = "group";
 	private static final String TEXT = "text";
 	private MarginDetector detector;
 	private List<Component> testComponents;
@@ -109,9 +115,12 @@ public class MarginDetectorTest {
 		grd(" ───────────  ───────── ");
 		grd(" ───────      ───────── ");
 		grd(" ───────────  ───────── ");
+		grd(" ────────────────────── ", GROUP);
+		grd("         ───────        ");
+		grd("         ───────        ");
 		grd(" ────────────────────── ", LINE);
 		detected = detector.detectMargins(gridComponents());
-		Assert.assertEquals(2, detected.size());
+		Assert.assertEquals(3, detected.size());
 		mrg("             ");
 		mrg(" ┌─────────┐ ");
 		mrg(" │         │ ");
@@ -122,7 +131,7 @@ public class MarginDetectorTest {
 		mrg(" └─────────┘ ");
 		mrg("             ");
 		assertMargin(detected);
-		mrg("                       ");
+		mrg("                        ");
 		mrg("              ┌───────┐ ");
 		mrg("              │       │ ");
 		mrg("              │       │ ");
@@ -131,6 +140,33 @@ public class MarginDetectorTest {
 		mrg("              │       │ ");
 		mrg("              └───────┘ ");
 		mrg("                        ");
+		assertMargin(detected);
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("                        ");
+		mrg("         ┌─────┐        ");
+		mrg("         └─────┘        ");
+		mrg("                        ");
+		assertMargin(detected);
+	}
+
+	@Test
+	public void detecDistantMargins() {
+		grd(" ─────────────             ────────── ");
+		grd(" ───────                        ───── ");
+		detected = detector.detectMargins(gridComponents());
+		Assert.assertEquals(2, detected.size());
+		mrg(" ┌───────────┐ ");
+		mrg(" └───────────┘ ");
+		assertMargin(detected);
+		mrg("                           ┌────────┐ ");
+		mrg("                           └────────┘ ");
 		assertMargin(detected);
 	}
 
@@ -194,6 +230,8 @@ public class MarginDetectorTest {
 		if (fromX != null) {
 			if (type.equals(TEXT))
 				testComponents.add(new TextComponent("", fromX, coordFromY(row), toX, coordToY(row), "", 1));
+			else if (type.equals(GROUP))
+				testComponents.add(new GroupComponent(fromX, coordFromY(row), toX, coordToY(row)));
 			else
 				testComponents.add(new GridComponent(type, fromX, coordFromY(row), toX, coordToY(row), 1));
 			fromX = null;
@@ -205,6 +243,8 @@ public class MarginDetectorTest {
 		if (fromY.get(column) != null) {
 			if (type.equals(TEXT))
 				testComponents.add(new TextComponent("", coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), "", 1));
+			else if (type.equals(GROUP))
+				testComponents.add(new GroupComponent(coordFromX(column), fromY.get(column), coordToX(column), toY.get(column)));
 			else
 				testComponents.add(new GridComponent(type, coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), 1));
 			fromY.put(column, null);

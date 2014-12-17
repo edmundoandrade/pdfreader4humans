@@ -28,6 +28,7 @@ import edworld.pdfreader4humans.PDFComponentLocator;
 import edworld.pdfreader4humans.TextComponent;
 
 public class MainPDFComponentLocator implements PDFComponentLocator {
+	private static final String SPACE = " ";
 	private Map<PDPage, List<GridComponent>> cachedGridComponents = new HashMap<PDPage, List<GridComponent>>();
 	private Map<PDPage, List<TextComponent>> cachedTextComponents = new HashMap<PDPage, List<TextComponent>>();
 
@@ -141,8 +142,26 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 					output = new StringWriter();
 					processPage(page, contents.getStream());
 				}
+				joinConsecutiveTexts(list);
 				Collections.sort(list);
 				return list;
+			}
+
+			protected void joinConsecutiveTexts(ArrayList<TextComponent> textComponents) {
+				for (int i = 0; i < textComponents.size() - 1; i++) {
+					TextComponent currentComponent = textComponents.get(i);
+					TextComponent nextComponent = textComponents.get(i + 1);
+					if (currentComponent.consecutive(nextComponent, false)) {
+						textComponents.set(i, joinTextComponents(currentComponent, SPACE, nextComponent));
+						textComponents.remove(i + 1);
+						i--;
+					}
+				}
+			}
+
+			protected TextComponent joinTextComponents(TextComponent component1, String separatorCharacter, TextComponent component2) {
+				return new TextComponent(component1.getText() + separatorCharacter + component2.getText(), component1.getFromX(), Math.min(component1.getFromY(),
+						component2.getFromY()), component2.getToX(), Math.max(component1.getToY(), component2.getToY()), component1.getFontName(), component1.getFontSize());
 			}
 
 			@Override
@@ -204,10 +223,12 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 
 			private boolean fusible(String partialText, String character) {
-				return fusions.containsKey(fusionPair(partialText, character));
+				return partialText.endsWith(SPACE) || fusions.containsKey(fusionPair(partialText, character));
 			}
 
 			private String fusion(String partialText, String character) {
+				if (partialText.endsWith(SPACE))
+					return partialText.substring(0, partialText.length() - 1) + character;
 				return partialText.substring(0, partialText.length() - 1) + fusions.get(fusionPair(partialText, character));
 			}
 

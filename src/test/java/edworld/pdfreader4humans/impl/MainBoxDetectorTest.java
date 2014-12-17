@@ -1,4 +1,5 @@
-package edworld.pdfreader4humans;
+// This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
+package edworld.pdfreader4humans.impl;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,9 +13,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import edworld.pdfreader4humans.impl.MainBoxDetector;
+import edworld.pdfreader4humans.BoxComponent;
+import edworld.pdfreader4humans.BoxDetector;
+import edworld.pdfreader4humans.GridComponent;
 
-public class BoxDetectorTest {
+public class MainBoxDetectorTest {
 	private static final String BOTTOM = "bottom";
 	private static final String RIGHT = "right";
 	private static final String TOP = "top";

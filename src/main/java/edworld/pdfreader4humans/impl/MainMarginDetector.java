@@ -3,12 +3,11 @@ package edworld.pdfreader4humans.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import edworld.pdfreader4humans.Component;
 import edworld.pdfreader4humans.GridComponent;
+import edworld.pdfreader4humans.GroupComponent;
 import edworld.pdfreader4humans.MarginComponent;
 import edworld.pdfreader4humans.MarginDetector;
 import edworld.pdfreader4humans.TextComponent;
@@ -19,39 +18,39 @@ public class MainMarginDetector implements MarginDetector {
 		List<Component> sortedComponents = new ArrayList<Component>(components);
 		Collections.sort(sortedComponents);
 		List<MarginComponent> margins = new ArrayList<MarginComponent>();
-		float tolerance = 3;
 		for (Component region : detectRegions(sortedComponents)) {
-			float frequencyLeft = 0;
-			float frequencyRight = 0;
-			float top = Float.POSITIVE_INFINITY;
-			float bottom = Float.NEGATIVE_INFINITY;
-			Map<Float, Integer> leftMap = new HashMap<Float, Integer>();
-			Map<Float, Integer> rightMap = new HashMap<Float, Integer>();
+			List<MarginComponent> regionMargins = new ArrayList<MarginComponent>();
 			for (Component component : sortedComponents)
-				if (region.contains(component) && component instanceof TextComponent) {
-					top = Math.min(component.getFromY(), top);
-					bottom = Math.max(component.getToY(), bottom);
-					frequencyLeft = Math.max(updateLeftMap(component, tolerance, leftMap), frequencyLeft);
-					frequencyRight = Math.max(updateRightMap(component, tolerance, rightMap), frequencyRight);
-				}
-			if (frequencyLeft > 4 && frequencyRight > 4) {
-				List<Float> leftMargins = marginCandidates(leftMap);
-				List<Float> rightMargins = marginCandidates(rightMap);
-				for (int i = 0; i < Math.min(leftMargins.size(), rightMargins.size()); i++) {
-					while (i + 1 < rightMargins.size() && rightMap.get(rightMargins.get(i)) < frequencyRight / 2)
-						rightMargins.remove(i);
-					while (i > 0 && i + 1 < leftMargins.size() && leftMap.get(leftMargins.get(i)) < 2)
-						leftMargins.remove(i);
-					if (i + 1 == leftMargins.size())
-						while (i + 1 < rightMargins.size())
-							rightMargins.remove(i);
-					margins.add(new MarginComponent(leftMargins.get(i), top, rightMargins.get(i), bottom));
-					while (i + 1 < leftMargins.size() && leftMargins.get(i + 1) <= rightMargins.get(i))
-						leftMargins.remove(i + 1);
-				}
-			}
+				if (region.contains(component) && component instanceof TextComponent)
+					updateMargins(component, regionMargins);
+			margins.addAll(regionMargins);
 		}
 		return margins;
+	}
+
+	private void updateMargins(Component component, List<MarginComponent> margins) {
+		List<MarginComponent> marginsToBeMerged = new ArrayList<MarginComponent>();
+		for (MarginComponent margin : margins)
+			if (margin.contains(component))
+				return;
+			else if (margin.intersectsHorizontally(component))
+				marginsToBeMerged.add(margin);
+		if (marginsToBeMerged.isEmpty()) {
+			margins.add(new MarginComponent(component.getFromX(), component.getFromY(), component.getToX(), component.getToY()));
+			return;
+		}
+		float fromX = component.getFromX();
+		float fromY = component.getFromY();
+		float toX = component.getToX();
+		float toY = component.getToY();
+		for (MarginComponent margin : marginsToBeMerged) {
+			fromX = Math.min(margin.getFromX(), fromX);
+			fromY = Math.min(margin.getFromY(), fromY);
+			toX = Math.max(margin.getToX(), toX);
+			toY = Math.max(margin.getToY(), toY);
+			margins.remove(margin);
+		}
+		margins.add(new MarginComponent(fromX, fromY, toX, toY));
 	}
 
 	private List<Component> detectRegions(List<? extends Component> components) {
@@ -68,7 +67,7 @@ public class MainMarginDetector implements MarginDetector {
 	}
 
 	private boolean regionSeparator(Component component, float contentWidth) {
-		return component.getWidth() >= contentWidth / 3 && component instanceof GridComponent;
+		return component.getWidth() > contentWidth / 2 && (component instanceof GridComponent || component instanceof GroupComponent);
 	}
 
 	private float calculateContentWidth(List<? extends Component> components) {
@@ -79,51 +78,5 @@ public class MainMarginDetector implements MarginDetector {
 			right = Math.max(component.getToX(), right);
 		}
 		return right - left;
-	}
-
-	private List<Float> marginCandidates(Map<Float, Integer> map) {
-		List<Float> margins = new ArrayList<Float>();
-		for (float x : map.keySet())
-			margins.add(x);
-		Collections.sort(margins);
-		return margins;
-	}
-
-	private int updateLeftMap(Component component, float tolerance, Map<Float, Integer> leftMap) {
-		for (float left : leftMap.keySet())
-			if (Math.abs(left - component.getFromX()) <= tolerance)
-				return updateLeftMap(left, component.getFromX(), leftMap);
-		int frequency = 1;
-		leftMap.put(component.getFromX(), frequency);
-		return frequency;
-	}
-
-	private int updateLeftMap(float left, float fromX, Map<Float, Integer> leftMap) {
-		int frequency = leftMap.get(left) + 1;
-		if (left > fromX) {
-			leftMap.put(fromX, frequency);
-			leftMap.remove(left);
-		} else
-			leftMap.put(left, frequency);
-		return frequency;
-	}
-
-	private int updateRightMap(Component component, float tolerance, Map<Float, Integer> rightMap) {
-		for (float right : rightMap.keySet())
-			if (Math.abs(right - component.getToX()) <= tolerance)
-				return updateRightMap(right, component.getToX(), rightMap);
-		int frequency = 1;
-		rightMap.put(component.getToX(), frequency);
-		return frequency;
-	}
-
-	private int updateRightMap(float right, float toX, Map<Float, Integer> rightMap) {
-		int frequency = rightMap.get(right) + 1;
-		if (right < toX) {
-			rightMap.put(toX, frequency);
-			rightMap.remove(right);
-		} else
-			rightMap.put(right, frequency);
-		return frequency;
 	}
 }

@@ -44,7 +44,7 @@ public class MainPDFComponentLocatorTest {
 	@Test
 	public void locateTextComponents() throws IOException {
 		List<TextComponent> components = locator.locateTextComponents(page1);
-		assertEquals(392, components.size());
+		assertEquals(233, components.size());
 		assertEquals("text :: 49.348, 56.089787, 217.9233, 62.794617, Times-Roman 9.0 :: Nº 31, quinta-feira, 13 de fevereiro de 2014", components.get(0).toString());
 		assertEquals("text :: 506.4658, 56.486153, 513.0536, 62.764587, HNBDHM+OxfordWd 11.0 :: 1", components.get(1).toString());
 		assertEquals("text :: 575.9183, 56.603043, 642.8473, 63.208984, Times-Italic 9.0 :: ISSN 1677-7042", components.get(2).toString());
@@ -54,14 +54,17 @@ public class MainPDFComponentLocatorTest {
 		assertEquals("text :: 353.0895, 77.603, 367.6987, 82.99078, Times-Roman 7.0 :: 10%", components.get(6).toString());
 		assertEquals("text :: 434.5236, 77.42765, 452.4563, 82.99078, Times-Roman 7.0 :: 90.30", components.get(7).toString());
 		assertEquals("text :: 470.85208, 77.49142, 629.8473, 82.99078, Times-Roman 7.0 :: Osciloscópios, analisadores de espectro e outros", components.get(8).toString());
-		assertEquals("text :: 663.42487, 77.603, 678.03406, 82.99078, Times-Roman 7.0 :: 15%", components.get(9).toString());
-		assertEquals("text :: 721.59143, 77.603, 736.2006, 82.99078, Times-Roman 7.0 :: 10%", components.get(10).toString());
-		assertEquals("text :: 64.63681, 234.46262, 115.43865, 239.8504, Times-Bold 7.0 :: DECRETO Nº", components.get(49).toString());
-		assertEquals("text :: 318.84198, 316.3835, 359.09103, 320.12946, Times-Roman 7.0 :: a) Gabinete;", components.get(98).toString());
-		assertEquals("text :: 304.69586, 435.96918, 517.3223, 440.66357, Times-Roman 7.0 :: tados e dos demais atos normativos a ser uniformemente seguida", components.get(206)
-				.toString());
-		assertEquals("text :: 414.0244, 764.2241, 422.40897, 769.7554, Times-Bold 7.0 :: Nº", components.get(351).toString());
-		assertEquals("text :: 463.2183, 879.116, 631.8032, 884.3922, Times-Roman 7.0 :: Documento assinado digitalmente conforme MP nº", components.get(388).toString());
+		assertEquals("text :: 418.10913, 161.3345, 490.97974, 166.72229, Times-Bold 7.0 :: PM = PE x (1 + M),", components.get(30).toString());
+		assertEquals("text :: 494.04825, 162.97635, 514.8582, 166.72229, Times-Roman 7.0 :: sendo:", components.get(31).toString());
+		assertEquals("text :: 64.63681, 234.26459, 261.34717, 239.85162, Times-Bold 7.0 :: DECRETO Nº 8.195, DE 12 DE FEVEREIRO DE 2014", components.get(49).toString());
+		assertEquals("text :: 318.84198, 316.3835, 359.09103, 320.12946, Times-Roman 7.0 :: a) Gabinete;", components.get(74).toString());
+		assertEquals("text :: 148.9305, 677.602, 176.10057, 682.9898, Times-Bold 7.0 :: TOTAL", components.get(176).toString());
+		assertEquals("text :: 414.0244, 764.2241, 422.40897, 769.7554, Times-Bold 7.0 :: Nº", components.get(193).toString());
+		assertEquals(
+				"text :: 49.4745, 879.54083, 352.7328, 884.817, Times-Roman 7.0 :: Este documento pode ser verificado no endereço eletrônico http://www.in.gov.br/autenticidade.html,",
+				components.get(229).toString());
+		assertEquals("text :: 463.2183, 879.0047, 757.81055, 884.3925, Times-Roman 7.0 :: Documento assinado digitalmente conforme MP nº 2.200-2 de 24/08/2001, que institui a",
+				components.get(230).toString());
 	}
 
 	@After

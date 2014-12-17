@@ -56,7 +56,15 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	public boolean intersects(Component other) {
-		return this != other && fromX <= other.getToX() && toX >= other.getFromX() && fromY <= other.getToY() && toY >= other.getFromY();
+		return intersectsHorizontally(other) && intersectsVertically(other);
+	}
+
+	public boolean intersectsHorizontally(Component other) {
+		return this != other && fromX <= other.getToX() && toX >= other.getFromX();
+	}
+
+	public boolean intersectsVertically(Component other) {
+		return this != other && fromY <= other.getToY() && toY >= other.getFromY();
 	}
 
 	public boolean verticalExtension(Component other) {

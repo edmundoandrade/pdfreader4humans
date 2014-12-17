@@ -14,7 +14,6 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import edworld.pdfreader4humans.impl.MainBoxDetector;
@@ -32,7 +31,7 @@ public class PDFReaderTest {
 
 	@Test
 	public void getFirstLevelComponents() throws IOException {
-		assertEquals(31, reader.getFirstLevelComponents(1).size());
+		assertEquals(17, reader.getFirstLevelComponents(1).size());
 	}
 
 	@Test
@@ -41,7 +40,6 @@ public class PDFReaderTest {
 	}
 
 	@Test
-	@Ignore
 	public void toTextLines() throws IOException {
 		InputStream input = getClass().getResourceAsStream("/testcase1/output.txt");
 		try {
@@ -79,9 +77,11 @@ public class PDFReaderTest {
 			assertEquals(expectedOutputImage.getWidth(), outputImage.getWidth());
 			assertEquals(expectedOutputImage.getHeight(), outputImage.getHeight());
 			assertEquals(expectedOutputImage.getTransparency(), outputImage.getTransparency());
-			for (int k = 0; k < Math.min(outputImage.getWidth(), outputImage.getHeight()); k++) {
-				int expectedColor = expectedOutputImage.getRGB(k, k);
-				int actualColor = outputImage.getRGB(k, k);
+			for (int k = 0; k < Math.max(outputImage.getWidth(), outputImage.getHeight()); k++) {
+				int kX = k % outputImage.getWidth();
+				int kY = k % outputImage.getHeight();
+				int expectedColor = expectedOutputImage.getRGB(kX, kY);
+				int actualColor = outputImage.getRGB(kX, kY);
 				if ((expectedColor ^ 0xFFFFFF) == actualColor)
 					expectedColor ^= 0xFFFFFF;
 				assertEquals("Color should be the same at (" + k + "," + k + ").", expectedColor, actualColor);

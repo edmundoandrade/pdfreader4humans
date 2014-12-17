@@ -23,11 +23,15 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
 public class PDFReader {
+	protected static final String HIFEN = "-";
+	protected static final String SPACE = " ";
 	protected static final String UTF_8 = "UTF-8";
 	protected static final String LINE_BREAK = System.getProperty("line.separator");
 	protected URL url;
 	protected List<List<Component>> firstLevel = new ArrayList<List<Component>>();
 	protected Map<String, String> templateMap = new HashMap<String, String>();
+	protected Component lastContainer;
+	protected TextComponent lastComponent;
 
 	/**
 	 * Class responsible for reading PDF contents in the same order a human would read them.
@@ -73,16 +77,61 @@ public class PDFReader {
 
 	protected List<String> pageToTextLines(int pageNumber, List<Component> pageFirstLevelComponents) {
 		List<String> lines = new ArrayList<String>();
+		lastContainer = null;
+		lastComponent = null;
 		for (Component component : pageFirstLevelComponents)
-			addToTextLines(component, lines);
+			addToTextLines(component, null, lines);
 		return lines;
 	}
 
-	private void addToTextLines(Component component, List<String> lines) {
+	private void addToTextLines(Component component, Component container, List<String> lines) {
 		if (component instanceof TextComponent)
-			lines.add(((TextComponent) component).getText());
+			addText((TextComponent) component, container, lines);
 		for (Component child : component.getChildren())
-			addToTextLines(child, lines);
+			addToTextLines(child, component, lines);
+	}
+
+	private void addText(TextComponent component, Component container, List<String> lines) {
+		if (container == lastContainer && consecutiveText(lastComponent, component, container)) {
+			String lastText = lines.get(lines.size() - 1);
+			lines.set(lines.size() - 1, joinConsecutiveText(lastText, component.getText()));
+		} else
+			lines.add(component.getText());
+		lastContainer = container;
+		lastComponent = component;
+	}
+
+	private boolean consecutiveText(TextComponent component1, TextComponent component2, Component container) {
+		if (component1 == null)
+			return false;
+		if (component1.consecutive(component2, true))
+			return true;
+		if (alignedToCenter(component1, component2, container))
+			return false;
+		int nextWordLength = Math.min(5, (component2.getText() + SPACE).indexOf(SPACE)) + 1;
+		return component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > container.getToX()
+				&& (alignedToRight(component1, component2, container) || component2.getFromX() - component2.getAverageCharacterWidth() < component1.getFromX())
+				&& component1.getToX() > component2.getFromX() && component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > component2.getToX()
+				&& component2.getFromY() - component1.getToY() < Math.max(component1.getHeight(), component2.getHeight());
+	}
+
+	private boolean alignedToCenter(TextComponent component1, TextComponent component2, Component container) {
+		float leftMargin1 = component1.getFromX() - container.getFromX();
+		float rightMargin1 = container.getToX() - component1.getToX();
+		float leftMargin2 = component2.getFromX() - container.getFromX();
+		float rightMargin2 = container.getToX() - component2.getToX();
+		return Math.abs(rightMargin1 - leftMargin1) < 1 && Math.abs(rightMargin2 - leftMargin2) < 1 && rightMargin1 + leftMargin1 > component1.getAverageCharacterWidth()
+				&& rightMargin2 + leftMargin2 > component2.getAverageCharacterWidth();
+	}
+
+	private boolean alignedToRight(TextComponent component1, TextComponent component2, Component container) {
+		return component1.getToX() + component1.getAverageCharacterWidth() > container.getToX() && component2.getToX() + component2.getAverageCharacterWidth() > container.getToX();
+	}
+
+	private String joinConsecutiveText(String text1, String text2) {
+		if (text1.endsWith(HIFEN))
+			return text1.substring(0, text1.length() - 1) + text2;
+		return text1 + SPACE + text2;
 	}
 
 	protected String removeEmptyLines(String text) {
