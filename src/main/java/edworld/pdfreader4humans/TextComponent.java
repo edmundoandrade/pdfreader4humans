@@ -2,7 +2,7 @@
 package edworld.pdfreader4humans;
 
 public class TextComponent extends Component {
-	protected static final int MAX_CONSECUTIVE_DISTANCE = 2;
+	protected static final float MAX_CONSECUTIVE_DISTANCE = 2.3f;
 	private String text;
 	private String fontName;
 	private float fontSize;
@@ -30,15 +30,15 @@ public class TextComponent extends Component {
 		return distanceInCharacters(other, ignoreFontStyle) <= MAX_CONSECUTIVE_DISTANCE;
 	}
 
-	public int distanceInCharacters(TextComponent other, boolean ignoreFontStyle) {
+	public float distanceInCharacters(TextComponent other, boolean ignoreFontStyle) {
 		if (followedBy(other, ignoreFontStyle))
-			return Math.max(0, Math.round((other.getFromX() - getToX()) / getAverageCharacterWidth()));
-		return Integer.MAX_VALUE;
+			return Math.max(0, (other.getFromX() - getToX()) / Math.max(getAverageCharacterWidth(), other.getAverageCharacterWidth()));
+		return Float.MAX_VALUE;
 	}
 
 	public boolean followedBy(TextComponent other, boolean ignoreFontStyle) {
 		boolean fontStyleRule = ignoreFontStyle || (getFontName().equals(other.getFontName()) && getFontSize() == other.getFontSize());
-		return intersectsVertically(other) && getFromX() < other.getFromX() && fontStyleRule;
+		return fontStyleRule && intersectsVertically(other) && getFromX() < other.getFromX();
 	}
 
 	public float getAverageCharacterWidth() {

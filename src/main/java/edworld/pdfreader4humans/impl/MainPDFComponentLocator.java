@@ -124,6 +124,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 		return new PDFTextStripper() {
 			private Map<String, String> fusions;
 			List<Component> horizontalComponents;
+			List<Component> verticalComponents;
 			private ArrayList<TextComponent> list;
 			{
 				fusions = new HashMap<String, String>();
@@ -133,6 +134,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 
 			public List<TextComponent> locateTextComponents() throws IOException {
 				horizontalComponents = Component.horizontal(gridComponents);
+				verticalComponents = Component.vertical(gridComponents);
 				list = new ArrayList<TextComponent>();
 				PDStream contents = page.getContents();
 				setStartPage(getCurrentPageNo());
@@ -152,9 +154,18 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 					TextComponent currentComponent = textComponents.get(i);
 					TextComponent nextComponent = textComponents.get(i + 1);
 					if (currentComponent.consecutive(nextComponent, false)) {
-						textComponents.set(i, joinTextComponents(currentComponent, SPACE, nextComponent));
-						textComponents.remove(i + 1);
-						i--;
+						boolean mustSeparate = false;
+						TextComponent newComponent = joinTextComponents(currentComponent, SPACE, nextComponent);
+						for (Component separator : verticalComponents)
+							if (separator.intersects(newComponent)) {
+								mustSeparate = true;
+								break;
+							}
+						if (!mustSeparate) {
+							textComponents.set(i, newComponent);
+							textComponents.remove(i + 1);
+							i--;
+						}
 					}
 				}
 			}

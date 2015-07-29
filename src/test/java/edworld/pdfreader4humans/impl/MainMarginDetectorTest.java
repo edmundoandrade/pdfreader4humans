@@ -106,7 +106,7 @@ public class MainMarginDetectorTest {
 	}
 
 	@Test
-	public void detecMarginsInsideRegions() {
+	public void detecMarginsInsideSimpleRegions() {
 		grd(" ────────────────────── ", LINE);
 		grd("    ─────      ───      ");
 		grd(" ───────────  ────────  ");
@@ -153,6 +153,90 @@ public class MainMarginDetectorTest {
 		mrg("         ┌─────┐        ");
 		mrg("         └─────┘        ");
 		mrg("                        ");
+		assertMargin(detected);
+	}
+
+	@Test
+	public void detecMarginsInsideComplexRegions() {
+		grd(" ─────────────────────────── ", LINE);
+		grd("    ─────      ────────────  ");
+		grd(" ─────────  ──────────────── ");
+		grd(" ─────────  ──────────────── ");
+		grd(" ─────────  ──────────────── ");
+		grd(" ─────────  ──────────────── ");
+		grd("            ──────────────── ", GROUP);
+		grd(" ─────────  ──────────────── ");
+		grd(" ─────────  ──────────────── ");
+		grd("            ──────────────── ", LINE);
+		grd(" ─────────           ─────── ");
+		grd(" ─────────  ───────  ─────── ");
+		grd(" ─────────  ───────  ─────── ");
+		grd(" ─────────────────────────── ", LINE);
+		detected = detector.detectMargins(gridComponents());
+		Assert.assertEquals(5, detected.size());
+		mrg("             ");
+		mrg(" ┌───────┐ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" │       │ ");
+		mrg(" └───────┘ ");
+		mrg("             ");
+		assertMargin(detected);
+		mrg("                             ");
+		mrg("            ┌──────────────┐ ");
+		mrg("            │              │ ");
+		mrg("            │              │ ");
+		mrg("            │              │ ");
+		mrg("            └──────────────┘ ");
+		mrg("                             ");
+		assertMargin(detected);
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("            ┌──────────────┐ ");
+		mrg("            └──────────────┘ ");
+		mrg("                             ");
+		assertMargin(detected);
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("            ┌─────┐          ");
+		mrg("            └─────┘          ");
+		mrg("                             ");
+		assertMargin(detected);
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                             ");
+		mrg("                     ┌─────┐ ");
+		mrg("                     │     │ ");
+		mrg("                     └─────┘ ");
+		mrg("                             ");
 		assertMargin(detected);
 	}
 

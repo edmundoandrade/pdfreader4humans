@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edworld</groupId>
 	<artifactId>pdfreader4humans</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 	<name>Edworld's PDF reader</name>
 	<description>PDF reader able to recognize information components in the natural human reading order.</description>
 	<url>https://github.com/edmundoandrade/pdfreader</url>

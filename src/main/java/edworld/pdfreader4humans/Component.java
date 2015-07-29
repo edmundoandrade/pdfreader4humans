@@ -52,6 +52,8 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	public boolean contains(Component other) {
+		if (other instanceof TextComponent)
+			return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY < other.getToY() && toY >= other.getToY();
 		return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY <= other.getFromY() && toY >= other.getToY();
 	}
 

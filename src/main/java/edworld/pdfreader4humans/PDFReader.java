@@ -106,7 +106,7 @@ public class PDFReader {
 			return false;
 		if (component1.consecutive(component2, true))
 			return true;
-		if (alignedToCenter(component1, component2, container))
+		if (container == null || alignedToCenter(component1, component2, container))
 			return false;
 		int nextWordLength = Math.min(5, (component2.getText() + SPACE).indexOf(SPACE)) + 1;
 		return component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > container.getToX()
