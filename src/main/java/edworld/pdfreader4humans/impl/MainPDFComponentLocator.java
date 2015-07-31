@@ -1,6 +1,12 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans.impl;
 
+import static edworld.pdfreader4humans.TextComponent.UNDERLINE_TOLERANCE;
+import static java.lang.Math.abs;
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+import static java.lang.Math.round;
+
 import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
@@ -62,7 +68,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 
 			public List<GridComponent> locateGridComponents() throws IOException {
 				PDRectangle cropBox = pageToDraw.findCropBox();
-				BufferedImage image = new BufferedImage(Math.round(cropBox.getWidth()), Math.round(cropBox.getHeight()), BufferedImage.TYPE_INT_ARGB);
+				BufferedImage image = new BufferedImage(round(cropBox.getWidth()), round(cropBox.getHeight()), BufferedImage.TYPE_INT_ARGB);
 				Graphics2D graphics = image.createGraphics();
 				drawPage(graphics, pageToDraw, cropBox.createDimension());
 				graphics.dispose();
@@ -107,10 +113,10 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 
 			private void addGridComponent(String type, Point2D from, Point2D to) {
-				float fromX = (float) Math.min(from.getX(), to.getX());
-				float fromY = (float) Math.min(from.getY(), to.getY());
-				float toX = (float) Math.max(from.getX(), to.getX());
-				float toY = (float) Math.max(from.getY(), to.getY());
+				float fromX = (float) min(from.getX(), to.getX());
+				float fromY = (float) min(from.getY(), to.getY());
+				float toX = (float) max(from.getX(), to.getX());
+				float toY = (float) max(from.getY(), to.getY());
 				list.add(new GridComponent(type, fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
 			}
 
@@ -171,8 +177,9 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 
 			protected TextComponent joinTextComponents(TextComponent component1, String separatorCharacter, TextComponent component2) {
-				return new TextComponent(component1.getText() + separatorCharacter + component2.getText(), component1.getFromX(), Math.min(component1.getFromY(),
-						component2.getFromY()), component2.getToX(), Math.max(component1.getToY(), component2.getToY()), component1.getFontName(), component1.getFontSize());
+				return new TextComponent(component1.getText() + separatorCharacter + component2.getText(), component1.getFromX(),
+						min(component1.getFromY(), component2.getFromY()), component2.getToX(), max(component1.getToY(), component2.getToY()), component1.getFontName(),
+						component1.getFontSize());
 			}
 
 			@Override
@@ -212,8 +219,8 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 						partialList.add(textPosition);
 						partialText += character;
 					}
-					toX = Math.max(x1 + textPosition.getWidth(), toX);
-					toY = Math.max(y1, toY);
+					toX = max(x1 + textPosition.getWidth(), toX);
+					toY = max(y1, toY);
 					lastLeft = x1;
 					lastRight = x1 + textPosition.getWidth();
 				}
@@ -222,9 +229,9 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 
 			private Component findOverlappingHorizontalShape(TextPosition textPosition) {
 				GridComponent component = new GridComponent("rect", textPosition.getX(), textPosition.getY() - textPosition.getHeight(), textPosition.getX()
-						+ textPosition.getWidth(), textPosition.getY(), 1);
+						+ textPosition.getWidth(), textPosition.getY() + UNDERLINE_TOLERANCE, 1);
 				for (Component candidate : horizontalComponents)
-					if (candidate.intersects(component) && Math.abs(candidate.getWidth() - component.getWidth()) < 0.1)
+					if (candidate.intersects(component) && abs(candidate.getWidth() - component.getWidth()) < 0.1)
 						return candidate;
 				return null;
 			}

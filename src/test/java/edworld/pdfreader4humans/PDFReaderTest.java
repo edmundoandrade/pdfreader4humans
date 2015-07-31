@@ -1,6 +1,9 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans;
 
+import static java.lang.Math.max;
+import static java.lang.System.getProperty;
+import static org.apache.commons.io.IOUtils.readLines;
 import static org.junit.Assert.assertEquals;
 
 import java.awt.Color;
@@ -14,6 +17,7 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import edworld.pdfreader4humans.impl.MainBoxDetector;
@@ -22,18 +26,20 @@ import edworld.pdfreader4humans.impl.MainPDFComponentLocator;
 
 public class PDFReaderTest {
 	private static final String UTF_8 = "UTF-8";
-	private PDFReader reader1, reader2;
+	private PDFReader reader1, reader2, reader3;
 
 	@Before
 	public void setUp() throws IOException {
 		reader1 = new PDFReader(getClass().getResource("/testcase1/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
 		reader2 = new PDFReader(getClass().getResource("/testcase2/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
+		reader3 = new PDFReader(getClass().getResource("/testcase3/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
 	}
 
 	@Test
 	public void getFirstLevelComponents() throws IOException {
 		assertEquals(17, reader1.getFirstLevelComponents(1).size());
 		assertEquals(13, reader2.getFirstLevelComponents(1).size());
+		assertEquals(17, reader3.getFirstLevelComponents(1).size());
 	}
 
 	@Test
@@ -45,13 +51,24 @@ public class PDFReaderTest {
 	public void toTextLines() throws IOException {
 		InputStream input = getClass().getResourceAsStream("/testcase1/output.txt");
 		try {
-			assertEquals(text(IOUtils.readLines(input, UTF_8)), text(reader1.toTextLines()));
+			assertEquals(text(readLines(input, UTF_8)), text(reader1.toTextLines()));
 		} finally {
 			input.close();
 		}
 		input = getClass().getResourceAsStream("/testcase2/output.txt");
 		try {
-			assertEquals(text(IOUtils.readLines(input, UTF_8)), text(reader2.toTextLines()));
+			assertEquals(text(readLines(input, UTF_8)), text(reader2.toTextLines()));
+		} finally {
+			input.close();
+		}
+	}
+
+	@Test
+	@Ignore
+	public void toTextLinesInProgress() throws IOException {
+		InputStream input = getClass().getResourceAsStream("/testcase3/output.txt");
+		try {
+			assertEquals(text(readLines(input, UTF_8)), text(reader3.toTextLines()));
 		} finally {
 			input.close();
 		}
@@ -65,6 +82,9 @@ public class PDFReaderTest {
 		outputFile = new File("target/outputWithStructure2.png");
 		ImageIO.write(reader2.createPageImage(1, 3, Color.WHITE, Color.BLACK, true), "png", outputFile);
 		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase2/outputWithStructure.png"), ImageIO.read(outputFile));
+		outputFile = new File("target/outputWithStructure3.png");
+		ImageIO.write(reader3.createPageImage(1, 3, Color.WHITE, Color.BLACK, true), "png", outputFile);
+		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase3/outputWithStructure.png"), ImageIO.read(outputFile));
 	}
 
 	@Test
@@ -80,7 +100,7 @@ public class PDFReaderTest {
 	private String text(List<String> lines) {
 		String text = "";
 		for (String line : lines)
-			text += line + System.getProperty("line.separator");
+			text += line + getProperty("line.separator");
 		return text;
 	}
 
@@ -91,7 +111,7 @@ public class PDFReaderTest {
 			assertEquals(expectedOutputImage.getWidth(), outputImage.getWidth());
 			assertEquals(expectedOutputImage.getHeight(), outputImage.getHeight());
 			assertEquals(expectedOutputImage.getTransparency(), outputImage.getTransparency());
-			for (int k = 0; k < Math.max(outputImage.getWidth(), outputImage.getHeight()); k++) {
+			for (int k = 0; k < max(outputImage.getWidth(), outputImage.getHeight()); k++) {
 				int kX = k % outputImage.getWidth();
 				int kY = k % outputImage.getHeight();
 				int expectedColor = expectedOutputImage.getRGB(kX, kY);

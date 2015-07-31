@@ -2,6 +2,7 @@
 package edworld.pdfreader4humans;
 
 public class TextComponent extends Component {
+	public static float UNDERLINE_TOLERANCE = 0.001f;
 	protected static final float MAX_CONSECUTIVE_DISTANCE = 2.3f;
 	private String text;
 	private String fontName;
