@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Collections;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -38,8 +39,12 @@ public class PDFReaderTest {
 	@Test
 	public void getFirstLevelComponents() throws IOException {
 		assertEquals(17, reader1.getFirstLevelComponents(1).size());
-		assertEquals(13, reader2.getFirstLevelComponents(1).size());
-		assertEquals(17, reader3.getFirstLevelComponents(1).size());
+		assertEquals(8, reader2.getFirstLevelComponents(1).size());
+		assertEquals(13, reader3.getFirstLevelComponents(1).size());
+		List<Component> list = reader3.getFirstLevelComponents(1);
+		Collections.sort(list);
+		for (Component component : list)
+			System.out.println(component);
 	}
 
 	@Test

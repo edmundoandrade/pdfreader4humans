@@ -1,11 +1,12 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans;
 
+import static java.util.Collections.sort;
+import static java.util.regex.Matcher.quoteReplacement;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.regex.Matcher;
 
 public abstract class Component implements Comparable<Component> {
 	protected String type;
@@ -128,7 +129,7 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	protected String fillTemplate(String template, String fieldName, Object fieldValue) {
-		return template.replaceAll("\\$\\{" + fieldName + "\\}", Matcher.quoteReplacement(fieldValue.toString()));
+		return template.replaceAll("\\$\\{" + fieldName + "\\}", quoteReplacement(fieldValue.toString()));
 	}
 
 	@Override
@@ -141,7 +142,7 @@ public abstract class Component implements Comparable<Component> {
 		for (Component component : components)
 			if (component.getWidth() > component.getHeight())
 				horizontalComponents.add(component);
-		Collections.sort(horizontalComponents, orderByYX());
+		sort(horizontalComponents, orderByYX());
 		return horizontalComponents;
 	}
 
@@ -150,7 +151,7 @@ public abstract class Component implements Comparable<Component> {
 		for (Component component : components)
 			if (component.getHeight() > component.getWidth())
 				verticalComponents.add(component);
-		Collections.sort(verticalComponents, orderByXY());
+		sort(verticalComponents, orderByXY());
 		return verticalComponents;
 	}
 

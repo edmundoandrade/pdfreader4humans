@@ -72,8 +72,11 @@ public class MainPDFComponentLocatorTest {
 		doc.close();
 		doc = PDDocument.load(getClass().getResource("/testcase3/input.pdf"));
 		page1 = (PDPage) doc.getDocumentCatalog().getAllPages().get(0);
-		List<TextComponent> components = locator.locateTextComponents(page1);
-		assertEquals("text :: 531.4999, 665.6678, 640.17206, 671.0556, Times-Roman 7.0 :: Nº 289, de 28 de julho de 2015.", components.get(161).toString());
+		String result = "";
+		for (TextComponent component : locator.locateTextComponents(page1))
+			if (component.getText().contains("289, de 28 de julho de 2015"))
+				result = component.toString();
+		assertEquals("text :: 531.4999, 665.6678, 640.17206, 671.0556, Times-Roman 7.0 :: Nº 289, de 28 de julho de 2015.", result);
 	}
 
 	@After

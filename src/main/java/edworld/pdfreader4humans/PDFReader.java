@@ -1,6 +1,14 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans;
 
+import static java.awt.image.BufferedImage.TYPE_INT_ARGB;
+import static java.lang.Math.abs;
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+import static java.lang.Math.round;
+import static java.util.Collections.sort;
+import static java.util.regex.Matcher.quoteReplacement;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -11,11 +19,9 @@ import java.io.StringReader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -65,7 +71,7 @@ public class PDFReader {
 		String content = "";
 		for (int pageIndex = 0; pageIndex < firstLevel.size(); pageIndex++)
 			content += pageToXML(pageIndex + 1, firstLevel.get(pageIndex), 1);
-		return removeEmptyLines(output.replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content)));
+		return removeEmptyLines(output.replaceAll("\\$\\{content\\}", quoteReplacement(content)));
 	}
 
 	public List<String> toTextLines() {
@@ -108,11 +114,11 @@ public class PDFReader {
 			return true;
 		if (container == null || alignedToCenter(component1, component2, container))
 			return false;
-		int nextWordLength = Math.min(5, (component2.getText() + SPACE).indexOf(SPACE)) + 1;
+		int nextWordLength = min(5, (component2.getText() + SPACE).indexOf(SPACE)) + 1;
 		return component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > container.getToX()
 				&& (alignedToRight(component1, component2, container) || component2.getFromX() - component2.getAverageCharacterWidth() < component1.getFromX())
 				&& component1.getToX() > component2.getFromX() && component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > component2.getToX()
-				&& component2.getFromY() - component1.getToY() < Math.max(component1.getHeight(), component2.getHeight());
+				&& component2.getFromY() - component1.getToY() < max(component1.getHeight(), component2.getHeight());
 	}
 
 	private boolean alignedToCenter(TextComponent component1, TextComponent component2, Component container) {
@@ -120,7 +126,7 @@ public class PDFReader {
 		float rightMargin1 = container.getToX() - component1.getToX();
 		float leftMargin2 = component2.getFromX() - container.getFromX();
 		float rightMargin2 = container.getToX() - component2.getToX();
-		return Math.abs(rightMargin1 - leftMargin1) < 1 && Math.abs(rightMargin2 - leftMargin2) < 1 && rightMargin1 + leftMargin1 > component1.getAverageCharacterWidth()
+		return abs(rightMargin1 - leftMargin1) < 1 && abs(rightMargin2 - leftMargin2) < 1 && rightMargin1 + leftMargin1 > component1.getAverageCharacterWidth()
 				&& rightMargin2 + leftMargin2 > component2.getAverageCharacterWidth();
 	}
 
@@ -143,7 +149,7 @@ public class PDFReader {
 		String content = "";
 		for (Component component : pageFirstLevelComponents)
 			content += output(component, indentLevel + 1);
-		return pageTemplate.replaceAll("\\$\\{pageNumber\\}", String.valueOf(pageNumber)).replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
+		return pageTemplate.replaceAll("\\$\\{pageNumber\\}", String.valueOf(pageNumber)).replaceAll("\\$\\{content\\}", quoteReplacement(content));
 	}
 
 	protected String output(Component component, int indentLevel) {
@@ -151,13 +157,13 @@ public class PDFReader {
 		String content = "";
 		for (Component child : component.getChildren())
 			content += output(child, indentLevel + 1);
-		return component.output(componentTemplate).replaceAll("\\$\\{content\\}", Matcher.quoteReplacement(content));
+		return component.output(componentTemplate).replaceAll("\\$\\{content\\}", quoteReplacement(content));
 	}
 
 	public BufferedImage createPageImage(int pageNumber, int scaling, Color inkColor, Color backgroundColor, boolean showStructure) throws IOException {
 		Map<String, Font> fonts = new HashMap<String, Font>();
 		PDRectangle cropBox = getPageCropBox(pageNumber);
-		BufferedImage image = new BufferedImage(Math.round(cropBox.getWidth() * scaling), Math.round(cropBox.getHeight() * scaling), BufferedImage.TYPE_INT_ARGB);
+		BufferedImage image = new BufferedImage(round(cropBox.getWidth() * scaling), round(cropBox.getHeight() * scaling), TYPE_INT_ARGB);
 		Graphics2D graphics = image.createGraphics();
 		graphics.setBackground(backgroundColor);
 		graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
@@ -194,12 +200,42 @@ public class PDFReader {
 		firstLevelComponents.addAll(margins);
 		addComponents(textComponents, firstLevelComponents, containers);
 		sortRecursively(firstLevelComponents);
+		expandMargins(firstLevelComponents);
 		return firstLevelComponents;
+	}
+
+	private void expandMargins(List<Component> components) {
+		for (Component margin : components)
+			if (margin instanceof MarginComponent)
+				if (expandedTowards(margin.nextUpperHorizontalComponent(margin.getToX(), margin.getFromX(), components), margin, components)
+						|| expandedTowards(margin.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components), margin, components)) {
+					expandMargins(components);
+					break;
+				}
+	}
+
+	private boolean expandedTowards(Component nearComponent, Component margin, List<Component> components) {
+		if (nearComponent != null && abs(nearComponent.getFromX() - margin.getFromX()) < 1 && abs(nearComponent.getToX() - margin.getToX()) < 1) {
+			components.remove(nearComponent);
+			components.remove(margin);
+			float fromX = min(margin.getFromX(), nearComponent.getFromX());
+			float fromY = min(margin.getFromY(), nearComponent.getFromY());
+			float toX = max(margin.getToX(), nearComponent.getToX());
+			float toY = max(margin.getToY(), nearComponent.getToY());
+			MarginComponent newMargin = new MarginComponent(fromX, fromY, toX, toY);
+			newMargin.getChildren().addAll(margin.getChildren());
+			newMargin.addChild(nearComponent);
+			sort(newMargin.getChildren());
+			components.add(newMargin);
+			sort(components);
+			return true;
+		}
+		return false;
 	}
 
 	protected void sortRecursively(List<Component> components) {
 		if (components.size() > 0)
-			Collections.sort(components);
+			sort(components);
 		for (Component component : components)
 			sortRecursively(component.getChildren());
 	}
@@ -229,10 +265,10 @@ public class PDFReader {
 		float toY = Float.NEGATIVE_INFINITY;
 		for (Component component : groupMap.keySet())
 			if (groupMap.get(component) == groupIndex) {
-				fromX = Math.min(component.getFromX(), fromX);
-				fromY = Math.min(component.getFromY(), fromY);
-				toX = Math.max(component.getToX(), toX);
-				toY = Math.max(component.getToY(), toY);
+				fromX = min(component.getFromX(), fromX);
+				fromY = min(component.getFromY(), fromY);
+				toX = max(component.getToX(), toX);
+				toY = max(component.getToY(), toY);
 			}
 		return new GroupComponent(fromX, fromY, toX, toY);
 	}
@@ -333,16 +369,16 @@ public class PDFReader {
 			graphics.setColor(inkColor);
 		} else if (component instanceof GroupComponent && showStructure) {
 			graphics.setColor(groupColor(backgroundColor));
-			graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()), round(component.getHeight()));
 			graphics.setColor(inkColor);
 		} else if (component instanceof MarginComponent && showStructure) {
 			graphics.setColor(marginColor(backgroundColor));
-			graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()), round(component.getHeight()));
 			graphics.setColor(inkColor);
 		} else if (component.getType().equals("line"))
-			graphics.drawLine(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getToX()), Math.round(component.getToY()));
+			graphics.drawLine(round(component.getFromX()), round(component.getFromY()), round(component.getToX()), round(component.getToY()));
 		else if (component.getType().equals("rect"))
-			graphics.drawRect(Math.round(component.getFromX()), Math.round(component.getFromY()), Math.round(component.getWidth()), Math.round(component.getHeight()));
+			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()), round(component.getHeight()));
 		else if (component instanceof TextComponent) {
 			graphics.setFont(font((TextComponent) component, fonts));
 			graphics.drawString(((TextComponent) component).getText(), component.getFromX(), component.getToY());
