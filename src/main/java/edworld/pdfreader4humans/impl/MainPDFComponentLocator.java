@@ -1,7 +1,6 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans.impl;
 
-import static edworld.pdfreader4humans.TextComponent.UNDERLINE_TOLERANCE;
 import static java.lang.Math.abs;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
@@ -229,9 +228,9 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 
 			private Component findOverlappingHorizontalShape(TextPosition textPosition) {
 				GridComponent component = new GridComponent("rect", textPosition.getX(), textPosition.getY() - textPosition.getHeight(), textPosition.getX()
-						+ textPosition.getWidth(), textPosition.getY() + UNDERLINE_TOLERANCE, 1);
+						+ textPosition.getWidth(), textPosition.getY(), 1);
 				for (Component candidate : horizontalComponents)
-					if (candidate.intersects(component) && abs(candidate.getWidth() - component.getWidth()) < 0.1)
+					if (candidate.underlineOf(component) && abs(candidate.getWidth() - component.getWidth()) < 0.1)
 						return candidate;
 				return null;
 			}

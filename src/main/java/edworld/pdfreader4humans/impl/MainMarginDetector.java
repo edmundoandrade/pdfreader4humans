@@ -1,8 +1,6 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans.impl;
 
-import static edworld.pdfreader4humans.TextComponent.UNDERLINE_TOLERANCE;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -35,7 +33,7 @@ public class MainMarginDetector implements MarginDetector {
 	private MarginComponent provideMarginForComponent(TextComponent component, List<Component> components, List<MarginComponent> margins, Map<Component, MarginComponent> map) {
 		for (MarginComponent margin : margins) {
 			Component nextLowerComponent = margin.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components);
-			if (nextLowerComponent.getFromY() - margin.getToY() <= UNDERLINE_TOLERANCE)
+			if (nextLowerComponent.underlineOf(margin))
 				nextLowerComponent = nextLowerComponent.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components);
 			if (component == nextLowerComponent) {
 				MarginComponent extendedMargin = margin.extended(component);

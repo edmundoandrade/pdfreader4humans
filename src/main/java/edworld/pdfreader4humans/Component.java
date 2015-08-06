@@ -1,6 +1,7 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans;
 
+import static edworld.pdfreader4humans.TextComponent.UNDERLINE_TOLERANCE;
 import static java.util.Collections.sort;
 import static java.util.regex.Matcher.quoteReplacement;
 
@@ -177,5 +178,9 @@ public abstract class Component implements Comparable<Component> {
 				return compare;
 			}
 		};
+	}
+
+	public boolean underlineOf(Component component) {
+		return getToY() > component.getFromY() && getToY() - component.getToY() <= UNDERLINE_TOLERANCE && getFromX() <= component.getToX() && getToX() >= component.getFromX();
 	}
 }
