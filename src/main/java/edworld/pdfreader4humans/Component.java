@@ -76,19 +76,20 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	public int compareTo(Component other) {
+		int result = 0;
 		if (getToY() - getHeight() / 20 < other.getFromY() + other.getHeight() / 20)
-			return -1;
+			result = -1;
 		else if (getFromY() + getHeight() / 20 > other.getToY() - other.getHeight() / 20)
-			return 1;
-		if (getFromX() < other.getFromX())
-			return -1;
+			result = 1;
+		else if (getFromX() < other.getFromX())
+			result = -1;
 		else if (getFromX() > other.getFromX())
-			return 1;
-		if (getFromY() < other.getFromY())
-			return -1;
+			result = 1;
+		else if (getFromY() < other.getFromY())
+			result = -1;
 		else if (getFromY() > other.getFromY())
-			return 1;
-		return 0;
+			result = 1;
+		return result;
 	}
 
 	public float getWidth() {
