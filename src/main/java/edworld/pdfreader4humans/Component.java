@@ -75,11 +75,19 @@ public abstract class Component implements Comparable<Component> {
 		return getFromX() == other.getFromX() && getToX() == other.getToX() && intersects(other);
 	}
 
+	public boolean verticallyBefore(Component other) {
+		return getToY() - getHeight() / 20 < other.getFromY() + other.getHeight() / 20;
+	}
+
+	public boolean verticallyAfter(Component other) {
+		return other.verticallyBefore(this);
+	}
+
 	public int compareTo(Component other) {
 		int result = 0;
-		if (getToY() - getHeight() / 20 < other.getFromY() + other.getHeight() / 20)
+		if (verticallyBefore(other))
 			result = -1;
-		else if (getFromY() + getHeight() / 20 > other.getToY() - other.getHeight() / 20)
+		else if (verticallyAfter(other))
 			result = 1;
 		else if (getFromX() < other.getFromX())
 			result = -1;
