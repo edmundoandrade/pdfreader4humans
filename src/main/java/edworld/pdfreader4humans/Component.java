@@ -6,8 +6,11 @@ import static java.util.Collections.sort;
 import static java.util.regex.Matcher.quoteReplacement;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public abstract class Component implements Comparable<Component> {
 	protected String type;
@@ -163,6 +166,48 @@ public abstract class Component implements Comparable<Component> {
 				verticalComponents.add(component);
 		sort(verticalComponents, orderByXY());
 		return verticalComponents;
+	}
+
+	public static <T extends Component> void smartSort(List<T> list) {
+		Map<T, List<T>> mapRemovedAfter = new HashMap<T, List<T>>();
+		Map<T, T> mapRemovedBefore = new HashMap<T, T>();
+		for (int i = 0; i < list.size(); i++) {
+			T component1 = list.get(i);
+			for (int j = i + 1; j < list.size(); j++) {
+				T component2 = list.get(j);
+				if (!component1.verticallyBefore(component2) && !component1.verticallyAfter(component2)) {
+					T afterComponent;
+					T beforeComponent;
+					if (component1.compareTo(component2) < 0) {
+						afterComponent = component2;
+						beforeComponent = component1;
+					} else {
+						afterComponent = component1;
+						beforeComponent = component2;
+					}
+					if (!mapRemovedBefore.containsKey(beforeComponent)) {
+						while (mapRemovedBefore.containsKey(afterComponent))
+							afterComponent = mapRemovedBefore.get(afterComponent);
+						if (!mapRemovedAfter.containsKey(afterComponent))
+							mapRemovedAfter.put(afterComponent, new ArrayList<T>());
+						if (mapRemovedAfter.containsKey(beforeComponent)) {
+							mapRemovedAfter.get(afterComponent).addAll(mapRemovedAfter.get(beforeComponent));
+							mapRemovedAfter.remove(beforeComponent);
+						}
+						mapRemovedAfter.get(afterComponent).add(beforeComponent);
+						mapRemovedBefore.put(beforeComponent, afterComponent);
+					}
+				}
+			}
+		}
+		for (T componentAfter : mapRemovedAfter.keySet())
+			list.removeAll(mapRemovedAfter.get(componentAfter));
+		Collections.sort(list);
+		for (T componentAfter : mapRemovedAfter.keySet()) {
+			List<T> beforeList = mapRemovedAfter.get(componentAfter);
+			smartSort(beforeList);
+			list.addAll(list.indexOf(componentAfter), beforeList);
+		}
 	}
 
 	public static Comparator<Component> orderByYX() {

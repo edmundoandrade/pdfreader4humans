@@ -2,7 +2,6 @@
 package edworld.pdfreader4humans.impl;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import edworld.pdfreader4humans.BoxComponent;
@@ -20,7 +19,7 @@ public class MainBoxDetector implements BoxDetector {
 		List<BoxComponent> boxes = new ArrayList<BoxComponent>();
 		for (Component horizontalComponent : horizontalComponents)
 			detectBoxes(horizontalComponent, verticalComponents, horizontalComponents, boxes);
-		Collections.sort(boxes);
+		Component.smartSort(boxes);
 		return boxes;
 	}
 

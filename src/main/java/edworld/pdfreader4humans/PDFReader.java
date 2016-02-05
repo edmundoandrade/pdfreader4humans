@@ -40,16 +40,19 @@ public class PDFReader {
 	protected TextComponent lastComponent;
 
 	/**
-	 * Class responsible for reading PDF contents in the same order a human would read them.
+	 * Class responsible for reading PDF contents in the same order a human
+	 * would read them.
 	 * 
 	 * @param url
 	 *            the PDF's location
 	 * @param componentLocator
-	 *            an instance of a PDFComponentLocator subclass such as MainPDFComponentLocator
+	 *            an instance of a PDFComponentLocator subclass such as
+	 *            MainPDFComponentLocator
 	 * @param boxDetector
 	 *            an instance of a BoxDetector subclass such as MainBoxDetector
 	 * @param marginDetector
-	 *            an instance of a MarginDetector subclass such as MainMarginDetector
+	 *            an instance of a MarginDetector subclass such as
+	 *            MainMarginDetector
 	 * @throws IOException
 	 */
 	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
@@ -235,7 +238,7 @@ public class PDFReader {
 
 	protected void sortRecursively(List<Component> components) {
 		if (components.size() > 0)
-			sort(components);
+			Component.smartSort(components);
 		for (Component component : components)
 			sortRecursively(component.getChildren());
 	}

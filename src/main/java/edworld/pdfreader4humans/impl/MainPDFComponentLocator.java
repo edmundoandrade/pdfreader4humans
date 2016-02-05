@@ -73,43 +73,8 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 				graphics.dispose();
 				dispose();
 				List<GridComponent> sortableList = new ArrayList<GridComponent>(list);
-//				Map<GridComponent, GridComponent> mapAfter = new HashMap<GridComponent, GridComponent>();
-//				Map<GridComponent, GridComponent> mapBefore = new HashMap<GridComponent, GridComponent>();
-//				Map<GridComponent, GridComponent> mapRemovedAfter = new HashMap<GridComponent, GridComponent>();
-//				for (int i = 0; i < sortableList.size(); i++) {
-//					GridComponent component1 = sortableList.get(i);
-//					for (int j = i + 1; j < sortableList.size(); j++) {
-//						GridComponent component2 = sortableList.get(j);
-//						if (component1.verticallyAfter(component2))
-//							if (verifyTransivityGreaterThan(component1, component2, mapAfter, mapBefore, mapRemovedAfter)) {
-//								mapAfter.put(component1, component2);
-//								mapBefore.put(component2, component1);
-//								System.out.println("==== after (item1, item2)");
-//								System.out.println(component1);
-//								System.out.println(component2);
-//							}
-//					}
-//				}
-//				for (GridComponent componentAfter : mapRemovedAfter.keySet())
-//					sortableList.remove(mapRemovedAfter.get(componentAfter));
-				Collections.sort(sortableList);
-//				for (GridComponent componentAfter : mapRemovedAfter.keySet())
-//					sortableList.add(sortableList.indexOf(componentAfter), mapRemovedAfter.get(componentAfter));
+				Component.smartSort(sortableList);
 				return sortableList;
-			}
-
-			private boolean verifyTransivityGreaterThan(GridComponent component1, GridComponent component2, Map<GridComponent, GridComponent> mapAfter,
-					Map<GridComponent, GridComponent> mapBefore, Map<GridComponent, GridComponent> mapRemovedAfter) {
-				GridComponent component0 = mapBefore.get(component1);
-				GridComponent component3 = mapAfter.get(component2);
-				if (component0 != null && component0 == component3) {
-					System.out.println("==== remove (after, item)");
-					System.out.println(component0);
-					System.out.println(component1);
-					mapRemovedAfter.put(component0, component1);
-					return false;
-				}
-				return true;
 			}
 
 			@Override
