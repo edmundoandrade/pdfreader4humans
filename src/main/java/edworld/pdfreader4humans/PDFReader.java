@@ -55,7 +55,8 @@ public class PDFReader {
 	 *            MainMarginDetector
 	 * @throws IOException
 	 */
-	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector,
+			MarginDetector marginDetector) throws IOException {
 		this.url = url;
 		PDDocument doc = PDDocument.load(url);
 		try {
@@ -119,8 +120,10 @@ public class PDFReader {
 			return false;
 		int nextWordLength = min(5, (component2.getText() + SPACE).indexOf(SPACE)) + 1;
 		return component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > container.getToX()
-				&& (alignedToRight(component1, component2, container) || component2.getFromX() - component2.getAverageCharacterWidth() < component1.getFromX())
-				&& component1.getToX() > component2.getFromX() && component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > component2.getToX()
+				&& (alignedToRight(component1, component2, container)
+						|| component2.getFromX() - component2.getAverageCharacterWidth() < component1.getFromX())
+				&& component1.getToX() > component2.getFromX()
+				&& component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > component2.getToX()
 				&& component2.getFromY() - component1.getToY() < max(component1.getHeight(), component2.getHeight());
 	}
 
@@ -129,12 +132,14 @@ public class PDFReader {
 		float rightMargin1 = container.getToX() - component1.getToX();
 		float leftMargin2 = component2.getFromX() - container.getFromX();
 		float rightMargin2 = container.getToX() - component2.getToX();
-		return abs(rightMargin1 - leftMargin1) < 1 && abs(rightMargin2 - leftMargin2) < 1 && rightMargin1 + leftMargin1 > component1.getAverageCharacterWidth()
+		return abs(rightMargin1 - leftMargin1) < 1 && abs(rightMargin2 - leftMargin2) < 1
+				&& rightMargin1 + leftMargin1 > component1.getAverageCharacterWidth()
 				&& rightMargin2 + leftMargin2 > component2.getAverageCharacterWidth();
 	}
 
 	private boolean alignedToRight(TextComponent component1, TextComponent component2, Component container) {
-		return component1.getToX() + component1.getAverageCharacterWidth() > container.getToX() && component2.getToX() + component2.getAverageCharacterWidth() > container.getToX();
+		return component1.getToX() + component1.getAverageCharacterWidth() > container.getToX()
+				&& component2.getToX() + component2.getAverageCharacterWidth() > container.getToX();
 	}
 
 	private String joinConsecutiveText(String text1, String text2) {
@@ -152,7 +157,8 @@ public class PDFReader {
 		String content = "";
 		for (Component component : pageFirstLevelComponents)
 			content += output(component, indentLevel + 1);
-		return pageTemplate.replaceAll("\\$\\{pageNumber\\}", String.valueOf(pageNumber)).replaceAll("\\$\\{content\\}", quoteReplacement(content));
+		return pageTemplate.replaceAll("\\$\\{pageNumber\\}", String.valueOf(pageNumber)).replaceAll("\\$\\{content\\}",
+				quoteReplacement(content));
 	}
 
 	protected String output(Component component, int indentLevel) {
@@ -163,10 +169,12 @@ public class PDFReader {
 		return component.output(componentTemplate).replaceAll("\\$\\{content\\}", quoteReplacement(content));
 	}
 
-	public BufferedImage createPageImage(int pageNumber, int scaling, Color inkColor, Color backgroundColor, boolean showStructure) throws IOException {
+	public BufferedImage createPageImage(int pageNumber, int scaling, Color inkColor, Color backgroundColor,
+			boolean showStructure) throws IOException {
 		Map<String, Font> fonts = new HashMap<String, Font>();
 		PDRectangle cropBox = getPageCropBox(pageNumber);
-		BufferedImage image = new BufferedImage(round(cropBox.getWidth() * scaling), round(cropBox.getHeight() * scaling), TYPE_INT_ARGB);
+		BufferedImage image = new BufferedImage(round(cropBox.getWidth() * scaling),
+				round(cropBox.getHeight() * scaling), TYPE_INT_ARGB);
 		Graphics2D graphics = image.createGraphics();
 		graphics.setBackground(backgroundColor);
 		graphics.clearRect(0, 0, image.getWidth(), image.getHeight());
@@ -180,12 +188,14 @@ public class PDFReader {
 		return image;
 	}
 
-	protected void readAllPages(PDDocument doc, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	protected void readAllPages(PDDocument doc, PDFComponentLocator componentLocator, BoxDetector boxDetector,
+			MarginDetector marginDetector) throws IOException {
 		for (Object page : doc.getDocumentCatalog().getAllPages())
 			firstLevel.add(readPage((PDPage) page, componentLocator, boxDetector, marginDetector));
 	}
 
-	protected List<Component> readPage(PDPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector, MarginDetector marginDetector) throws IOException {
+	protected List<Component> readPage(PDPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector,
+			MarginDetector marginDetector) throws IOException {
 		List<Component> firstLevelComponents = new ArrayList<Component>();
 		List<GridComponent> gridComponents = componentLocator.locateGridComponents(page);
 		List<TextComponent> textComponents = componentLocator.locateTextComponents(page);
@@ -210,15 +220,19 @@ public class PDFReader {
 	private void expandMargins(List<Component> components) {
 		for (Component margin : components)
 			if (margin instanceof MarginComponent)
-				if (expandedTowards(margin.nextUpperHorizontalComponent(margin.getToX(), margin.getFromX(), components), margin, components)
-						|| expandedTowards(margin.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components), margin, components)) {
+				if (expandedTowards(margin.nextUpperHorizontalComponent(margin.getToX(), margin.getFromX(), components),
+						margin, components)
+						|| expandedTowards(
+								margin.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components),
+								margin, components)) {
 					expandMargins(components);
 					break;
 				}
 	}
 
 	private boolean expandedTowards(Component nearComponent, Component margin, List<Component> components) {
-		if (nearComponent != null && abs(nearComponent.getFromX() - margin.getFromX()) < 1 && abs(nearComponent.getToX() - margin.getToX()) < 1) {
+		if (nearComponent != null && abs(nearComponent.getFromX() - margin.getFromX()) < 1
+				&& abs(nearComponent.getToX() - margin.getToX()) < 1) {
 			components.remove(nearComponent);
 			components.remove(margin);
 			float fromX = min(margin.getFromX(), nearComponent.getFromX());
@@ -285,7 +299,8 @@ public class PDFReader {
 		return lastGroupIndex;
 	}
 
-	private int mapToSameGroupIndex(Component component1, Component component2, int lastGroupIndex, Map<Component, Integer> groupMap) {
+	private int mapToSameGroupIndex(Component component1, Component component2, int lastGroupIndex,
+			Map<Component, Integer> groupMap) {
 		Integer groupIndex1 = groupMap.get(component1);
 		Integer groupIndex2 = groupMap.get(component2);
 		if (groupIndex1 == null && groupIndex2 == null) {
@@ -308,7 +323,8 @@ public class PDFReader {
 				groupMap.put(component, groupIndex1);
 	}
 
-	protected void addComponents(List<? extends Component> components, List<Component> targetList, List<? extends Component> containers) {
+	protected void addComponents(List<? extends Component> components, List<Component> targetList,
+			List<? extends Component> containers) {
 		for (Component component : components) {
 			Component container = findContainer(component, containers);
 			if (container != null)
@@ -363,25 +379,31 @@ public class PDFReader {
 		}
 	}
 
-	private void draw(Component component, Graphics2D graphics, Color inkColor, Color backgroundColor, boolean showStructure, Map<String, Font> fonts) {
+	private void draw(Component component, Graphics2D graphics, Color inkColor, Color backgroundColor,
+			boolean showStructure, Map<String, Font> fonts) {
 		for (Component child : component.getChildren())
 			draw(child, graphics, inkColor, backgroundColor, showStructure, fonts);
 		if (component instanceof BoxComponent && showStructure) {
 			graphics.setColor(boxColor(backgroundColor));
-			graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(), (int) component.getHeight());
+			graphics.drawRect((int) component.getFromX(), (int) component.getFromY(), (int) component.getWidth(),
+					(int) component.getHeight());
 			graphics.setColor(inkColor);
 		} else if (component instanceof GroupComponent && showStructure) {
 			graphics.setColor(groupColor(backgroundColor));
-			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()), round(component.getHeight()));
+			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()),
+					round(component.getHeight()));
 			graphics.setColor(inkColor);
 		} else if (component instanceof MarginComponent && showStructure) {
 			graphics.setColor(marginColor(backgroundColor));
-			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()), round(component.getHeight()));
+			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()),
+					round(component.getHeight()));
 			graphics.setColor(inkColor);
 		} else if (component.getType().equals("line"))
-			graphics.drawLine(round(component.getFromX()), round(component.getFromY()), round(component.getToX()), round(component.getToY()));
+			graphics.drawLine(round(component.getFromX()), round(component.getFromY()), round(component.getToX()),
+					round(component.getToY()));
 		else if (component.getType().equals("rect"))
-			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()), round(component.getHeight()));
+			graphics.drawRect(round(component.getFromX()), round(component.getFromY()), round(component.getWidth()),
+					round(component.getHeight()));
 		else if (component instanceof TextComponent) {
 			graphics.setFont(font((TextComponent) component, fonts));
 			graphics.drawString(((TextComponent) component).getText(), component.getFromX(), component.getToY());
@@ -405,7 +427,8 @@ public class PDFReader {
 		Font font = fonts.get(key);
 		if (font == null) {
 			String name = component.getFontName().contains("Times") ? "TimesRoman" : "Dialog";
-			int style = component.getFontName().contains("Bold") ? Font.BOLD : (component.getFontName().contains("Italic") ? Font.ITALIC : Font.PLAIN);
+			int style = component.getFontName().contains("Bold") ? Font.BOLD
+					: (component.getFontName().contains("Italic") ? Font.ITALIC : Font.PLAIN);
 			font = new Font(name, style, (int) component.getFontSize());
 			fonts.put(key, font);
 		}

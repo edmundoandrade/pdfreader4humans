@@ -67,7 +67,8 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 
 			public List<GridComponent> locateGridComponents() throws IOException {
 				PDRectangle cropBox = pageToDraw.findCropBox();
-				BufferedImage image = new BufferedImage(round(cropBox.getWidth()), round(cropBox.getHeight()), BufferedImage.TYPE_INT_ARGB);
+				BufferedImage image = new BufferedImage(round(cropBox.getWidth()), round(cropBox.getHeight()),
+						BufferedImage.TYPE_INT_ARGB);
 				Graphics2D graphics = image.createGraphics();
 				drawPage(graphics, pageToDraw, cropBox.createDimension());
 				graphics.dispose();
@@ -92,7 +93,8 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 				if (operator.getOperation().equals("l"))
 					processLineTo((COSNumber) arguments.get(0), (COSNumber) arguments.get(1));
 				else if (operator.getOperation().equals("re"))
-					processAppendRectangleToPath((COSNumber) arguments.get(0), (COSNumber) arguments.get(1), (COSNumber) arguments.get(2), (COSNumber) arguments.get(3));
+					processAppendRectangleToPath((COSNumber) arguments.get(0), (COSNumber) arguments.get(1),
+							(COSNumber) arguments.get(2), (COSNumber) arguments.get(3));
 				super.processOperator(operator, arguments);
 			}
 
@@ -126,12 +128,14 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 		}.locateGridComponents();
 	}
 
-	protected List<TextComponent> locateAllTextComponents(final PDPage page, final List<GridComponent> gridComponents) throws IOException {
+	protected List<TextComponent> locateAllTextComponents(final PDPage page, final List<GridComponent> gridComponents)
+			throws IOException {
 		return new PDFTextStripper() {
 			private Map<String, String> fusions;
 			List<Component> horizontalComponents;
 			List<Component> verticalComponents;
 			private ArrayList<TextComponent> list;
+
 			{
 				fusions = new HashMap<String, String>();
 				fusions.put("o-", "º");
@@ -176,9 +180,11 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 				}
 			}
 
-			protected TextComponent joinTextComponents(TextComponent component1, String separatorCharacter, TextComponent component2) {
-				return new TextComponent(component1.getText() + separatorCharacter + component2.getText(), component1.getFromX(),
-						min(component1.getFromY(), component2.getFromY()), component2.getToX(), max(component1.getToY(), component2.getToY()), component1.getFontName(),
+			protected TextComponent joinTextComponents(TextComponent component1, String separatorCharacter,
+					TextComponent component2) {
+				return new TextComponent(component1.getText() + separatorCharacter + component2.getText(),
+						component1.getFromX(), min(component1.getFromY(), component2.getFromY()), component2.getToX(),
+						max(component1.getToY(), component2.getToY()), component1.getFontName(),
 						component1.getFontSize());
 			}
 
@@ -197,7 +203,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 				for (TextPosition textPosition : textPositions) {
 					String character = textPosition.getCharacter();
 					Component overlappingShape = findOverlappingHorizontalShape(textPosition);
-					if (overlappingShape != null && fusible(character, "-")) {
+					if (overlappingShape != null && (character.endsWith(SPACE) || fusible(character, "-"))) {
 						character = fusion(character, "-");
 						removeOverlappingShape(overlappingShape);
 					}
@@ -205,11 +211,14 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 					float y1 = textPosition.getY();
 					if (x1 < lastLeft) {
 						list.add(new TextComponent(partialText, fromX, fromY, toX, toY, fontName, fontSize));
-						writeString(text.substring(partialText.length()), textPositions.subList(partialList.size(), textPositions.size()));
+						writeString(text.substring(partialText.length()),
+								textPositions.subList(partialList.size(), textPositions.size()));
 						return;
-					} else if (x1 < lastRight && fusible(partialText, character)) {
+					} else if (x1 < lastRight && fusible(partialText, character))
 						partialText = fusion(partialText, character);
-					} else {
+					else if (x1 + textPosition.getWidth() * 0.03 < lastRight && partialText.endsWith(SPACE))
+						partialText = fusion(partialText, character);
+					else {
 						if (x1 < fromX) {
 							fromX = x1;
 							fromY = y1 - textPosition.getHeight();
@@ -228,8 +237,9 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 
 			private Component findOverlappingHorizontalShape(TextPosition textPosition) {
-				GridComponent component = new GridComponent("rect", textPosition.getX(), textPosition.getY() - textPosition.getHeight(), textPosition.getX()
-						+ textPosition.getWidth(), textPosition.getY(), 1);
+				GridComponent component = new GridComponent("rect", textPosition.getX(),
+						textPosition.getY() - textPosition.getHeight(), textPosition.getX() + textPosition.getWidth(),
+						textPosition.getY(), 1);
 				for (Component candidate : horizontalComponents)
 					if (candidate.underlineOf(component) && abs(candidate.getWidth() - component.getWidth()) < 0.1)
 						return candidate;
@@ -241,13 +251,16 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 
 			private boolean fusible(String partialText, String character) {
-				return partialText.endsWith(SPACE) || fusions.containsKey(fusionPair(partialText, character));
+				return fusions.containsKey(fusionPair(partialText, character));
 			}
 
 			private String fusion(String partialText, String character) {
+				if (character.equals(SPACE))
+					return partialText;
 				if (partialText.endsWith(SPACE))
 					return partialText.substring(0, partialText.length() - 1) + character;
-				return partialText.substring(0, partialText.length() - 1) + fusions.get(fusionPair(partialText, character));
+				return partialText.substring(0, partialText.length() - 1)
+						+ fusions.get(fusionPair(partialText, character));
 			}
 
 			private String fusionPair(String partialText, String character) {

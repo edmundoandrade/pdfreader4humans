@@ -27,15 +27,22 @@ import edworld.pdfreader4humans.impl.MainPDFComponentLocator;
 
 public class PDFReaderTest {
 	private static final String UTF_8 = "UTF-8";
-	private PDFReader reader1, reader2, reader3, reader4, reader5;
+	private PDFReader reader1, reader2, reader3, reader4, reader5, reader6;
 
 	@Before
 	public void setUp() throws IOException {
-		reader1 = new PDFReader(getClass().getResource("/testcase1/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
-		reader2 = new PDFReader(getClass().getResource("/testcase2/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
-		reader3 = new PDFReader(getClass().getResource("/testcase3/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
-		reader4 = new PDFReader(getClass().getResource("/testcase4/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
-		reader5 = new PDFReader(getClass().getResource("/testcase5/input.pdf"), new MainPDFComponentLocator(), new MainBoxDetector(), new MainMarginDetector());
+		reader1 = new PDFReader(getClass().getResource("/testcase1/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
+		reader2 = new PDFReader(getClass().getResource("/testcase2/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
+		reader3 = new PDFReader(getClass().getResource("/testcase3/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
+		reader4 = new PDFReader(getClass().getResource("/testcase4/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
+		reader5 = new PDFReader(getClass().getResource("/testcase5/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
+		reader6 = new PDFReader(getClass().getResource("/testcase6/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
 	}
 
 	@Test
@@ -54,6 +61,7 @@ public class PDFReaderTest {
 		assertEquals(IOUtils.toString(getClass().getResource("/testcase1/output.xml"), UTF_8), reader1.toXML());
 		assertEquals(IOUtils.toString(getClass().getResource("/testcase4/output.xml"), UTF_8), reader4.toXML());
 		assertEquals(IOUtils.toString(getClass().getResource("/testcase5/output.xml"), UTF_8), reader5.toXML());
+		assertEquals(IOUtils.toString(getClass().getResource("/testcase6/output.xml"), UTF_8), reader6.toXML());
 	}
 
 	@Test
@@ -87,23 +95,28 @@ public class PDFReaderTest {
 	public void createPageImageWithStructure() throws IOException {
 		File outputFile = new File("target/outputWithStructure1.png");
 		ImageIO.write(reader1.createPageImage(1, 3, Color.WHITE, Color.BLACK, true), "png", outputFile);
-		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase1/outputWithStructure.png"), ImageIO.read(outputFile));
+		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase1/outputWithStructure.png"),
+				ImageIO.read(outputFile));
 		outputFile = new File("target/outputWithStructure2.png");
 		ImageIO.write(reader2.createPageImage(1, 3, Color.WHITE, Color.BLACK, true), "png", outputFile);
-		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase2/outputWithStructure.png"), ImageIO.read(outputFile));
+		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase2/outputWithStructure.png"),
+				ImageIO.read(outputFile));
 		outputFile = new File("target/outputWithStructure3.png");
 		ImageIO.write(reader3.createPageImage(1, 3, Color.WHITE, Color.BLACK, true), "png", outputFile);
-		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase3/outputWithStructure.png"), ImageIO.read(outputFile));
+		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase3/outputWithStructure.png"),
+				ImageIO.read(outputFile));
 	}
 
 	@Test
 	public void createPageImageWithoutStructure() throws IOException {
 		File outputFile = new File("target/outputWithoutStructure1.png");
 		ImageIO.write(reader1.createPageImage(1, 3, Color.BLACK, Color.WHITE, false), "png", outputFile);
-		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase1/outputWithoutStructure.png"), ImageIO.read(outputFile));
+		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase1/outputWithoutStructure.png"),
+				ImageIO.read(outputFile));
 		outputFile = new File("target/outputWithoutStructure2.png");
 		ImageIO.write(reader2.createPageImage(1, 3, Color.BLACK, Color.WHITE, false), "png", outputFile);
-		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase2/outputWithoutStructure.png"), ImageIO.read(outputFile));
+		assertImagesAreSimilar(getClass().getResourceAsStream("/testcase2/outputWithoutStructure.png"),
+				ImageIO.read(outputFile));
 	}
 
 	private String text(List<String> lines) {
@@ -113,7 +126,8 @@ public class PDFReaderTest {
 		return text;
 	}
 
-	private void assertImagesAreSimilar(InputStream expectedOutputStream, BufferedImage outputImage) throws IOException {
+	private void assertImagesAreSimilar(InputStream expectedOutputStream, BufferedImage outputImage)
+			throws IOException {
 		try {
 			BufferedImage expectedOutputImage = ImageIO.read(expectedOutputStream);
 			assertEquals(expectedOutputImage.getType(), outputImage.getType());
