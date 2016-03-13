@@ -4,10 +4,8 @@ package edworld.pdfreader4humans;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.pdfbox.pdmodel.PDPage;
-
 public interface PDFComponentLocator {
-	List<TextComponent> locateTextComponents(PDPage page) throws IOException;
+	List<TextComponent> locateTextComponents(PDFPage page) throws IOException;
 
-	List<GridComponent> locateGridComponents(PDPage page) throws IOException;
+	List<GridComponent> locateGridComponents(PDFPage page) throws IOException;
 }

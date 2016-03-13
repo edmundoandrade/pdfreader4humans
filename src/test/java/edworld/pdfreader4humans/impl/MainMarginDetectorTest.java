@@ -262,7 +262,8 @@ public class MainMarginDetectorTest {
 	}
 
 	private void assertMargin(List<MarginComponent> detected) {
-		Assert.assertEquals(new MarginComponent(boxFromX, boxFromY, boxToX, boxToY).toString(), detected.get(marginIndex).toString());
+		Assert.assertEquals(new MarginComponent(boxFromX, boxFromY, boxToX, boxToY).toString(),
+				detected.get(marginIndex).toString());
 		marginIndex++;
 		resetMarginData();
 	}
@@ -326,11 +327,14 @@ public class MainMarginDetectorTest {
 	private void addVertical(int column, String type) {
 		if (fromY.get(column) != null) {
 			if (type.equals(TEXT))
-				testComponents.add(new TextComponent("", coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), "", 1));
+				testComponents.add(new TextComponent("", coordFromX(column), fromY.get(column), coordToX(column),
+						toY.get(column), "", 1));
 			else if (type.equals(GROUP))
-				testComponents.add(new GroupComponent(coordFromX(column), fromY.get(column), coordToX(column), toY.get(column)));
+				testComponents.add(
+						new GroupComponent(coordFromX(column), fromY.get(column), coordToX(column), toY.get(column)));
 			else
-				testComponents.add(new GridComponent(type, coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), 1));
+				testComponents.add(new GridComponent(type, coordFromX(column), fromY.get(column), coordToX(column),
+						toY.get(column), 1));
 			fromY.put(column, null);
 			toY.put(column, null);
 		}

@@ -21,7 +21,8 @@ public class MainMarginDetector implements MarginDetector {
 		Map<Component, MarginComponent> map = new HashMap<Component, MarginComponent>();
 		for (Component component : sortedComponents)
 			if (map.get(component) == null && component instanceof TextComponent)
-				map.put(component, provideMarginForComponent((TextComponent) component, sortedComponents, margins, map));
+				map.put(component,
+						provideMarginForComponent((TextComponent) component, sortedComponents, margins, map));
 		joinConnectedMargins(margins, map);
 		for (Component component : map.keySet())
 			if (map.get(component).getArea() == component.getArea())
@@ -30,11 +31,14 @@ public class MainMarginDetector implements MarginDetector {
 		return margins;
 	}
 
-	private MarginComponent provideMarginForComponent(TextComponent component, List<Component> components, List<MarginComponent> margins, Map<Component, MarginComponent> map) {
+	private MarginComponent provideMarginForComponent(TextComponent component, List<Component> components,
+			List<MarginComponent> margins, Map<Component, MarginComponent> map) {
 		for (MarginComponent margin : margins) {
-			Component nextLowerComponent = margin.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components);
-			if (nextLowerComponent.underlineOf(margin))
-				nextLowerComponent = nextLowerComponent.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(), components);
+			Component nextLowerComponent = margin.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(),
+					components);
+			if (nextLowerComponent != null && nextLowerComponent.underlineOf(margin))
+				nextLowerComponent = nextLowerComponent.nextLowerHorizontalComponent(margin.getToX(), margin.getFromX(),
+						components);
 			if (component == nextLowerComponent) {
 				MarginComponent extendedMargin = margin.extended(component);
 				margins.remove(margin);
@@ -43,7 +47,8 @@ public class MainMarginDetector implements MarginDetector {
 				return extendedMargin;
 			}
 		}
-		MarginComponent margin = new MarginComponent(component.getFromX(), component.getFromY(), component.getToX(), component.getToY());
+		MarginComponent margin = new MarginComponent(component.getFromX(), component.getFromY(), component.getToX(),
+				component.getToY());
 		margins.add(margin);
 		return margin;
 	}

@@ -33,12 +33,14 @@ public class TextComponent extends Component {
 
 	public float distanceInCharacters(TextComponent other, boolean ignoreFontStyle) {
 		if (followedBy(other, ignoreFontStyle))
-			return Math.max(0, (other.getFromX() - getToX()) / Math.max(getAverageCharacterWidth(), other.getAverageCharacterWidth()));
+			return Math.max(0, (other.getFromX() - getToX())
+					/ Math.max(getAverageCharacterWidth(), other.getAverageCharacterWidth()));
 		return Float.MAX_VALUE;
 	}
 
 	public boolean followedBy(TextComponent other, boolean ignoreFontStyle) {
-		boolean fontStyleRule = ignoreFontStyle || (getFontName().equals(other.getFontName()) && getFontSize() == other.getFontSize());
+		boolean fontStyleRule = ignoreFontStyle
+				|| (getFontName().equals(other.getFontName()) && getFontSize() == other.getFontSize());
 		return fontStyleRule && intersectsVertically(other) && getFromX() < other.getFromX();
 	}
 

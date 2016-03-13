@@ -3,9 +3,10 @@ package edworld.pdfreader4humans;
 
 public class BoxComponent extends Component {
 	private boolean borderLeft, borderTop, borderRight, borderBottom;
-	private double lineWidth;
+	private float lineWidth;
 
-	public BoxComponent(float fromX, float fromY, float toX, float toY, double lineWidth, boolean borderLeft, boolean borderTop, boolean borderRight, boolean borderBottom) {
+	public BoxComponent(float fromX, float fromY, float toX, float toY, float lineWidth, boolean borderLeft,
+			boolean borderTop, boolean borderRight, boolean borderBottom) {
 		super("box", fromX, fromY, toX, toY);
 		this.lineWidth = lineWidth;
 		this.borderLeft = borderLeft;
@@ -14,7 +15,7 @@ public class BoxComponent extends Component {
 		this.borderBottom = borderBottom;
 	}
 
-	public double getLineWidth() {
+	public float getLineWidth() {
 		return lineWidth;
 	}
 

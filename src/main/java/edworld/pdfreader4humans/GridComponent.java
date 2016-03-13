@@ -2,14 +2,14 @@
 package edworld.pdfreader4humans;
 
 public class GridComponent extends Component {
-	private double lineWidth;
+	private float lineWidth;
 
-	public GridComponent(String type, float fromX, float fromY, float toX, float toY, double lineWidth) {
+	public GridComponent(String type, float fromX, float fromY, float toX, float toY, float lineWidth) {
 		super(type, fromX, fromY, toX, toY);
 		this.lineWidth = lineWidth;
 	}
 
-	public double getLineWidth() {
+	public float getLineWidth() {
 		return lineWidth;
 	}
 

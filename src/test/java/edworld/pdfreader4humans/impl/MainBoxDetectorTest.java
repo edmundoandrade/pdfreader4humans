@@ -194,7 +194,8 @@ public class MainBoxDetectorTest {
 		boolean borderTop = list.contains(TOP);
 		boolean borderRight = list.contains(RIGHT);
 		boolean borderBottom = list.contains(BOTTOM);
-		Assert.assertEquals(new BoxComponent(boxFromX, boxFromY, boxToX, boxToY, 1, borderLeft, borderTop, borderRight, borderBottom).toString(), detected.get(boxIndex).toString());
+		Assert.assertEquals(new BoxComponent(boxFromX, boxFromY, boxToX, boxToY, 1, borderLeft, borderTop, borderRight,
+				borderBottom).toString(), detected.get(boxIndex).toString());
 		boxIndex++;
 		resetBoxData();
 	}
@@ -248,7 +249,8 @@ public class MainBoxDetectorTest {
 
 	private void addVertical(int column) {
 		if (fromY.get(column) != null) {
-			testComponents.add(new GridComponent("rect", coordFromX(column), fromY.get(column), coordToX(column), toY.get(column), 1));
+			testComponents.add(new GridComponent("rect", coordFromX(column), fromY.get(column), coordToX(column),
+					toY.get(column), 1));
 			fromY.put(column, null);
 			toY.put(column, null);
 		}

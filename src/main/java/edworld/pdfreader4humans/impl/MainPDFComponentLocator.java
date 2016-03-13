@@ -4,11 +4,8 @@ package edworld.pdfreader4humans.impl;
 import static java.lang.Math.abs;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
-import static java.lang.Math.round;
 
-import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -17,27 +14,28 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSNumber;
-import org.apache.pdfbox.pdfviewer.PageDrawer;
 import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.common.PDStream;
-import org.apache.pdfbox.util.PDFOperator;
-import org.apache.pdfbox.util.PDFTextStripper;
-import org.apache.pdfbox.util.TextPosition;
+import org.apache.pdfbox.rendering.PDFRenderer;
+import org.apache.pdfbox.rendering.PageDrawer;
+import org.apache.pdfbox.rendering.PageDrawerParameters;
+import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.text.TextPosition;
 
 import edworld.pdfreader4humans.Component;
 import edworld.pdfreader4humans.GridComponent;
 import edworld.pdfreader4humans.PDFComponentLocator;
+import edworld.pdfreader4humans.PDFPage;
 import edworld.pdfreader4humans.TextComponent;
 
 public class MainPDFComponentLocator implements PDFComponentLocator {
 	private static final String SPACE = " ";
-	private Map<PDPage, List<GridComponent>> cachedGridComponents = new HashMap<PDPage, List<GridComponent>>();
-	private Map<PDPage, List<TextComponent>> cachedTextComponents = new HashMap<PDPage, List<TextComponent>>();
+	private Map<PDFPage, List<GridComponent>> cachedGridComponents = new HashMap<PDFPage, List<GridComponent>>();
+	private Map<PDFPage, List<TextComponent>> cachedTextComponents = new HashMap<PDFPage, List<TextComponent>>();
 
-	public List<GridComponent> locateGridComponents(PDPage page) throws IOException {
+	public List<GridComponent> locateGridComponents(PDFPage page) throws IOException {
 		List<GridComponent> gridComponents = cachedGridComponents.get(page);
 		if (gridComponents != null)
 			return gridComponents;
@@ -45,7 +43,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 		return cachedGridComponents.get(page);
 	}
 
-	public List<TextComponent> locateTextComponents(PDPage page) throws IOException {
+	public List<TextComponent> locateTextComponents(PDFPage page) throws IOException {
 		List<TextComponent> textComponents = cachedTextComponents.get(page);
 		if (textComponents != null)
 			return textComponents;
@@ -53,83 +51,82 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 		return cachedTextComponents.get(page);
 	}
 
-	private void locateComponents(PDPage page) throws IOException {
+	private void locateComponents(PDFPage page) throws IOException {
 		List<GridComponent> gridComponents = locateAllGridComponents(page);
 		List<TextComponent> textComponents = locateAllTextComponents(page, gridComponents);
 		cachedGridComponents.put(page, gridComponents);
 		cachedTextComponents.put(page, textComponents);
 	}
 
-	protected List<GridComponent> locateAllGridComponents(PDPage page) throws IOException {
-		final PDPage pageToDraw = page;
-		return new PageDrawer() {
-			private List<GridComponent> list = new ArrayList<GridComponent>();
+	protected List<GridComponent> locateAllGridComponents(PDFPage page) throws IOException {
+		final List<GridComponent> list = new ArrayList<GridComponent>();
+		PDFRenderer renderer = new PDFRenderer(page.getDoc()) {
+			protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException {
+				return new PageDrawer(parameters) {
+					@Override
+					public void processOperator(Operator operator, List<COSBase> arguments) throws IOException {
+						String operation = operator.getName();
+						if (isTextOperation(operation))
+							return;
+						if (operation.equals("i")) {
+							processSetFlatnessTolerance((COSNumber) arguments.get(0));
+							return;
+						}
+						if (operation.equals("l"))
+							processLineTo((COSNumber) arguments.get(0), (COSNumber) arguments.get(1));
+						else if (operation.equals("re"))
+							processAppendRectangleToPath((COSNumber) arguments.get(0), (COSNumber) arguments.get(1),
+									(COSNumber) arguments.get(2), (COSNumber) arguments.get(3));
+						super.processOperator(operator, arguments);
+					}
 
-			public List<GridComponent> locateGridComponents() throws IOException {
-				PDRectangle cropBox = pageToDraw.findCropBox();
-				BufferedImage image = new BufferedImage(round(cropBox.getWidth()), round(cropBox.getHeight()),
-						BufferedImage.TYPE_INT_ARGB);
-				Graphics2D graphics = image.createGraphics();
-				drawPage(graphics, pageToDraw, cropBox.createDimension());
-				graphics.dispose();
-				dispose();
-				List<GridComponent> sortableList = new ArrayList<GridComponent>(list);
-				Component.smartSort(sortableList);
-				return sortableList;
-			}
+					private void processSetFlatnessTolerance(COSNumber flatnessTolerance) {
+						getGraphicsState().setFlatness(flatnessTolerance.doubleValue());
+					}
 
-			@Override
-			protected void processOperator(PDFOperator operator, List<COSBase> arguments) throws IOException {
-				processGridOPeration(operator, arguments);
-			}
+					private void processLineTo(COSNumber x, COSNumber y) {
+						Point2D from = getLinePath().getCurrentPoint();
+						Point2D to = transformedPoint(x.floatValue(), adjustY(y.floatValue()));
+						addGridComponent("line", from, to);
+					}
 
-			private void processGridOPeration(PDFOperator operator, List<COSBase> arguments) throws IOException {
-				if (isTextOperation(operator.getOperation()))
-					return;
-				if (operator.getOperation().equals("i")) {
-					processSetFlatnessTolerance((COSNumber) arguments.get(0));
-					return;
-				}
-				if (operator.getOperation().equals("l"))
-					processLineTo((COSNumber) arguments.get(0), (COSNumber) arguments.get(1));
-				else if (operator.getOperation().equals("re"))
-					processAppendRectangleToPath((COSNumber) arguments.get(0), (COSNumber) arguments.get(1),
-							(COSNumber) arguments.get(2), (COSNumber) arguments.get(3));
-				super.processOperator(operator, arguments);
-			}
+					private void processAppendRectangleToPath(COSNumber x, COSNumber y, COSNumber w, COSNumber h) {
+						Point2D from = transformedPoint(x.floatValue(), adjustY(y.floatValue()));
+						Point2D to = transformedPoint(w.floatValue() + x.floatValue(),
+								adjustY(h.floatValue() + y.floatValue()));
+						addGridComponent("rect", from, to);
+					}
 
-			private void processSetFlatnessTolerance(COSNumber flatnessTolerance) {
-				getGraphicsState().setFlatness(flatnessTolerance.doubleValue());
-			}
+					private float adjustY(float y) {
+						return getPage().getBBox().getHeight() - y;
+					}
 
-			private void processLineTo(COSNumber x, COSNumber y) {
-				Point2D from = getLinePath().getCurrentPoint();
-				Point2D to = transformedPoint(x.doubleValue(), y.doubleValue());
-				addGridComponent("line", from, to);
-			}
+					private void addGridComponent(String type, Point2D from, Point2D to) {
+						float fromX = (float) min(from.getX(), to.getX());
+						float fromY = (float) min(from.getY(), to.getY());
+						float toX = (float) max(from.getX(), to.getX());
+						float toY = (float) max(from.getY(), to.getY());
+						list.add(new GridComponent(type, fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
+					}
 
-			private void processAppendRectangleToPath(COSNumber x, COSNumber y, COSNumber w, COSNumber h) {
-				Point2D from = transformedPoint(x.doubleValue(), y.doubleValue());
-				Point2D to = transformedPoint(w.doubleValue() + x.doubleValue(), h.doubleValue() + y.doubleValue());
-				addGridComponent("rect", from, to);
+					private boolean isTextOperation(String operation) {
+						return "/BT/ET/T*/Tc/Td/TD/Tf/Tj/TJ/TL/Tm/Tr/Ts/Tw/Tz/'/\"/".contains("/" + operation + "/");
+					}
+				};
 			}
-
-			private void addGridComponent(String type, Point2D from, Point2D to) {
-				float fromX = (float) min(from.getX(), to.getX());
-				float fromY = (float) min(from.getY(), to.getY());
-				float toX = (float) max(from.getX(), to.getX());
-				float toY = (float) max(from.getY(), to.getY());
-				list.add(new GridComponent(type, fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
-			}
-
-			private boolean isTextOperation(String operation) {
-				return "/BT/ET/T*/Tc/Td/TD/Tf/Tj/TJ/TL/Tm/Tr/Ts/Tw/Tz/'/\"/".contains("/" + operation + "/");
-			}
-		}.locateGridComponents();
+		};
+		renderer.renderImage(page.getIndex());
+		Collections.sort(list);
+		return list;
+		// List<GridComponent> sortableList = new
+		// ArrayList<GridComponent>(list);
+		// Component.smartSort(sortableList);
+		// return sortableList;
 	}
 
-	protected List<TextComponent> locateAllTextComponents(final PDPage page, final List<GridComponent> gridComponents)
+	protected List<TextComponent> locateAllTextComponents(PDFPage page, final List<GridComponent> gridComponents)
 			throws IOException {
+		final PDPage thePage = page.getPage();
 		return new PDFTextStripper() {
 			private Map<String, String> fusions;
 			List<Component> horizontalComponents;
@@ -146,13 +143,12 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 				horizontalComponents = Component.horizontal(gridComponents);
 				verticalComponents = Component.vertical(gridComponents);
 				list = new ArrayList<TextComponent>();
-				PDStream contents = page.getContents();
 				setStartPage(getCurrentPageNo());
 				setEndPage(getCurrentPageNo());
 				setSortByPosition(false);
-				if (contents != null) {
+				if (thePage.hasContents()) {
 					output = new StringWriter();
-					processPage(page, contents.getStream());
+					processPage(thePage);
 				}
 				joinConsecutiveTexts(list);
 				Collections.sort(list);
@@ -167,7 +163,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 						boolean mustSeparate = false;
 						TextComponent newComponent = joinTextComponents(currentComponent, SPACE, nextComponent);
 						for (Component separator : verticalComponents)
-							if (separator.intersects(newComponent)) {
+							if (separator.intersects(newComponent) && !separator.contains(newComponent)) {
 								mustSeparate = true;
 								break;
 							}
@@ -201,7 +197,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 				float lastLeft = Float.NEGATIVE_INFINITY;
 				float lastRight = Float.NEGATIVE_INFINITY;
 				for (TextPosition textPosition : textPositions) {
-					String character = textPosition.getCharacter();
+					String character = textPosition.getUnicode();
 					Component overlappingShape = findOverlappingHorizontalShape(textPosition);
 					if (overlappingShape != null && (character.endsWith(SPACE) || fusible(character, "-"))) {
 						character = fusion(character, "-");
@@ -222,7 +218,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 						if (x1 < fromX) {
 							fromX = x1;
 							fromY = y1 - textPosition.getHeight();
-							fontName = textPosition.getFont().getBaseFont();
+							fontName = textPosition.getFont().getName();
 							fontSize = textPosition.getFontSizeInPt();
 						}
 						partialList.add(textPosition);

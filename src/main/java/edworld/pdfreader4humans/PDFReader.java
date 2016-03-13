@@ -28,6 +28,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
+import edworld.pdfreader4humans.util.PDFUtil;
+
 public class PDFReader {
 	protected static final String HIFEN = "-";
 	protected static final String SPACE = " ";
@@ -58,7 +60,7 @@ public class PDFReader {
 	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector,
 			MarginDetector marginDetector) throws IOException {
 		this.url = url;
-		PDDocument doc = PDDocument.load(url);
+		PDDocument doc = PDFUtil.load(url);
 		try {
 			readAllPages(doc, componentLocator, boxDetector, marginDetector);
 		} finally {
@@ -190,11 +192,14 @@ public class PDFReader {
 
 	protected void readAllPages(PDDocument doc, PDFComponentLocator componentLocator, BoxDetector boxDetector,
 			MarginDetector marginDetector) throws IOException {
-		for (Object page : doc.getDocumentCatalog().getAllPages())
-			firstLevel.add(readPage((PDPage) page, componentLocator, boxDetector, marginDetector));
+		int index = 0;
+		for (PDPage page : doc.getPages()) {
+			firstLevel.add(readPage(new PDFPage(index, page, doc), componentLocator, boxDetector, marginDetector));
+			index++;
+		}
 	}
 
-	protected List<Component> readPage(PDPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector,
+	protected List<Component> readPage(PDFPage page, PDFComponentLocator componentLocator, BoxDetector boxDetector,
 			MarginDetector marginDetector) throws IOException {
 		List<Component> firstLevelComponents = new ArrayList<Component>();
 		List<GridComponent> gridComponents = componentLocator.locateGridComponents(page);
@@ -436,9 +441,9 @@ public class PDFReader {
 	}
 
 	private PDRectangle getPageCropBox(int pageIndex) throws IOException {
-		PDDocument doc = PDDocument.load(url);
+		PDDocument doc = PDFUtil.load(url);
 		try {
-			return ((PDPage) doc.getDocumentCatalog().getAllPages().get(pageIndex - 1)).findCropBox();
+			return doc.getPages().get(pageIndex - 1).getCropBox();
 		} finally {
 			doc.close();
 		}
