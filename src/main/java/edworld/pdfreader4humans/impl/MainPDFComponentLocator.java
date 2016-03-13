@@ -116,12 +116,9 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 		};
 		renderer.renderImage(page.getIndex());
-		Collections.sort(list);
-		return list;
-		// List<GridComponent> sortableList = new
-		// ArrayList<GridComponent>(list);
-		// Component.smartSort(sortableList);
-		// return sortableList;
+		List<GridComponent> sortableList = new ArrayList<GridComponent>(list);
+		Component.smartSort(sortableList);
+		return sortableList;
 	}
 
 	protected List<TextComponent> locateAllTextComponents(PDFPage page, final List<GridComponent> gridComponents)
