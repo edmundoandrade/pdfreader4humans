@@ -1,9 +1,13 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans.impl;
 
+import static org.hamcrest.CoreMatchers.hasItem;
+import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -25,25 +29,45 @@ public class MainPDFComponentLocatorTest {
 	@Before
 	public void setUp() throws Exception {
 		locator = new MainPDFComponentLocator();
-		doc = PDFUtil.load(getClass().getResource("/testcase1/input.pdf"));
-		page1 = new PDFPage(0, doc.getPages().get(0), doc);
+		doc = null;
 	}
 
 	@Test
 	public void locateGridComponents() throws IOException {
+		doc = PDFUtil.load(getClass().getResource("/testcase1/input.pdf"));
+		page1 = new PDFPage(0, doc.getPages().get(0), doc);
 		List<GridComponent> components = locator.locateGridComponents(page1);
 		assertEquals(172, components.size());
-		assertEquals("rect :: 50.406, 34.147034, 758.273, 69.08002, 1.0pt", components.get(0).toString());
-		assertEquals("rect :: 49.518, 75.11603, 49.717003, 83.987, 0.51pt", components.get(1).toString());
-		assertEquals("rect :: 49.518, 83.887024, 389.762, 84.086, 0.51pt", components.get(2).toString());
-		assertEquals("rect :: 101.254, 75.11603, 101.452995, 83.987, 0.51pt", components.get(36).toString());
-		assertEquals("rect :: 273.328, 75.11603, 273.527, 83.987, 0.51pt", components.get(37).toString());
-		assertEquals("line :: 49.607, 218.59601, 758.265, 688.404, 1.08pt", components.get(71).toString());
-		assertEquals("line :: 49.607, 321.733, 517.321, 585.26697, 1.08pt", components.get(72).toString());
+		List<String> items = new ArrayList<>();
+		for (GridComponent component : components)
+			items.add(component.toString());
+		assertThat(items, hasItem("rect :: 50.406, 34.147034, 758.273, 69.08002, 1.0pt"));
+		assertThat(items, hasItem("rect :: 49.518, 75.11603, 49.717003, 83.987, 0.51pt"));
+		assertThat(items, hasItem("rect :: 49.518, 83.887024, 389.762, 84.086, 0.51pt"));
+		assertThat(items, hasItem("rect :: 101.254, 75.11603, 101.452995, 83.987, 0.51pt"));
+		assertThat(items, hasItem("rect :: 273.328, 75.11603, 273.527, 83.987, 0.51pt"));
+		assertThat(items, not(hasItem("line :: 49.607, 321.733, 517.321, 585.26697, 1.08pt")));
+	}
+
+	@Test
+	public void locateGridComponentsWithMassiveDrawingElements() throws IOException {
+		doc = PDFUtil.load(getClass().getResource("/testcase5/input.pdf"));
+		page1 = new PDFPage(0, doc.getPages().get(0), doc);
+		List<GridComponent> components = locator.locateGridComponents(page1);
+		assertEquals(422, components.size());
+		List<String> items = new ArrayList<>();
+		for (GridComponent component : components) {
+			items.add(component.toString());
+			System.out.println(component.toString());
+		}
+		assertThat(items, hasItem("line :: 49.607, 873.311, 758.273, 873.311, 0.51pt"));
+		assertThat(items, hasItem("line :: 713.179, 797.3233, 713.179, 807.12506, 0.257pt"));
 	}
 
 	@Test
 	public void locateTextComponents() throws IOException {
+		doc = PDFUtil.load(getClass().getResource("/testcase1/input.pdf"));
+		page1 = new PDFPage(0, doc.getPages().get(0), doc);
 		List<TextComponent> components = locator.locateTextComponents(page1);
 		assertEquals(233, components.size());
 		assertEquals(
@@ -90,7 +114,6 @@ public class MainPDFComponentLocatorTest {
 
 	@Test
 	public void locateTextComponentsWithOverlappingShape() throws IOException {
-		doc.close();
 		doc = PDFUtil.load(getClass().getResource("/testcase3/input.pdf"));
 		page1 = new PDFPage(0, doc.getPages().get(0), doc);
 		String result = "";
@@ -104,6 +127,9 @@ public class MainPDFComponentLocatorTest {
 
 	@After
 	public void tearDown() throws IOException {
-		doc.close();
+		if (doc != null) {
+			doc.close();
+			doc = null;
+		}
 	}
 }

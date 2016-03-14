@@ -58,8 +58,10 @@ public abstract class Component implements Comparable<Component> {
 
 	public boolean contains(Component other) {
 		if (other instanceof TextComponent)
-			return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY < other.getToY() && toY >= other.getToY();
-		return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY <= other.getFromY() && toY >= other.getToY();
+			return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY < other.getToY()
+					&& toY >= other.getToY();
+		return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY <= other.getFromY()
+				&& toY >= other.getToY();
 	}
 
 	public boolean intersects(Component other) {
@@ -235,6 +237,7 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	public boolean underlineOf(Component component) {
-		return getToY() > component.getFromY() && getToY() - component.getToY() <= UNDERLINE_TOLERANCE && getFromX() <= component.getToX() && getToX() >= component.getFromX();
+		return getToY() > component.getFromY() && getToY() - component.getToY() <= UNDERLINE_TOLERANCE
+				&& getFromX() <= component.getToX() && getToX() >= component.getFromX();
 	}
 }

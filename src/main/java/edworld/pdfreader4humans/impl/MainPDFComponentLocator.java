@@ -54,7 +54,13 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 	private void locateComponents(PDFPage page) throws IOException {
 		List<GridComponent> gridComponents = locateAllGridComponents(page);
 		List<TextComponent> textComponents = locateAllTextComponents(page, gridComponents);
+		// List<GridComponent> sortableList = new
+		// ArrayList<GridComponent>(gridComponents);
+		// Component.smartSort(sortableList);
+		// cachedGridComponents.put(page, sortableList);
+		// Collections.sort(gridComponents, Component.orderByYX());
 		cachedGridComponents.put(page, gridComponents);
+		Collections.sort(textComponents);
 		cachedTextComponents.put(page, textComponents);
 	}
 
@@ -86,27 +92,27 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 
 					private void processLineTo(COSNumber x, COSNumber y) {
 						Point2D from = getLinePath().getCurrentPoint();
-						Point2D to = transformedPoint(x.floatValue(), adjustY(y.floatValue()));
-						addGridComponent("line", from, to);
+						Point2D to = transformedPoint(x.floatValue(), y.floatValue());
+						if (to.getX() == from.getX() || to.getY() == from.getY())
+							addGridComponent("line", from, to);
 					}
 
 					private void processAppendRectangleToPath(COSNumber x, COSNumber y, COSNumber w, COSNumber h) {
-						Point2D from = transformedPoint(x.floatValue(), adjustY(y.floatValue()));
-						Point2D to = transformedPoint(w.floatValue() + x.floatValue(),
-								adjustY(h.floatValue() + y.floatValue()));
+						Point2D from = transformedPoint(x.floatValue(), y.floatValue());
+						Point2D to = transformedPoint(w.floatValue() + x.floatValue(), h.floatValue() + y.floatValue());
 						addGridComponent("rect", from, to);
-					}
-
-					private float adjustY(float y) {
-						return getPage().getBBox().getHeight() - y;
 					}
 
 					private void addGridComponent(String type, Point2D from, Point2D to) {
 						float fromX = (float) min(from.getX(), to.getX());
-						float fromY = (float) min(from.getY(), to.getY());
+						float fromY = (float) min(adjustY(from.getY()), adjustY(to.getY()));
 						float toX = (float) max(from.getX(), to.getX());
-						float toY = (float) max(from.getY(), to.getY());
+						float toY = (float) max(adjustY(from.getY()), adjustY(to.getY()));
 						list.add(new GridComponent(type, fromX, fromY, toX, toY, getGraphicsState().getLineWidth()));
+					}
+
+					private double adjustY(double y) {
+						return getPage().getBBox().getHeight() - y;
 					}
 
 					private boolean isTextOperation(String operation) {
@@ -116,9 +122,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 		};
 		renderer.renderImage(page.getIndex());
-		List<GridComponent> sortableList = new ArrayList<GridComponent>(list);
-		Component.smartSort(sortableList);
-		return sortableList;
+		return list;
 	}
 
 	protected List<TextComponent> locateAllTextComponents(PDFPage page, final List<GridComponent> gridComponents)
@@ -148,7 +152,6 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 					processPage(thePage);
 				}
 				joinConsecutiveTexts(list);
-				Collections.sort(list);
 				return list;
 			}
 

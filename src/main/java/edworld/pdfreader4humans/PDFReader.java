@@ -297,10 +297,13 @@ public class PDFReader {
 
 	private int buildGroupMap(List<Component> components, Map<Component, Integer> groupMap) {
 		int lastGroupIndex = 0;
-		for (Component component1 : components)
-			for (Component component2 : components)
+		for (int i = 0; i < components.size(); i++)
+			for (int j = i + 1; j < components.size(); j++) {
+				Component component1 = components.get(i);
+				Component component2 = components.get(j);
 				if (component1.intersects(component2))
 					lastGroupIndex = mapToSameGroupIndex(component1, component2, lastGroupIndex, groupMap);
+			}
 		return lastGroupIndex;
 	}
 
