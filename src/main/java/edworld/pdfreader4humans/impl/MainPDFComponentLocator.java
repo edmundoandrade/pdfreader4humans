@@ -54,11 +54,6 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 	private void locateComponents(PDFPage page) throws IOException {
 		List<GridComponent> gridComponents = locateAllGridComponents(page);
 		List<TextComponent> textComponents = locateAllTextComponents(page, gridComponents);
-		// List<GridComponent> sortableList = new
-		// ArrayList<GridComponent>(gridComponents);
-		// Component.smartSort(sortableList);
-		// cachedGridComponents.put(page, sortableList);
-		// Collections.sort(gridComponents, Component.orderByYX());
 		cachedGridComponents.put(page, gridComponents);
 		Collections.sort(textComponents);
 		cachedTextComponents.put(page, textComponents);
@@ -210,8 +205,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 						writeString(text.substring(partialText.length()),
 								textPositions.subList(partialList.size(), textPositions.size()));
 						return;
-					} else if (x1 < lastRight && fusible(partialText, character)
-							&& textPosition.getFontSizeInPt() < fontSize)
+					} else if (x1 < lastRight && fusible(partialText, character) && fontsz(textPosition) < fontSize)
 						partialText = fusion(partialText, character);
 					else if (x1 + textPosition.getWidth() * 0.2 < lastRight && partialText.endsWith(SPACE))
 						partialText = fusion(partialText, character);
@@ -220,7 +214,7 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 							fromX = x1;
 							fromY = y1 - textPosition.getHeight();
 							fontName = textPosition.getFont().getName();
-							fontSize = textPosition.getFontSizeInPt();
+							fontSize = fontsz(textPosition);
 						}
 						partialList.add(textPosition);
 						partialText += character;
@@ -231,6 +225,10 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 					lastRight = x1 + textPosition.getWidth();
 				}
 				list.add(new TextComponent(partialText, fromX, fromY, toX, toY, fontName, fontSize));
+			}
+
+			private float fontsz(TextPosition textPosition) {
+				return textPosition.getFontSize() == 1F ? textPosition.getFontSizeInPt() : textPosition.getFontSize();
 			}
 
 			private Component findOverlappingHorizontalShape(TextPosition textPosition) {

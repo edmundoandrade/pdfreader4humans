@@ -123,6 +123,19 @@ public class MainPDFComponentLocatorTest {
 				result);
 	}
 
+	@Test
+	public void locateTextComponentsWithCorrectFontSize() throws IOException {
+		doc = PDFUtil.load(getClass().getResource("/testcase6/input.pdf"));
+		page1 = new PDFPage(0, doc.getPages().get(0), doc);
+		String result = "";
+		for (TextComponent component : locator.locateTextComponents(page1))
+			if (component.getText().contains("Coordenação de Apoio ao Plenário"))
+				result = component.toString();
+		assertEquals(
+				"text :: 161.3, 723.07477, 431.73688, 730.56, Arial,Bold 15.96 :: Coordenação de Apoio ao Plenário ",
+				result);
+	}
+
 	@After
 	public void tearDown() throws IOException {
 		if (doc != null) {
