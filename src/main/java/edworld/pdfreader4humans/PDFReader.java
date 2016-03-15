@@ -121,12 +121,13 @@ public class PDFReader {
 		if (container == null || alignedToCenter(component1, component2, container))
 			return false;
 		int nextWordLength = min(5, (component2.getText() + SPACE).indexOf(SPACE)) + 1;
+		float distanceBetweenLines = component2.getFromY() - component1.getToY();
 		return component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > container.getToX()
 				&& (alignedToRight(component1, component2, container)
 						|| component2.getFromX() - component2.getAverageCharacterWidth() < component1.getFromX())
 				&& component1.getToX() > component2.getFromX()
 				&& component1.getToX() + nextWordLength * component1.getAverageCharacterWidth() > component2.getToX()
-				&& component2.getFromY() - component1.getToY() < max(component1.getHeight(), component2.getHeight());
+				&& distanceBetweenLines < 1.5 * max(component1.getHeight(), component2.getHeight());
 	}
 
 	private boolean alignedToCenter(TextComponent component1, TextComponent component2, Component container) {

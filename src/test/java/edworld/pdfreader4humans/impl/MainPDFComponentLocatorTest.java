@@ -56,10 +56,8 @@ public class MainPDFComponentLocatorTest {
 		List<GridComponent> components = locator.locateGridComponents(page1);
 		assertEquals(422, components.size());
 		List<String> items = new ArrayList<>();
-		for (GridComponent component : components) {
+		for (GridComponent component : components)
 			items.add(component.toString());
-			System.out.println(component.toString());
-		}
 		assertThat(items, hasItem("line :: 49.607, 873.311, 758.273, 873.311, 0.51pt"));
 		assertThat(items, hasItem("line :: 713.179, 797.3233, 713.179, 807.12506, 0.257pt"));
 	}

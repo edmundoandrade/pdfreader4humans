@@ -3,192 +3,192 @@
 	<page id="1">
 		<margin fromX="256.6864" fromY="216.72432" toX="510.7905" toY="239.5791">
 			<text fromX="339.8356" fromY="216.72432" toX="421.95538" toY="222.7298" fontName="JLEOFM+OxfordWd" fontSize="10.0"><![CDATA[Ano CLII Nº 187]]></text>
-			<text fromX="256.6864" fromY="233.57362" toX="510.7905" toY="239.5791" fontName="JLEOFM+OxfordWd" fontSize="10.0"><![CDATA[Brasília-DF,quarta-feira,30desetembrode2015]]></text>
+			<text fromX="256.6864" fromY="233.57362" toX="510.7905" toY="239.5791" fontName="JLEOFM+OxfordWd" fontSize="10.0"><![CDATA[Brasília - DF, quarta-feira, 30 de setembro de 2015]]></text>
 		</margin>
-		<margin fromX="49.607" fromY="254.98" toX="276.38712" toY="867.855">
-			<rect fromX="49.607" fromY="254.98" toX="276.378" toY="256.674" lineWidth="0.51">
+		<margin fromX="49.607" fromY="254.97998" toX="276.38712" toY="867.855">
+			<rect fromX="49.607" fromY="254.97998" toX="276.378" toY="256.67395" lineWidth="0.51">
 			</rect>
 			<group fromX="49.607" fromY="256.972" toX="276.378" toY="276.815">
 				<rect fromX="49.607" fromY="256.972" toX="276.378" toY="276.815" lineWidth="0.51">
 					<text fromX="141.4008" fromY="261.60492" toX="184.58298" toY="268.9275" fontName="JLEOGM+OttawaV" fontSize="11.0"><![CDATA[Sumário]]></text>
-					<rect fromX="49.607" fromY="273.909" toX="276.378" toY="275.603" lineWidth="0.51">
+					<text fromX="49.607" fromY="271.97906" toX="51.59952" toY="276.4264" fontName="Times-Roman" fontSize="7.0"><![CDATA[.]]></text>
+					<rect fromX="49.607" fromY="273.909" toX="276.378" toY="275.60297" lineWidth="0.51">
 					</rect>
-					<text fromX="49.607" fromY="275.54172" toX="51.59952" toY="276.4264" fontName="Times-Roman" fontSize="7.0"><![CDATA[.]]></text>
 				</rect>
 			</group>
-			<text fromX="246.2745" fromY="285.1517" toX="276.37762" toY="290.42792" fontName="Times-Roman" fontSize="7.0"><![CDATA[PÁGINA]]></text>
-			<text fromX="49.607513" fromY="295.44827" toX="276.37744" toY="300.82013" fontName="Times-Roman" fontSize="7.0"><![CDATA[Atos do Congresso Nacional .............................................................. 1]]></text>
-			<text fromX="49.607513" fromY="305.93454" toX="276.37747" toY="311.21075" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidência da República .................................................................... 3]]></text>
-			<text fromX="49.607513" fromY="316.32675" toX="276.37753" toY="321.60297" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Agricultura, Pecuária e Abastecimento ...................... 5]]></text>
-			<text fromX="49.607513" fromY="326.71817" toX="276.3775" toY="331.9944" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Ciência, Tecnologia e Inovação ................................ 11]]></text>
-			<text fromX="49.607513" fromY="337.11038" toX="276.37747" toY="342.3866" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Cultura ........................................................................ 11]]></text>
-			<text fromX="49.607513" fromY="347.5026" toX="276.37747" toY="352.7788" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Defesa......................................................................... 14]]></text>
-			<text fromX="49.607513" fromY="357.89322" toX="276.37747" toY="363.16943" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Educação .................................................................... 16]]></text>
-			<text fromX="49.607513" fromY="368.28543" toX="276.37747" toY="373.56165" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Fazenda....................................................................... 17]]></text>
-			<text fromX="49.607513" fromY="378.67606" toX="276.3775" toY="383.95227" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Integração Nacional ................................................... 49]]></text>
-			<text fromX="49.607513" fromY="389.06827" toX="276.37747" toY="394.34448" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Justiça ......................................................................... 49]]></text>
-			<text fromX="49.607513" fromY="399.46048" toX="276.37747" toY="404.7367" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Previdência Social...................................................... 54]]></text>
-			<text fromX="49.607513" fromY="409.8511" toX="276.37747" toY="415.12732" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Saúde .......................................................................... 61]]></text>
-			<text fromX="49.607513" fromY="420.24332" toX="276.37747" toY="425.51953" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério das Comunicações........................................................... 99]]></text>
-			<text fromX="49.607513" fromY="430.63553" toX="276.3775" toY="435.91174" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério das Relações Exteriores ................................................ 103]]></text>
-			<text fromX="49.607513" fromY="441.02615" toX="276.3775" toY="446.30237" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério de Minas e Energia....................................................... 103]]></text>
-			<text fromX="49.607513" fromY="451.41837" toX="276.37747" toY="456.69458" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Desenvolvimento Agrário........................................ 114]]></text>
-			<text fromX="49.607513" fromY="461.56192" toX="276.3775" toY="467.0852" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Desenvolvimento, Indústria e Comércio Exterior . 115]]></text>
-			<text fromX="49.607513" fromY="472.2012" toX="276.37747" toY="477.47742" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Meio Ambiente ........................................................ 115]]></text>
-			<text fromX="49.607513" fromY="482.5934" toX="276.3775" toY="487.86963" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Planejamento, Orçamento e Gestão........................ 116]]></text>
-			<text fromX="49.607513" fromY="492.98404" toX="276.37747" toY="498.26025" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Trabalho e Emprego................................................ 123]]></text>
-			<text fromX="49.607513" fromY="503.37625" toX="276.37747" toY="508.65247" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério dos Transportes ............................................................. 144]]></text>
-			<text fromX="49.607513" fromY="513.5437" toX="276.37747" toY="519.0431" fontName="Times-Roman" fontSize="7.0"><![CDATA[Conselho Nacional do Ministério Público..................................... 144]]></text>
-			<text fromX="49.607513" fromY="524.1591" toX="276.37747" toY="529.4353" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério Público da União .......................................................... 145]]></text>
-			<text fromX="49.607513" fromY="534.55133" toX="276.37747" toY="539.8275" fontName="Times-Roman" fontSize="7.0"><![CDATA[Tribunal de Contas da União ......................................................... 150]]></text>
-			<text fromX="49.607513" fromY="544.94275" toX="276.37747" toY="550.21893" fontName="Times-Roman" fontSize="7.0"><![CDATA[Defensoria Pública da União.......................................................... 213]]></text>
-			<text fromX="49.607513" fromY="555.33496" toX="276.37744" toY="560.61115" fontName="Times-Roman" fontSize="7.0"><![CDATA[Poder Legislativo............................................................................. 213]]></text>
-			<text fromX="49.607513" fromY="565.7256" toX="276.37744" toY="571.0018" fontName="Times-Roman" fontSize="7.0"><![CDATA[Poder Judiciário............................................................................... 213]]></text>
-			<text fromX="49.607513" fromY="575.8707" toX="276.3775" toY="581.394" fontName="Times-Roman" fontSize="7.0"><![CDATA[Entidades de Fiscalização do Exercício das Profissões Liberais . 221]]></text>
-			<rect fromX="49.607" fromY="589.394" toX="276.378" toY="591.088" lineWidth="0.51">
+			<text fromX="246.2745" fromY="285.9806" toX="276.37762" toY="290.42792" fontName="Times-Roman" fontSize="7.0"><![CDATA[PÁGINA]]></text>
+			<text fromX="49.607513" fromY="296.3728" toX="276.37744" toY="300.82013" fontName="Times-Roman" fontSize="7.0"><![CDATA[Atos do Congresso Nacional .............................................................. 1]]></text>
+			<text fromX="49.607513" fromY="306.76343" toX="276.37747" toY="311.21075" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidência da República .................................................................... 3]]></text>
+			<text fromX="49.607513" fromY="317.15564" toX="276.37753" toY="321.60297" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Agricultura, Pecuária e Abastecimento ...................... 5]]></text>
+			<text fromX="49.607513" fromY="327.54706" toX="276.3775" toY="331.9944" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Ciência, Tecnologia e Inovação ................................ 11]]></text>
+			<text fromX="49.607513" fromY="337.93927" toX="276.37747" toY="342.3866" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Cultura ........................................................................ 11]]></text>
+			<text fromX="49.607513" fromY="348.33148" toX="276.37747" toY="352.7788" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Defesa......................................................................... 14]]></text>
+			<text fromX="49.607513" fromY="358.7221" toX="276.37747" toY="363.16943" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Educação .................................................................... 16]]></text>
+			<text fromX="49.607513" fromY="369.11432" toX="276.37747" toY="373.56165" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Fazenda....................................................................... 17]]></text>
+			<text fromX="49.607513" fromY="379.50494" toX="276.3775" toY="383.95227" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Integração Nacional ................................................... 49]]></text>
+			<text fromX="49.607513" fromY="389.89716" toX="276.37747" toY="394.34448" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Justiça ......................................................................... 49]]></text>
+			<text fromX="49.607513" fromY="400.28937" toX="276.37747" toY="404.7367" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Previdência Social...................................................... 54]]></text>
+			<text fromX="49.607513" fromY="410.68" toX="276.37747" toY="415.12732" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério da Saúde .......................................................................... 61]]></text>
+			<text fromX="49.607513" fromY="421.0722" toX="276.37747" toY="425.51953" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério das Comunicações........................................................... 99]]></text>
+			<text fromX="49.607513" fromY="431.46442" toX="276.3775" toY="435.91174" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério das Relações Exteriores ................................................ 103]]></text>
+			<text fromX="49.607513" fromY="441.85504" toX="276.3775" toY="446.30237" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério de Minas e Energia....................................................... 103]]></text>
+			<text fromX="49.607513" fromY="452.24725" toX="276.37747" toY="456.69458" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Desenvolvimento Agrário........................................ 114]]></text>
+			<text fromX="49.607513" fromY="462.63788" toX="276.3775" toY="467.0852" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Desenvolvimento, Indústria e Comércio Exterior . 115]]></text>
+			<text fromX="49.607513" fromY="473.0301" toX="276.37747" toY="477.47742" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Meio Ambiente ........................................................ 115]]></text>
+			<text fromX="49.607513" fromY="483.4223" toX="276.3775" toY="487.86963" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Planejamento, Orçamento e Gestão........................ 116]]></text>
+			<text fromX="49.607513" fromY="493.81293" toX="276.37747" toY="498.26025" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério do Trabalho e Emprego................................................ 123]]></text>
+			<text fromX="49.607513" fromY="504.20514" toX="276.37747" toY="508.65247" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério dos Transportes ............................................................. 144]]></text>
+			<text fromX="49.607513" fromY="514.59576" toX="276.37747" toY="519.0431" fontName="Times-Roman" fontSize="7.0"><![CDATA[Conselho Nacional do Ministério Público..................................... 144]]></text>
+			<text fromX="49.607513" fromY="524.988" toX="276.37747" toY="529.4353" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ministério Público da União .......................................................... 145]]></text>
+			<text fromX="49.607513" fromY="535.3802" toX="276.37747" toY="539.8275" fontName="Times-Roman" fontSize="7.0"><![CDATA[Tribunal de Contas da União ......................................................... 150]]></text>
+			<text fromX="49.607513" fromY="545.7716" toX="276.37747" toY="550.21893" fontName="Times-Roman" fontSize="7.0"><![CDATA[Defensoria Pública da União.......................................................... 213]]></text>
+			<text fromX="49.607513" fromY="556.1638" toX="276.37744" toY="560.61115" fontName="Times-Roman" fontSize="7.0"><![CDATA[Poder Legislativo............................................................................. 213]]></text>
+			<text fromX="49.607513" fromY="566.55444" toX="276.37744" toY="571.0018" fontName="Times-Roman" fontSize="7.0"><![CDATA[Poder Judiciário............................................................................... 213]]></text>
+			<text fromX="49.607513" fromY="576.94666" toX="276.3775" toY="581.394" fontName="Times-Roman" fontSize="7.0"><![CDATA[Entidades de Fiscalização do Exercício das Profissões Liberais . 221]]></text>
+			<rect fromX="49.607" fromY="589.39404" toX="276.378" toY="591.088" lineWidth="0.51">
 			</rect>
 			<group fromX="49.607" fromY="591.386" toX="276.378" toY="611.229">
 				<rect fromX="49.607" fromY="591.386" toX="276.378" toY="611.229" lineWidth="0.51">
-					<text fromX="87.2797" fromY="596.0189" toX="238.70424" toY="603.3415" fontName="JLEOGM+OttawaV" fontSize="11.0"><![CDATA[Atos do Congresso Nacional]]></text>
-					<rect fromX="49.607" fromY="608.323" toX="276.378" toY="610.017" lineWidth="0.51">
+					<text fromX="87.2797" fromY="596.0189" toX="238.70422" toY="603.3415" fontName="JLEOGM+OttawaV" fontSize="11.0"><![CDATA[Atos do Congresso Nacional]]></text>
+					<text fromX="49.607" fromY="606.3522" toX="51.59952" toY="610.7995" fontName="Times-Roman" fontSize="7.0"><![CDATA[.]]></text>
+					<rect fromX="49.607" fromY="608.323" toX="276.378" toY="610.01697" lineWidth="0.51">
 					</rect>
-					<text fromX="49.607" fromY="609.9148" toX="51.59952" toY="610.7995" fontName="Times-Roman" fontSize="7.0"><![CDATA[.]]></text>
 				</rect>
 			</group>
-			<margin fromX="49.607018" fromY="623.4992" toX="276.38712" toY="765.27106">
-				<text fromX="77.50286" fromY="623.4992" toX="276.3799" toY="628.7754" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
-				<text fromX="49.607513" fromY="631.3179" toX="276.37915" toY="636.81726" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
-				<text fromX="49.607513" fromY="639.37573" toX="276.38712" toY="644.85913" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
-				<text fromX="49.607513" fromY="647.3777" toX="258.9979" toY="652.90094" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
-				<text fromX="138.33147" fromY="663.63666" toX="229.35799" toY="668.91284" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
-				<text fromX="138.33147" fromY="671.5666" toX="196.51346" toY="676.9547" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 201, DE 2015]]></text>
-				<text fromX="134.64719" fromY="687.4829" toX="276.3802" toY="692.9663" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga autorização à]]></text>
-				<text fromX="134.64719" fromY="695.5088" toX="276.37946" toY="701.0082" fontName="Times-Roman" fontSize="7.0"><![CDATA[ASSOCIAÇÃO CULTURAL SOCIAL E]]></text>
-				<text fromX="134.64719" fromY="703.7738" toX="276.37952" toY="709.05" fontName="Times-Roman" fontSize="7.0"><![CDATA[LAZER DE QUEIRÓZ para executar ser-]]></text>
-				<text fromX="134.64719" fromY="713.3937" toX="276.38336" toY="717.0918" fontName="Times-Roman" fontSize="7.0"><![CDATA[viço de radiodifusão comunitária na cidade]]></text>
-				<text fromX="134.64719" fromY="719.6104" toX="246.49951" toY="725.13367" fontName="Times-Roman" fontSize="7.0"><![CDATA[de Queiroz, Estado de São Paulo.]]></text>
-				<text fromX="77.502365" fromY="735.6462" toX="180.1094" toY="741.14557" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
-				<text fromX="77.502365" fromY="743.81555" toX="276.3802" toY="749.1874" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 192,]]></text>
-				<text fromX="49.607018" fromY="751.706" toX="276.37787" toY="757.22925" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 6 de junho de 2011, que outorga autorização à Associação Cultural]]></text>
-				<text fromX="49.607018" fromY="759.77167" toX="276.3826" toY="765.27106" fontName="Times-Roman" fontSize="7.0"><![CDATA[Social e Lazer de Queiróz para executar, por 10 (dez) anos, sem]]></text>
+			<margin fromX="49.607018" fromY="624.32806" toX="276.38712" toY="765.27106">
+				<text fromX="77.50286" fromY="624.32806" toX="276.3799" toY="628.7754" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
+				<text fromX="49.607513" fromY="632.36993" toX="276.37915" toY="636.81726" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
+				<text fromX="49.607513" fromY="640.4118" toX="276.38712" toY="644.85913" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
+				<text fromX="49.607513" fromY="648.4536" toX="258.9979" toY="652.90094" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
+				<text fromX="138.33147" fromY="664.4655" toX="229.35799" toY="668.91284" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
+				<text fromX="138.33147" fromY="672.5071" toX="196.51346" toY="676.9547" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 201, DE 2015]]></text>
+				<text fromX="134.64719" fromY="688.519" toX="276.3802" toY="692.9663" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga autorização à]]></text>
+				<text fromX="134.64719" fromY="696.56085" toX="276.37946" toY="701.0082" fontName="Times-Roman" fontSize="7.0"><![CDATA[ASSOCIAÇÃO CULTURAL SOCIAL E]]></text>
+				<text fromX="134.64719" fromY="704.60266" toX="276.37952" toY="709.05" fontName="Times-Roman" fontSize="7.0"><![CDATA[LAZER DE QUEIRÓZ para executar ser-]]></text>
+				<text fromX="134.64719" fromY="712.6445" toX="276.38336" toY="717.0918" fontName="Times-Roman" fontSize="7.0"><![CDATA[viço de radiodifusão comunitária na cidade]]></text>
+				<text fromX="134.64719" fromY="720.68634" toX="246.49951" toY="725.13367" fontName="Times-Roman" fontSize="7.0"><![CDATA[de Queiroz, Estado de São Paulo.]]></text>
+				<text fromX="77.502365" fromY="736.69824" toX="180.1094" toY="741.14557" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
+				<text fromX="77.502365" fromY="744.74005" toX="276.3802" toY="749.1874" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 192,]]></text>
+				<text fromX="49.607018" fromY="752.7819" toX="276.37787" toY="757.22925" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 6 de junho de 2011, que outorga autorização à Associação Cultural]]></text>
+				<text fromX="49.607018" fromY="760.8237" toX="276.3826" toY="765.27106" fontName="Times-Roman" fontSize="7.0"><![CDATA[Social e Lazer de Queiróz para executar, por 10 (dez) anos, sem]]></text>
 			</margin>
 			<rect fromX="50.341" fromY="773.278" toX="275.857" toY="867.855" lineWidth="0.51">
 			</rect>
 		</margin>
-		<margin fromX="290.5535" fromY="254.91049" toX="517.3349" toY="765.27234">
-			<text fromX="290.5535" fromY="254.91049" toX="517.3236" toY="260.43378" fontName="Times-Roman" fontSize="7.0"><![CDATA[direito de exclusividade, serviço de radiodifusão comunitária na ci-]]></text>
-			<text fromX="290.5535" fromY="262.88058" toX="420.52188" toY="268.40387" fontName="Times-Roman" fontSize="7.0"><![CDATA[dade de Queiroz, Estado de São Paulo.]]></text>
-			<text fromX="318.44885" fromY="270.82675" toX="517.32367" toY="276.35004" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
-			<text fromX="290.5535" fromY="280.54947" toX="340.76514" toY="284.2954" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
-			<text fromX="357.9096" fromY="294.7123" toX="506.6635" toY="300.21167" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
-			<text fromX="380.07446" fromY="302.65768" toX="484.49878" toY="308.15704" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
-			<text fromX="383.41394" fromY="310.827" toX="481.15924" toY="316.1032" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
-			<text fromX="318.44885" fromY="328.7111" toX="517.3259" toY="333.9873" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
-			<text fromX="290.5535" fromY="336.4341" toX="517.3252" toY="341.93347" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
-			<text fromX="290.5535" fromY="344.39542" toX="517.3332" toY="349.87885" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
-			<text fromX="290.5535" fromY="352.30173" toX="499.94397" toY="357.825" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
-			<text fromX="379.27747" fromY="368.46506" toX="470.30402" toY="373.74127" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
-			<text fromX="379.27747" fromY="376.29794" toX="437.45996" toY="381.68665" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 202, DE 2015]]></text>
-			<text fromX="375.5937" fromY="392.23016" toX="517.32935" toY="397.60202" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga permissão à RÁ-]]></text>
-			<text fromX="375.5937" fromY="400.2712" toX="517.3301" toY="405.54742" fontName="Times-Roman" fontSize="7.0"><![CDATA[DIO CABOCLA LTDA. para explorar ser-]]></text>
-			<text fromX="375.5937" fromY="407.97034" toX="517.3268" toY="413.49362" fontName="Times-Roman" fontSize="7.0"><![CDATA[viço de radiodifusão sonora em frequência]]></text>
-			<text fromX="375.5937" fromY="416.1636" toX="517.3276" toY="421.43982" fontName="Times-Roman" fontSize="7.0"><![CDATA[modulada na cidade de Fonte Boa, Estado]]></text>
-			<text fromX="375.5937" fromY="423.86194" toX="422.2666" toY="429.38522" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Amazonas.]]></text>
-			<text fromX="318.44888" fromY="439.80215" toX="421.05603" toY="445.3015" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
-			<text fromX="318.44888" fromY="447.87506" toX="517.3311" toY="453.24692" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 82,]]></text>
-			<text fromX="290.55353" fromY="455.66983" toX="517.3276" toY="461.1931" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 30 de março de 2011, que outorga permissão à Rádio Cabocla]]></text>
-			<text fromX="290.55353" fromY="463.8631" toX="517.3268" toY="469.1393" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ltda. para explorar, por 10 (dez) anos, sem direito de exclusividade,]]></text>
-			<text fromX="290.55353" fromY="473.33878" toX="517.33154" toY="477.08472" fontName="Times-Roman" fontSize="7.0"><![CDATA[serviço de radiodifusão sonora em frequência modulada na cidade de]]></text>
-			<text fromX="290.55353" fromY="479.7547" toX="401.11475" toY="485.0309" fontName="Times-Roman" fontSize="7.0"><![CDATA[Fonte Boa, Estado do Amazonas.]]></text>
-			<text fromX="318.44888" fromY="487.45303" toX="517.3237" toY="492.97632" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
-			<text fromX="290.55353" fromY="497.17657" toX="340.76517" toY="500.92252" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
-			<text fromX="357.90964" fromY="511.33865" toX="506.66354" toY="516.838" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
-			<text fromX="380.0745" fromY="519.2848" toX="484.4988" toY="524.7842" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
-			<text fromX="383.41397" fromY="527.4542" toX="481.15927" toY="532.7304" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
-			<text fromX="318.44888" fromY="545.36224" toX="517.326" toY="550.6384" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
-			<text fromX="290.55353" fromY="553.0852" toX="517.32526" toY="558.5846" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
-			<text fromX="290.55353" fromY="561.04663" toX="517.3332" toY="566.53" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
-			<text fromX="290.55353" fromY="568.95294" toX="499.944" toY="574.4762" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
-			<text fromX="379.27747" fromY="585.11633" toX="470.30402" toY="590.3925" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
-			<text fromX="379.27747" fromY="592.94836" toX="437.45996" toY="598.3379" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 203, DE 2015]]></text>
-			<text fromX="375.5937" fromY="608.76904" toX="517.32684" toY="614.2525" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga autorização à]]></text>
-			<text fromX="375.5937" fromY="616.82605" toX="517.32776" toY="622.1979" fontName="Times-Roman" fontSize="7.0"><![CDATA[ASSOCIAÇÃO COMUNITÁRIA E CUL-]]></text>
-			<text fromX="375.5937" fromY="624.8679" toX="517.3254" toY="630.1441" fontName="Times-Roman" fontSize="7.0"><![CDATA[TURAL DO MUNICÍPIO DE NOVA VE-]]></text>
-			<text fromX="375.5937" fromY="632.72644" toX="517.32605" toY="638.09033" fontName="Times-Roman" fontSize="7.0"><![CDATA[NEZA para executar serviço de radiodifu-]]></text>
-			<text fromX="375.5937" fromY="642.28973" toX="517.3308" toY="646.0357" fontName="Times-Roman" fontSize="7.0"><![CDATA[são comunitária na cidade de Nova Veneza,]]></text>
-			<text fromX="375.5937" fromY="648.7057" toX="460.72235" toY="653.9819" fontName="Times-Roman" fontSize="7.0"><![CDATA[Estado de Santa Catarina.]]></text>
-			<text fromX="318.44888" fromY="664.398" toX="421.05603" toY="669.8974" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
-			<text fromX="318.44888" fromY="672.47174" toX="517.32544" toY="677.84357" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº]]></text>
-			<text fromX="290.55353" fromY="680.3063" toX="517.32916" toY="685.78973" fontName="Times-Roman" fontSize="7.0"><![CDATA[1.161, de 24 de novembro de 2010, que outorga autorização à As-]]></text>
-			<text fromX="290.55353" fromY="689.98914" toX="517.32605" toY="693.7351" fontName="Times-Roman" fontSize="7.0"><![CDATA[sociação Comunitária e Cultural do Município de Nova Veneza para]]></text>
-			<text fromX="290.55353" fromY="697.93536" toX="517.3349" toY="701.68134" fontName="Times-Roman" fontSize="7.0"><![CDATA[executar, por 10 (dez) anos, sem direito de exclusividade, serviço de]]></text>
-			<text fromX="290.55353" fromY="705.96045" toX="517.32697" toY="709.6267" fontName="Times-Roman" fontSize="7.0"><![CDATA[radiodifusão comunitária na cidade de Nova Veneza, Estado de Santa]]></text>
-			<text fromX="290.55353" fromY="712.0735" toX="319.5488" toY="717.5729" fontName="Times-Roman" fontSize="7.0"><![CDATA[Catarina.]]></text>
-			<text fromX="318.44888" fromY="719.9958" toX="517.3237" toY="725.51904" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
-			<text fromX="290.55353" fromY="729.7185" toX="340.76517" toY="733.4645" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
-			<text fromX="357.90964" fromY="743.88135" toX="506.66354" toY="749.38074" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
-			<text fromX="380.0745" fromY="751.8268" toX="484.4988" toY="757.3262" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
-			<text fromX="383.41397" fromY="759.99615" toX="481.15927" toY="765.27234" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
+		<margin fromX="290.5535" fromY="255.98647" toX="517.3349" toY="765.27234">
+			<text fromX="290.5535" fromY="255.98647" toX="517.3236" toY="260.43378" fontName="Times-Roman" fontSize="7.0"><![CDATA[direito de exclusividade, serviço de radiodifusão comunitária na ci-]]></text>
+			<text fromX="290.5535" fromY="263.95654" toX="420.52188" toY="268.40387" fontName="Times-Roman" fontSize="7.0"><![CDATA[dade de Queiroz, Estado de São Paulo.]]></text>
+			<text fromX="318.44885" fromY="271.9027" toX="517.32367" toY="276.35004" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
+			<text fromX="290.5535" fromY="279.84808" toX="340.76514" toY="284.2954" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
+			<text fromX="357.9096" fromY="295.76434" toX="506.6635" toY="300.21167" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
+			<text fromX="380.07446" fromY="303.70972" toX="484.49878" toY="308.15704" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
+			<text fromX="383.41394" fromY="311.65588" toX="481.15924" toY="316.1032" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
+			<text fromX="318.44885" fromY="329.53998" toX="517.3259" toY="333.9873" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
+			<text fromX="290.5535" fromY="337.48615" toX="517.3252" toY="341.93347" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
+			<text fromX="290.5535" fromY="345.43152" toX="517.3332" toY="349.87885" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
+			<text fromX="290.5535" fromY="353.3777" toX="499.94397" toY="357.825" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
+			<text fromX="379.27747" fromY="369.29395" toX="470.30402" toY="373.74127" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
+			<text fromX="379.27747" fromY="377.2384" toX="437.45996" toY="381.68665" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 202, DE 2015]]></text>
+			<text fromX="375.5937" fromY="393.1547" toX="517.32935" toY="397.60202" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga permissão à RÁ-]]></text>
+			<text fromX="375.5937" fromY="401.1001" toX="517.3301" toY="405.54742" fontName="Times-Roman" fontSize="7.0"><![CDATA[DIO CABOCLA LTDA. para explorar ser-]]></text>
+			<text fromX="375.5937" fromY="409.0463" toX="517.3268" toY="413.49362" fontName="Times-Roman" fontSize="7.0"><![CDATA[viço de radiodifusão sonora em frequência]]></text>
+			<text fromX="375.5937" fromY="416.9925" toX="517.3276" toY="421.43982" fontName="Times-Roman" fontSize="7.0"><![CDATA[modulada na cidade de Fonte Boa, Estado]]></text>
+			<text fromX="375.5937" fromY="424.9379" toX="422.2666" toY="429.38522" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Amazonas.]]></text>
+			<text fromX="318.44888" fromY="440.8542" toX="421.05603" toY="445.3015" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
+			<text fromX="318.44888" fromY="448.7996" toX="517.3311" toY="453.24692" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 82,]]></text>
+			<text fromX="290.55353" fromY="456.7458" toX="517.3276" toY="461.1931" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 30 de março de 2011, que outorga permissão à Rádio Cabocla]]></text>
+			<text fromX="290.55353" fromY="464.692" toX="517.3268" toY="469.1393" fontName="Times-Roman" fontSize="7.0"><![CDATA[Ltda. para explorar, por 10 (dez) anos, sem direito de exclusividade,]]></text>
+			<text fromX="290.55353" fromY="472.6374" toX="517.33154" toY="477.08472" fontName="Times-Roman" fontSize="7.0"><![CDATA[serviço de radiodifusão sonora em frequência modulada na cidade de]]></text>
+			<text fromX="290.55353" fromY="480.5836" toX="401.11475" toY="485.0309" fontName="Times-Roman" fontSize="7.0"><![CDATA[Fonte Boa, Estado do Amazonas.]]></text>
+			<text fromX="318.44888" fromY="488.529" toX="517.3237" toY="492.97632" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
+			<text fromX="290.55353" fromY="496.4752" toX="340.76517" toY="500.92252" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
+			<text fromX="357.90964" fromY="512.3907" toX="506.66354" toY="516.838" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
+			<text fromX="380.0745" fromY="520.33685" toX="484.4988" toY="524.7842" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
+			<text fromX="383.41397" fromY="528.2831" toX="481.15927" toY="532.7304" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
+			<text fromX="318.44888" fromY="546.1911" toX="517.326" toY="550.6384" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
+			<text fromX="290.55353" fromY="554.13727" toX="517.32526" toY="558.5846" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
+			<text fromX="290.55353" fromY="562.0827" toX="517.3332" toY="566.53" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
+			<text fromX="290.55353" fromY="570.0289" toX="499.944" toY="574.4762" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
+			<text fromX="379.27747" fromY="585.9452" toX="470.30402" toY="590.3925" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
+			<text fromX="379.27747" fromY="593.88885" toX="437.45996" toY="598.3379" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 203, DE 2015]]></text>
+			<text fromX="375.5937" fromY="609.8052" toX="517.32684" toY="614.2525" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga autorização à]]></text>
+			<text fromX="375.5937" fromY="617.75055" toX="517.32776" toY="622.1979" fontName="Times-Roman" fontSize="7.0"><![CDATA[ASSOCIAÇÃO COMUNITÁRIA E CUL-]]></text>
+			<text fromX="375.5937" fromY="625.6968" toX="517.3254" toY="630.1441" fontName="Times-Roman" fontSize="7.0"><![CDATA[TURAL DO MUNICÍPIO DE NOVA VE-]]></text>
+			<text fromX="375.5937" fromY="633.643" toX="517.32605" toY="638.09033" fontName="Times-Roman" fontSize="7.0"><![CDATA[NEZA para executar serviço de radiodifu-]]></text>
+			<text fromX="375.5937" fromY="641.5884" toX="517.3308" toY="646.0357" fontName="Times-Roman" fontSize="7.0"><![CDATA[são comunitária na cidade de Nova Veneza,]]></text>
+			<text fromX="375.5937" fromY="649.53455" toX="460.72235" toY="653.9819" fontName="Times-Roman" fontSize="7.0"><![CDATA[Estado de Santa Catarina.]]></text>
+			<text fromX="318.44888" fromY="665.4501" toX="421.05603" toY="669.8974" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
+			<text fromX="318.44888" fromY="673.39624" toX="517.32544" toY="677.84357" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº]]></text>
+			<text fromX="290.55353" fromY="681.3424" toX="517.32916" toY="685.78973" fontName="Times-Roman" fontSize="7.0"><![CDATA[1.161, de 24 de novembro de 2010, que outorga autorização à As-]]></text>
+			<text fromX="290.55353" fromY="689.2878" toX="517.32605" toY="693.7351" fontName="Times-Roman" fontSize="7.0"><![CDATA[sociação Comunitária e Cultural do Município de Nova Veneza para]]></text>
+			<text fromX="290.55353" fromY="697.234" toX="517.3349" toY="701.68134" fontName="Times-Roman" fontSize="7.0"><![CDATA[executar, por 10 (dez) anos, sem direito de exclusividade, serviço de]]></text>
+			<text fromX="290.55353" fromY="705.1794" toX="517.32697" toY="709.6267" fontName="Times-Roman" fontSize="7.0"><![CDATA[radiodifusão comunitária na cidade de Nova Veneza, Estado de Santa]]></text>
+			<text fromX="290.55353" fromY="713.12555" toX="319.5488" toY="717.5729" fontName="Times-Roman" fontSize="7.0"><![CDATA[Catarina.]]></text>
+			<text fromX="318.44888" fromY="721.0717" toX="517.3237" toY="725.51904" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
+			<text fromX="290.55353" fromY="729.01715" toX="340.76517" toY="733.4645" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
+			<text fromX="357.90964" fromY="744.9334" toX="506.66354" toY="749.38074" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
+			<text fromX="380.0745" fromY="752.87885" toX="484.4988" toY="757.3262" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
+			<text fromX="383.41397" fromY="760.825" toX="481.15927" toY="765.27234" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
 		</margin>
-		<margin fromX="531.4992" fromY="102.75398" toX="758.2797" toY="765.2744">
-			<text fromX="542.3442" fromY="102.75398" toX="609.2732" toY="109.359924" fontName="Times-Italic" fontSize="9.0"><![CDATA[ISSN 1677-7042]]></text>
-			<text fromX="559.39453" fromY="255.15886" toX="758.2711" toY="260.43506" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
-			<text fromX="531.4992" fromY="264.1085" toX="758.2705" toY="269.60785" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
-			<text fromX="531.4992" fromY="273.2972" toX="758.27893" toY="278.78064" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
-			<text fromX="531.4992" fromY="282.43015" toX="740.8894" toY="287.95343" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
-			<text fromX="620.22314" fromY="299.8201" toX="711.2497" toY="305.0963" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
-			<text fromX="620.22314" fromY="308.8787" toX="678.4064" toY="314.2691" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 204, DE 2015]]></text>
-			<text fromX="616.5401" fromY="326.0375" toX="758.27454" toY="331.40936" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que renova a permissão ou-]]></text>
-			<text fromX="616.5401" fromY="335.88776" toX="758.27637" toY="340.58215" fontName="Times-Roman" fontSize="7.0"><![CDATA[torgada à RÁDIO SERRANA DE BENTO]]></text>
-			<text fromX="616.5401" fromY="344.25558" toX="758.2729" toY="349.75494" fontName="Times-Roman" fontSize="7.0"><![CDATA[GONÇALVES LTDA. para executar servi-]]></text>
-			<text fromX="616.5401" fromY="353.5479" toX="758.2722" toY="358.92773" fontName="Times-Roman" fontSize="7.0"><![CDATA[ço de radiodifusão sonora em frequência]]></text>
-			<text fromX="616.5401" fromY="362.57724" toX="758.2713" toY="368.10052" fontName="Times-Roman" fontSize="7.0"><![CDATA[modulada na cidade de Bento Gonçalves,]]></text>
-			<text fromX="616.5401" fromY="371.9971" toX="717.1147" toY="377.27332" fontName="Times-Roman" fontSize="7.0"><![CDATA[Estado do Rio Grande do Sul.]]></text>
-			<text fromX="559.39526" fromY="388.91763" toX="662.002" toY="394.417" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
-			<text fromX="559.39526" fromY="398.21793" toX="758.27295" toY="403.58978" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 503,]]></text>
-			<text fromX="531.49994" fromY="407.2393" toX="758.2795" toY="412.76257" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 6 de dezembro de 2011, que renova por 10 (dez) anos, a partir de]]></text>
-			<text fromX="531.49994" fromY="416.41208" toX="758.2699" toY="421.93536" fontName="Times-Roman" fontSize="7.0"><![CDATA[24 de janeiro de 2009, a permissão outorgada à Rádio Serrana de]]></text>
-			<text fromX="531.49994" fromY="425.83194" toX="758.27454" toY="431.10815" fontName="Times-Roman" fontSize="7.0"><![CDATA[Bento Gonçalves Ltda. para executar, sem direito de exclusividade,]]></text>
-			<text fromX="531.49994" fromY="436.535" toX="758.2761" toY="440.28094" fontName="Times-Roman" fontSize="7.0"><![CDATA[serviço de radiodifusão sonora em frequência modulada, na cidade de]]></text>
-			<text fromX="531.49994" fromY="444.17752" toX="692.8862" toY="449.45374" fontName="Times-Roman" fontSize="7.0"><![CDATA[Bento Gonçalves, Estado do Rio Grande do Sul.]]></text>
-			<text fromX="559.39526" fromY="453.10324" toX="758.2697" toY="458.62653" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
-			<text fromX="531.49994" fromY="464.05338" toX="581.7114" toY="467.79932" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
-			<text fromX="598.8561" fromY="479.44284" toX="747.60974" toY="484.9422" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
-			<text fromX="621.02094" fromY="488.61563" toX="725.44507" toY="494.115" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
-			<text fromX="624.3604" fromY="498.01157" toX="722.1055" toY="503.28778" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
-			<text fromX="559.3953" fromY="517.14703" toX="758.2719" toY="522.4232" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
-			<text fromX="531.5" fromY="526.09656" toX="758.2713" toY="531.59595" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
-			<text fromX="531.5" fromY="535.2854" toX="758.2797" toY="540.7688" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
-			<text fromX="531.5" fromY="544.4183" toX="740.8902" toY="549.9415" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
-			<text fromX="620.22394" fromY="561.8083" toX="711.2505" toY="567.0845" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
-			<text fromX="620.22394" fromY="570.8653" toX="678.4064" toY="576.2572" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 205, DE 2015]]></text>
-			<text fromX="616.5401" fromY="588.0242" toX="758.2737" toY="593.396" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga permissão à OLI-]]></text>
-			<text fromX="616.5401" fromY="597.0694" toX="758.274" toY="602.5688" fontName="Times-Roman" fontSize="7.0"><![CDATA[VEIRA & PERIN ASSESSORIA E CO-]]></text>
-			<text fromX="616.5401" fromY="606.4654" toX="758.27295" toY="611.7416" fontName="Times-Roman" fontSize="7.0"><![CDATA[MUNICAÇÕES LTDA. para explorar ser-]]></text>
-			<text fromX="616.5401" fromY="615.3911" toX="758.2729" toY="620.91437" fontName="Times-Roman" fontSize="7.0"><![CDATA[viço de radiodifusão sonora em frequência]]></text>
-			<text fromX="616.5401" fromY="626.4209" toX="758.2787" toY="630.08716" fontName="Times-Roman" fontSize="7.0"><![CDATA[modulada na cidade de Rio dos Índios, Es-]]></text>
-			<text fromX="616.5401" fromY="634.56555" toX="709.1446" toY="639.25995" fontName="Times-Roman" fontSize="7.0"><![CDATA[tado do Rio Grande do Sul.]]></text>
-			<text fromX="559.39526" fromY="650.90424" toX="662.002" toY="656.4036" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
-			<text fromX="559.39526" fromY="660.2046" toX="758.27295" toY="665.5764" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 914,]]></text>
-			<text fromX="531.49994" fromY="669.22595" toX="758.2796" toY="674.7492" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 14 de outubro de 2010, que outorga permissão à Oliveira & Perin]]></text>
-			<text fromX="531.49994" fromY="678.5342" toX="758.2719" toY="683.922" fontName="Times-Roman" fontSize="7.0"><![CDATA[Assessoria e Comunicações Ltda. para explorar, por 10 (dez) anos,]]></text>
-			<text fromX="531.49994" fromY="689.3488" toX="758.2718" toY="693.0948" fontName="Times-Roman" fontSize="7.0"><![CDATA[sem direito de exclusividade, serviço de radiodifusão sonora em fre-]]></text>
-			<text fromX="531.49994" fromY="696.8718" toX="758.2777" toY="702.2676" fontName="Times-Roman" fontSize="7.0"><![CDATA[quência modulada na cidade de Rio dos Índios, Estado do Rio Grande]]></text>
-			<text fromX="531.49994" fromY="705.9171" toX="555.1632" toY="711.44037" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Sul.]]></text>
-			<text fromX="559.39526" fromY="715.0899" toX="758.2697" toY="720.61316" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
-			<text fromX="531.49994" fromY="726.04" toX="581.7114" toY="729.78595" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
-			<text fromX="598.8561" fromY="741.42944" toX="747.60974" toY="746.92883" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
-			<text fromX="621.02094" fromY="750.60223" toX="725.44507" toY="756.1016" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
-			<text fromX="624.3604" fromY="759.9982" toX="722.1055" toY="765.2744" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
+		<margin fromX="531.4992" fromY="103.79596" toX="758.2797" toY="765.2744">
+			<text fromX="542.3442" fromY="103.79596" toX="609.2732" toY="109.359924" fontName="Times-Italic" fontSize="9.0"><![CDATA[ISSN 1677-7042]]></text>
+			<text fromX="559.39453" fromY="255.98775" toX="758.2711" toY="260.43506" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
+			<text fromX="531.4992" fromY="265.16052" toX="758.2705" toY="269.60785" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
+			<text fromX="531.4992" fromY="274.3333" toX="758.27893" toY="278.78064" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
+			<text fromX="531.4992" fromY="283.5061" toX="740.8894" toY="287.95343" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
+			<text fromX="620.22314" fromY="300.649" toX="711.2497" toY="305.0963" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
+			<text fromX="620.22314" fromY="309.81915" toX="678.4064" toY="314.2691" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 204, DE 2015]]></text>
+			<text fromX="616.5401" fromY="326.96204" toX="758.27454" toY="331.40936" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que renova a permissão ou-]]></text>
+			<text fromX="616.5401" fromY="336.13483" toX="758.27637" toY="340.58215" fontName="Times-Roman" fontSize="7.0"><![CDATA[torgada à RÁDIO SERRANA DE BENTO]]></text>
+			<text fromX="616.5401" fromY="345.30762" toX="758.2729" toY="349.75494" fontName="Times-Roman" fontSize="7.0"><![CDATA[GONÇALVES LTDA. para executar servi-]]></text>
+			<text fromX="616.5401" fromY="354.4804" toX="758.2722" toY="358.92773" fontName="Times-Roman" fontSize="7.0"><![CDATA[ço de radiodifusão sonora em frequência]]></text>
+			<text fromX="616.5401" fromY="363.6532" toX="758.2713" toY="368.10052" fontName="Times-Roman" fontSize="7.0"><![CDATA[modulada na cidade de Bento Gonçalves,]]></text>
+			<text fromX="616.5401" fromY="372.826" toX="717.1147" toY="377.27332" fontName="Times-Roman" fontSize="7.0"><![CDATA[Estado do Rio Grande do Sul.]]></text>
+			<text fromX="559.39526" fromY="389.96967" toX="662.002" toY="394.417" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
+			<text fromX="559.39526" fromY="399.14246" toX="758.27295" toY="403.58978" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 503,]]></text>
+			<text fromX="531.49994" fromY="408.31525" toX="758.2795" toY="412.76257" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 6 de dezembro de 2011, que renova por 10 (dez) anos, a partir de]]></text>
+			<text fromX="531.49994" fromY="417.48804" toX="758.2699" toY="421.93536" fontName="Times-Roman" fontSize="7.0"><![CDATA[24 de janeiro de 2009, a permissão outorgada à Rádio Serrana de]]></text>
+			<text fromX="531.49994" fromY="426.66083" toX="758.27454" toY="431.10815" fontName="Times-Roman" fontSize="7.0"><![CDATA[Bento Gonçalves Ltda. para executar, sem direito de exclusividade,]]></text>
+			<text fromX="531.49994" fromY="435.83362" toX="758.2761" toY="440.28094" fontName="Times-Roman" fontSize="7.0"><![CDATA[serviço de radiodifusão sonora em frequência modulada, na cidade de]]></text>
+			<text fromX="531.49994" fromY="445.0064" toX="692.8862" toY="449.45374" fontName="Times-Roman" fontSize="7.0"><![CDATA[Bento Gonçalves, Estado do Rio Grande do Sul.]]></text>
+			<text fromX="559.39526" fromY="454.1792" toX="758.2697" toY="458.62653" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
+			<text fromX="531.49994" fromY="463.352" toX="581.7114" toY="467.79932" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
+			<text fromX="598.8561" fromY="480.49487" toX="747.60974" toY="484.9422" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
+			<text fromX="621.02094" fromY="489.66766" toX="725.44507" toY="494.115" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
+			<text fromX="624.3604" fromY="498.84045" toX="722.1055" toY="503.28778" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
+			<text fromX="559.3953" fromY="517.9759" toX="758.2719" toY="522.4232" fontName="Times-Roman" fontSize="7.0"><![CDATA[Faço saber que o Congresso Nacional aprovou, e eu, Renan]]></text>
+			<text fromX="531.5" fromY="527.1486" toX="758.2713" toY="531.59595" fontName="Times-Roman" fontSize="7.0"><![CDATA[Calheiros, Presidente do Senado Federal, nos termos do parágrafo]]></text>
+			<text fromX="531.5" fromY="536.3215" toX="758.2797" toY="540.7688" fontName="Times-Roman" fontSize="7.0"><![CDATA[único do art. 52 do Regimento Comum e do inciso XXVIII do art. 48]]></text>
+			<text fromX="531.5" fromY="545.4942" toX="740.8902" toY="549.9415" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Regimento Interno do Senado Federal, promulgo o seguinte]]></text>
+			<text fromX="620.22394" fromY="562.63715" toX="711.2505" toY="567.0845" fontName="Times-Roman" fontSize="7.0"><![CDATA[DECRETO LEGISLATIVO]]></text>
+			<text fromX="620.22394" fromY="571.8058" toX="678.4064" toY="576.2572" fontName="Times-Roman" fontSize="7.0"><![CDATA[Nº 205, DE 2015]]></text>
+			<text fromX="616.5401" fromY="588.94867" toX="758.2737" toY="593.396" fontName="Times-Roman" fontSize="7.0"><![CDATA[Aprova o ato que outorga permissão à OLI-]]></text>
+			<text fromX="616.5401" fromY="598.12146" toX="758.274" toY="602.5688" fontName="Times-Roman" fontSize="7.0"><![CDATA[VEIRA & PERIN ASSESSORIA E CO-]]></text>
+			<text fromX="616.5401" fromY="607.29425" toX="758.2729" toY="611.7416" fontName="Times-Roman" fontSize="7.0"><![CDATA[MUNICAÇÕES LTDA. para explorar ser-]]></text>
+			<text fromX="616.5401" fromY="616.46704" toX="758.2729" toY="620.91437" fontName="Times-Roman" fontSize="7.0"><![CDATA[viço de radiodifusão sonora em frequência]]></text>
+			<text fromX="616.5401" fromY="625.63983" toX="758.2787" toY="630.08716" fontName="Times-Roman" fontSize="7.0"><![CDATA[modulada na cidade de Rio dos Índios, Es-]]></text>
+			<text fromX="616.5401" fromY="634.8126" toX="709.1446" toY="639.25995" fontName="Times-Roman" fontSize="7.0"><![CDATA[tado do Rio Grande do Sul.]]></text>
+			<text fromX="559.39526" fromY="651.9563" toX="662.002" toY="656.4036" fontName="Times-Roman" fontSize="7.0"><![CDATA[O Congresso Nacional decreta:]]></text>
+			<text fromX="559.39526" fromY="661.1291" toX="758.27295" toY="665.5764" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 1º Fica aprovado o ato a que se refere a Portaria nº 914,]]></text>
+			<text fromX="531.49994" fromY="670.3019" toX="758.2796" toY="674.7492" fontName="Times-Roman" fontSize="7.0"><![CDATA[de 14 de outubro de 2010, que outorga permissão à Oliveira & Perin]]></text>
+			<text fromX="531.49994" fromY="679.4747" toX="758.2719" toY="683.922" fontName="Times-Roman" fontSize="7.0"><![CDATA[Assessoria e Comunicações Ltda. para explorar, por 10 (dez) anos,]]></text>
+			<text fromX="531.49994" fromY="688.64746" toX="758.2718" toY="693.0948" fontName="Times-Roman" fontSize="7.0"><![CDATA[sem direito de exclusividade, serviço de radiodifusão sonora em fre-]]></text>
+			<text fromX="531.49994" fromY="697.82025" toX="758.2777" toY="702.2676" fontName="Times-Roman" fontSize="7.0"><![CDATA[quência modulada na cidade de Rio dos Índios, Estado do Rio Grande]]></text>
+			<text fromX="531.49994" fromY="706.99304" toX="555.1632" toY="711.44037" fontName="Times-Roman" fontSize="7.0"><![CDATA[do Sul.]]></text>
+			<text fromX="559.39526" fromY="716.16583" toX="758.2697" toY="720.61316" fontName="Times-Roman" fontSize="7.0"><![CDATA[Art. 2º Este Decreto Legislativo entra em vigor na data de]]></text>
+			<text fromX="531.49994" fromY="725.3386" toX="581.7114" toY="729.78595" fontName="Times-Roman" fontSize="7.0"><![CDATA[sua publicação.]]></text>
+			<text fromX="598.8561" fromY="742.4815" toX="747.60974" toY="746.92883" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senado Federal, em 29 de setembro de 2015]]></text>
+			<text fromX="621.02094" fromY="751.6543" toX="725.44507" toY="756.1016" fontName="Times-Roman" fontSize="7.0"><![CDATA[Senador RENAN CALHEIROS]]></text>
+			<text fromX="624.3604" fromY="760.8271" toX="722.1055" toY="765.2744" fontName="Times-Roman" fontSize="7.0"><![CDATA[Presidente do Senado Federal]]></text>
 		</margin>
 		<line fromX="49.607" fromY="873.311" toX="758.273" toY="873.311" lineWidth="0.51" />
-		<margin fromX="49.474487" fromY="879.54083" toX="352.7328" toY="894.13086">
-			<text fromX="49.4745" fromY="879.54083" toX="352.7328" toY="884.817" fontName="Times-Roman" fontSize="7.0"><![CDATA[Este documento pode ser verificado no endereço eletrônico http://www.in.gov.br/autenticidade.html,]]></text>
-			<text fromX="49.474487" fromY="888.7351" toX="156.11916" toY="894.13086" fontName="Times-Roman" fontSize="7.0"><![CDATA[pelo código 00012015093000001]]></text>
+		<margin fromX="49.474487" fromY="880.3697" toX="352.7328" toY="894.13086">
+			<text fromX="49.4745" fromY="880.3697" toX="352.7328" toY="884.817" fontName="Times-Roman" fontSize="7.0"><![CDATA[Este documento pode ser verificado no endereço eletrônico http://www.in.gov.br/autenticidade.html,]]></text>
+			<text fromX="49.474487" fromY="889.68353" toX="156.11916" toY="894.13086" fontName="Times-Roman" fontSize="7.0"><![CDATA[pelo código 00012015093000001]]></text>
 		</margin>
-		<margin fromX="463.2183" fromY="879.0047" toX="757.81055" toY="893.70636">
-			<text fromX="463.2183" fromY="879.0047" toX="757.81055" toY="884.3925" fontName="Times-Roman" fontSize="7.0"><![CDATA[Documento assinado digitalmente conforme MP nº 2.200-2 de 24/08/2001, que institui a]]></text>
-			<text fromX="568.29675" fromY="888.4302" toX="757.80945" toY="893.70636" fontName="Times-Roman" fontSize="7.0"><![CDATA[Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.]]></text>
+		<margin fromX="463.2183" fromY="879.9449" toX="757.81055" toY="893.70636">
+			<text fromX="463.2183" fromY="879.9449" toX="757.81055" toY="884.3925" fontName="Times-Roman" fontSize="7.0"><![CDATA[Documento assinado digitalmente conforme MP nº 2.200-2 de 24/08/2001, que institui a]]></text>
+			<text fromX="568.29675" fromY="889.25903" toX="757.80945" toY="893.70636" fontName="Times-Roman" fontSize="7.0"><![CDATA[Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.]]></text>
 		</margin>
 	</page>
 </pdfreader4humans>

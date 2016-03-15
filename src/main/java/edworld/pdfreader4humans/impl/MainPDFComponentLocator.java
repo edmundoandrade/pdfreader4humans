@@ -210,9 +210,10 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 						writeString(text.substring(partialText.length()),
 								textPositions.subList(partialList.size(), textPositions.size()));
 						return;
-					} else if (x1 < lastRight && fusible(partialText, character))
+					} else if (x1 < lastRight && fusible(partialText, character)
+							&& textPosition.getFontSizeInPt() < fontSize)
 						partialText = fusion(partialText, character);
-					else if (x1 + textPosition.getWidth() * 0.03 < lastRight && partialText.endsWith(SPACE))
+					else if (x1 + textPosition.getWidth() * 0.2 < lastRight && partialText.endsWith(SPACE))
 						partialText = fusion(partialText, character);
 					else {
 						if (x1 < fromX) {
