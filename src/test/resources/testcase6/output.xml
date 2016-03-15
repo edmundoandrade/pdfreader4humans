@@ -7,81 +7,81 @@
 			<box fromX="36.12" fromY="39.599976" toX="558.83997" toY="802.92" lineWidth="1.0">
 				<text fromX="297.67" fromY="51.24297" toX="311.17" toY="59.27997" fontName="Times New Roman,Bold" fontSize="18.0"><![CDATA[   ]]></text>
 				<text fromX="294.31" fromY="71.378006" toX="299.314" toY="79.82001" fontName="Arial,Bold" fontSize="18.0"><![CDATA[ ]]></text>
-				<text fromX="358.27" fromY="227.06876" toX="361.03888" toY="231.73999" fontName="Arial" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="358.27" fromY="227.06876" toX="361.03888" toY="231.73999" fontName="Arial" fontSize="9.0"><![CDATA[ ]]></text>
 				<rect fromX="36.12" fromY="39.599976" toX="36.6" toY="802.44" lineWidth="1.0">
 				</rect>
 				<rect fromX="41.16" fromY="243.76996" toX="547.44" toY="264.52997" lineWidth="1.0">
 					<text fromX="42.6" fromY="251.88802" toX="423.664" toY="260.33002" fontName="Arial,Bold" fontSize="18.0"><![CDATA[  CÂMARA DOS DEPUTADOS ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="264.52997" toX="547.44" toY="275.93" lineWidth="1.0">
-					<text fromX="294.31" fromY="269.09872" toX="297.0789" toY="273.76996" fontName="Arial" fontSize="9.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="269.09872" toX="297.0789" toY="273.76996" fontName="Arial" fontSize="9.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="275.93" toX="547.44" toY="287.45" lineWidth="1.0">
-					<text fromX="294.31" fromY="280.49875" toX="297.0789" toY="285.16998" fontName="Arial" fontSize="9.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="280.49875" toX="297.0789" toY="285.16998" fontName="Arial" fontSize="9.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="287.44995" toX="547.44" toY="298.96997" lineWidth="1.0">
-					<text fromX="294.31" fromY="291.89877" toX="297.0789" toY="296.57" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="291.89877" toX="297.0789" toY="296.57" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="298.97003" toX="547.44" toY="317.33002" lineWidth="1.0">
-					<text fromX="294.31" fromY="306.24475" toX="298.7469" toY="313.72998" fontName="Arial" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="306.24475" toX="298.7469" toY="313.72998" fontName="Arial" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="317.33002" toX="547.44" toY="335.81" lineWidth="1.0">
-					<text fromX="42.6" fromY="324.60477" toX="435.6969" toY="332.09" fontName="Arial" fontSize="15.96"><![CDATA[  ]]></text>
+					<text fromX="42.6" fromY="324.60477" toX="435.6969" toY="332.09" fontName="Arial" fontSize="15.0"><![CDATA[  ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="335.81" toX="547.44" toY="354.16998" lineWidth="1.0">
-					<text fromX="294.31" fromY="343.08475" toX="303.1869" toY="350.56998" fontName="Arial" fontSize="15.96"><![CDATA[  ]]></text>
+					<text fromX="294.31" fromY="343.08475" toX="303.1869" toY="350.56998" fontName="Arial" fontSize="15.0"><![CDATA[  ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="354.16998" toX="547.44" toY="372.53" lineWidth="1.0">
-					<text fromX="294.31" fromY="361.44476" toX="298.7469" toY="368.93" fontName="Arial" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="361.44476" toX="298.7469" toY="368.93" fontName="Arial" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="372.52997" toX="547.44" toY="391.00998" lineWidth="1.0">
-					<text fromX="294.31" fromY="379.80475" toX="298.7469" toY="387.28998" fontName="Arial" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="379.80475" toX="298.7469" toY="387.28998" fontName="Arial" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="391.00598" toX="547.44" toY="409.38998" lineWidth="1.0">
-					<text fromX="294.31" fromY="398.30475" toX="298.7469" toY="405.78998" fontName="Arial" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="398.30475" toX="298.7469" toY="405.78998" fontName="Arial" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="200.45" fromY="428.66476" toX="399.5769" toY="436.15" fontName="Arial,Bold" fontSize="15.96"><![CDATA[PAUTA PREVISTA PARA: ]]></text>
-				<text fromX="171.05" fromY="447.02475" toX="421.89688" toY="454.50998" fontName="Arial,Bold" fontSize="15.96"><![CDATA[23 A 25 DE FEVEREIRO DE 2016 ]]></text>
-				<text fromX="223.85" fromY="465.50476" toX="368.5331" toY="472.99" fontName="Arial,Bold" fontSize="15.96"><![CDATA[(Sujeita a alterações) ]]></text>
-				<text fromX="297.79" fromY="483.86475" toX="302.2269" toY="491.34998" fontName="Arial" fontSize="15.96"><![CDATA[ ]]></text>
+				<text fromX="200.45" fromY="428.66476" toX="399.5769" toY="436.15" fontName="Arial,Bold" fontSize="15.0"><![CDATA[PAUTA PREVISTA PARA: ]]></text>
+				<text fromX="171.05" fromY="447.02475" toX="421.89688" toY="454.50998" fontName="Arial,Bold" fontSize="15.0"><![CDATA[23 A 25 DE FEVEREIRO DE 2016 ]]></text>
+				<text fromX="223.85" fromY="465.50476" toX="368.5331" toY="472.99" fontName="Arial,Bold" fontSize="15.0"><![CDATA[(Sujeita a alterações) ]]></text>
+				<text fromX="297.79" fromY="483.86475" toX="302.2269" toY="491.34998" fontName="Arial" fontSize="15.0"><![CDATA[ ]]></text>
 				<rect fromX="41.16" fromY="494.94998" toX="547.44" toY="513.43" lineWidth="1.0">
-					<text fromX="294.31" fromY="502.22476" toX="298.7469" toY="509.71" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="502.22476" toX="298.7469" toY="509.71" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="513.43" toX="547.44" toY="531.79" lineWidth="1.0">
-					<text fromX="294.31" fromY="520.7048" toX="298.7469" toY="528.19" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="520.7048" toX="298.7469" toY="528.19" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="42.6" fromY="539.06476" toX="47.03688" toY="546.55" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
-				<text fromX="42.6" fromY="557.4548" toX="47.03688" toY="564.94" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
-				<text fromX="42.6" fromY="575.93475" toX="47.03688" toY="583.42" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="539.06476" toX="47.03688" toY="546.55" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="557.4548" toX="47.03688" toY="564.94" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="575.93475" toX="47.03688" toY="583.42" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				<rect fromX="41.16" fromY="587.02" toX="547.44" toY="605.38" lineWidth="1.0">
-					<text fromX="294.31" fromY="594.29474" toX="298.7469" toY="601.77997" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="594.29474" toX="298.7469" toY="601.77997" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="605.38" toX="547.44" toY="623.74" lineWidth="1.0">
-					<text fromX="294.31" fromY="612.6548" toX="298.7469" toY="620.14" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="612.6548" toX="298.7469" toY="620.14" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="623.74" toX="547.44" toY="642.22" lineWidth="1.0">
-					<text fromX="294.31" fromY="631.0148" toX="298.7469" toY="638.5" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="631.0148" toX="298.7469" toY="638.5" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="642.22" toX="547.44" toY="660.57996" lineWidth="1.0">
-					<text fromX="294.31" fromY="649.49475" toX="298.7469" toY="656.98" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="649.49475" toX="298.7469" toY="656.98" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="660.57996" toX="547.44" toY="678.94" lineWidth="1.0">
-					<text fromX="294.31" fromY="667.85474" toX="298.7469" toY="675.33997" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="667.85474" toX="298.7469" toY="675.33997" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="678.94" toX="547.44" toY="697.42" lineWidth="1.0">
-					<text fromX="294.31" fromY="686.2147" toX="298.7469" toY="693.69995" fontName="Arial,Bold" fontSize="15.96"><![CDATA[ ]]></text>
+					<text fromX="294.31" fromY="686.2147" toX="298.7469" toY="693.69995" fontName="Arial,Bold" fontSize="15.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="697.416" toX="547.44" toY="715.8" lineWidth="1.0">
-					<text fromX="172.49" fromY="704.7147" toX="420.5769" toY="712.19995" fontName="Arial,Bold" fontSize="15.96"><![CDATA[SECRETARIA-GERAL DA MESA ]]></text>
+					<text fromX="172.49" fromY="704.7147" toX="420.5769" toY="712.19995" fontName="Arial,Bold" fontSize="15.0"><![CDATA[SECRETARIA-GERAL DA MESA ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="715.8" toX="547.44" toY="734.16" lineWidth="1.0">
-					<text fromX="161.3" fromY="723.07477" toX="431.73688" toY="730.56" fontName="Arial,Bold" fontSize="15.96"><![CDATA[Coordenação de Apoio ao Plenário ]]></text>
+					<text fromX="161.3" fromY="723.07477" toX="431.73688" toY="730.56" fontName="Arial,Bold" fontSize="15.0"><![CDATA[Coordenação de Apoio ao Plenário ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="734.16" toX="547.44" toY="752.64" lineWidth="1.0">
-					<text fromX="135.02" fromY="741.43475" toX="457.56998" toY="748.92" fontName="Arial,Bold" fontSize="15.96"><![CDATA[Telefones: (0xx61) 3216-1144 / 1145 / 1146 ]]></text>
+					<text fromX="135.02" fromY="741.43475" toX="457.56998" toY="748.92" fontName="Arial,Bold" fontSize="15.0"><![CDATA[Telefones: (0xx61) 3216-1144 / 1145 / 1146 ]]></text>
 				</rect>
-				<text fromX="42.6" fromY="757.9106" toX="45.359997" toY="762.83997" fontName="Times New Roman,Bold" fontSize="11.04"><![CDATA[ ]]></text>
-				<text fromX="42.6" fromY="770.5106" toX="45.359997" toY="775.44" fontName="Times New Roman,Bold" fontSize="11.04"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="757.9106" toX="45.359997" toY="762.83997" fontName="Times New Roman,Bold" fontSize="11.0"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="770.5106" toX="45.359997" toY="775.44" fontName="Times New Roman,Bold" fontSize="11.0"><![CDATA[ ]]></text>
 				<rect fromX="36.6" fromY="802.44" toX="558.83997" toY="802.92" lineWidth="1.0">
 				</rect>
 			</box>
@@ -89,14 +89,6 @@
 		<group fromX="558.84" fromY="39.119995" toX="559.32" toY="802.92">
 			<rect fromX="558.84" fromY="39.599976" toX="559.32" toY="802.44" lineWidth="1.0">
 			</rect>
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="2">
@@ -167,9 +159,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 2 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 2 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -192,12 +184,6 @@
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
 		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
 	</page>
 	<page id="3">
 		<group fromX="36.12" fromY="39.119995" toX="558.83997" toY="816.6">
@@ -210,7 +196,7 @@
 				</rect>
 				<text fromX="56.784" fromY="75.63201" toX="217.226" toY="81.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[PLP nº 23/03) (NT 62 e T 64) ]]></text>
 				<text fromX="42.6" fromY="89.432" toX="474.916" toY="95.06" fontName="Arial,Bold" fontSize="12.0"><![CDATA[ MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="42.6" fromY="102.26876" toX="45.368877" toY="106.94" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="102.26876" toX="45.368877" toY="106.94" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="56.304" fromY="114.63201" toX="549.324" toY="120.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[VI. Requerimento nº 3.142/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="128.43199" toX="549.2559" toY="134.06" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="142.23198" toX="548.6842" toY="147.85999" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 804, de 2007, do Sr. Lincoln Portela, que altera o art. 1° da Lei n° 11.179 de 22 de ]]></text>
@@ -226,20 +212,20 @@
 				<text fromX="56.784" fromY="280.26202" toX="549.1779" toY="285.89" fontName="Arial" fontSize="12.0"><![CDATA[nº 2.848, de 07 de dezembro de 1940, Código Penal. (Prevê o dano qualificado quando ]]></text>
 				<text fromX="56.784" fromY="294.062" toX="446.236" toY="299.69" fontName="Arial,Bold" fontSize="12.0"><![CDATA[houver crime contra o patrimônio do Distrito Federal) (NT 62 e T 64) ]]></text>
 				<text fromX="56.784" fromY="307.862" toX="474.916" toY="313.49" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="56.784" fromY="320.69876" toX="59.55288" toY="325.37" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="56.784" fromY="320.69876" toX="59.55288" toY="325.37" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="49.68" fromY="333.182" toX="549.05804" toY="338.81" fontName="Arial,Bold" fontSize="12.0"><![CDATA[VIII. Requerimento nº 3.316/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="346.982" toX="549.24396" toY="352.61" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de ]]></text>
 				<text fromX="56.784" fromY="360.78198" toX="549.2999" toY="366.40997" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Decreto Legislativo nº 234, de 2015, do Sr. Gonzaga Patriota, que susta, nos termos do ]]></text>
 				<text fromX="56.784" fromY="374.582" toX="548.772" toY="380.21" fontName="Arial,Bold" fontSize="12.0"><![CDATA[inciso V, art. 49 da Constituição Federal, a aplicação da Resolução nº 556, de 17 de ]]></text>
 				<text fromX="56.784" fromY="388.402" toX="526.416" toY="394.03" fontName="Arial,Bold" fontSize="12.0"><![CDATA[setembro de 2015, do Conselho Nacional de Trânsito - CONTRAN. (NT 62 e NT 64) ]]></text>
-				<text fromX="71.064" fromY="401.23874" toX="73.832886" toY="405.90997" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="71.064" fromY="401.23874" toX="73.832886" toY="405.90997" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="56.304" fromY="413.722" toX="549.05804" toY="419.34998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[IX. Requerimento nº 3.353/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="427.522" toX="549.2559" toY="433.15" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="441.322" toX="549.148" toY="446.94998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 3.337, de 2015, do Sr. Vicente Cândido e outros, que dispõe sobre a cessão de ]]></text>
 				<text fromX="56.784" fromY="455.122" toX="549.196" toY="460.75" fontName="Arial,Bold" fontSize="12.0"><![CDATA[créditos da Dívida Ativa da União a pessoas jurídicas de direito privado e dá outras ]]></text>
 				<text fromX="56.784" fromY="468.922" toX="203.546" toY="474.55" fontName="Arial" fontSize="12.0"><![CDATA[providências. (T 62 e T 64) ]]></text>
 				<text fromX="42.6" fromY="482.722" toX="474.076" toY="488.34998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[    MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="42.6" fromY="495.55875" toX="45.368877" toY="500.22998" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="495.55875" toX="45.368877" toY="500.22998" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="59.664" fromY="508.042" toX="549.05804" toY="513.67" fontName="Arial,Bold" fontSize="12.0"><![CDATA[X. Requerimento nº 3.354/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="521.842" toX="549.2559" toY="527.47" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="535.642" toX="549.23193" toY="541.27" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Complementar nº 181, de 2015, do Sr. Vicente Cândido e outros, que modifica a Lei nº ]]></text>
@@ -247,7 +233,7 @@
 				<text fromX="56.784" fromY="563.27203" toX="549.232" toY="568.9" fontName="Arial,Bold" fontSize="12.0"><![CDATA[cessão de créditos da dívida ativa consolidada a instituições financeiras. (NT 62 e T ]]></text>
 				<text fromX="56.784" fromY="577.07196" toX="77.52" toY="582.69995" fontName="Arial,Bold" fontSize="12.0"><![CDATA[64) ]]></text>
 				<text fromX="56.784" fromY="590.872" toX="474.916" toY="596.5" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="56.784" fromY="603.70874" toX="59.55288" toY="608.38" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="56.784" fromY="603.70874" toX="59.55288" toY="608.38" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="56.304" fromY="616.07196" toX="549.05804" toY="621.69995" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XI. Requerimento nº 3.381/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="629.872" toX="549.2559" toY="635.5" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="643.672" toX="549.05804" toY="649.3" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 6.544, de 2013, do Sr. Carlos Zarattini, que acrescenta parágrafo ao art. 261 da Lei nº ]]></text>
@@ -264,9 +250,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 3 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 3 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -280,10 +266,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="4">
@@ -302,7 +284,7 @@
 				<text fromX="56.784" fromY="130.83195" toX="548.78394" toY="136.45996" fontName="Arial,Bold" fontSize="12.0"><![CDATA[locais fechados, estabelecendo maior rigor para a liberação de seus alvarás de ]]></text>
 				<text fromX="56.784" fromY="144.632" toX="234.146" toY="150.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[funcionamento. (NT 62 e T 64)  ]]></text>
 				<text fromX="56.784" fromY="158.43199" toX="474.916" toY="164.06" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="56.784" fromY="171.14877" toX="59.55288" toY="175.82" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="56.784" fromY="171.14877" toX="59.55288" toY="175.82" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="48.36" fromY="183.632" toX="548.93005" toY="189.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XIV. Requerimento nº 3.442/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="197.43199" toX="549.2559" toY="203.06" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="211.23198" toX="549.184" toY="216.85999" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 8.194, de 2014, do Senado Federal, que acrescenta art. 19-A ao Decreto-Lei nº 986, de ]]></text>
@@ -317,7 +299,7 @@
 				<text fromX="56.784" fromY="335.462" toX="548.8439" toY="341.09" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Tribunais Regionais Federais da 1ª, 2ª, 3ª, 4ª e 5ª Regiões; cria cargos de provimento ]]></text>
 				<text fromX="56.784" fromY="349.262" toX="549.324" toY="354.88998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[efetivo e em comissão e funções comissionadas nos seus Quadros de Pessoal; e ]]></text>
 				<text fromX="56.784" fromY="363.062" toX="357.046" toY="368.69" fontName="Arial" fontSize="12.0"><![CDATA[estabelece normas de funcionamento. (NT 62 e NT 64)  ]]></text>
-				<text fromX="56.784" fromY="375.89874" toX="59.55288" toY="380.56998" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="56.784" fromY="375.89874" toX="59.55288" toY="380.56998" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="48.36" fromY="388.402" toX="548.93005" toY="394.03" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XVI. Requerimento nº 3.536/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="402.202" toX="549.2559" toY="407.83" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="416.00198" toX="549.058" toY="421.62997" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Complementar nº 163, de 2015, do Senado Federal, que acrescenta § 14 ao art. 3º da ]]></text>
@@ -326,7 +308,7 @@
 				<text fromX="56.784" fromY="457.402" toX="548.84393" toY="463.03" fontName="Arial,Bold" fontSize="12.0"><![CDATA[arrecadação do imposto sobre a circulação de mercadorias e serviços pertencente ]]></text>
 				<text fromX="56.784" fromY="471.202" toX="234.866" toY="476.83" fontName="Arial,Bold" fontSize="12.0"><![CDATA[aos Municípios. (NT 62 e T 64)  ]]></text>
 				<text fromX="56.784" fromY="485.00198" toX="474.916" toY="490.62997" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="56.784" fromY="497.83875" toX="59.55288" toY="502.50998" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="56.784" fromY="497.83875" toX="59.55288" toY="502.50998" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="45.0" fromY="510.32196" toX="548.93005" toY="515.94995" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XVII. Requerimento nº 3.565/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="524.122" toX="549.2559" toY="529.75" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="537.922" toX="548.9182" toY="543.55" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 1.700, de 2011, do Sr. Silas Câmara, que altera a Lei nº 6.938, de 31 de agosto de ]]></text>
@@ -335,14 +317,14 @@
 				<text fromX="56.784" fromY="579.352" toX="549.25586" toY="584.98" fontName="Arial,Bold" fontSize="12.0"><![CDATA[sísmicos sejam considerados no âmbito do licenciamento ambiental. (Apensado ao ]]></text>
 				<text fromX="56.784" fromY="593.152" toX="229.226" toY="598.77997" fontName="Arial,Bold" fontSize="12.0"><![CDATA[PL nº 3.729/04) (NT 62 e T 64)  ]]></text>
 				<text fromX="56.784" fromY="606.95197" toX="474.916" toY="612.57996" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="71.064" fromY="619.7887" toX="73.832886" toY="624.45996" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="71.064" fromY="619.7887" toX="73.832886" toY="624.45996" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="41.64" fromY="632.27203" toX="548.918" toY="637.9" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XVIII. Requerimento nº 3.566/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="645.95197" toX="549.2559" toY="651.57996" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="659.752" toX="549.09406" toY="665.38" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 1.749, de 2015, dos Srs. Bebeto e Tia Eron, que tipifica o crime de injúria racial ]]></text>
 				<text fromX="56.784" fromY="673.552" toX="549.336" toY="679.18" fontName="Arial,Bold" fontSize="12.0"><![CDATA[coletiva e torna pública incondicionada a respectiva ação penal. (Altera o Decreto-lei ]]></text>
 				<text fromX="56.784" fromY="687.352" toX="551.136" toY="692.98" fontName="Arial" fontSize="12.0"><![CDATA[nº 2.848, de 1940 e a Lei nº 7.716, de 1989) (Apensado ao PL nº 6.418/05) (NT 62 e T 64)  ]]></text>
 				<text fromX="56.784" fromY="701.172" toX="474.916" toY="706.8" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="56.784" fromY="712.98926" toX="59.01912" toY="716.76" fontName="Arial,Bold" fontSize="8.04"><![CDATA[ ]]></text>
+				<text fromX="56.784" fromY="712.98926" toX="59.01912" toY="716.76" fontName="Arial,Bold" fontSize="8.0"><![CDATA[ ]]></text>
 				<text fromX="48.36" fromY="724.212" toX="548.918" toY="729.83997" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XIX. Requerimento nº 3.567/15, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="738.012" toX="549.2559" toY="743.64" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="751.812" toX="549.10596" toY="757.44" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 6.912, de 2002, do Senado Federal, que institui ações afirmativas em prol da ]]></text>
@@ -351,9 +333,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 4 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 4 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -367,10 +349,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="5">
@@ -399,7 +377,7 @@
 				<text fromX="56.784" fromY="268.742" toX="549.2799" toY="274.37" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Resolução nº 108, de 2015, da Mesa Diretora, que altera o art. 32 do Regimento Interno ]]></text>
 				<text fromX="56.784" fromY="282.542" toX="548.8559" toY="288.16998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[da Câmara dos Deputados, para criar a Comissão de Defesa dos Direitos da Pessoa ]]></text>
 				<text fromX="56.784" fromY="296.34198" toX="322.246" toY="301.96997" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Idosa, e dá outras providências. (NT 62 e NT 64) ]]></text>
-				<text fromX="78.024" fromY="309.29874" toX="80.792885" toY="313.96997" fontName="Arial" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="78.024" fromY="309.29874" toX="80.792885" toY="313.96997" fontName="Arial" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="41.64" fromY="321.662" toX="548.918" toY="327.28998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[XXIII. Requerimento nº 3.890/16, dos Srs. Líderes, que requer, nos termos do art. 155 do ]]></text>
 				<text fromX="56.784" fromY="335.462" toX="549.2559" toY="341.09" fontName="Arial" fontSize="12.0"><![CDATA[Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei ]]></text>
 				<text fromX="56.784" fromY="349.262" toX="549.1059" toY="354.88998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[nº 678, de 2015, do Sr. Manoel Junior, que define os crimes de abuso de autoridade e ]]></text>
@@ -417,9 +395,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 5 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 5 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -433,10 +411,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="6">
@@ -503,9 +477,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 6 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 6 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -519,10 +493,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="7">
@@ -589,9 +559,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 7 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 7 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -606,10 +576,6 @@
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
 		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
 	</page>
 	<page id="8">
 		<group fromX="36.12" fromY="39.119995" toX="558.83997" toY="816.6">
@@ -622,7 +588,7 @@
 				</rect>
 				<text fromX="42.6" fromY="75.63201" toX="305.806" toY="81.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[APROVADO O RQU Nº 2.786/15, EM 26/08/15.  ]]></text>
 				<text fromX="42.6" fromY="89.432" toX="460.756" toY="95.06" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="42.6" fromY="102.26876" toX="45.368877" toY="106.94" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="102.26876" toX="45.368877" toY="106.94" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="293.83" fromY="114.63201" toX="315.166" toY="120.26001" fontName="Arial" fontSize="12.0"><![CDATA[6  ]]></text>
 				<text fromX="200.09" fromY="128.43199" toX="416.596" toY="134.06" fontName="Arial" fontSize="12.0"><![CDATA[PROJETO DE LEI Nº 2.289-B, DE 2007 ]]></text>
 				<text fromX="245.69" fromY="142.23198" toX="371.086" toY="147.85999" fontName="Arial" fontSize="12.0"><![CDATA[(DO SR. BETO FARO) ]]></text>
@@ -676,9 +642,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 8 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 8 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -692,10 +658,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="9">
@@ -762,9 +724,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 9 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 9 ]]></text>
 				<rect fromX="546.72" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -779,10 +741,6 @@
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
 		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
 	</page>
 	<page id="10">
 		<group fromX="36.12" fromY="39.119995" toX="558.83997" toY="816.6">
@@ -796,13 +754,13 @@
 				<rect fromX="36.12" fromY="39.599976" toX="36.6" toY="816.6" lineWidth="1.0">
 				</rect>
 				<rect fromX="41.16" fromY="97.81995" toX="554.27997" toY="109.21997" lineWidth="1.0">
-					<text fromX="297.67" fromY="102.26876" toX="300.4389" toY="106.94" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+					<text fromX="297.67" fromY="102.26876" toX="300.4389" toY="106.94" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="109.21997" toX="554.27997" toY="123.01996" lineWidth="1.0">
 					<text fromX="259.97" fromY="114.63201" toX="338.686" toY="120.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[PRIORIDADE ]]></text>
 				</rect>
 				<rect fromX="41.16" fromY="123.01996" toX="554.27997" toY="134.53998" lineWidth="1.0">
-					<text fromX="297.67" fromY="127.46877" toX="300.4389" toY="132.14001" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+					<text fromX="297.67" fromY="127.46877" toX="300.4389" toY="132.14001" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				</rect>
 				<text fromX="267.65" fromY="139.95201" toX="331.006" toY="145.58002" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Discussão ]]></text>
 				<text fromX="297.67" fromY="153.752" toX="301.006" toY="159.38" fontName="Arial,Bold" fontSize="12.0"><![CDATA[ ]]></text>
@@ -847,9 +805,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 10 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 10 ]]></text>
 				<rect fromX="540.6" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -864,12 +822,6 @@
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
 		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
 	</page>
 	<page id="11">
 		<group fromX="36.12" fromY="39.119995" toX="558.83997" toY="816.6">
@@ -878,7 +830,7 @@
 				</rect>
 				<text fromX="267.65" fromY="48.012016" toX="331.006" toY="53.640015" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Discussão ]]></text>
 				<text fromX="164.66" fromY="61.932" toX="433.996" toY="67.56" fontName="Arial" fontSize="12.0"><![CDATA[(Art. 151, II c/c art. 52, § 6º do Regimento Interno) ]]></text>
-				<text fromX="42.6" fromY="74.668724" toX="45.368877" toY="79.339966" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="74.668724" toX="45.368877" toY="79.339966" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="290.35" fromY="87.031975" toX="311.686" toY="92.65997" fontName="Arial" fontSize="12.0"><![CDATA[14  ]]></text>
 				<text fromX="199.49" fromY="100.95202" toX="399.316" toY="106.58002" fontName="Arial" fontSize="12.0"><![CDATA[PROJETO DE LEI Nº 37-A, DE 2011 ]]></text>
 				<text fromX="220.97" fromY="114.75201" toX="377.686" toY="120.380005" fontName="Arial" fontSize="12.0"><![CDATA[(DO SR. WELITON PRADO) ]]></text>
@@ -887,7 +839,7 @@
 				<text fromX="42.6" fromY="156.03197" toX="555.576" toY="161.65997" fontName="Arial" fontSize="12.0"><![CDATA[petróleo, gás natural e outros hidrocarbonetos fluidos e das substâncias minerais submetidas ]]></text>
 				<text fromX="42.6" fromY="183.632" toX="556.0779" toY="189.26001" fontName="Arial" fontSize="12.0"><![CDATA[fevereiro de 1967. Pendente de parecer da Comissão Especial. (CÓDIGO DE MINERAÇÃO) (T ]]></text>
 				<text fromX="42.6" fromY="197.43199" toX="104.035995" toY="203.06" fontName="Arial,Bold" fontSize="12.0"><![CDATA[62 e T 64)  ]]></text>
-				<text fromX="70.944" fromY="212.18875" toX="555.6" toY="216.85999" fontName="Arial" fontSize="9.96"><![CDATA[ Tendo apensados (9) o PLs nºs 463/11, 3.403/12, 4.679/12, 5.138/13, 5.306/13, ]]></text>
+				<text fromX="70.944" fromY="212.18875" toX="555.6" toY="216.85999" fontName="Arial" fontSize="9.0"><![CDATA[ Tendo apensados (9) o PLs nºs 463/11, 3.403/12, 4.679/12, 5.138/13, 5.306/13, ]]></text>
 				<text fromX="42.6" fromY="225.03197" toX="262.826" toY="230.65997" fontName="Arial" fontSize="12.0"><![CDATA[5.807/13, 8.065/14, 3.587/15 e 3.726/15. ]]></text>
 				<rect fromX="36.12" fromY="39.599976" toX="36.6" toY="816.6" lineWidth="1.0">
 				</rect>
@@ -913,7 +865,7 @@
 				<text fromX="42.6" fromY="473.602" toX="365.44598" toY="479.22998" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Fundo, critérios de alocação e execução) (NT 62 e T 64)  ]]></text>
 				<text fromX="78.024" fromY="487.402" toX="268.586" toY="493.03" fontName="Arial" fontSize="12.0"><![CDATA[Tendo apensado o PLP nº 439/14.  ]]></text>
 				<text fromX="42.6" fromY="501.202" toX="460.756" toY="506.83" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="42.6" fromY="513.9187" toX="45.368877" toY="518.58997" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="513.9187" toX="45.368877" toY="518.58997" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<rect fromX="41.16" fromY="520.99" toX="554.27997" toY="534.79" lineWidth="1.0">
 					<text fromX="297.67" fromY="526.40204" toX="301.006" toY="532.03" fontName="Arial,Bold" fontSize="12.0"><![CDATA[ ]]></text>
 				</rect>
@@ -938,9 +890,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 11 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 11 ]]></text>
 				<rect fromX="540.6" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -955,10 +907,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="12">
@@ -1041,9 +989,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 12 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 12 ]]></text>
 				<rect fromX="540.6" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -1058,16 +1006,6 @@
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
 		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
 	</page>
 	<page id="13">
 		<group fromX="36.12" fromY="39.119995" toX="558.83997" toY="816.6">
@@ -1079,9 +1017,9 @@
 				<text fromX="70.944" fromY="75.63201" toX="74.28" toY="81.26001" fontName="Arial,Bold" fontSize="12.0"><![CDATA[ ]]></text>
 				<text fromX="297.67" fromY="89.432" toX="301.006" toY="95.06" fontName="Arial,Bold" fontSize="12.0"><![CDATA[ ]]></text>
 				<text fromX="263.69" fromY="103.23199" toX="335.086" toY="108.859985" fontName="Arial,Bold" fontSize="12.0"><![CDATA[ORDINÁRIA ]]></text>
-				<text fromX="297.67" fromY="116.06875" toX="300.4389" toY="120.73999" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="297.67" fromY="116.06875" toX="300.4389" toY="120.73999" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="267.65" fromY="128.43199" toX="334.366" toY="134.06" fontName="Arial,Bold" fontSize="12.0"><![CDATA[Discussão  ]]></text>
-				<text fromX="297.67" fromY="141.26877" toX="300.4389" toY="145.94" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="297.67" fromY="141.26877" toX="300.4389" toY="145.94" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="290.35" fromY="153.752" toX="311.686" toY="159.38" fontName="Arial" fontSize="12.0"><![CDATA[22  ]]></text>
 				<text fromX="196.13" fromY="167.55199" toX="402.676" toY="173.18" fontName="Arial" fontSize="12.0"><![CDATA[PROJETO DE LEI Nº 595-E, DE 2003 ]]></text>
 				<text fromX="207.65" fromY="181.35197" toX="391.006" toY="186.97998" fontName="Arial" fontSize="12.0"><![CDATA[(DA SRA. PERPÉTUA ALMEIDA) ]]></text>
@@ -1096,7 +1034,7 @@
 				<text fromX="42.6" fromY="305.58197" toX="556.04803" toY="311.20996" fontName="Arial,Bold" fontSize="12.0"><![CDATA[obrigatoriedade de transmissão às emissoras de televisão; altera a Lei nº 4.117, de 27 de ]]></text>
 				<text fromX="42.6" fromY="319.38202" toX="212.666" toY="325.01" fontName="Arial,Bold" fontSize="12.0"><![CDATA[agosto de 1962). (T 62 e T 64) ]]></text>
 				<text fromX="42.6" fromY="333.182" toX="460.756" toY="338.81" fontName="Arial,Bold" fontSize="12.0"><![CDATA[MATÉRIA A SER DELIBERADA APÓS SUPERADO O SOBRESTAMENTO. ]]></text>
-				<text fromX="42.6" fromY="346.01877" toX="45.368877" toY="350.69" fontName="Arial,Bold" fontSize="9.96"><![CDATA[ ]]></text>
+				<text fromX="42.6" fromY="346.01877" toX="45.368877" toY="350.69" fontName="Arial,Bold" fontSize="9.0"><![CDATA[ ]]></text>
 				<text fromX="290.35" fromY="358.50198" toX="311.686" toY="364.12997" fontName="Arial" fontSize="12.0"><![CDATA[23  ]]></text>
 				<rect fromX="36.12" fromY="39.599976" toX="36.6" toY="816.6" lineWidth="1.0">
 				</rect>
@@ -1139,9 +1077,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 13 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 13 ]]></text>
 				<rect fromX="540.6" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -1171,14 +1109,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 	<page id="14">
@@ -1242,9 +1172,9 @@
 				<rect fromX="285.67" fromY="802.2" toX="309.67" toY="814.8" lineWidth="1.0">
 				</rect>
 				<rect fromX="285.68" fromY="802.201" toX="309.68" toY="814.80096" lineWidth="1.0">
-					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.04"><![CDATA[ ]]></text>
+					<text fromX="288.67" fromY="807.2222" toX="291.73914" toY="812.39996" fontName="Arial" fontSize="11.0"><![CDATA[ ]]></text>
 				</rect>
-				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.96"><![CDATA[ 14 ]]></text>
+				<text fromX="288.67" fromY="806.64874" toX="555.9091" toY="812.39996" fontName="Arial" fontSize="9.0"><![CDATA[ 14 ]]></text>
 				<rect fromX="540.6" fromY="802.201" toX="552.83997" toY="814.80096" lineWidth="1.0">
 				</rect>
 			</box>
@@ -1272,14 +1202,6 @@
 			</rect>
 		</group>
 		<group fromX="558.84" fromY="816.60004" toX="559.32" toY="817.08">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
-		</group>
-		<group fromX="Infinity" fromY="Infinity" toX="-Infinity" toY="-Infinity">
 		</group>
 	</page>
 </pdfreader4humans>

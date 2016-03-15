@@ -277,11 +277,11 @@ public class PDFReader {
 		int lastGroupIndex = buildGroupMap(components, groupMap);
 		List<Component> groups = new ArrayList<Component>(lastGroupIndex);
 		for (int groupIndex = 1; groupIndex <= lastGroupIndex; groupIndex++)
-			groups.add(createGroup(groupIndex, groupMap));
+			createGroup(groupIndex, groupMap, groups);
 		return groups;
 	}
 
-	protected Component createGroup(int groupIndex, Map<Component, Integer> groupMap) {
+	protected void createGroup(int groupIndex, Map<Component, Integer> groupMap, List<Component> groups) {
 		float fromX = Float.POSITIVE_INFINITY;
 		float fromY = Float.POSITIVE_INFINITY;
 		float toX = Float.NEGATIVE_INFINITY;
@@ -293,7 +293,9 @@ public class PDFReader {
 				toX = max(component.getToX(), toX);
 				toY = max(component.getToY(), toY);
 			}
-		return new GroupComponent(fromX, fromY, toX, toY);
+		if (fromX != Float.POSITIVE_INFINITY || fromY != Float.POSITIVE_INFINITY || toX != Float.NEGATIVE_INFINITY
+				|| toY != Float.NEGATIVE_INFINITY)
+			groups.add(new GroupComponent(fromX, fromY, toX, toY));
 	}
 
 	private int buildGroupMap(List<Component> components, Map<Component, Integer> groupMap) {

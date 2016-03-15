@@ -228,7 +228,8 @@ public class MainPDFComponentLocator implements PDFComponentLocator {
 			}
 
 			private float fontsz(TextPosition textPosition) {
-				return textPosition.getFontSize() == 1F ? textPosition.getFontSizeInPt() : textPosition.getFontSize();
+				return textPosition.getFontSize() == 1F ? textPosition.getFontSizeInPt()
+						: (int) textPosition.getFontSize();
 			}
 
 			private Component findOverlappingHorizontalShape(TextPosition textPosition) {

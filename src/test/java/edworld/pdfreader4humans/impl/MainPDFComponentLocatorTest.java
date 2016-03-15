@@ -132,7 +132,7 @@ public class MainPDFComponentLocatorTest {
 			if (component.getText().contains("Coordenação de Apoio ao Plenário"))
 				result = component.toString();
 		assertEquals(
-				"text :: 161.3, 723.07477, 431.73688, 730.56, Arial,Bold 15.96 :: Coordenação de Apoio ao Plenário ",
+				"text :: 161.3, 723.07477, 431.73688, 730.56, Arial,Bold 15.0 :: Coordenação de Apoio ao Plenário ",
 				result);
 	}
 
