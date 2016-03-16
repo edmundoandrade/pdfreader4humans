@@ -15,7 +15,6 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import org.apache.commons.io.IOUtils;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -53,37 +52,22 @@ public class PDFReaderTest {
 
 	@Test
 	public void toXML() throws IOException {
-		assertEquals(IOUtils.toString(getClass().getResource("/testcase1/output.xml"), UTF_8), reader1.toXML());
-		assertEquals(IOUtils.toString(getClass().getResource("/testcase4/output.xml"), UTF_8), reader4.toXML());
-		assertEquals(IOUtils.toString(getClass().getResource("/testcase5/output.xml"), UTF_8), reader5.toXML());
-		assertEquals(IOUtils.toString(getClass().getResource("/testcase6/output.xml"), UTF_8), reader6.toXML());
+		assertEquals(text(readLinesFromResource("/testcase1/output.xml")), reader1.toXML());
+		assertEquals(text(readLinesFromResource("/testcase4/output.xml")), reader4.toXML());
+		assertEquals(text(readLinesFromResource("/testcase5/output.xml")), reader5.toXML());
+		assertEquals(text(readLinesFromResource("/testcase6/output.xml")), reader6.toXML());
 	}
 
 	@Test
 	public void toTextLines() throws IOException {
-		InputStream input = getClass().getResourceAsStream("/testcase1/output.txt");
-		try {
-			assertEquals(text(readLines(input, UTF_8)), text(reader1.toTextLines()));
-		} finally {
-			input.close();
-		}
-		input = getClass().getResourceAsStream("/testcase2/output.txt");
-		try {
-			assertEquals(text(readLines(input, UTF_8)), text(reader2.toTextLines()));
-		} finally {
-			input.close();
-		}
+		assertEquals(text(readLinesFromResource("/testcase1/output.txt")), text(reader1.toTextLines()));
+		assertEquals(text(readLinesFromResource("/testcase2/output.txt")), text(reader2.toTextLines()));
 	}
 
 	@Test
 	@Ignore
 	public void toTextLinesInProgress() throws IOException {
-		InputStream input = getClass().getResourceAsStream("/testcase3/output.txt");
-		try {
-			assertEquals(text(readLines(input, UTF_8)), text(reader3.toTextLines()));
-		} finally {
-			input.close();
-		}
+		assertEquals(text(readLinesFromResource("/testcase3/output.txt")), text(reader3.toTextLines()));
 	}
 
 	@Test
@@ -140,6 +124,15 @@ public class PDFReaderTest {
 			}
 		} finally {
 			expectedOutputStream.close();
+		}
+	}
+
+	private List<String> readLinesFromResource(String resourceName) throws IOException {
+		InputStream input = getClass().getResourceAsStream(resourceName);
+		try {
+			return readLines(input, UTF_8);
+		} finally {
+			input.close();
 		}
 	}
 }
