@@ -25,24 +25,29 @@ import edworld.pdfreader4humans.impl.MainPDFComponentLocator;
 
 public class PDFReaderTest {
 	private static final String UTF_8 = "UTF-8";
-	private static PDFReader reader1, reader2, reader3, reader4, reader5, reader6, reader7;
+	private static PDFReader reader1, reader2, reader3, reader4, reader5, reader6, reader7, reader8;
 
 	@BeforeClass
 	public static void setUp() throws IOException {
-		reader1 = new PDFReader(PDFReaderTest.class.getResource("/testcase1/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
-		reader2 = new PDFReader(PDFReaderTest.class.getResource("/testcase2/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
-		reader3 = new PDFReader(PDFReaderTest.class.getResource("/testcase3/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
-		reader4 = new PDFReader(PDFReaderTest.class.getResource("/testcase4/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
-		reader5 = new PDFReader(PDFReaderTest.class.getResource("/testcase5/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
-		reader6 = new PDFReader(PDFReaderTest.class.getResource("/testcase6/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
-		reader7 = new PDFReader(PDFReaderTest.class.getResource("/testcase7/input.pdf"), new MainPDFComponentLocator(),
-				new MainBoxDetector(), new MainMarginDetector());
+		PDFComponentLocator locator = new MainPDFComponentLocator();
+		BoxDetector boxDetector = new MainBoxDetector();
+		MarginDetector marginDetector = new MainMarginDetector();
+		reader1 = new PDFReader(PDFReaderTest.class.getResource("/testcase1/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader2 = new PDFReader(PDFReaderTest.class.getResource("/testcase2/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader3 = new PDFReader(PDFReaderTest.class.getResource("/testcase3/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader4 = new PDFReader(PDFReaderTest.class.getResource("/testcase4/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader5 = new PDFReader(PDFReaderTest.class.getResource("/testcase5/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader6 = new PDFReader(PDFReaderTest.class.getResource("/testcase6/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader7 = new PDFReader(PDFReaderTest.class.getResource("/testcase7/input.pdf"), locator, boxDetector,
+				marginDetector);
+		reader8 = new PDFReader(PDFReaderTest.class.getResource("/testcase8/input.pdf"), locator, boxDetector,
+				marginDetector);
 	}
 
 	@Test
@@ -68,6 +73,7 @@ public class PDFReaderTest {
 		assertEquals(text(readLinesFromResource("/testcase1/output.txt")), text(reader1.toTextLines()));
 		assertEquals(text(readLinesFromResource("/testcase2/output.txt")), text(reader2.toTextLines()));
 		assertEquals(text(readLinesFromResource("/testcase7/output.txt")), text(reader7.toTextLines()));
+		assertEquals(text(readLinesFromResource("/testcase8/output.txt")), text(reader8.toTextLines()));
 	}
 
 	@Test
