@@ -25,7 +25,7 @@ import edworld.pdfreader4humans.impl.MainPDFComponentLocator;
 
 public class PDFReaderTest {
 	private static final String UTF_8 = "UTF-8";
-	private static PDFReader reader1, reader2, reader3, reader4, reader5, reader6;
+	private static PDFReader reader1, reader2, reader3, reader4, reader5, reader6, reader7;
 
 	@BeforeClass
 	public static void setUp() throws IOException {
@@ -40,6 +40,8 @@ public class PDFReaderTest {
 		reader5 = new PDFReader(PDFReaderTest.class.getResource("/testcase5/input.pdf"), new MainPDFComponentLocator(),
 				new MainBoxDetector(), new MainMarginDetector());
 		reader6 = new PDFReader(PDFReaderTest.class.getResource("/testcase6/input.pdf"), new MainPDFComponentLocator(),
+				new MainBoxDetector(), new MainMarginDetector());
+		reader7 = new PDFReader(PDFReaderTest.class.getResource("/testcase7/input.pdf"), new MainPDFComponentLocator(),
 				new MainBoxDetector(), new MainMarginDetector());
 	}
 
@@ -60,8 +62,12 @@ public class PDFReaderTest {
 
 	@Test
 	public void toTextLines() throws IOException {
+		for (Component component : reader7.getFirstLevelComponents(1)) {
+			System.out.println(component.toString());
+		}
 		assertEquals(text(readLinesFromResource("/testcase1/output.txt")), text(reader1.toTextLines()));
 		assertEquals(text(readLinesFromResource("/testcase2/output.txt")), text(reader2.toTextLines()));
+		assertEquals(text(readLinesFromResource("/testcase7/output.txt")), text(reader7.toTextLines()));
 	}
 
 	@Test
