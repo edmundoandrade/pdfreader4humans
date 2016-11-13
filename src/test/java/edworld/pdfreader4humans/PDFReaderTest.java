@@ -47,7 +47,7 @@ public class PDFReaderTest {
 		reader7 = new PDFReader(PDFReaderTest.class.getResource("/testcase7/input.pdf"), locator, boxDetector,
 				marginDetector);
 		reader8 = new PDFReader(PDFReaderTest.class.getResource("/testcase8/input.pdf"), locator, boxDetector,
-				marginDetector);
+				marginDetector, 0.5F);
 	}
 
 	@Test
@@ -67,15 +67,31 @@ public class PDFReaderTest {
 
 	@Test
 	public void toTextLines() throws IOException {
-		// for (Component component : reader8.getFirstLevelComponents(9)) {
-		// System.out.println(component.toString());
-		// for (Component subComponent : component.getChildren()) {
-		// System.out.println("\t"+subComponent);
-		// for (Component nextSubComponent : subComponent.getChildren())
-		// System.out.println("\t\t"+nextSubComponent);
-		// }
-		// }
-		ImageIO.write(reader8.createPageImage(9, 3, Color.WHITE, Color.BLACK, true), "png", new File("C:/Users/Ed/Desktop/outputWithStructure8.png"));
+//		for (Component component : reader3.getFirstLevelComponents(1)) {
+//			System.out.println(component.toString());
+//			for (Component subComponent : component.getChildren()) {
+//				System.out.println("\t" + subComponent);
+//				for (Component nextSubComponent : subComponent.getChildren()) {
+//					System.out.println("\t\t" + nextSubComponent);
+//					for (Component next2SubComponent : nextSubComponent.getChildren())
+//						System.out.println("\t\t\t" + next2SubComponent);
+//				}
+//			}
+//		}
+		
+//margin :: 531.4939, 74.23602, 758.28345, 527.708
+//		text :: 559.7438, 523.2607, 676.53735, 527.708, Times-Roman 7.0 :: "X - habitação de interesse social."
+
+//rect :: 559.744, 544.96704, 612.36304, 545.46497, 0.51pt
+//		text :: 559.744, 540.3726, 612.3625, 544.9674, Times-Bold 7.0 :: Razões do veto
+
+//margin :: 531.494, 76.22803, 758.2808, 868.8181
+//		group :: 531.494, 76.22803, 758.265, 96.071045
+//			rect :: 531.494, 76.22803, 758.265, 96.071045, 0.51pt
+//				text :: 578.133, 80.860725, 711.62476, 88.18329, JCLDHF+OttawaV 11.0 :: Presidência da República
+//				rect :: 531.494, 93.16498, 758.265, 94.85895, 0.51pt
+//		text :: 559.7918, 557.77936, 758.2725, 562.2267, Times-Roman 7.0 :: "Da forma como previsto, tal acréscimo de finalidade po-
+		
 		assertEquals(text(readLinesFromResource("/testcase1/output.txt")), text(reader1.toTextLines()));
 		assertEquals(text(readLinesFromResource("/testcase2/output.txt")), text(reader2.toTextLines()));
 		assertEquals(text(readLinesFromResource("/testcase8/output.txt")), text(reader8.toTextLines()));

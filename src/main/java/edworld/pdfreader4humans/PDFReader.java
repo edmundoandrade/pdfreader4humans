@@ -1,6 +1,7 @@
 // This open source code is distributed without warranties according to the license published at http://www.apache.org/licenses/LICENSE-2.0
 package edworld.pdfreader4humans;
 
+import static edworld.pdfreader4humans.util.TextUtil.removeDiacritics;
 import static java.awt.image.BufferedImage.TYPE_INT_ARGB;
 import static java.lang.Math.abs;
 import static java.lang.Math.max;
@@ -22,6 +23,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -31,11 +33,12 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import edworld.pdfreader4humans.util.PDFUtil;
 
 public class PDFReader {
-	protected static final String HIFEN = "-";
+	protected static final String HYPHEN = "-";
 	protected static final String SPACE = " ";
 	protected static final String UTF_8 = "UTF-8";
 	protected static final String LINE_BREAK = System.getProperty("line.separator");
 	protected URL url;
+	protected float tolerance;
 	protected List<List<Component>> firstLevel = new ArrayList<List<Component>>();
 	protected Map<String, String> templateMap = new HashMap<String, String>();
 	protected Component lastContainer;
@@ -59,7 +62,31 @@ public class PDFReader {
 	 */
 	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector,
 			MarginDetector marginDetector) throws IOException {
+		this(url, componentLocator, boxDetector, marginDetector, 0);
+	}
+
+	/**
+	 * Class responsible for reading PDF contents in the same order a human
+	 * would read them.
+	 * 
+	 * @param url
+	 *            the PDF's location
+	 * @param componentLocator
+	 *            an instance of a PDFComponentLocator subclass such as
+	 *            MainPDFComponentLocator
+	 * @param boxDetector
+	 *            an instance of a BoxDetector subclass such as MainBoxDetector
+	 * @param marginDetector
+	 *            an instance of a MarginDetector subclass such as
+	 *            MainMarginDetector
+	 * @param tolerance
+	 *            tolerance used to verify containment of components
+	 * @throws IOException
+	 */
+	public PDFReader(URL url, PDFComponentLocator componentLocator, BoxDetector boxDetector,
+			MarginDetector marginDetector, float tolerance) throws IOException {
 		this.url = url;
+		this.tolerance = tolerance;
 		PDDocument doc = PDFUtil.load(url);
 		try {
 			readAllPages(doc, componentLocator, boxDetector, marginDetector);
@@ -146,8 +173,12 @@ public class PDFReader {
 	}
 
 	private String joinConsecutiveText(String text1, String text2) {
-		if (text1.endsWith(HIFEN))
+		if (text1.endsWith(HYPHEN)) {
+			if ((text2.equalsIgnoreCase("se") || removeDiacritics(text2).matches("(?i)se[^a-z].*"))
+					&& text1.matches("(?i).*[^s]" + Matcher.quoteReplacement(HYPHEN)))
+				return text1 + text2;
 			return text1.substring(0, text1.length() - 1) + text2;
+		}
 		return text1 + SPACE + text2;
 	}
 
@@ -349,7 +380,7 @@ public class PDFReader {
 		Component container = null;
 		float area = Float.POSITIVE_INFINITY;
 		for (Component possibleContainer : containers)
-			if (possibleContainer.contains(component, 0.5F) && possibleContainer.getArea() < area) {
+			if (possibleContainer.contains(component, tolerance) && possibleContainer.getArea() < area) {
 				container = possibleContainer;
 				area = possibleContainer.getArea();
 			}
