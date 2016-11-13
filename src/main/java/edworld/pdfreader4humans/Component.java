@@ -57,11 +57,15 @@ public abstract class Component implements Comparable<Component> {
 	}
 
 	public boolean contains(Component other) {
+		return contains(other, 0);
+	}
+
+	public boolean contains(Component other, float tolerance) {
 		if (other instanceof TextComponent)
-			return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY < other.getToY()
-					&& toY >= other.getToY();
-		return this != other && fromX <= other.getFromX() && toX >= other.getToX() && fromY <= other.getFromY()
-				&& toY >= other.getToY();
+			return this != other && fromX <= other.getFromX() + tolerance && toX + tolerance >= other.getToX()
+					&& fromY < other.getToY() + tolerance && toY + tolerance >= other.getToY();
+		return this != other && fromX <= other.getFromX() + tolerance && toX + tolerance >= other.getToX()
+				&& fromY <= other.getFromY() + tolerance && toY + tolerance >= other.getToY();
 	}
 
 	public boolean intersects(Component other) {

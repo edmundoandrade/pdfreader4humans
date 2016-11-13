@@ -349,7 +349,7 @@ public class PDFReader {
 		Component container = null;
 		float area = Float.POSITIVE_INFINITY;
 		for (Component possibleContainer : containers)
-			if (possibleContainer.contains(component) && possibleContainer.getArea() < area) {
+			if (possibleContainer.contains(component, 0.5F) && possibleContainer.getArea() < area) {
 				container = possibleContainer;
 				area = possibleContainer.getArea();
 			}
